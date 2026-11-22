@@ -1,0 +1,83 @@
+{
+  "id": "s1-30-read-juz-amma-short",
+  "stage": 1,
+  "order": 30,
+  "title": "Reading short surahs: 108, 112, 113, 114, 103",
+  "minutes": 15,
+  "prerequisites": ["s1-29-read-al-fatiha"],
+  "bigIdea": { "text": "Five short surahs, one at a time: Al-Kawthar, Al-Ikhlas, Al-Falaq, An-Nas and Al-'Asr. Each has only a few short ayat, so you can read a whole surah in one sitting.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Ayat: 108 has 3, 112 has 4, 113 has 5, 114 has 6 and 103 has 3. Suggested order: 108 → 112 → 113 → 114 → 103; 103 comes last because 103:3 is the longest ayah of the five (9 words).", "provenance": { "kind": "dataset", "source": "Tanzil text, surahs 103, 108, 112, 113, 114 (ayah and word counts)" } },
+    { "text": "In this text the basmala is printed before the first ayah of each of these surahs, without its own number (only in Al-Fatiha is it numbered as ayah 1).", "provenance": { "kind": "dataset", "source": "Tanzil text: basmala prefixed to ayah 1 of surahs 2–114 except 9" } },
+    { "text": "What to watch: the maddah in 108:1; the sukun endings in 112:3 and the merged ن in 112:4; the hidden ن before ش at the start of 113:2–5; the doubled ن with a hum at every ayah end of 114; the rounded zeros in 103:3.", "provenance": { "kind": "dataset", "source": "rebuilt cpfair/quran-tajweed annotations (madd_munfasil, idghaam_no_ghunnah, ikhfa, ghunnah, silent) and Tanzil text for these surahs" } },
+    { "text": "Echo each ayah after Sheikh al-Minshawi until you can read it without help, then read the whole surah alone.", "provenance": { "kind": "app" } },
+    { "text": "At each ayah end: drop the final vowel or tanween (lesson 21), and give the long vowel before the last letter your chosen 2, 4 or 6 counts, the same every time.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": { "kind": "arrows", "steps": ["108 Al-Kawthar", "112 Al-Ikhlas", "113 Al-Falaq", "114 An-Nas", "103 Al-'Asr"], "provenance": { "kind": "app" } },
+  "memoryHook": { "text": "One ayah, echo, repeat; then the whole surah alone.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "Short surahs are worth reading many times: each repetition trains your eyes on the same words until you read them at a glance.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "108:1", "rule": "madd_munfasil", "note": { "text": "The first word has a maddah and the next word starts with a hamza: hold 4–5 counts.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "112:3", "note": { "text": "Every word ends on a sakin letter: close each one cleanly.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "112:4", "words": [1, 3], "rule": "idghaam_no_ghunnah", "note": { "text": "A bare ن merges into the doubled ل.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "113:2", "words": [0, 2], "rule": "ikhfa", "note": { "text": "A bare ن before ش: hidden, with a light hum (Stage 2). The same pair opens 113:3, 113:4 and 113:5.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "114:1", "words": [3, 4], "rule": "ghunnah", "note": { "text": "A doubled ن with a nasal hum of about 2 counts; every ayah of An-Nas ends on this sound.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "103:1", "note": { "text": "One word: the و joins straight into the lam; the ٱ between them is silent.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "103:3", "words": [2, 4], "rule": "silent", "note": { "text": "Rounded zeros: the alifs after the plural waw are not read.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "letters": [],
+  "listen": [
+    { "source": "nuraniah", "lesson": 16, "note": "Mapped by order (our lesson 30 → Nuraniah lesson 16) — please confirm. The video titles carry no topic, so check it fits this lesson and mark its segments when you watch." },
+    { "source": "minshawi-ayah", "ref": "108:1" },
+    { "source": "minshawi-ayah", "ref": "112:1" },
+    { "source": "minshawi-ayah", "ref": "113:1" },
+    { "source": "minshawi-ayah", "ref": "114:1" },
+    { "source": "minshawi-ayah", "ref": "103:1" }
+  ],
+  "drills": [
+    { "kind": "echo", "ref": "108:1" },
+    { "kind": "echo", "ref": "112:1" },
+    { "kind": "echo", "ref": "113:1" },
+    { "kind": "echo", "ref": "114:1" },
+    { "kind": "echo", "ref": "103:3" }
+  ],
+  "cr": [
+    { "ref": "108:1", "mode": "echo" }, { "ref": "108:2", "mode": "echo" }, { "ref": "108:3", "mode": "echo" },
+    { "ref": "112:1", "mode": "echo" }, { "ref": "112:2", "mode": "echo" }, { "ref": "112:3", "mode": "echo" }, { "ref": "112:4", "mode": "echo" },
+    { "ref": "113:1", "mode": "echo" }, { "ref": "113:2", "mode": "echo" }, { "ref": "113:3", "mode": "echo" }, { "ref": "113:4", "mode": "echo" }, { "ref": "113:5", "mode": "echo" },
+    { "ref": "114:1", "mode": "echo" }, { "ref": "114:2", "mode": "echo" }, { "ref": "114:3", "mode": "echo" }, { "ref": "114:4", "mode": "echo" }, { "ref": "114:5", "mode": "echo" }, { "ref": "114:6", "mode": "echo" },
+    { "ref": "103:1", "mode": "echo" }, { "ref": "103:2", "mode": "echo" }, { "ref": "103:3", "mode": "echo" }
+  ],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true, "recitation": { "ref": "108:1", "checks": ["madd", "tempo"] } },
+  "questions": [
+    { "id": "s1-30-q1", "q": "How many ayat does Al-Kawthar (108) have?", "options": ["3", "4", "5", "6"], "answer": 0, "explain": ["Right.", "4 is Al-Ikhlas (112).", "5 is Al-Falaq (113).", "6 is An-Nas (114)."], "provenance": { "kind": "dataset", "source": "Tanzil text, surahs 108, 112, 113, 114" }, "heldOut": false },
+    { "id": "s1-30-q2", "q": "In this text, where does the basmala of surah 112 appear?", "options": ["Before its first ayah, without its own number", "As ayah 1 with its own number", "At the end of the surah", "It is not written"], "answer": 0, "explain": ["Right.", "Only Al-Fatiha numbers the basmala as ayah 1.", "It always comes at the start.", "It is written before the surah."], "provenance": { "kind": "dataset", "source": "Tanzil text 112:1 (basmala prefix)" }, "heldOut": false },
+    { "id": "s1-30-q3", "q": "At the start of 113:2–5 a bare ن comes before ش. How is it read?", "options": ["Hidden, with a light nasal hum, not a clear 'n'", "A clear 'n' with sukun", "Silent", "As an 'm'"], "answer": 0, "explain": ["Right (ikhfa, Stage 2).", "A bare ن is not a clear sukun.", "Its hum is still heard.", "An 'm' comes only before ب, with a small meem."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-30-q4", "q": "In 112:4 a bare ن comes before a doubled ل. What happens?", "options": ["The ن merges fully into the ل", "Say a clear 'n'", "Pause between the two words", "The ل is silent"], "answer": 0, "explain": ["Right.", "The shadda on ل shows the merge.", "There is no pause sign there.", "The ل is doubled, not silent."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-30-q5", "q": "In 103:3 several alifs carry a rounded zero. What do you do?", "options": ["Don't read them", "Read them as a long 'aa'", "Read them only when stopping", "Read them as a hamza"], "answer": 0, "explain": ["Right.", "A rounded zero means never pronounced.", "That is the upright oval zero.", "They carry no hamza."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-30-q6", "q": "What is the best way to learn a new short surah?", "options": ["Echo one ayah at a time, then read the whole surah alone", "Read the whole surah at full speed first", "Only listen, never read", "Start from the last ayah"], "answer": 0, "explain": ["Right.", "Accuracy first, speed later.", "This stage is about reading the text.", "Go in order, from the first ayah."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-30-q7", "q": "Every ayah of An-Nas (114) ends with a doubled ن. What do you hear on it?", "options": ["A nasal hum (ghunnah) of about 2 counts", "A bounce (qalqalah)", "A long 'aa'", "Nothing special"], "answer": 0, "explain": ["Right.", "Qalqalah is for ق ط ب ج د with sukun.", "The long 'aa' comes after the ن, not on it.", "A doubled ن always hums."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-30-q8", "q": "How many ayat does Al-Ikhlas (112) have?", "options": ["4", "3", "5", "6"], "answer": 0, "explain": ["Right.", "3 is Al-Kawthar (108) or Al-'Asr (103).", "5 is Al-Falaq (113).", "6 is An-Nas (114)."], "provenance": { "kind": "dataset", "source": "Tanzil text, surahs 103, 108, 112, 113, 114" }, "heldOut": true },
+    { "id": "s1-30-q9", "q": "In 108:1 the first word ends with a maddah and the next word starts with a hamza. How long?", "options": ["4–5 counts", "2 counts", "6 counts", "1 count"], "answer": 0, "explain": ["Right.", "The maddah asks for more than 2.", "6 is for a maddah before a sukun or shadda.", "One count is a short vowel."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-30-q10", "q": "How do you begin 103:1, a single word that starts with وَ?", "options": ["Join the و straight into the lam; the ٱ after it is silent", "Say a hamza after the و", "Pause after the و", "Skip the و"], "answer": 0, "explain": ["Right.", "The joining hamza drops after وَ.", "The و belongs to the word; there is no pause.", "The و is read."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-30-q11", "q": "You stop at the end of 112:1, which ends in tanween damm. How do you finish?", "options": ["Drop the '-un' and end on د with sukun", "Say '-un' fully", "Hold a long 'uu'", "Add an 'a'"], "answer": 0, "explain": ["Right.", "The n of tanween drops when you stop.", "There is no long vowel there.", "Nothing is added."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-30-q12", "q": "Reading these surahs alone, how long is the long vowel before the last letter at each ayah end?", "options": ["Your chosen 2, 4 or 6 counts, the same every time", "Always 1 count", "A different length each time", "As long as your breath lasts"], "answer": 0, "explain": ["Right.", "It is a long vowel: at least 2.", "Lengths must stay consistent.", "Length is counted, not breath-based."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-30-q13", "q": "Why is 103 last in this lesson's suggested order?", "options": ["Its third ayah is the longest single ayah of the five surahs", "It has the most ayat", "It has no basmala", "It uses letters you haven't learned"], "answer": 0, "explain": ["Right: 103:3 has 9 words.", "An-Nas (114) has the most ayat.", "Its basmala is printed like the others.", "You have learned every letter in it."], "provenance": { "kind": "dataset", "source": "Tanzil text: word counts per ayah, surahs 103, 108, 112, 113, 114" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "word-audio", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "rule-id", "rules": ["hamzat_wasl", "lam_shamsiyyah", "madd_2", "silent"], "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "harakah-id", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "Basmala before surahs 108, 112, 113, 114, 103 in this text == Printed before ayah 1, without its own number",
+    "Learning a new short surah == Echo one ayah at a time, then read the whole surah alone",
+    "Bare ن before ش (113:2–5) == Hidden with a light hum (ikhfa)",
+    "Rounded zeros in 103:3 == Those alifs are not read"
+  ],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Echo Al-Ikhlas (112) ayah by ayah after Sheikh al-Minshawi, then record yourself reading all four ayat, then press Play mine (step 5, Practise) and compare it with the reference."
+}

@@ -1,0 +1,4033 @@
+{
+ "v": 1,
+ "text": {
+  "source": "Tanzil Quran Text (Uthmani, Version 1.1)",
+  "sha256": "18c719bb3ba26d32ef457f40dad77cd28c4c5a34156833e26a8e5fcfdd246fb1",
+  "options": "marks=true, sajdah=true (pause marks + sajdah signs), txt-2"
+ },
+ "copyright": "PLEASE DO NOT REMOVE OR CHANGE THIS COPYRIGHT BLOCK\n====================================================================\n\n Tanzil Quran Text (Uthmani, Version 1.1)\n Copyright (C) 2007-2026 Tanzil Project\n License: Creative Commons Attribution 3.0\n\n This copy of the Quran text is carefully produced, highly \n verified and continuously monitored by a group of specialists \n at Tanzil Project.\n\n TERMS OF USE:\n\n - Permission is granted to copy and distribute verbatim copies \n   of this text, but CHANGING IT IS NOT ALLOWED.\n\n - This Quran text can be used in any website or application, \n   provided that its source (Tanzil Project) is clearly indicated, \n   and a link is made to tanzil.net to enable users to keep\n   track of changes.\n\n - This copyright notice shall be included in all verbatim copies \n   of the text, and shall be reproduced appropriately in all files \n   derived from or containing substantial portion of this text.\n\n Please check updates at: http://tanzil.net/updates/\n\n====================================================================",
+ "metadataCopyright": "Tanzil Quran metadata (C) 2008-2009 Tanzil.info, licence cc-by, https://tanzil.net",
+ "rules": [
+  "hamzat_wasl",
+  "lam_shamsiyyah",
+  "silent",
+  "madd_2",
+  "madd_246",
+  "madd_muttasil",
+  "madd_munfasil",
+  "madd_6",
+  "ghunnah",
+  "ikhfa",
+  "ikhfa_shafawi",
+  "iqlab",
+  "idghaam_ghunnah",
+  "idghaam_no_ghunnah",
+  "idghaam_shafawi",
+  "idghaam_mutajanisayn",
+  "idghaam_mutaqaribayn",
+  "qalqalah"
+ ],
+ "annFlags": {
+  "WASL_ONLY": 1,
+  "REBUILD_ONLY": 2,
+  "FROM_2017": 4,
+  "DISPUTED": 8,
+  "WAQF_ONLY": 16,
+  "ENGINE_DISPUTED": 32
+ },
+ "timingFlags": {
+  "INTERPOLATED": 1,
+  "SPLIT": 2,
+  "CLAMPED": 4,
+  "DURATION_FIXED": 8,
+  "REMAPPED": 16,
+  "SNAPPED": 32
+ },
+ "surahs": [
+  {
+   "n": 1,
+   "name": "الفاتحة",
+   "tname": "Al-Faatiha",
+   "ename": "The Opening",
+   "type": "Meccan",
+   "order": 5,
+   "ayas": 7,
+   "file": "s001.json",
+   "bytes": 2945,
+   "sha256": "b03ec10545ea8b6b6741f7e84c7d9f7e2b73c375e4cc0fec76179189299702c7"
+  },
+  {
+   "n": 2,
+   "name": "البقرة",
+   "tname": "Al-Baqara",
+   "ename": "The Cow",
+   "type": "Medinan",
+   "order": 87,
+   "ayas": 286,
+   "file": "s002.json",
+   "bytes": 336736,
+   "sha256": "b94d6a0587f2b133731586911c89f844cd50b42a763c0ec0a41d7310c3d6609f"
+  },
+  {
+   "n": 3,
+   "name": "آل عمران",
+   "tname": "Aal-i-Imraan",
+   "ename": "The Family of Imraan",
+   "type": "Medinan",
+   "order": 89,
+   "ayas": 200,
+   "file": "s003.json",
+   "bytes": 191620,
+   "sha256": "de7a91ff20f1693c40219d2df3158f859a761dc402f02e60d6a9574c30182381"
+  },
+  {
+   "n": 4,
+   "name": "النساء",
+   "tname": "An-Nisaa",
+   "ename": "The Women",
+   "type": "Medinan",
+   "order": 92,
+   "ayas": 176,
+   "file": "s004.json",
+   "bytes": 203907,
+   "sha256": "1ccb9a3b879922d385ff5b351ba78ec2968755d62471d8b5aebcaea88dc9b81b"
+  },
+  {
+   "n": 5,
+   "name": "المائدة",
+   "tname": "Al-Maaida",
+   "ename": "The Table",
+   "type": "Medinan",
+   "order": 112,
+   "ayas": 120,
+   "file": "s005.json",
+   "bytes": 156062,
+   "sha256": "364edc7a61fccce3da9b66eb405d7af77efe8f48190589efc439142382bd43a3"
+  },
+  {
+   "n": 6,
+   "name": "الأنعام",
+   "tname": "Al-An'aam",
+   "ename": "The Cattle",
+   "type": "Meccan",
+   "order": 55,
+   "ayas": 165,
+   "file": "s006.json",
+   "bytes": 164268,
+   "sha256": "9d941fec5fbe6847339eca6597b9cab27b1856ad0c44751e147e52cffa536a83"
+  },
+  {
+   "n": 7,
+   "name": "الأعراف",
+   "tname": "Al-A'raaf",
+   "ename": "The Heights",
+   "type": "Meccan",
+   "order": 39,
+   "ayas": 206,
+   "file": "s007.json",
+   "bytes": 181985,
+   "sha256": "86ccfee9298fa25dc9654a2e14b6003828e8986d745aac5a9698690ac69eefd2"
+  },
+  {
+   "n": 8,
+   "name": "الأنفال",
+   "tname": "Al-Anfaal",
+   "ename": "The Spoils of War",
+   "type": "Medinan",
+   "order": 88,
+   "ayas": 75,
+   "file": "s008.json",
+   "bytes": 68814,
+   "sha256": "f714aa764cd4d96158fc6002bc006297e89208388b71a95f204b2fd767096159"
+  },
+  {
+   "n": 9,
+   "name": "التوبة",
+   "tname": "At-Tawba",
+   "ename": "The Repentance",
+   "type": "Medinan",
+   "order": 113,
+   "ayas": 129,
+   "file": "s009.json",
+   "bytes": 137984,
+   "sha256": "bded92c5677c407b78e7cf49733564f314521aae4e255da0e52c9e75bcc2f0f6"
+  },
+  {
+   "n": 10,
+   "name": "يونس",
+   "tname": "Yunus",
+   "ename": "Jonas",
+   "type": "Meccan",
+   "order": 51,
+   "ayas": 109,
+   "file": "s010.json",
+   "bytes": 99462,
+   "sha256": "2929f776640352585fe4e56f99dc7523098f5dfc49f8c5cbe4db5353edd927f5"
+  },
+  {
+   "n": 11,
+   "name": "هود",
+   "tname": "Hud",
+   "ename": "Hud",
+   "type": "Meccan",
+   "order": 52,
+   "ayas": 123,
+   "file": "s011.json",
+   "bytes": 103185,
+   "sha256": "060db8db4e0e0b63839c5c9b29d4ba33a1d3a365c3f0900a3472e38d2f132e7f"
+  },
+  {
+   "n": 12,
+   "name": "يوسف",
+   "tname": "Yusuf",
+   "ename": "Joseph",
+   "type": "Meccan",
+   "order": 53,
+   "ayas": 111,
+   "file": "s012.json",
+   "bytes": 96266,
+   "sha256": "85f76603562ebabac91dc59dc4a988840c1dc8287e629e04133aa0120f4d0200"
+  },
+  {
+   "n": 13,
+   "name": "الرعد",
+   "tname": "Ar-Ra'd",
+   "ename": "The Thunder",
+   "type": "Medinan",
+   "order": 96,
+   "ayas": 43,
+   "file": "s013.json",
+   "bytes": 47876,
+   "sha256": "181556ad995eac3224bfb73c2a8146c05f22c7c669fa85193f22e204faf7d409"
+  },
+  {
+   "n": 14,
+   "name": "ابراهيم",
+   "tname": "Ibrahim",
+   "ename": "Abraham",
+   "type": "Meccan",
+   "order": 72,
+   "ayas": 52,
+   "file": "s014.json",
+   "bytes": 46439,
+   "sha256": "d50136d818b2b4a41e54832fbc0d0c063febcc37cfaa58800cb631a8b9b85854"
+  },
+  {
+   "n": 15,
+   "name": "الحجر",
+   "tname": "Al-Hijr",
+   "ename": "The Rock",
+   "type": "Meccan",
+   "order": 54,
+   "ayas": 99,
+   "file": "s015.json",
+   "bytes": 37417,
+   "sha256": "f88b9ea293a74cb3951b22dc1ecfc137518bd848facb84c600acef6a0d8559ec"
+  },
+  {
+   "n": 16,
+   "name": "النحل",
+   "tname": "An-Nahl",
+   "ename": "The Bee",
+   "type": "Meccan",
+   "order": 70,
+   "ayas": 128,
+   "file": "s016.json",
+   "bytes": 100075,
+   "sha256": "80dcfb93ad8b5d9ddb90710ed12271a6070804a6fdf117f149473006010c84b2"
+  },
+  {
+   "n": 17,
+   "name": "الإسراء",
+   "tname": "Al-Israa",
+   "ename": "The Night Journey",
+   "type": "Meccan",
+   "order": 50,
+   "ayas": 111,
+   "file": "s017.json",
+   "bytes": 82719,
+   "sha256": "449b326883f6bac58c378b32cf20c1e7293564354ea6b47fe0dacfab315967e4"
+  },
+  {
+   "n": 18,
+   "name": "الكهف",
+   "tname": "Al-Kahf",
+   "ename": "The Cave",
+   "type": "Meccan",
+   "order": 69,
+   "ayas": 110,
+   "file": "s018.json",
+   "bytes": 82759,
+   "sha256": "dd22bc216962f28cee595a8855891169416e64b79b31d0798c0024e29c49d4d0"
+  },
+  {
+   "n": 19,
+   "name": "مريم",
+   "tname": "Maryam",
+   "ename": "Mary",
+   "type": "Meccan",
+   "order": 44,
+   "ayas": 98,
+   "file": "s019.json",
+   "bytes": 51048,
+   "sha256": "22eabfe99f1b9bf56792e9d484bdfd734bb4bd77aaf89ec3fff2ffdd99bd75f4"
+  },
+  {
+   "n": 20,
+   "name": "طه",
+   "tname": "Taa-Haa",
+   "ename": "Taa-Haa",
+   "type": "Meccan",
+   "order": 45,
+   "ayas": 135,
+   "file": "s020.json",
+   "bytes": 69828,
+   "sha256": "aa8fdaa27ba679d74b233552f4c1cfbf55bd67c2f33ef636b10aa4c7c555b081"
+  },
+  {
+   "n": 21,
+   "name": "الأنبياء",
+   "tname": "Al-Anbiyaa",
+   "ename": "The Prophets",
+   "type": "Meccan",
+   "order": 73,
+   "ayas": 112,
+   "file": "s021.json",
+   "bytes": 65181,
+   "sha256": "4bc05036824fb78034864719b6eea109b6a3f510cf339f17e11db7402615edb4"
+  },
+  {
+   "n": 22,
+   "name": "الحج",
+   "tname": "Al-Hajj",
+   "ename": "The Pilgrimage",
+   "type": "Medinan",
+   "order": 103,
+   "ayas": 78,
+   "file": "s022.json",
+   "bytes": 70766,
+   "sha256": "1a8e6f01c0586564d261f99dff6ce8f70b17ba844bfc820d83c2e72ff00442af"
+  },
+  {
+   "n": 23,
+   "name": "المؤمنون",
+   "tname": "Al-Muminoon",
+   "ename": "The Believers",
+   "type": "Meccan",
+   "order": 74,
+   "ayas": 118,
+   "file": "s023.json",
+   "bytes": 57491,
+   "sha256": "4ce53acb82a6f74e6fc96cc77d369207da2aed9b6fed2434f4f3015656c0e6ec"
+  },
+  {
+   "n": 24,
+   "name": "النور",
+   "tname": "An-Noor",
+   "ename": "The Light",
+   "type": "Medinan",
+   "order": 102,
+   "ayas": 64,
+   "file": "s024.json",
+   "bytes": 73709,
+   "sha256": "2ff26dc065f216029323091c84105a2694d56dd00130ca1ec2bb82fd8c2137bc"
+  },
+  {
+   "n": 25,
+   "name": "الفرقان",
+   "tname": "Al-Furqaan",
+   "ename": "The Criterion",
+   "type": "Meccan",
+   "order": 42,
+   "ayas": 77,
+   "file": "s025.json",
+   "bytes": 47622,
+   "sha256": "67478c7295dfdcdfb175ffd01529bce167f1fc352d3498af90fd0a11734b3fcf"
+  },
+  {
+   "n": 26,
+   "name": "الشعراء",
+   "tname": "Ash-Shu'araa",
+   "ename": "The Poets",
+   "type": "Meccan",
+   "order": 47,
+   "ayas": 227,
+   "file": "s026.json",
+   "bytes": 72094,
+   "sha256": "cb969eaa2fc22e7b73ad23802406e7b44a9ba783266ac7393b38eaaed43dbad4"
+  },
+  {
+   "n": 27,
+   "name": "النمل",
+   "tname": "An-Naml",
+   "ename": "The Ant",
+   "type": "Meccan",
+   "order": 48,
+   "ayas": 93,
+   "file": "s027.json",
+   "bytes": 62209,
+   "sha256": "b35391e1af03caf2c79a73edf50f0558c9d5b325a8d6a6ba116afb082a4220b1"
+  },
+  {
+   "n": 28,
+   "name": "القصص",
+   "tname": "Al-Qasas",
+   "ename": "The Stories",
+   "type": "Meccan",
+   "order": 49,
+   "ayas": 88,
+   "file": "s028.json",
+   "bytes": 76750,
+   "sha256": "a90e1da44a5e8715024651480118281e1e188d45c9b7cab5722569112cde88b7"
+  },
+  {
+   "n": 29,
+   "name": "العنكبوت",
+   "tname": "Al-Ankaboot",
+   "ename": "The Spider",
+   "type": "Meccan",
+   "order": 85,
+   "ayas": 69,
+   "file": "s029.json",
+   "bytes": 55207,
+   "sha256": "a3462ff81ce1c6b20edecd01aea2e9a363374c35462151b12fcfc3c4de5e309e"
+  },
+  {
+   "n": 30,
+   "name": "الروم",
+   "tname": "Ar-Room",
+   "ename": "The Romans",
+   "type": "Meccan",
+   "order": 84,
+   "ayas": 60,
+   "file": "s030.json",
+   "bytes": 45979,
+   "sha256": "1ee47fe081254268c17333e46881c1610c7d307c2ceb1688d8c3bcc3fddae808"
+  },
+  {
+   "n": 31,
+   "name": "لقمان",
+   "tname": "Luqman",
+   "ename": "Luqman",
+   "type": "Meccan",
+   "order": 57,
+   "ayas": 34,
+   "file": "s031.json",
+   "bytes": 30034,
+   "sha256": "967b306053a14efe50de7a39a6599a62f2ee04fe1eea1d818d0f893668b2f74c"
+  },
+  {
+   "n": 32,
+   "name": "السجدة",
+   "tname": "As-Sajda",
+   "ename": "The Prostration",
+   "type": "Meccan",
+   "order": 75,
+   "ayas": 30,
+   "file": "s032.json",
+   "bytes": 21091,
+   "sha256": "f2c761f8d36aa8d780e32dc51a71253411ceb10bef8c5cc9f90ead99edfe9596"
+  },
+  {
+   "n": 33,
+   "name": "الأحزاب",
+   "tname": "Al-Ahzaab",
+   "ename": "The Clans",
+   "type": "Medinan",
+   "order": 90,
+   "ayas": 73,
+   "file": "s033.json",
+   "bytes": 70985,
+   "sha256": "90eccd4894c145c895338087c8ba0a06b03dbdb4076aa3d65dadbae93a0f3036"
+  },
+  {
+   "n": 34,
+   "name": "سبإ",
+   "tname": "Saba",
+   "ename": "Sheba",
+   "type": "Meccan",
+   "order": 58,
+   "ayas": 54,
+   "file": "s034.json",
+   "bytes": 47966,
+   "sha256": "f5cf56aac356ecdc876ae88709f2b185fb63f9a77921fa997a6394dae47bcb3a"
+  },
+  {
+   "n": 35,
+   "name": "فاطر",
+   "tname": "Faatir",
+   "ename": "The Originator",
+   "type": "Meccan",
+   "order": 43,
+   "ayas": 45,
+   "file": "s035.json",
+   "bytes": 42932,
+   "sha256": "4533df96bd2409d9f7f0a15135b42779fc217ffe604a420b60686f359170b663"
+  },
+  {
+   "n": 36,
+   "name": "يس",
+   "tname": "Yaseen",
+   "ename": "Yaseen",
+   "type": "Meccan",
+   "order": 41,
+   "ayas": 83,
+   "file": "s036.json",
+   "bytes": 39894,
+   "sha256": "e47f6f594f77811360fc163eb155c97fc1781e20b3f477777090881057339c4f"
+  },
+  {
+   "n": 37,
+   "name": "الصافات",
+   "tname": "As-Saaffaat",
+   "ename": "Those drawn up in Ranks",
+   "type": "Meccan",
+   "order": 56,
+   "ayas": 182,
+   "file": "s037.json",
+   "bytes": 50185,
+   "sha256": "e74ce7546d7e52f472c9c0b0a3add3662d14efb07878b4145f81224c79705d31"
+  },
+  {
+   "n": 38,
+   "name": "ص",
+   "tname": "Saad",
+   "ename": "The letter Saad",
+   "type": "Meccan",
+   "order": 38,
+   "ayas": 88,
+   "file": "s038.json",
+   "bytes": 41499,
+   "sha256": "79bde16e82fe1712dd36e46383bb3d0fcc641dc408aed63f2845d1d34aca7368"
+  },
+  {
+   "n": 39,
+   "name": "الزمر",
+   "tname": "Az-Zumar",
+   "ename": "The Groups",
+   "type": "Meccan",
+   "order": 59,
+   "ayas": 75,
+   "file": "s039.json",
+   "bytes": 63954,
+   "sha256": "17bc8eed93ca5d533c1861882ad883ae2b4b86c388f6d5f238372a40a6cccf1c"
+  },
+  {
+   "n": 40,
+   "name": "غافر",
+   "tname": "Al-Ghaafir",
+   "ename": "The Forgiver",
+   "type": "Meccan",
+   "order": 60,
+   "ayas": 85,
+   "file": "s040.json",
+   "bytes": 66733,
+   "sha256": "ccf41ec0408c4e8bb46d0c8487a60052d93f2b265aca43c9692a715f95a4b972"
+  },
+  {
+   "n": 41,
+   "name": "فصلت",
+   "tname": "Fussilat",
+   "ename": "Explained in detail",
+   "type": "Meccan",
+   "order": 61,
+   "ayas": 54,
+   "file": "s041.json",
+   "bytes": 44058,
+   "sha256": "2ae7e06b18acb6b7c0dfabcf1d11fea8d8d24b78fd6a6179cac45ea8a39b5fbb"
+  },
+  {
+   "n": 42,
+   "name": "الشورى",
+   "tname": "Ash-Shura",
+   "ename": "Consultation",
+   "type": "Meccan",
+   "order": 62,
+   "ayas": 53,
+   "file": "s042.json",
+   "bytes": 47155,
+   "sha256": "b53fb4800a9b74172f1ba2ed88a1d1cbfe4d3bc04c9a33c10756f4d11653af71"
+  },
+  {
+   "n": 43,
+   "name": "الزخرف",
+   "tname": "Az-Zukhruf",
+   "ename": "Ornaments of gold",
+   "type": "Meccan",
+   "order": 63,
+   "ayas": 89,
+   "file": "s043.json",
+   "bytes": 46430,
+   "sha256": "ddbf89a40dc72e4da4bb0a4fefc31ee1f863e0e4325813d5dd8761d309b33f53"
+  },
+  {
+   "n": 44,
+   "name": "الدخان",
+   "tname": "Ad-Dukhaan",
+   "ename": "The Smoke",
+   "type": "Meccan",
+   "order": 64,
+   "ayas": 59,
+   "file": "s044.json",
+   "bytes": 20389,
+   "sha256": "a4e8c47aa8d442955925eebac48aa192f4f9887dd606bd536068e0c3ab21288f"
+  },
+  {
+   "n": 45,
+   "name": "الجاثية",
+   "tname": "Al-Jaathiya",
+   "ename": "Crouching",
+   "type": "Meccan",
+   "order": 65,
+   "ayas": 37,
+   "file": "s045.json",
+   "bytes": 27558,
+   "sha256": "f164d5dbd77f44193ef1cfe5682dc09d0fe70ecdd870fcad4b90abcc0a606930"
+  },
+  {
+   "n": 46,
+   "name": "الأحقاف",
+   "tname": "Al-Ahqaf",
+   "ename": "The Dunes",
+   "type": "Meccan",
+   "order": 66,
+   "ayas": 35,
+   "file": "s046.json",
+   "bytes": 35283,
+   "sha256": "1ee84d9f68f26cb86d39896f9463b98ef09cc4b9ff05478914da9544dec25c8d"
+  },
+  {
+   "n": 47,
+   "name": "محمد",
+   "tname": "Muhammad",
+   "ename": "Muhammad",
+   "type": "Medinan",
+   "order": 95,
+   "ayas": 38,
+   "file": "s047.json",
+   "bytes": 30980,
+   "sha256": "12d980f037229ae286195f9d2bc6a90f60d40e259562d2239ebaf04312e5d2c4"
+  },
+  {
+   "n": 48,
+   "name": "الفتح",
+   "tname": "Al-Fath",
+   "ename": "The Victory",
+   "type": "Medinan",
+   "order": 111,
+   "ayas": 29,
+   "file": "s048.json",
+   "bytes": 30975,
+   "sha256": "c3fd54847dc88da9858c13edf97c3618a598d3f0991d37afe02a92ad3c08b87b"
+  },
+  {
+   "n": 49,
+   "name": "الحجرات",
+   "tname": "Al-Hujuraat",
+   "ename": "The Inner Apartments",
+   "type": "Medinan",
+   "order": 106,
+   "ayas": 18,
+   "file": "s049.json",
+   "bytes": 20565,
+   "sha256": "90a559d4da064b62ab6c0a92375e4bee351d3a04ce6a8313827c5004781312be"
+  },
+  {
+   "n": 50,
+   "name": "ق",
+   "tname": "Qaaf",
+   "ename": "The letter Qaaf",
+   "type": "Meccan",
+   "order": 34,
+   "ayas": 45,
+   "file": "s050.json",
+   "bytes": 21175,
+   "sha256": "410bdcf2eed8cc34254ffb484dcf4f8fabc6ae6d1b3785647d47f6a7b750fb3e"
+  },
+  {
+   "n": 51,
+   "name": "الذاريات",
+   "tname": "Adh-Dhaariyat",
+   "ename": "The Winnowing Winds",
+   "type": "Meccan",
+   "order": 67,
+   "ayas": 60,
+   "file": "s051.json",
+   "bytes": 20812,
+   "sha256": "71e4473163e794399e61fe40d4c38b960fcca7161f7f93bd64022e3dc451a196"
+  },
+  {
+   "n": 52,
+   "name": "الطور",
+   "tname": "At-Tur",
+   "ename": "The Mount",
+   "type": "Meccan",
+   "order": 76,
+   "ayas": 49,
+   "file": "s052.json",
+   "bytes": 18148,
+   "sha256": "0d50b88f9c017fd96b195031c07f6cd5939ce7e0a0c27e2dc1a9d946365758e2"
+  },
+  {
+   "n": 53,
+   "name": "النجم",
+   "tname": "An-Najm",
+   "ename": "The Star",
+   "type": "Meccan",
+   "order": 23,
+   "ayas": 62,
+   "file": "s053.json",
+   "bytes": 20382,
+   "sha256": "28e2a21479d0debc87461b81131372451b23b05bfee79af531ca0dc946913355"
+  },
+  {
+   "n": 54,
+   "name": "القمر",
+   "tname": "Al-Qamar",
+   "ename": "The Moon",
+   "type": "Meccan",
+   "order": 37,
+   "ayas": 55,
+   "file": "s054.json",
+   "bytes": 19843,
+   "sha256": "e8aa33c8d3825ac61e5df2669cef6dbb62e7be58b7e6bfca2db940ac21dc0243"
+  },
+  {
+   "n": 55,
+   "name": "الرحمن",
+   "tname": "Ar-Rahmaan",
+   "ename": "The Beneficent",
+   "type": "Medinan",
+   "order": 97,
+   "ayas": 78,
+   "file": "s055.json",
+   "bytes": 21688,
+   "sha256": "a5dc7d87b9aaead7f0a0278fa55723b858ebc1cd4b47fa3852cc7794de96e7a8"
+  },
+  {
+   "n": 56,
+   "name": "الواقعة",
+   "tname": "Al-Waaqia",
+   "ename": "The Inevitable",
+   "type": "Meccan",
+   "order": 46,
+   "ayas": 96,
+   "file": "s056.json",
+   "bytes": 23440,
+   "sha256": "a9e692a6d62ef95d7e5ce6a9cd1e22564535861545dc4b429ec88a268fb18fac"
+  },
+  {
+   "n": 57,
+   "name": "الحديد",
+   "tname": "Al-Hadid",
+   "ename": "The Iron",
+   "type": "Medinan",
+   "order": 94,
+   "ayas": 29,
+   "file": "s057.json",
+   "bytes": 32975,
+   "sha256": "9a7cea852005b851393533ad34e6a917098cab4bb9197b8d4862d56a69d1a0db"
+  },
+  {
+   "n": 58,
+   "name": "المجادلة",
+   "tname": "Al-Mujaadila",
+   "ename": "The Pleading Woman",
+   "type": "Medinan",
+   "order": 105,
+   "ayas": 22,
+   "file": "s058.json",
+   "bytes": 26996,
+   "sha256": "9fe6ec1288b5b5fa0449e751497a24fa6c4daac08c3c7941b9d6a2094e01a31b"
+  },
+  {
+   "n": 59,
+   "name": "الحشر",
+   "tname": "Al-Hashr",
+   "ename": "The Exile",
+   "type": "Medinan",
+   "order": 101,
+   "ayas": 24,
+   "file": "s059.json",
+   "bytes": 25685,
+   "sha256": "2b566b4d5f6710c9ad49b0157edd889b17ee6cdc4d264d6a2194a24663c9219f"
+  },
+  {
+   "n": 60,
+   "name": "الممتحنة",
+   "tname": "Al-Mumtahana",
+   "ename": "She that is to be examined",
+   "type": "Medinan",
+   "order": 91,
+   "ayas": 13,
+   "file": "s060.json",
+   "bytes": 20578,
+   "sha256": "61f7229120ba71ba3d9d1382de841d5942ca3e73f0cbf50eb7bba80878aa96ad"
+  },
+  {
+   "n": 61,
+   "name": "الصف",
+   "tname": "As-Saff",
+   "ename": "The Ranks",
+   "type": "Medinan",
+   "order": 109,
+   "ayas": 14,
+   "file": "s061.json",
+   "bytes": 13244,
+   "sha256": "8b333b64f3660f3e65730b189093637bb0c708a6b70ce0ce9fcd0a2ce565fdcd"
+  },
+  {
+   "n": 62,
+   "name": "الجمعة",
+   "tname": "Al-Jumu'a",
+   "ename": "Friday",
+   "type": "Medinan",
+   "order": 110,
+   "ayas": 11,
+   "file": "s062.json",
+   "bytes": 10947,
+   "sha256": "a677e66c94ba2cae5393e420de2c183361367b87f8ac205e5fe9eb2bce955bad"
+  },
+  {
+   "n": 63,
+   "name": "المنافقون",
+   "tname": "Al-Munaafiqoon",
+   "ename": "The Hypocrites",
+   "type": "Medinan",
+   "order": 104,
+   "ayas": 11,
+   "file": "s063.json",
+   "bytes": 11011,
+   "sha256": "6862fdba7037ad30d902f86947ee8679bcfde76f2191f8ea4c28d8903d314210"
+  },
+  {
+   "n": 64,
+   "name": "التغابن",
+   "tname": "At-Taghaabun",
+   "ename": "Mutual Disillusion",
+   "type": "Medinan",
+   "order": 108,
+   "ayas": 18,
+   "file": "s064.json",
+   "bytes": 14656,
+   "sha256": "9ec62edb815554d52423f800b921ea4f3f28e82c772dc06ca642c9fdd9042f31"
+  },
+  {
+   "n": 65,
+   "name": "الطلاق",
+   "tname": "At-Talaaq",
+   "ename": "Divorce",
+   "type": "Medinan",
+   "order": 99,
+   "ayas": 12,
+   "file": "s065.json",
+   "bytes": 16912,
+   "sha256": "9d67382b9ac0c27a95e1fc8d590d77531937452db39c4523437cfd36bdaa28c1"
+  },
+  {
+   "n": 66,
+   "name": "التحريم",
+   "tname": "At-Tahrim",
+   "ename": "The Prohibition",
+   "type": "Medinan",
+   "order": 107,
+   "ayas": 12,
+   "file": "s066.json",
+   "bytes": 14981,
+   "sha256": "d61ce41a92d93f67f5a30a272bc3f82e1e92ae6e8ef6dc24aeb6332db4afed86"
+  },
+  {
+   "n": 67,
+   "name": "الملك",
+   "tname": "Al-Mulk",
+   "ename": "The Sovereignty",
+   "type": "Meccan",
+   "order": 77,
+   "ayas": 30,
+   "file": "s067.json",
+   "bytes": 18762,
+   "sha256": "5709321a8f4dd8574ffa29335e9c3b287a410eebaa09a1649bf5af13ebb2734f"
+  },
+  {
+   "n": 68,
+   "name": "القلم",
+   "tname": "Al-Qalam",
+   "ename": "The Pen",
+   "type": "Meccan",
+   "order": 2,
+   "ayas": 52,
+   "file": "s068.json",
+   "bytes": 17712,
+   "sha256": "446777054b20e3dda3156b93dff894eb728b01b878cb07e90f35a2e2ea09d17a"
+  },
+  {
+   "n": 69,
+   "name": "الحاقة",
+   "tname": "Al-Haaqqa",
+   "ename": "The Reality",
+   "type": "Meccan",
+   "order": 78,
+   "ayas": 52,
+   "file": "s069.json",
+   "bytes": 15343,
+   "sha256": "411ef7c6bda0fad50c506d58fdaa13e86a46f8dbac8a1596759b99f5141d6af8"
+  },
+  {
+   "n": 70,
+   "name": "المعارج",
+   "tname": "Al-Ma'aarij",
+   "ename": "The Ascending Stairways",
+   "type": "Meccan",
+   "order": 79,
+   "ayas": 44,
+   "file": "s070.json",
+   "bytes": 13283,
+   "sha256": "2d680e873f06e8420d41fd5aed6b5a5d4819de845ebaf6da635396ced4eb92dd"
+  },
+  {
+   "n": 71,
+   "name": "نوح",
+   "tname": "Nooh",
+   "ename": "Noah",
+   "type": "Meccan",
+   "order": 71,
+   "ayas": 28,
+   "file": "s071.json",
+   "bytes": 13087,
+   "sha256": "513cb7ee897532c58c2409ad20056f1c5e606c13ddffa9c863b06440a2a60ffe"
+  },
+  {
+   "n": 72,
+   "name": "الجن",
+   "tname": "Al-Jinn",
+   "ename": "The Jinn",
+   "type": "Meccan",
+   "order": 40,
+   "ayas": 28,
+   "file": "s072.json",
+   "bytes": 15865,
+   "sha256": "f256f08509031209485dc04de59b5415cf7cb809c9c7c34f587c967be64dc968"
+  },
+  {
+   "n": 73,
+   "name": "المزمل",
+   "tname": "Al-Muzzammil",
+   "ename": "The Enshrouded One",
+   "type": "Meccan",
+   "order": 3,
+   "ayas": 20,
+   "file": "s073.json",
+   "bytes": 11983,
+   "sha256": "4dc30b1418590bf8c2bd45630fc420130a34bca5dc0c9cf26f64656016053ebe"
+  },
+  {
+   "n": 74,
+   "name": "المدثر",
+   "tname": "Al-Muddaththir",
+   "ename": "The Cloaked One",
+   "type": "Meccan",
+   "order": 4,
+   "ayas": 56,
+   "file": "s074.json",
+   "bytes": 15095,
+   "sha256": "a4369f0bccf56f651519b7c9a4994cab23a0853f6ce7570166e789f0a375c714"
+  },
+  {
+   "n": 75,
+   "name": "القيامة",
+   "tname": "Al-Qiyaama",
+   "ename": "The Resurrection",
+   "type": "Meccan",
+   "order": 31,
+   "ayas": 40,
+   "file": "s075.json",
+   "bytes": 10147,
+   "sha256": "66e72684f7c881c13ebe71810ef37bc91f6db3a487cdee7767d9af82078807f5"
+  },
+  {
+   "n": 76,
+   "name": "الانسان",
+   "tname": "Al-Insaan",
+   "ename": "Man",
+   "type": "Medinan",
+   "order": 98,
+   "ayas": 31,
+   "file": "s076.json",
+   "bytes": 14216,
+   "sha256": "d25534b959a1cb52b370cfd707397006ed274926abaa59ed3a86ae61d5f979cc"
+  },
+  {
+   "n": 77,
+   "name": "المرسلات",
+   "tname": "Al-Mursalaat",
+   "ename": "The Emissaries",
+   "type": "Meccan",
+   "order": 33,
+   "ayas": 50,
+   "file": "s077.json",
+   "bytes": 11963,
+   "sha256": "991629eb0647637b80f677676f345d30124ea39e9e1a7c59182f4c7babe6ccda"
+  },
+  {
+   "n": 78,
+   "name": "النبإ",
+   "tname": "An-Naba",
+   "ename": "The Announcement",
+   "type": "Meccan",
+   "order": 80,
+   "ayas": 40,
+   "file": "s078.json",
+   "bytes": 11056,
+   "sha256": "cbd90b7a70c3ccdb67a85eba0f6aa3065890ee97b620e2fe64ea393f527b9386"
+  },
+  {
+   "n": 79,
+   "name": "النازعات",
+   "tname": "An-Naazi'aat",
+   "ename": "Those who drag forth",
+   "type": "Meccan",
+   "order": 81,
+   "ayas": 46,
+   "file": "s079.json",
+   "bytes": 11631,
+   "sha256": "c37d905db388b838a56648518f7c5c7db755dcbcd61298f2aae3c65640b6755a"
+  },
+  {
+   "n": 80,
+   "name": "عبس",
+   "tname": "Abasa",
+   "ename": "He frowned",
+   "type": "Meccan",
+   "order": 24,
+   "ayas": 42,
+   "file": "s080.json",
+   "bytes": 9034,
+   "sha256": "32d2cc8c2550ff0e2c0a764c2d2f98962b1e52740e301f0f79df91fb557aecf2"
+  },
+  {
+   "n": 81,
+   "name": "التكوير",
+   "tname": "At-Takwir",
+   "ename": "The Overthrowing",
+   "type": "Meccan",
+   "order": 7,
+   "ayas": 29,
+   "file": "s081.json",
+   "bytes": 7207,
+   "sha256": "f31d455fbf3b96b31bbfa7963bb570eb7c1f1bbfa4ef9db6baaf0407f1eca20b"
+  },
+  {
+   "n": 82,
+   "name": "الإنفطار",
+   "tname": "Al-Infitaar",
+   "ename": "The Cleaving",
+   "type": "Meccan",
+   "order": 82,
+   "ayas": 19,
+   "file": "s082.json",
+   "bytes": 5764,
+   "sha256": "ce304107a60559a258f893715bc527f38f99e2af036d040cf90ddfb65e0dbd60"
+  },
+  {
+   "n": 83,
+   "name": "المطففين",
+   "tname": "Al-Mutaffifin",
+   "ename": "Defrauding",
+   "type": "Meccan",
+   "order": 86,
+   "ayas": 36,
+   "file": "s083.json",
+   "bytes": 11128,
+   "sha256": "8195a54e2d4cf882d3529c76fe15d2b558e4779910e6ad8a42893b720e39e074"
+  },
+  {
+   "n": 84,
+   "name": "الإنشقاق",
+   "tname": "Al-Inshiqaaq",
+   "ename": "The Splitting Open",
+   "type": "Meccan",
+   "order": 83,
+   "ayas": 25,
+   "file": "s084.json",
+   "bytes": 7253,
+   "sha256": "1496efaf03b79a093f73aa5e8ba7ff779ce3be5bb4556a1c1acb6e276d5d1b61"
+  },
+  {
+   "n": 85,
+   "name": "البروج",
+   "tname": "Al-Burooj",
+   "ename": "The Constellations",
+   "type": "Meccan",
+   "order": 27,
+   "ayas": 22,
+   "file": "s085.json",
+   "bytes": 7766,
+   "sha256": "00dd78ecd90e09bba3cafa6f4d718eeb965c2cf556986ed77a052d8c0ca845fc"
+  },
+  {
+   "n": 86,
+   "name": "الطارق",
+   "tname": "At-Taariq",
+   "ename": "The Morning Star",
+   "type": "Meccan",
+   "order": 36,
+   "ayas": 17,
+   "file": "s086.json",
+   "bytes": 4967,
+   "sha256": "0118280f72a9da798ab7612337855138d14ac40e3f331ae9f890d0c973c2d323"
+  },
+  {
+   "n": 87,
+   "name": "الأعلى",
+   "tname": "Al-A'laa",
+   "ename": "The Most High",
+   "type": "Meccan",
+   "order": 8,
+   "ayas": 19,
+   "file": "s087.json",
+   "bytes": 5332,
+   "sha256": "6e7481f66c7b6f553525229a72f2ac9d5efb4ca2e685aa050713817014676ad9"
+  },
+  {
+   "n": 88,
+   "name": "الغاشية",
+   "tname": "Al-Ghaashiya",
+   "ename": "The Overwhelming",
+   "type": "Meccan",
+   "order": 68,
+   "ayas": 26,
+   "file": "s088.json",
+   "bytes": 6246,
+   "sha256": "a117e993ae69c7d18c90bc816f97154eac80b616e3c8f28a4190afea81ddf59c"
+  },
+  {
+   "n": 89,
+   "name": "الفجر",
+   "tname": "Al-Fajr",
+   "ename": "The Dawn",
+   "type": "Meccan",
+   "order": 10,
+   "ayas": 30,
+   "file": "s089.json",
+   "bytes": 9132,
+   "sha256": "885e062f6aa98eaf3305a3eca289dca23d9786c926fb50ff5433f7eaf823147a"
+  },
+  {
+   "n": 90,
+   "name": "البلد",
+   "tname": "Al-Balad",
+   "ename": "The City",
+   "type": "Meccan",
+   "order": 35,
+   "ayas": 20,
+   "file": "s090.json",
+   "bytes": 6009,
+   "sha256": "6e77d69e58fc319f7ff014595c6717132e61a690cc62ab03521f5813ec0e075f"
+  },
+  {
+   "n": 91,
+   "name": "الشمس",
+   "tname": "Ash-Shams",
+   "ename": "The Sun",
+   "type": "Meccan",
+   "order": 26,
+   "ayas": 15,
+   "file": "s091.json",
+   "bytes": 4461,
+   "sha256": "c9adf58f69732b9788a42561eb952e2e3e830e28943fdf857fdba997c7a81a32"
+  },
+  {
+   "n": 92,
+   "name": "الليل",
+   "tname": "Al-Lail",
+   "ename": "The Night",
+   "type": "Meccan",
+   "order": 9,
+   "ayas": 21,
+   "file": "s092.json",
+   "bytes": 5395,
+   "sha256": "c79be698eaa19455e7b87581ffec64aadd19135d0d2b132c34649f63e6a2b8b9"
+  },
+  {
+   "n": 93,
+   "name": "الضحى",
+   "tname": "Ad-Dhuhaa",
+   "ename": "The Morning Hours",
+   "type": "Meccan",
+   "order": 11,
+   "ayas": 11,
+   "file": "s093.json",
+   "bytes": 3472,
+   "sha256": "4973ca6ff84a4740b5c5893436f9d55ce8c803a7f474be9547167f452612ceb5"
+  },
+  {
+   "n": 94,
+   "name": "الشرح",
+   "tname": "Ash-Sharh",
+   "ename": "The Consolation",
+   "type": "Meccan",
+   "order": 12,
+   "ayas": 8,
+   "file": "s094.json",
+   "bytes": 2731,
+   "sha256": "e410f3bf82e1e56d0010b98e6456e79795221be9c165f7dd3daa50e8ee42d361"
+  },
+  {
+   "n": 95,
+   "name": "التين",
+   "tname": "At-Tin",
+   "ename": "The Fig",
+   "type": "Meccan",
+   "order": 28,
+   "ayas": 8,
+   "file": "s095.json",
+   "bytes": 3375,
+   "sha256": "583ca8681e1902b48aa1b11a119aba21141345f79bc6515f32589d0c317ff64b"
+  },
+  {
+   "n": 96,
+   "name": "العلق",
+   "tname": "Al-Alaq",
+   "ename": "The Clot",
+   "type": "Meccan",
+   "order": 1,
+   "ayas": 19,
+   "file": "s096.json",
+   "bytes": 5367,
+   "sha256": "4c7e7032a7bcf188d97b710287d47ed4f93b68dbb522f7a8e07c967f80246f4e"
+  },
+  {
+   "n": 97,
+   "name": "القدر",
+   "tname": "Al-Qadr",
+   "ename": "The Power, Fate",
+   "type": "Meccan",
+   "order": 25,
+   "ayas": 5,
+   "file": "s097.json",
+   "bytes": 2893,
+   "sha256": "076d0d487a892984a41219fa0395e198f3b76aa46606b0a36d2e2669d06598bf"
+  },
+  {
+   "n": 98,
+   "name": "البينة",
+   "tname": "Al-Bayyina",
+   "ename": "The Evidence",
+   "type": "Medinan",
+   "order": 100,
+   "ayas": 8,
+   "file": "s098.json",
+   "bytes": 6474,
+   "sha256": "10b94ec4d14385b5ceff03cb13a07d42699100fec20960331b923c5881875069"
+  },
+  {
+   "n": 99,
+   "name": "الزلزلة",
+   "tname": "Az-Zalzala",
+   "ename": "The Earthquake",
+   "type": "Medinan",
+   "order": 93,
+   "ayas": 8,
+   "file": "s099.json",
+   "bytes": 3240,
+   "sha256": "a1b61f53cf67f389fc1c78a9a939bf78ad5cd12063e893636432cded788212f4"
+  },
+  {
+   "n": 100,
+   "name": "العاديات",
+   "tname": "Al-Aadiyaat",
+   "ename": "The Chargers",
+   "type": "Meccan",
+   "order": 14,
+   "ayas": 11,
+   "file": "s100.json",
+   "bytes": 3686,
+   "sha256": "d14877a82b66b4243752263e6c8f1cf11e774146db38eecc5094fc79e1c4b42b"
+  },
+  {
+   "n": 101,
+   "name": "القارعة",
+   "tname": "Al-Qaari'a",
+   "ename": "The Calamity",
+   "type": "Meccan",
+   "order": 30,
+   "ayas": 11,
+   "file": "s101.json",
+   "bytes": 3401,
+   "sha256": "ab771769b2cc38626911fe54ec1ccd1bdef8cc52dda9f2cb507320e1c8de2448"
+  },
+  {
+   "n": 102,
+   "name": "التكاثر",
+   "tname": "At-Takaathur",
+   "ename": "Competition",
+   "type": "Meccan",
+   "order": 16,
+   "ayas": 8,
+   "file": "s102.json",
+   "bytes": 2939,
+   "sha256": "e58040fbe4a083dad9b5dbc6f5c3faa45be2a00d72bd0cac199ad6494544e76f"
+  },
+  {
+   "n": 103,
+   "name": "العصر",
+   "tname": "Al-Asr",
+   "ename": "The Declining Day, Epoch",
+   "type": "Meccan",
+   "order": 13,
+   "ayas": 3,
+   "file": "s103.json",
+   "bytes": 2181,
+   "sha256": "25ed23ee37e6094ce45e0b757c9a0b925698ce39259dc2fe5e637d84a426a925"
+  },
+  {
+   "n": 104,
+   "name": "الهمزة",
+   "tname": "Al-Humaza",
+   "ename": "The Traducer",
+   "type": "Meccan",
+   "order": 32,
+   "ayas": 9,
+   "file": "s104.json",
+   "bytes": 3121,
+   "sha256": "b1e6acb249a6957d30a9b2174373a20d92fc69daed744a8b9cbe522759bc4673"
+  },
+  {
+   "n": 105,
+   "name": "الفيل",
+   "tname": "Al-Fil",
+   "ename": "The Elephant",
+   "type": "Meccan",
+   "order": 19,
+   "ayas": 5,
+   "file": "s105.json",
+   "bytes": 2509,
+   "sha256": "bbf51dc22277e4f16a1147d1671838158c19c32952d7d3962de913e680362e65"
+  },
+  {
+   "n": 106,
+   "name": "قريش",
+   "tname": "Quraish",
+   "ename": "Quraysh",
+   "type": "Meccan",
+   "order": 29,
+   "ayas": 4,
+   "file": "s106.json",
+   "bytes": 2347,
+   "sha256": "1724490de577d39f07effe05474b45a8757e408bacc39a9062985bfc83d33dcb"
+  },
+  {
+   "n": 107,
+   "name": "الماعون",
+   "tname": "Al-Maa'un",
+   "ename": "Almsgiving",
+   "type": "Meccan",
+   "order": 17,
+   "ayas": 7,
+   "file": "s107.json",
+   "bytes": 2733,
+   "sha256": "1bf5346071e5bd4adcc51530aa420ab1296a39f8f27786e8b8ce312634fbe424"
+  },
+  {
+   "n": 108,
+   "name": "الكوثر",
+   "tname": "Al-Kawthar",
+   "ename": "Abundance",
+   "type": "Meccan",
+   "order": 15,
+   "ayas": 3,
+   "file": "s108.json",
+   "bytes": 1878,
+   "sha256": "c012cc87264551173a1f1905a20bfcb7760612a07e5adf911aef3af2f579369b"
+  },
+  {
+   "n": 109,
+   "name": "الكافرون",
+   "tname": "Al-Kaafiroon",
+   "ename": "The Disbelievers",
+   "type": "Meccan",
+   "order": 18,
+   "ayas": 6,
+   "file": "s109.json",
+   "bytes": 2692,
+   "sha256": "48842cadfc1600807d6a88baa516259dab8ecca7e821788c671bcc64fc7988d8"
+  },
+  {
+   "n": 110,
+   "name": "النصر",
+   "tname": "An-Nasr",
+   "ename": "Divine Support",
+   "type": "Medinan",
+   "order": 114,
+   "ayas": 3,
+   "file": "s110.json",
+   "bytes": 2275,
+   "sha256": "deeaf1fd6bdc46b4754ab38387eff9dc088793e204fcbf24ffac0c1a97bd1b4a"
+  },
+  {
+   "n": 111,
+   "name": "المسد",
+   "tname": "Al-Masad",
+   "ename": "The Palm Fibre",
+   "type": "Meccan",
+   "order": 6,
+   "ayas": 5,
+   "file": "s111.json",
+   "bytes": 2507,
+   "sha256": "f6632d0ab85049c6e93b7c31dfa0113d04536fd840da433e891467f247e304bd"
+  },
+  {
+   "n": 112,
+   "name": "الإخلاص",
+   "tname": "Al-Ikhlaas",
+   "ename": "Sincerity",
+   "type": "Meccan",
+   "order": 22,
+   "ayas": 4,
+   "file": "s112.json",
+   "bytes": 2056,
+   "sha256": "cf82b85b6caf1fdc4eba8f8110817a1d2880bf63910358639b1dcbb455f92e8f"
+  },
+  {
+   "n": 113,
+   "name": "الفلق",
+   "tname": "Al-Falaq",
+   "ename": "The Dawn",
+   "type": "Meccan",
+   "order": 20,
+   "ayas": 5,
+   "file": "s113.json",
+   "bytes": 2443,
+   "sha256": "9d15d93cd854f76cdf37194d319f3d4ee48ccba79f491e5683f56e3f2bacb853"
+  },
+  {
+   "n": 114,
+   "name": "الناس",
+   "tname": "An-Naas",
+   "ename": "Mankind",
+   "type": "Meccan",
+   "order": 21,
+   "ayas": 6,
+   "file": "s114.json",
+   "bytes": 2521,
+   "sha256": "4cfdcfe3351e5c156629ab7a3cc31119e09d1ab6cc6d1b2e88dc44dd2480fb15"
+  }
+ ],
+ "juz": [
+  [
+   1,
+   1
+  ],
+  [
+   2,
+   142
+  ],
+  [
+   2,
+   253
+  ],
+  [
+   3,
+   93
+  ],
+  [
+   4,
+   24
+  ],
+  [
+   4,
+   148
+  ],
+  [
+   5,
+   82
+  ],
+  [
+   6,
+   111
+  ],
+  [
+   7,
+   88
+  ],
+  [
+   8,
+   41
+  ],
+  [
+   9,
+   93
+  ],
+  [
+   11,
+   6
+  ],
+  [
+   12,
+   53
+  ],
+  [
+   15,
+   1
+  ],
+  [
+   17,
+   1
+  ],
+  [
+   18,
+   75
+  ],
+  [
+   21,
+   1
+  ],
+  [
+   23,
+   1
+  ],
+  [
+   25,
+   21
+  ],
+  [
+   27,
+   56
+  ],
+  [
+   29,
+   46
+  ],
+  [
+   33,
+   31
+  ],
+  [
+   36,
+   28
+  ],
+  [
+   39,
+   32
+  ],
+  [
+   41,
+   47
+  ],
+  [
+   46,
+   1
+  ],
+  [
+   51,
+   31
+  ],
+  [
+   58,
+   1
+  ],
+  [
+   67,
+   1
+  ],
+  [
+   78,
+   1
+  ]
+ ],
+ "pages": [
+  [
+   1,
+   1
+  ],
+  [
+   2,
+   1
+  ],
+  [
+   2,
+   6
+  ],
+  [
+   2,
+   17
+  ],
+  [
+   2,
+   25
+  ],
+  [
+   2,
+   30
+  ],
+  [
+   2,
+   38
+  ],
+  [
+   2,
+   49
+  ],
+  [
+   2,
+   58
+  ],
+  [
+   2,
+   62
+  ],
+  [
+   2,
+   70
+  ],
+  [
+   2,
+   77
+  ],
+  [
+   2,
+   84
+  ],
+  [
+   2,
+   89
+  ],
+  [
+   2,
+   94
+  ],
+  [
+   2,
+   102
+  ],
+  [
+   2,
+   106
+  ],
+  [
+   2,
+   113
+  ],
+  [
+   2,
+   120
+  ],
+  [
+   2,
+   127
+  ],
+  [
+   2,
+   135
+  ],
+  [
+   2,
+   142
+  ],
+  [
+   2,
+   146
+  ],
+  [
+   2,
+   154
+  ],
+  [
+   2,
+   164
+  ],
+  [
+   2,
+   170
+  ],
+  [
+   2,
+   177
+  ],
+  [
+   2,
+   182
+  ],
+  [
+   2,
+   187
+  ],
+  [
+   2,
+   191
+  ],
+  [
+   2,
+   197
+  ],
+  [
+   2,
+   203
+  ],
+  [
+   2,
+   211
+  ],
+  [
+   2,
+   216
+  ],
+  [
+   2,
+   220
+  ],
+  [
+   2,
+   225
+  ],
+  [
+   2,
+   231
+  ],
+  [
+   2,
+   234
+  ],
+  [
+   2,
+   238
+  ],
+  [
+   2,
+   246
+  ],
+  [
+   2,
+   249
+  ],
+  [
+   2,
+   253
+  ],
+  [
+   2,
+   257
+  ],
+  [
+   2,
+   260
+  ],
+  [
+   2,
+   265
+  ],
+  [
+   2,
+   270
+  ],
+  [
+   2,
+   275
+  ],
+  [
+   2,
+   282
+  ],
+  [
+   2,
+   283
+  ],
+  [
+   3,
+   1
+  ],
+  [
+   3,
+   10
+  ],
+  [
+   3,
+   16
+  ],
+  [
+   3,
+   23
+  ],
+  [
+   3,
+   30
+  ],
+  [
+   3,
+   38
+  ],
+  [
+   3,
+   46
+  ],
+  [
+   3,
+   53
+  ],
+  [
+   3,
+   62
+  ],
+  [
+   3,
+   71
+  ],
+  [
+   3,
+   78
+  ],
+  [
+   3,
+   84
+  ],
+  [
+   3,
+   92
+  ],
+  [
+   3,
+   101
+  ],
+  [
+   3,
+   109
+  ],
+  [
+   3,
+   116
+  ],
+  [
+   3,
+   122
+  ],
+  [
+   3,
+   133
+  ],
+  [
+   3,
+   141
+  ],
+  [
+   3,
+   149
+  ],
+  [
+   3,
+   154
+  ],
+  [
+   3,
+   158
+  ],
+  [
+   3,
+   166
+  ],
+  [
+   3,
+   174
+  ],
+  [
+   3,
+   181
+  ],
+  [
+   3,
+   187
+  ],
+  [
+   3,
+   195
+  ],
+  [
+   4,
+   1
+  ],
+  [
+   4,
+   7
+  ],
+  [
+   4,
+   12
+  ],
+  [
+   4,
+   15
+  ],
+  [
+   4,
+   20
+  ],
+  [
+   4,
+   24
+  ],
+  [
+   4,
+   27
+  ],
+  [
+   4,
+   34
+  ],
+  [
+   4,
+   38
+  ],
+  [
+   4,
+   45
+  ],
+  [
+   4,
+   52
+  ],
+  [
+   4,
+   60
+  ],
+  [
+   4,
+   66
+  ],
+  [
+   4,
+   75
+  ],
+  [
+   4,
+   80
+  ],
+  [
+   4,
+   87
+  ],
+  [
+   4,
+   92
+  ],
+  [
+   4,
+   95
+  ],
+  [
+   4,
+   102
+  ],
+  [
+   4,
+   106
+  ],
+  [
+   4,
+   114
+  ],
+  [
+   4,
+   122
+  ],
+  [
+   4,
+   128
+  ],
+  [
+   4,
+   135
+  ],
+  [
+   4,
+   141
+  ],
+  [
+   4,
+   148
+  ],
+  [
+   4,
+   155
+  ],
+  [
+   4,
+   163
+  ],
+  [
+   4,
+   171
+  ],
+  [
+   4,
+   176
+  ],
+  [
+   5,
+   3
+  ],
+  [
+   5,
+   6
+  ],
+  [
+   5,
+   10
+  ],
+  [
+   5,
+   14
+  ],
+  [
+   5,
+   18
+  ],
+  [
+   5,
+   24
+  ],
+  [
+   5,
+   32
+  ],
+  [
+   5,
+   37
+  ],
+  [
+   5,
+   42
+  ],
+  [
+   5,
+   46
+  ],
+  [
+   5,
+   51
+  ],
+  [
+   5,
+   58
+  ],
+  [
+   5,
+   65
+  ],
+  [
+   5,
+   71
+  ],
+  [
+   5,
+   77
+  ],
+  [
+   5,
+   83
+  ],
+  [
+   5,
+   90
+  ],
+  [
+   5,
+   96
+  ],
+  [
+   5,
+   104
+  ],
+  [
+   5,
+   109
+  ],
+  [
+   5,
+   114
+  ],
+  [
+   6,
+   1
+  ],
+  [
+   6,
+   9
+  ],
+  [
+   6,
+   19
+  ],
+  [
+   6,
+   28
+  ],
+  [
+   6,
+   36
+  ],
+  [
+   6,
+   45
+  ],
+  [
+   6,
+   53
+  ],
+  [
+   6,
+   60
+  ],
+  [
+   6,
+   69
+  ],
+  [
+   6,
+   74
+  ],
+  [
+   6,
+   82
+  ],
+  [
+   6,
+   91
+  ],
+  [
+   6,
+   95
+  ],
+  [
+   6,
+   102
+  ],
+  [
+   6,
+   111
+  ],
+  [
+   6,
+   119
+  ],
+  [
+   6,
+   125
+  ],
+  [
+   6,
+   132
+  ],
+  [
+   6,
+   138
+  ],
+  [
+   6,
+   143
+  ],
+  [
+   6,
+   147
+  ],
+  [
+   6,
+   152
+  ],
+  [
+   6,
+   158
+  ],
+  [
+   7,
+   1
+  ],
+  [
+   7,
+   12
+  ],
+  [
+   7,
+   23
+  ],
+  [
+   7,
+   31
+  ],
+  [
+   7,
+   38
+  ],
+  [
+   7,
+   44
+  ],
+  [
+   7,
+   52
+  ],
+  [
+   7,
+   58
+  ],
+  [
+   7,
+   68
+  ],
+  [
+   7,
+   74
+  ],
+  [
+   7,
+   82
+  ],
+  [
+   7,
+   88
+  ],
+  [
+   7,
+   96
+  ],
+  [
+   7,
+   105
+  ],
+  [
+   7,
+   121
+  ],
+  [
+   7,
+   131
+  ],
+  [
+   7,
+   138
+  ],
+  [
+   7,
+   144
+  ],
+  [
+   7,
+   150
+  ],
+  [
+   7,
+   156
+  ],
+  [
+   7,
+   160
+  ],
+  [
+   7,
+   164
+  ],
+  [
+   7,
+   171
+  ],
+  [
+   7,
+   179
+  ],
+  [
+   7,
+   188
+  ],
+  [
+   7,
+   196
+  ],
+  [
+   8,
+   1
+  ],
+  [
+   8,
+   9
+  ],
+  [
+   8,
+   17
+  ],
+  [
+   8,
+   26
+  ],
+  [
+   8,
+   34
+  ],
+  [
+   8,
+   41
+  ],
+  [
+   8,
+   46
+  ],
+  [
+   8,
+   53
+  ],
+  [
+   8,
+   62
+  ],
+  [
+   8,
+   70
+  ],
+  [
+   9,
+   1
+  ],
+  [
+   9,
+   7
+  ],
+  [
+   9,
+   14
+  ],
+  [
+   9,
+   21
+  ],
+  [
+   9,
+   27
+  ],
+  [
+   9,
+   32
+  ],
+  [
+   9,
+   37
+  ],
+  [
+   9,
+   41
+  ],
+  [
+   9,
+   48
+  ],
+  [
+   9,
+   55
+  ],
+  [
+   9,
+   62
+  ],
+  [
+   9,
+   69
+  ],
+  [
+   9,
+   73
+  ],
+  [
+   9,
+   80
+  ],
+  [
+   9,
+   87
+  ],
+  [
+   9,
+   94
+  ],
+  [
+   9,
+   100
+  ],
+  [
+   9,
+   107
+  ],
+  [
+   9,
+   112
+  ],
+  [
+   9,
+   118
+  ],
+  [
+   9,
+   123
+  ],
+  [
+   10,
+   1
+  ],
+  [
+   10,
+   7
+  ],
+  [
+   10,
+   15
+  ],
+  [
+   10,
+   21
+  ],
+  [
+   10,
+   26
+  ],
+  [
+   10,
+   34
+  ],
+  [
+   10,
+   43
+  ],
+  [
+   10,
+   54
+  ],
+  [
+   10,
+   62
+  ],
+  [
+   10,
+   71
+  ],
+  [
+   10,
+   79
+  ],
+  [
+   10,
+   89
+  ],
+  [
+   10,
+   98
+  ],
+  [
+   10,
+   107
+  ],
+  [
+   11,
+   6
+  ],
+  [
+   11,
+   13
+  ],
+  [
+   11,
+   20
+  ],
+  [
+   11,
+   29
+  ],
+  [
+   11,
+   38
+  ],
+  [
+   11,
+   46
+  ],
+  [
+   11,
+   54
+  ],
+  [
+   11,
+   63
+  ],
+  [
+   11,
+   72
+  ],
+  [
+   11,
+   82
+  ],
+  [
+   11,
+   89
+  ],
+  [
+   11,
+   98
+  ],
+  [
+   11,
+   109
+  ],
+  [
+   11,
+   118
+  ],
+  [
+   12,
+   5
+  ],
+  [
+   12,
+   15
+  ],
+  [
+   12,
+   23
+  ],
+  [
+   12,
+   31
+  ],
+  [
+   12,
+   38
+  ],
+  [
+   12,
+   44
+  ],
+  [
+   12,
+   53
+  ],
+  [
+   12,
+   64
+  ],
+  [
+   12,
+   70
+  ],
+  [
+   12,
+   79
+  ],
+  [
+   12,
+   87
+  ],
+  [
+   12,
+   96
+  ],
+  [
+   12,
+   104
+  ],
+  [
+   13,
+   1
+  ],
+  [
+   13,
+   6
+  ],
+  [
+   13,
+   14
+  ],
+  [
+   13,
+   19
+  ],
+  [
+   13,
+   29
+  ],
+  [
+   13,
+   35
+  ],
+  [
+   13,
+   43
+  ],
+  [
+   14,
+   6
+  ],
+  [
+   14,
+   11
+  ],
+  [
+   14,
+   19
+  ],
+  [
+   14,
+   25
+  ],
+  [
+   14,
+   34
+  ],
+  [
+   14,
+   43
+  ],
+  [
+   15,
+   1
+  ],
+  [
+   15,
+   16
+  ],
+  [
+   15,
+   32
+  ],
+  [
+   15,
+   52
+  ],
+  [
+   15,
+   71
+  ],
+  [
+   15,
+   91
+  ],
+  [
+   16,
+   7
+  ],
+  [
+   16,
+   15
+  ],
+  [
+   16,
+   27
+  ],
+  [
+   16,
+   35
+  ],
+  [
+   16,
+   43
+  ],
+  [
+   16,
+   55
+  ],
+  [
+   16,
+   65
+  ],
+  [
+   16,
+   73
+  ],
+  [
+   16,
+   80
+  ],
+  [
+   16,
+   88
+  ],
+  [
+   16,
+   94
+  ],
+  [
+   16,
+   103
+  ],
+  [
+   16,
+   111
+  ],
+  [
+   16,
+   119
+  ],
+  [
+   17,
+   1
+  ],
+  [
+   17,
+   8
+  ],
+  [
+   17,
+   18
+  ],
+  [
+   17,
+   28
+  ],
+  [
+   17,
+   39
+  ],
+  [
+   17,
+   50
+  ],
+  [
+   17,
+   59
+  ],
+  [
+   17,
+   67
+  ],
+  [
+   17,
+   76
+  ],
+  [
+   17,
+   87
+  ],
+  [
+   17,
+   97
+  ],
+  [
+   17,
+   105
+  ],
+  [
+   18,
+   5
+  ],
+  [
+   18,
+   16
+  ],
+  [
+   18,
+   21
+  ],
+  [
+   18,
+   28
+  ],
+  [
+   18,
+   35
+  ],
+  [
+   18,
+   46
+  ],
+  [
+   18,
+   54
+  ],
+  [
+   18,
+   62
+  ],
+  [
+   18,
+   75
+  ],
+  [
+   18,
+   84
+  ],
+  [
+   18,
+   98
+  ],
+  [
+   19,
+   1
+  ],
+  [
+   19,
+   12
+  ],
+  [
+   19,
+   26
+  ],
+  [
+   19,
+   39
+  ],
+  [
+   19,
+   52
+  ],
+  [
+   19,
+   65
+  ],
+  [
+   19,
+   77
+  ],
+  [
+   19,
+   96
+  ],
+  [
+   20,
+   13
+  ],
+  [
+   20,
+   38
+  ],
+  [
+   20,
+   52
+  ],
+  [
+   20,
+   65
+  ],
+  [
+   20,
+   77
+  ],
+  [
+   20,
+   88
+  ],
+  [
+   20,
+   99
+  ],
+  [
+   20,
+   114
+  ],
+  [
+   20,
+   126
+  ],
+  [
+   21,
+   1
+  ],
+  [
+   21,
+   11
+  ],
+  [
+   21,
+   25
+  ],
+  [
+   21,
+   36
+  ],
+  [
+   21,
+   45
+  ],
+  [
+   21,
+   58
+  ],
+  [
+   21,
+   73
+  ],
+  [
+   21,
+   82
+  ],
+  [
+   21,
+   91
+  ],
+  [
+   21,
+   102
+  ],
+  [
+   22,
+   1
+  ],
+  [
+   22,
+   6
+  ],
+  [
+   22,
+   16
+  ],
+  [
+   22,
+   24
+  ],
+  [
+   22,
+   31
+  ],
+  [
+   22,
+   39
+  ],
+  [
+   22,
+   47
+  ],
+  [
+   22,
+   56
+  ],
+  [
+   22,
+   65
+  ],
+  [
+   22,
+   73
+  ],
+  [
+   23,
+   1
+  ],
+  [
+   23,
+   18
+  ],
+  [
+   23,
+   28
+  ],
+  [
+   23,
+   43
+  ],
+  [
+   23,
+   60
+  ],
+  [
+   23,
+   75
+  ],
+  [
+   23,
+   90
+  ],
+  [
+   23,
+   105
+  ],
+  [
+   24,
+   1
+  ],
+  [
+   24,
+   11
+  ],
+  [
+   24,
+   21
+  ],
+  [
+   24,
+   28
+  ],
+  [
+   24,
+   32
+  ],
+  [
+   24,
+   37
+  ],
+  [
+   24,
+   44
+  ],
+  [
+   24,
+   54
+  ],
+  [
+   24,
+   59
+  ],
+  [
+   24,
+   62
+  ],
+  [
+   25,
+   3
+  ],
+  [
+   25,
+   12
+  ],
+  [
+   25,
+   21
+  ],
+  [
+   25,
+   33
+  ],
+  [
+   25,
+   44
+  ],
+  [
+   25,
+   56
+  ],
+  [
+   25,
+   68
+  ],
+  [
+   26,
+   1
+  ],
+  [
+   26,
+   20
+  ],
+  [
+   26,
+   40
+  ],
+  [
+   26,
+   61
+  ],
+  [
+   26,
+   84
+  ],
+  [
+   26,
+   112
+  ],
+  [
+   26,
+   137
+  ],
+  [
+   26,
+   160
+  ],
+  [
+   26,
+   184
+  ],
+  [
+   26,
+   207
+  ],
+  [
+   27,
+   1
+  ],
+  [
+   27,
+   14
+  ],
+  [
+   27,
+   23
+  ],
+  [
+   27,
+   36
+  ],
+  [
+   27,
+   45
+  ],
+  [
+   27,
+   56
+  ],
+  [
+   27,
+   64
+  ],
+  [
+   27,
+   77
+  ],
+  [
+   27,
+   89
+  ],
+  [
+   28,
+   6
+  ],
+  [
+   28,
+   14
+  ],
+  [
+   28,
+   22
+  ],
+  [
+   28,
+   29
+  ],
+  [
+   28,
+   36
+  ],
+  [
+   28,
+   44
+  ],
+  [
+   28,
+   51
+  ],
+  [
+   28,
+   60
+  ],
+  [
+   28,
+   71
+  ],
+  [
+   28,
+   78
+  ],
+  [
+   28,
+   85
+  ],
+  [
+   29,
+   7
+  ],
+  [
+   29,
+   15
+  ],
+  [
+   29,
+   24
+  ],
+  [
+   29,
+   31
+  ],
+  [
+   29,
+   39
+  ],
+  [
+   29,
+   46
+  ],
+  [
+   29,
+   53
+  ],
+  [
+   29,
+   64
+  ],
+  [
+   30,
+   6
+  ],
+  [
+   30,
+   16
+  ],
+  [
+   30,
+   25
+  ],
+  [
+   30,
+   33
+  ],
+  [
+   30,
+   42
+  ],
+  [
+   30,
+   51
+  ],
+  [
+   31,
+   1
+  ],
+  [
+   31,
+   12
+  ],
+  [
+   31,
+   20
+  ],
+  [
+   31,
+   29
+  ],
+  [
+   32,
+   1
+  ],
+  [
+   32,
+   12
+  ],
+  [
+   32,
+   21
+  ],
+  [
+   33,
+   1
+  ],
+  [
+   33,
+   7
+  ],
+  [
+   33,
+   16
+  ],
+  [
+   33,
+   23
+  ],
+  [
+   33,
+   31
+  ],
+  [
+   33,
+   36
+  ],
+  [
+   33,
+   44
+  ],
+  [
+   33,
+   51
+  ],
+  [
+   33,
+   55
+  ],
+  [
+   33,
+   63
+  ],
+  [
+   34,
+   1
+  ],
+  [
+   34,
+   8
+  ],
+  [
+   34,
+   15
+  ],
+  [
+   34,
+   23
+  ],
+  [
+   34,
+   32
+  ],
+  [
+   34,
+   40
+  ],
+  [
+   34,
+   49
+  ],
+  [
+   35,
+   4
+  ],
+  [
+   35,
+   12
+  ],
+  [
+   35,
+   19
+  ],
+  [
+   35,
+   31
+  ],
+  [
+   35,
+   39
+  ],
+  [
+   35,
+   45
+  ],
+  [
+   36,
+   13
+  ],
+  [
+   36,
+   28
+  ],
+  [
+   36,
+   41
+  ],
+  [
+   36,
+   55
+  ],
+  [
+   36,
+   71
+  ],
+  [
+   37,
+   1
+  ],
+  [
+   37,
+   25
+  ],
+  [
+   37,
+   52
+  ],
+  [
+   37,
+   77
+  ],
+  [
+   37,
+   103
+  ],
+  [
+   37,
+   127
+  ],
+  [
+   37,
+   154
+  ],
+  [
+   38,
+   1
+  ],
+  [
+   38,
+   17
+  ],
+  [
+   38,
+   27
+  ],
+  [
+   38,
+   43
+  ],
+  [
+   38,
+   62
+  ],
+  [
+   38,
+   84
+  ],
+  [
+   39,
+   6
+  ],
+  [
+   39,
+   11
+  ],
+  [
+   39,
+   22
+  ],
+  [
+   39,
+   32
+  ],
+  [
+   39,
+   41
+  ],
+  [
+   39,
+   48
+  ],
+  [
+   39,
+   57
+  ],
+  [
+   39,
+   68
+  ],
+  [
+   39,
+   75
+  ],
+  [
+   40,
+   8
+  ],
+  [
+   40,
+   17
+  ],
+  [
+   40,
+   26
+  ],
+  [
+   40,
+   34
+  ],
+  [
+   40,
+   41
+  ],
+  [
+   40,
+   50
+  ],
+  [
+   40,
+   59
+  ],
+  [
+   40,
+   67
+  ],
+  [
+   40,
+   78
+  ],
+  [
+   41,
+   1
+  ],
+  [
+   41,
+   12
+  ],
+  [
+   41,
+   21
+  ],
+  [
+   41,
+   30
+  ],
+  [
+   41,
+   39
+  ],
+  [
+   41,
+   47
+  ],
+  [
+   42,
+   1
+  ],
+  [
+   42,
+   11
+  ],
+  [
+   42,
+   16
+  ],
+  [
+   42,
+   23
+  ],
+  [
+   42,
+   32
+  ],
+  [
+   42,
+   45
+  ],
+  [
+   42,
+   52
+  ],
+  [
+   43,
+   11
+  ],
+  [
+   43,
+   23
+  ],
+  [
+   43,
+   34
+  ],
+  [
+   43,
+   48
+  ],
+  [
+   43,
+   61
+  ],
+  [
+   43,
+   74
+  ],
+  [
+   44,
+   1
+  ],
+  [
+   44,
+   19
+  ],
+  [
+   44,
+   40
+  ],
+  [
+   45,
+   1
+  ],
+  [
+   45,
+   14
+  ],
+  [
+   45,
+   23
+  ],
+  [
+   45,
+   33
+  ],
+  [
+   46,
+   6
+  ],
+  [
+   46,
+   15
+  ],
+  [
+   46,
+   21
+  ],
+  [
+   46,
+   29
+  ],
+  [
+   47,
+   1
+  ],
+  [
+   47,
+   12
+  ],
+  [
+   47,
+   20
+  ],
+  [
+   47,
+   30
+  ],
+  [
+   48,
+   1
+  ],
+  [
+   48,
+   10
+  ],
+  [
+   48,
+   16
+  ],
+  [
+   48,
+   24
+  ],
+  [
+   48,
+   29
+  ],
+  [
+   49,
+   5
+  ],
+  [
+   49,
+   12
+  ],
+  [
+   50,
+   1
+  ],
+  [
+   50,
+   16
+  ],
+  [
+   50,
+   36
+  ],
+  [
+   51,
+   7
+  ],
+  [
+   51,
+   31
+  ],
+  [
+   51,
+   52
+  ],
+  [
+   52,
+   15
+  ],
+  [
+   52,
+   32
+  ],
+  [
+   53,
+   1
+  ],
+  [
+   53,
+   27
+  ],
+  [
+   53,
+   45
+  ],
+  [
+   54,
+   7
+  ],
+  [
+   54,
+   28
+  ],
+  [
+   54,
+   50
+  ],
+  [
+   55,
+   17
+  ],
+  [
+   55,
+   41
+  ],
+  [
+   55,
+   68
+  ],
+  [
+   56,
+   17
+  ],
+  [
+   56,
+   51
+  ],
+  [
+   56,
+   77
+  ],
+  [
+   57,
+   4
+  ],
+  [
+   57,
+   12
+  ],
+  [
+   57,
+   19
+  ],
+  [
+   57,
+   25
+  ],
+  [
+   58,
+   1
+  ],
+  [
+   58,
+   7
+  ],
+  [
+   58,
+   12
+  ],
+  [
+   58,
+   22
+  ],
+  [
+   59,
+   4
+  ],
+  [
+   59,
+   10
+  ],
+  [
+   59,
+   17
+  ],
+  [
+   60,
+   1
+  ],
+  [
+   60,
+   6
+  ],
+  [
+   60,
+   12
+  ],
+  [
+   61,
+   6
+  ],
+  [
+   62,
+   1
+  ],
+  [
+   62,
+   9
+  ],
+  [
+   63,
+   5
+  ],
+  [
+   64,
+   1
+  ],
+  [
+   64,
+   10
+  ],
+  [
+   65,
+   1
+  ],
+  [
+   65,
+   6
+  ],
+  [
+   66,
+   1
+  ],
+  [
+   66,
+   8
+  ],
+  [
+   67,
+   1
+  ],
+  [
+   67,
+   13
+  ],
+  [
+   67,
+   27
+  ],
+  [
+   68,
+   16
+  ],
+  [
+   68,
+   43
+  ],
+  [
+   69,
+   9
+  ],
+  [
+   69,
+   35
+  ],
+  [
+   70,
+   11
+  ],
+  [
+   70,
+   40
+  ],
+  [
+   71,
+   11
+  ],
+  [
+   72,
+   1
+  ],
+  [
+   72,
+   14
+  ],
+  [
+   73,
+   1
+  ],
+  [
+   73,
+   20
+  ],
+  [
+   74,
+   18
+  ],
+  [
+   74,
+   48
+  ],
+  [
+   75,
+   20
+  ],
+  [
+   76,
+   6
+  ],
+  [
+   76,
+   26
+  ],
+  [
+   77,
+   20
+  ],
+  [
+   78,
+   1
+  ],
+  [
+   78,
+   31
+  ],
+  [
+   79,
+   16
+  ],
+  [
+   80,
+   1
+  ],
+  [
+   81,
+   1
+  ],
+  [
+   82,
+   1
+  ],
+  [
+   83,
+   7
+  ],
+  [
+   83,
+   35
+  ],
+  [
+   85,
+   1
+  ],
+  [
+   86,
+   1
+  ],
+  [
+   87,
+   16
+  ],
+  [
+   89,
+   1
+  ],
+  [
+   89,
+   24
+  ],
+  [
+   91,
+   1
+  ],
+  [
+   92,
+   15
+  ],
+  [
+   95,
+   1
+  ],
+  [
+   97,
+   1
+  ],
+  [
+   98,
+   8
+  ],
+  [
+   100,
+   10
+  ],
+  [
+   103,
+   1
+  ],
+  [
+   106,
+   1
+  ],
+  [
+   109,
+   1
+  ],
+  [
+   112,
+   1
+  ]
+ ],
+ "sajdas": [
+  {
+   "s": 7,
+   "a": 206,
+   "type": "recommended"
+  },
+  {
+   "s": 13,
+   "a": 15,
+   "type": "recommended"
+  },
+  {
+   "s": 16,
+   "a": 50,
+   "type": "recommended"
+  },
+  {
+   "s": 17,
+   "a": 109,
+   "type": "recommended"
+  },
+  {
+   "s": 19,
+   "a": 58,
+   "type": "recommended"
+  },
+  {
+   "s": 22,
+   "a": 18,
+   "type": "recommended"
+  },
+  {
+   "s": 22,
+   "a": 77,
+   "type": "recommended"
+  },
+  {
+   "s": 25,
+   "a": 60,
+   "type": "recommended"
+  },
+  {
+   "s": 27,
+   "a": 26,
+   "type": "recommended"
+  },
+  {
+   "s": 32,
+   "a": 15,
+   "type": "obligatory"
+  },
+  {
+   "s": 38,
+   "a": 24,
+   "type": "recommended"
+  },
+  {
+   "s": 41,
+   "a": 38,
+   "type": "obligatory"
+  },
+  {
+   "s": 53,
+   "a": 62,
+   "type": "obligatory"
+  },
+  {
+   "s": 84,
+   "a": 21,
+   "type": "recommended"
+  },
+  {
+   "s": 96,
+   "a": 19,
+   "type": "obligatory"
+  }
+ ]
+}

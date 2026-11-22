@@ -1,0 +1,81 @@
+{
+  "id": "s1-10-kaf-lam-mim",
+  "stage": 1,
+  "order": 10,
+  "title": "Tall and round: ك ل م",
+  "minutes": 12,
+  "prerequisites": ["s1-09-fa-qaf"],
+  "bigIdea": { "text": "ك (kaf) and ل (lam) are tall letters; م (mim) is a small round loop. ك is a light 'k', ل a clear 'l', and م an 'm' that can hum through the nose.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "ل is a tall stroke with a curved hook; standing alone it curves below the line. ك is tall with a slanted top stroke; standing alone or at the end of a word it has a small mark inside. م is a small round loop; standing alone or at the end of a word it has a tail going straight down. ل followed by ا is written as one joined shape: لا.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sounds: ك is a light 'k', made with the back of the tongue a little further forward than ق. ل is a clear, light 'l', not the dark 'l' at the end of the English word 'ball'. م is 'm': the lips close gently; with a shadda it hums through the nose for two counts.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sifat: ك is whispered (hams: the breath flows with it) and strong (shiddah). ل and م hold the breath back (jahr) and are 'in between' (tawassut). ل also 'leans' (inhiraf), like ر.", "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" } },
+    { "text": "Heavy or light: all three are light. The only heavy ل is the one in the word Allah, and only after a fatha or a damma; after a kasra (as in the basmala, 1:1) it stays light.", "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" } },
+    { "text": "Common mistakes. English speakers: the dark 'l' of 'ball' at the end of a syllable; keep ل clear. Most learners find ك and م easy; the real test is keeping ك light and forward next to ق (that pair comes in lesson 13).", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": {
+    "kind": "makhraj",
+    "points": [
+      { "letter": "ك", "region": "lisan", "detail": "Back of the tongue with the roof of the mouth above it" },
+      { "letter": "ل", "region": "lisan", "detail": "Front edges of the tongue against the upper teeth, on the right, the left or both sides" },
+      { "letter": "م", "region": "shafatan", "detail": "Between the two lips (shared with ب and و)" },
+      { "letter": "م", "region": "khayshum", "detail": "Its hum (ghunnah) comes from the nasal passage, as for ن" }
+    ],
+    "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }
+  },
+  "memoryHook": { "text": "Kaf: tall with an arm. Lam: tall with a hook. Mim: a little ball.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "The ل of the word Allah is heavy after a fatha or a damma and light after a kasra. Stage 2 covers it.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "1:4", "words": [0, 1], "note": { "text": "Has م, then ل, then ك.", "provenance": { "kind": "dataset", "source": "Tanzil text 1:4 recited word 0" } } },
+    { "ref": "112:3", "words": [0, 1], "note": { "text": "Starts with ل and ends with م.", "provenance": { "kind": "dataset", "source": "Tanzil text 112:3 recited word 0" } } },
+    { "ref": "108:1", "words": [2, 3], "note": { "text": "Has ل and then ك.", "provenance": { "kind": "dataset", "source": "Tanzil text 108:1 recited word 2" } } }
+  ],
+  "letters": ["ك", "ل", "م"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 2, "note": "Mapped by order — please confirm this is the right video, then mark where the teacher says ك, ل and م." },
+    { "source": "minshawi-words", "ref": "1:4", "words": [0, 1] },
+    { "source": "minshawi-words", "ref": "112:3", "words": [0, 1] },
+    { "source": "minshawi-words", "ref": "108:1", "words": [2, 3] }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Say each letter with a fatha: كَ لَ مَ", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Keep lam clear and light with each vowel: لَ لِ لُ", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["م", "ن"], "tip": { "text": "م: the lips close. ن: the lips stay open and the tongue tip touches behind the upper front teeth. Both carry a hum through the nose.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "cr": [{ "ref": "1:4", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-10-q1", "q": "Standing alone, which letter is a small round loop with a tail going straight down?", "options": ["م (mim)", "ه (ha)", "و (waw)", "ف (fa)"], "answer": 0, "explain": ["Right: that is mim.", "ha standing alone is a round shape with no straight tail.", "waw's tail curves round below the line.", "fa has a dot above and a flat tail."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-10-q2", "q": "Where is م made?", "options": ["Between the two lips", "The lower lip with the upper front teeth", "Tip of the tongue at the roots of the upper front teeth", "The middle of the tongue"], "answer": 0, "explain": ["Right: mim shares this place with ب and و.", "That is the place of ف.", "That is the place of ن.", "That is the place of ج, ش and ي."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-10-q3", "q": "Where is ل made?", "options": ["The front edges of the tongue against the upper teeth, on one or both sides", "Between the lips", "The back of the tongue", "The part of the throat nearest the mouth"], "answer": 0, "explain": ["Right.", "That is the place of ب, م and و.", "That is the place of ق and ك.", "That is the place of خ and غ."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-10-q4", "q": "When is ل heavy?", "options": ["Only in the word Allah, after a fatha or damma", "Always", "Whenever it has a fatha", "Never"], "answer": 0, "explain": ["Right: after a kasra even that lam is light, and lam is light everywhere else.", "lam is a light letter.", "A fatha makes ra heavy, not lam.", "The lam in the word Allah can be heavy."], "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-10-q5", "q": "Which 'l' is right for ل?", "options": ["A clear, light 'l', as in 'leaf'", "The dark 'l' at the end of 'ball'", "A 'w'-like sound", "A rolled 'r'"], "answer": 0, "explain": ["Right.", "That dark 'l' is too heavy; keep ل clear.", "Turning 'l' into 'w' drops the letter.", "That is ra, and even ra is only one light tap."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-10-q6", "q": "Which letter of this group is whispered (the breath flows with it)?", "options": ["ك (kaf)", "ل (lam)", "م (mim)", "None of them"], "answer": 0, "explain": ["Right: kaf is in the whispered (hams) group.", "lam holds the breath back (jahr).", "mim holds the breath back (jahr).", "kaf is whispered."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-10-q7", "q": "What is لا?", "options": ["ل followed by ا, written as one joined shape", "A new letter of the alphabet", "Two lams side by side", "A tajweed colour sign"], "answer": 0, "explain": ["Right: read it as lam, then alif.", "It is not a separate letter.", "It has one lam and one alif.", "It is ordinary writing, not a sign."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-10-q8", "q": "Where is ك made?", "options": ["The back of the tongue with the roof of the mouth above it", "Between the lips", "The middle of the throat", "Tip of the tongue with the front teeth"], "answer": 0, "explain": ["Right.", "That is the place of ب, م and و.", "That is the place of ع and ح.", "That is the place of ص, س and ز."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-10-q9", "q": "Which two letters of this group are 'in between' (tawassut)?", "options": ["ل and م", "ك and ل", "ك and م", "All three"], "answer": 0, "explain": ["Right: the in-between letters are ل ن ع م ر.", "kaf is strong (shiddah), not in between.", "kaf is strong (shiddah), not in between.", "kaf is not in between."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-10-q10", "q": "Where does the hum (ghunnah) of م come from?", "options": ["The nasal passage (khayshum)", "The middle of the throat", "The lips alone", "The middle of the tongue"], "answer": 0, "explain": ["Right: the hum of م and ن comes from the nasal passage.", "That is the place of ع and ح.", "The lips close for mim, but the hum is in the nose.", "That is the place of ج, ش and ي."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-10-q11", "q": "Which quality does ل share with ر?", "options": ["Leaning (inhiraf)", "Whistle (safir)", "Bounce (qalqalah)", "Spreading of air (tafashshi)"], "answer": 0, "explain": ["Right: inhiraf belongs to ل and ر.", "The whistle belongs to ص ز س.", "The bounce belongs to ق ط ب ج د.", "Spreading of air belongs to ش."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-10-q12", "q": "How is ك different from ق?", "options": ["ك is a little further forward and light; ق is deeper and heavy", "ك uses the lips", "ك comes from the throat", "There is no difference"], "answer": 0, "explain": ["Right: neighbours at the back of the tongue, but different weight.", "Neither uses the lips.", "Both come from the back of the tongue, not the throat.", "They are different letters with different sounds."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-10-q13", "q": "Standing alone, which letter has a small mark inside it?", "options": ["ك (kaf)", "ل (lam)", "م (mim)", "ط (ṭa)"], "answer": 0, "explain": ["Right: the small inner mark belongs to kaf.", "lam is a plain tall hook.", "mim is a loop with a tail.", "ṭa is a loop with a tall stroke."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "letter-id", "letters": ["ك", "ل", "م"]},
+    {"kind": "letter-in-word", "letters": ["ك", "م", "ل"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "ك (kaf) == Tall with a slanted arm (small mark inside at the end); back of the tongue, a little forward of ق; light 'k'",
+    "ل (lam) == Tall with a hook; front edges of the tongue; clear light 'l' (heavy only in the word Allah, after a fatha or damma)",
+    "م (mim) == Small round loop (tail down at the end); between the lips; hums through the nose with shadda",
+    "لا == ل then ا, written as one shape"
+  ],
+  "sources": [
+    { "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" },
+    { "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" },
+    { "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }
+  ],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say كَ لَ مَ three times, record the third time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

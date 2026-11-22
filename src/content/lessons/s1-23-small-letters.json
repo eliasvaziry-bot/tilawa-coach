@@ -1,0 +1,71 @@
+{
+  "id": "s1-23-small-letters",
+  "stage": 1,
+  "order": 23,
+  "title": "Small letters and the maddah sign",
+  "minutes": 12,
+  "prerequisites": ["s1-22-long-vowels"],
+  "bigIdea": { "text": "The mushaf writes some long vowels as tiny letters. Read them exactly like full long vowels. A small wavy line (maddah) over a madd letter means: stretch it longer than usual.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "The dagger alif (ـٰ, a small upright alif above the letter) is a long 'aa' without a full ا. Read it exactly like fatha + ا: 2 counts.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "A small waw (ۥ) after ـهُ and a small ya (ۦ) after ـهِ are a long 'uu' and 'ii': 2 counts. They show up mostly on the 'him/his' ending when the next word starts with a vowelled letter. If you stop on that word, drop the small letter and stop on ه with sukun.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "The maddah ( ٓ, a small wavy line) over a madd letter means a stretch longer than 2 counts. In Hafs it is usually 4–5 counts when a hamza follows, and 6 counts when a sukun or shadda follows. Stage 2 explains which is which; for now, hold it clearly longer.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "In this app's tajweed colours, small alifs, waws and yas get the 2-count colour, and almost every maddah (5,318 of 5,376) gets the colour of one of the longer madd types.", "provenance": { "kind": "dataset", "source": "rebuilt cpfair/quran-tajweed annotations (tj field) vs Tanzil text: madd_2 only on ٰ ۥ ۦ; U+0653 covered by madd_munfasil 3,172 / madd_muttasil 1,997 / madd_6 149, none 58" } }
+  ],
+  "visual": { "kind": "letters", "letters": ["بَٰ", "هُۥ", "هِۦ", "آ"], "caption": "dagger alif · small waw · small ya · maddah" },
+  "memoryHook": { "text": "Small letter, full length; wavy line, longer still.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "The base letters follow the spelling of the early written copies (the Uthmani rasm). Dots, vowel marks and small letters were added later so that every reader pronounces each word exactly.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "1:4", "words": [0, 1], "rule": "madd_2", "note": { "text": "A small alif on the first letter: a long 'aa', 2 counts.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "114:3", "words": [0, 1], "rule": "madd_2", "note": { "text": "A small alif above ل: a long 'aa', 2 counts.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "112:4", "words": [2, 3], "rule": "madd_2", "note": { "text": "A small waw after ـهُ: 'huu', 2 counts (the next word starts with a vowelled letter).", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "78:15", "words": [1, 2], "rule": "madd_2", "note": { "text": "A small ya after ـهِ: 'hii', 2 counts.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "108:1", "words": [0, 2], "rule": "madd_munfasil", "note": { "text": "A maddah on the alif, and the next word starts with a hamza: hold 4–5 counts.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "1:7", "words": [8, 9], "rule": "madd_6", "note": { "text": "A maddah before a shadda: hold 6 counts.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "98:5", "words": [10, 11], "rule": "silent", "note": { "text": "Extra: here a و is written but not read, and the small alif on it is read 'aa'.", "provenance": { "kind": "model-knowledge" }, "extra": true } }
+  ],
+  "letters": ["ٰ", "ۥ", "ۦ", "ٓ"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 9, "note": "Mapped by order (our lesson 23 → Nuraniah lesson 9) — please confirm. The video titles carry no topic, so check it fits this lesson and mark its segments when you watch." },
+    { "source": "minshawi-ayah", "ref": "108:1" },
+    { "source": "minshawi-words", "ref": "1:7", "words": [8, 9] },
+    { "source": "minshawi-ayah", "ref": "112:4" }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Read the small letters as full long vowels: بَٰ (baa) · هُۥ (huu) · هِۦ (hii), two counts each.", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Maddah practice: say بَا for 2 counts, then hold آ clearly longer, for 4 counts.", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["بَا", "بَٰ"], "tip": { "text": "Same sound and length: a full alif and a small (dagger) alif are both 'aa', 2 counts. Only the spelling differs.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "echo", "ref": "108:1" }
+  ],
+  "cr": [{ "ref": "108:1", "mode": "echo" }, { "ref": "1:4", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-23-q1", "q": "How do you read a small upright alif above a letter (ـٰ)?", "options": ["As a long 'aa', 2 counts", "As a short 'a'", "As a stop sign", "It is silent"], "answer": 0, "explain": ["Right.", "It is long, like fatha + ا.", "Stops are shown by pause signs.", "It is pronounced."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-23-q2", "q": "What is the small waw (ۥ) after ـهُ?", "options": ["A long 'uu', 2 counts", "A consonant 'w'", "A silent letter", "A sign to pause"], "answer": 0, "explain": ["Right.", "It lengthens the damma; it is not a 'w'.", "It is read when you continue.", "Pauses use pause signs."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-23-q3", "q": "What does the maddah (a small wavy line over a madd letter) tell you?", "options": ["Stretch longer than 2 counts", "Make the vowel short", "Stop here", "Read the letter twice"], "answer": 0, "explain": ["Right.", "It does the opposite: it lengthens.", "It is not a pause sign.", "Doubling is shadda."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-23-q4", "q": "A maddah is on a madd letter and the next word starts with a hamza. How long, in Hafs?", "options": ["4–5 counts", "2 counts", "1 count", "8 counts"], "answer": 0, "explain": ["Right.", "Two counts is the natural madd without a maddah.", "One count is a short vowel.", "No madd in Hafs is 8 counts."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-23-q5", "q": "A maddah is on a madd letter followed by a shadda (as at the end of Al-Fatiha). How long?", "options": ["6 counts", "2 counts", "4–5 counts", "1 count"], "answer": 0, "explain": ["Right.", "Too short for a maddah.", "4–5 is for a following hamza.", "One count is a short vowel."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-23-q6", "q": "Why does the mushaf use a small alif instead of a full one in some words?", "options": ["It keeps the traditional Uthmani spelling; the small alif shows the long vowel to read", "To save space on the page", "To show the vowel is short", "Because the alif is silent"], "answer": 0, "explain": ["Right.", "It is about spelling, not space.", "The small alif is read long.", "It is pronounced: 'aa'."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-23-q7", "q": "Which is read 'hii' (2 counts)?", "options": ["هِۦ", "هُۥ", "هِ", "هَٰ"], "answer": 0, "explain": ["Right: kasra + small ya.", "That is 'huu'.", "That is a short 'hi'.", "That is 'haa'."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-23-q8", "q": "A dagger alif and a full alif after a fatha: how do they compare?", "options": ["Same sound and length: 'aa', 2 counts", "The dagger alif is shorter", "The dagger alif is silent", "The full alif is 4 counts"], "answer": 0, "explain": ["Right.", "Both are 2 counts.", "It is pronounced.", "A plain alif after a fatha is 2 counts."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-23-q9", "q": "The wavy maddah sign is a signal to…", "options": ["Hold a madd letter longer than its natural 2 counts", "Lower your voice", "Skip the letter", "Add a hamza"], "answer": 0, "explain": ["Right.", "It is about length, not volume.", "The letter is read, and longer.", "It doesn't add a letter."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-23-q10", "q": "Which of these shows the maddah?", "options": ["آ (wavy line on top)", "بَٰ (small alif)", "بْ (sukun)", "بّ (shadda)"], "answer": 0, "explain": ["Right.", "That is a dagger alif.", "That is a sukun.", "That is a shadda."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-23-q11", "q": "How should you treat the small letters in the mushaf?", "options": ["Read them as real long vowels", "As decoration only", "Only in children's copies", "Only when you stop"], "answer": 0, "explain": ["Right (one exception: stopping on a final ـهُۥ or ـهِۦ drops the small letter).", "They carry real sounds.", "They are part of the standard mushaf.", "It is the other way round: they are read when you continue."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-23-q12", "q": "You stop on a word ending in ـهُۥ. What do you say at the end?", "options": ["Stop on ه with sukun; drop the small waw", "Hold 'huu' for 2 counts", "Hold 'huu' for 6 counts", "Say 'hun'"], "answer": 0, "explain": ["Right.", "That is for continuing, not stopping.", "No madd applies when you stop here.", "There is no tanween here."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-23-q13", "q": "In 108:1 the first word ends with a maddah and the next word starts with a hamza. What do you do?", "options": ["Stretch the long 'aa' to 4–5 counts", "Keep it at 2 counts", "Stop between the two words", "Skip the alif"], "answer": 0, "explain": ["Right.", "The maddah asks for more than 2.", "There is no pause sign there.", "The alif is the long vowel being stretched."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "contrast", "set": "small-sign", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "word-audio", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "Dagger alif (ـٰ) == A long 'aa' written small: 2 counts",
+    "Small waw (ۥ) / small ya (ۦ) after ه == Long 'uu' / 'ii', 2 counts; dropped when you stop on that word",
+    "Maddah ( ٓ ) on a madd letter == Stretch longer: 4–5 before a hamza, 6 before a sukun or shadda (Hafs)"
+  ],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Read the first word of 108:1 (in the examples) five times, holding the maddah for 4 counts; record the fifth time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

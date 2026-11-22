@@ -1,0 +1,37 @@
+{
+  "id": "s0-02-headphones-latency",
+  "stage": 0,
+  "order": 2,
+  "title": "Headphones and timing",
+  "minutes": 6,
+  "prerequisites": ["s0-01-microphone"],
+  "bigIdea": { "text": "Every speaker and every pair of headphones adds a tiny delay, called latency. We measure it once for each one you use, so the app can judge your timing fairly.", "provenance": { "kind": "app" } },
+  "proper": [
+    { "text": "First, the headphone check. If the app sees a Bluetooth microphone (for example AirPods), it shows a warning. For timed drills and checks, use wired headphones or the phone speaker.", "provenance": { "kind": "app" } },
+    { "text": "Then calibrate. Pick the output you are using: phone speaker, wired headphones or Bluetooth. The app saves one delay value for each. Run each calibration twice: results within 20 ms of each other are consistent.", "provenance": { "kind": "app" } },
+    { "text": "Phone speaker: put the phone on a table and stay quiet. The app plays 8 clicks, records them through the microphone and measures how late each one arrives.", "provenance": { "kind": "app" } },
+    { "text": "Headphones: the microphone cannot hear clicks played in your ears, so you clap along with 10 clicks instead. The app ignores the first 2 while you settle in, drops stray claps, and keeps the typical (middle) offset of the rest.", "provenance": { "kind": "app" } },
+    { "text": "Why wired is best: Bluetooth delay is long and can vary between connections, so even a calibrated value is less reliable. With wired headphones, the reference voice reaches only your ears, so the microphone hears only you. Just listening on Bluetooth is fine, because then timing does not matter.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": { "kind": "arrows", "steps": ["Headphone check", "Pick your output", "Speaker: 8 clicks · Headphones: clap along with 10", "Run it twice", "Saved for this output"], "provenance": { "kind": "app" } },
+  "memoryHook": { "text": "New output, new calibration.", "provenance": { "kind": "app" } },
+  "extras": [{ "text": "Delays are measured in milliseconds (ms): 1,000 ms make one second.", "provenance": { "kind": "model-knowledge" }, "extra": true }],
+  "examples": [],
+  "letters": [],
+  "listen": [],
+  "drills": [{ "kind": "setup", "component": "latency" }],
+  "cr": [],
+  "check": { "quiz": { "practice": 5, "mastery": 20 }, "selfRate": false },
+  "questions": [
+    { "id": "s0-02-q1", "q": "With headphones on, why does the latency test ask you to clap along?", "options": ["The microphone cannot hear clicks played inside your ears", "Clapping warms up your voice before reciting", "Claps are louder, so they test the microphone volume", "The clicks only play when Bluetooth is on"], "answer": 0, "explain": ["Right: the microphone can hear your claps, so your claps are timed instead.", "Clapping is not a voice warm-up here; it is a timing signal.", "Volume was checked in the microphone lesson; this test is about delay.", "The clicks play on every output; with headphones only you can hear them."], "provenance": { "kind": "app" }, "heldOut": false },
+    { "id": "s0-02-q2", "q": "You calibrated the phone speaker. Today you plug in wired headphones. What should you do?", "options": ["Run the calibration again for the wired headphones", "Nothing: one calibration covers every output", "Turn the volume to maximum instead", "Switch to Bluetooth so the app can detect it"], "answer": 0, "explain": ["Right: each output has its own delay, and the app saves one value per output.", "Each output adds a different delay, so one value cannot cover them all.", "Volume does not change the delay.", "Bluetooth adds the longest delay; it makes timing worse."], "provenance": { "kind": "app" }, "heldOut": false },
+    { "id": "s0-02-q3", "q": "What does the latency number measure?", "options": ["The delay between a sound being played and the app hearing it", "How loud your room is", "How long you can hold a note", "How fast you recite"], "answer": 0, "explain": ["Right: the app allows for that delay so your timing is judged fairly.", "That is the room-noise check.", "That belongs to the voice-range check.", "Tempo is measured while you recite, not here."], "provenance": { "kind": "app" }, "heldOut": false },
+    { "id": "s0-02-q4", "q": "Two runs on the same output gave 182 ms and 240 ms. What should you do?", "options": ["Run it again in a quieter spot until the runs agree within about 20 ms", "Keep the bigger number to be safe", "Stop: the microphone must be broken", "Average them and never calibrate again"], "answer": 0, "explain": ["Right: runs within about 20 ms of each other are consistent.", "A guess is not a measurement; runs that agree are.", "Noise or a missed click is the usual cause, not a broken microphone.", "Runs this far apart are not reliable yet, and every new output needs its own calibration."], "provenance": { "kind": "app" }, "heldOut": false },
+    { "id": "s0-02-q5", "q": "During setup the app shows a Bluetooth warning. What is the best response?", "options": ["Use wired headphones or the phone speaker for timed drills and checks", "Ignore it: Bluetooth is fine for everything", "Turn the volume up", "Restart the phone"], "answer": 0, "explain": ["Right: listening on Bluetooth is fine, but timed work needs a short, steady delay.", "Its long, changing delay spoils timing feedback.", "Volume does not change the delay.", "Restarting does not shorten the Bluetooth delay."], "provenance": { "kind": "app" }, "heldOut": false }
+  ],
+  "generators": [],
+  "remnote": ["Latency == The delay between a sound being played and the app hearing it", "Latency calibration on the phone speaker == The app plays 8 clicks and records them", "Latency calibration with headphones == Clap along with 10 clicks (the microphone cannot hear the clicks)", "When to calibrate latency again == For every new output: speaker, wired or Bluetooth", "Bluetooth warning == Use wired headphones or the speaker for timed drills and checks"],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Put the phone on a table, choose Phone speaker and press Start. Stay quiet for the 8 clicks, then press Run again once."
+}

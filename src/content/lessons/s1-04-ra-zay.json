@@ -1,0 +1,79 @@
+{
+  "id": "s1-04-ra-zay",
+  "stage": 1,
+  "order": 4,
+  "title": "The dipping pair: ر ز",
+  "minutes": 10,
+  "prerequisites": ["s1-03-dal-dhal"],
+  "bigIdea": { "text": "ر (ra) and ز (zay) share one small curve that dips below the line. No dot = 'r'. One dot above = 'z'.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Both are a short curve that starts on the line and dips below it. ز has one dot above. Like د and ذ, they never join the letter after them. Compare: د sits on the line as a corner; ر dips below the line as a curve.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sounds: ر is one light tap of the tongue tip just behind the upper front teeth. It is not the English 'r' with a curled tongue, and not a long roll. ز is 'z' as in 'zoo': the tongue tip stays near the front teeth with a narrow gap, so the sound buzzes and whistles.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sifat: ر is 'in between' (tawassut: between a full stop and a full flow), it 'leans' (inhiraf), and it has 'repetition' (takrir: the tongue tip can vibrate). ز is 'soft' (rakhawa) and has a 'whistle' (safir), like ص and س.", "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" } },
+    { "text": "Heavy or light: ز is light. ر changes with its vowel: with a fatha or a damma it is heavy; with a kasra it is light. (A ر with sukun comes in Stage 2.)", "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" } },
+    { "text": "Common mistakes. English speakers: a curled English 'r'; with a London accent, dropping ر after a vowel (as in 'car') — every ر is said. Persian/Urdu readers: ر stays light everywhere; with a fatha or damma it must be heavy. Everyone: know takrir so you can keep it small — one quick tap, not a drum roll.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": {
+    "kind": "makhraj",
+    "points": [
+      { "letter": "ر", "region": "lisan", "detail": "Tip of the tongue, toward its top, at the roots of the upper front teeth" },
+      { "letter": "ز", "region": "lisan", "detail": "Tip of the tongue with the front teeth (shared with ص and س)" }
+    ],
+    "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }
+  },
+  "memoryHook": { "text": "Dot on top = z, no dot = r; both dip below the line.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "One light tap of ر feels like the quick 'tt' in an American 'butter'.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "1:2", "words": [2, 3], "note": { "text": "Starts with ر with a fatha.", "provenance": { "kind": "dataset", "source": "Tanzil text 1:2 recited word 2" } } },
+    { "ref": "113:2", "words": [1, 2], "note": { "text": "Ends in ر with a shadda and a kasra.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:2 recited word 1" } } },
+    { "ref": "99:1", "words": [1, 2], "note": { "text": "Has ز twice.", "provenance": { "kind": "dataset", "source": "Tanzil text 99:1 recited word 1" } } }
+  ],
+  "letters": ["ر", "ز"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 1, "note": "Mapped by order — please confirm this is the right video, then mark where the teacher says ر and ز." },
+    { "source": "minshawi-words", "ref": "1:2", "words": [2, 3] },
+    { "source": "minshawi-words", "ref": "113:2", "words": [1, 2] },
+    { "source": "minshawi-words", "ref": "99:1", "words": [1, 2] }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Say each letter with a fatha: رَ زَ", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Say ra with each vowel — heavy, light, heavy: رَ رِ رُ", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["ر", "ز"], "tip": { "text": "ر: one light tap of the tongue tip, no buzz, no whistle. ز: the tongue tip stays near the front teeth and the voice buzzes with a whistle.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "cr": [{ "ref": "99:1", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-04-q1", "q": "Which letter is a small dipping curve with one dot above?", "options": ["ز (zay)", "ر (ra)", "ذ (dhal)", "ن (nun)"], "answer": 0, "explain": ["Right: the dipping curve with a dot is zay.", "ra is the same curve with no dot.", "dhal also has one dot, but it is a corner sitting on the line.", "nun also has one dot above, but it is a deep bowl and joins on both sides."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-04-q2", "q": "ر has a fatha. Is it heavy or light?", "options": ["Heavy", "Light", "Light, because ra is always light", "It depends on the next word"], "answer": 0, "explain": ["Right: with a fatha or a damma, ra is heavy.", "A kasra makes ra light, not a fatha.", "ra is not always light; its vowel decides.", "For a ra with its own vowel, that vowel decides."], "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-04-q3", "q": "ر has a kasra. Is it heavy or light?", "options": ["Light", "Heavy", "Heavy, because ra is always heavy", "It is not pronounced"], "answer": 0, "explain": ["Right: with a kasra, ra is light.", "A fatha or damma makes ra heavy, not a kasra.", "ra is not always heavy; a kasra makes it light.", "A ra with a kasra is clearly pronounced."], "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-04-q4", "q": "Which letter of this pair has a whistle (safir)?", "options": ["ز (zay)", "ر (ra)", "Both", "Neither"], "answer": 0, "explain": ["Right: zay is one of the three whistling letters (ص ز س).", "ra has no whistle.", "Only zay whistles.", "zay does whistle."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-04-q5", "q": "Which is the right way to say ر?", "options": ["One light tap of the tongue tip behind the upper front teeth", "A curled English 'r' with rounded lips", "A long, rolled trill", "Leave it out after a vowel"], "answer": 0, "explain": ["Right: a single, light tap.", "The English 'r' is a different sound.", "Keep the repetition (takrir) small: one tap.", "Every ra is pronounced."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-04-q6", "q": "You speak with a London accent. What is the main risk with ر?", "options": ["Dropping it after a vowel, as in 'car'", "Making it whistle", "Saying it through the nose", "Making it bounce like ق"], "answer": 0, "explain": ["Right: many British accents drop 'r' after a vowel; in Arabic every ra is said.", "ra has no whistle; that is a ز habit, not an accent habit.", "ra is not a nasal letter.", "Bouncing (qalqalah) belongs to ق ط ب ج د, not ra."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-04-q7", "q": "How does ر differ in shape from د?", "options": ["ر dips below the line as a curve; د sits on the line as a corner", "ر has a dot; د has none", "ر joins the next letter; د does not", "They look the same"], "answer": 0, "explain": ["Right: curve below the line vs corner on the line.", "Neither ra nor dal has a dot.", "Neither ra nor dal joins the letter after it.", "Their shapes are different."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-04-q8", "q": "Where is ر made?", "options": ["Tip of the tongue, toward its top, at the roots of the upper front teeth", "The middle of the tongue", "The middle of the throat", "Between the lips"], "answer": 0, "explain": ["Right: that is ra's point.", "That is the place of ج, ش and ي.", "That is the place of ع and ح.", "That is the place of ب, م and و."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-04-q9", "q": "Which quality belongs to ر alone?", "options": ["Repetition (takrir): the tongue tip can vibrate", "Whistle (safir)", "Bounce (qalqalah)", "Spreading of air (tafashshi)"], "answer": 0, "explain": ["Right: takrir is a quality of ra only.", "The whistle belongs to ص ز س.", "The bounce belongs to ق ط ب ج د.", "Spreading of air belongs to ش."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-04-q10", "q": "Which letters share the whistle (safir) with ز?", "options": ["ص and س", "ذ and ظ", "ش and ج", "ر and ل"], "answer": 0, "explain": ["Right: ص ز س are the three whistling letters.", "dhal and ẓa are not whistling letters.", "shin spreads its air (tafashshi); jim is not a whistling letter.", "ra and lam 'lean' (inhiraf); they do not whistle."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-04-q11", "q": "ر has a damma. Is it heavy or light?", "options": ["Heavy", "Light", "Silent", "Light at the start of a word"], "answer": 0, "explain": ["Right: a fatha or a damma makes ra heavy.", "Only a kasra makes ra light.", "A ra with a damma is pronounced.", "Its position in the word does not change this: the damma makes it heavy."], "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-04-q12", "q": "Persian/Urdu readers often keep ر light everywhere. When must it be heavy?", "options": ["When it has a fatha or a damma", "When it has a kasra", "Only at the start of a surah", "Never: ra is always light"], "answer": 0, "explain": ["Right: fatha or damma means a heavy ra.", "A kasra makes it light.", "Where it sits in the surah does not decide.", "ra is heavy with a fatha or a damma."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-04-q13", "q": "Which pair BOTH dip below the line and never join the letter after them?", "options": ["ر and ز", "د and ذ", "ب and ن", "ج and ح"], "answer": 0, "explain": ["Right: ra and zay.", "dal and dhal never join forward either, but they sit on the line.", "ba and nun join on both sides.", "jim and ḥa join on both sides."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "letter-id", "letters": ["ر", "ز"]},
+    {"kind": "letter-in-word", "letters": ["ز", "ر"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "ر (ra) == No dot, dips below the line; one light tap of the tongue tip; heavy with fatha/damma, light with kasra",
+    "ز (zay) == One dot above, dips below the line; 'z' with a whistle; light",
+    "Takrir (ر) == The tongue tip can vibrate; keep it to one light tap",
+    "London-accent fix for ر == Never drop ر after a vowel; tap it every time"
+  ],
+  "sources": [
+    { "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" },
+    { "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" },
+    { "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }
+  ],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say رَ رِ رُ زَ three times, record the third time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

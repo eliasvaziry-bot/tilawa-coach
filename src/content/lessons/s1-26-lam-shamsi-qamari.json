@@ -1,0 +1,71 @@
+{
+  "id": "s1-26-lam-shamsi-qamari",
+  "stage": 1,
+  "order": 26,
+  "title": "Sun and moon letters: when the lam of 'al-' disappears",
+  "minutes": 12,
+  "prerequisites": ["s1-25-ta-marbuta-alif-maqsura"],
+  "bigIdea": { "text": "'Al-' means 'the'. Before 14 letters (the sun letters) its lam is not said and the next letter is doubled. Before the other 14 (the moon letters) the lam is said clearly, with sukun.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Lam shamsiyya ('sun lam'): before ت ث د ذ ر ز س ش ص ض ط ظ ل ن, the lam of 'al-' is silent and the next letter takes a shadda, so you hear it twice. The word for 'the sun' in 75:9 shows it.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Lam qamariyya ('moon lam'): before the other 14 letters, ء ب ج ح خ ع غ ف ق ك م و ه ي, the lam is pronounced with sukun: 'al-'. The word for 'the moon' in 75:9 shows it.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "The mushaf shows you which is which: a sun lam has no mark and the next letter has a shadda; a moon lam carries a sukun.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Starting on 'al-', you say the joining hamza as 'a' (lesson 24) and then follow the sun or moon rule. Joining from the word before, the hamza drops, and with a sun letter the lam drops too.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": { "kind": "letters", "letters": ["ت", "ث", "د", "ذ", "ر", "ز", "س", "ش", "ص", "ض", "ط", "ظ", "ل", "ن"], "caption": "The 14 sun letters: after them the lam of al- is silent and the letter is doubled." },
+  "memoryHook": { "text": "Sun letters swallow the lam; moon letters let it shine.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "Why? The sun letters are made close to where lam itself is made, so the lam blends into them. The moon letters are made elsewhere, so the lam stays clear.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "75:9", "words": [1, 3], "rule": "lam_shamsiyyah", "note": { "text": "Sun, then moon, side by side: the first lam is silent (ش doubled); the second is said with sukun.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "114:1", "words": [3, 4], "rule": "lam_shamsiyyah", "note": { "text": "ن is a sun letter: the lam is silent and ن is doubled.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "112:2", "words": [1, 2], "rule": "lam_shamsiyyah", "note": { "text": "ص is a sun letter.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "1:4", "words": [2, 3], "rule": "lam_shamsiyyah", "note": { "text": "د is a sun letter.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "113:1", "words": [3, 4], "note": { "text": "ف is a moon letter: the lam has a sukun and is said.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "108:1", "words": [2, 3], "note": { "text": "ك is a moon letter.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "1:2", "words": [0, 1], "note": { "text": "ح is a moon letter.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "letters": ["ل"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 12, "note": "Mapped by order (our lesson 26 → Nuraniah lesson 12) — please confirm. The video titles carry no topic, so check it fits this lesson and mark its segments when you watch." },
+    { "source": "minshawi-ayah", "ref": "75:9" },
+    { "source": "minshawi-ayah", "ref": "114:1" },
+    { "source": "minshawi-ayah", "ref": "113:1" }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Sun letters: اَلتَّ اَلشَّ اَلنَّ (at-ta, ash-sha, an-na). No lam; double the letter.", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Moon letters: اَلْبَ اَلْقَ اَلْكَ (al-ba, al-qa, al-ka). A clear lam with sukun.", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Mixed: say each letter after 'al-' and decide sun or moon: ر · م · س · ع · ن · ف", "times": 2, "record": false },
+    { "kind": "echo", "ref": "75:9" }
+  ],
+  "cr": [{ "ref": "75:9", "mode": "echo" }, { "ref": "114:1", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-26-q1", "q": "Before a sun letter, what happens to the lam of 'al-'?", "options": ["It is silent and the next letter is doubled", "It is said with sukun", "It becomes a long 'aa'", "It turns into a noon"], "answer": 0, "explain": ["Right.", "That is the moon lam.", "Lam is not a madd letter.", "It merges into the next letter; it doesn't change into ن."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-26-q2", "q": "Which letter is a SUN letter?", "options": ["ن", "ق", "ب", "م"], "answer": 0, "explain": ["Right: the lam merges into ن.", "ق is a moon letter.", "ب is a moon letter.", "م is a moon letter."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-26-q3", "q": "Which letter is a MOON letter?", "options": ["ك", "ص", "د", "ر"], "answer": 0, "explain": ["Right: the lam is said before ك.", "ص is a sun letter.", "د is a sun letter.", "ر is a sun letter."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-26-q4", "q": "How does the mushaf show a sun lam?", "options": ["The lam has no mark and the next letter has a shadda", "The lam has a sukun", "The lam has a fatha", "The lam is written small"], "answer": 0, "explain": ["Right.", "A sukun on the lam means a moon lam.", "The lam of 'al-' never carries a vowel.", "It is written full size; it just isn't said."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-26-q5", "q": "How many sun letters are there?", "options": ["14", "7", "28", "10"], "answer": 0, "explain": ["Right: half of the 28 letters.", "There are more than 7.", "28 is the whole alphabet.", "There are 14."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-26-q6", "q": "Why are they called 'sun' and 'moon' letters?", "options": ["After the words for 'the sun' and 'the moon': one has a sun letter after al-, the other a moon letter", "Because they are read at different times of day", "Because sun letters are heavy", "Because moon letters are silent"], "answer": 0, "explain": ["Right: both words appear side by side in 75:9.", "Time of day has nothing to do with it.", "Heaviness is a different idea; ت and ن are light sun letters.", "Moon letters are pronounced; it is the sun lam that is silent."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-26-q7", "q": "Before a moon letter, the lam of 'al-' is…", "options": ["Said clearly, with sukun", "Silent", "Doubled", "Read with a kasra"], "answer": 0, "explain": ["Right.", "That is the sun lam.", "With a moon letter nothing is doubled.", "The lam of 'al-' has no vowel."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-26-q8", "q": "Which of these is a sun letter?", "options": ["ض", "غ", "ف", "ي"], "answer": 0, "explain": ["Right.", "غ is a moon letter.", "ف is a moon letter.", "ي is a moon letter."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-26-q9", "q": "Which of these is a moon letter?", "options": ["ج", "ز", "س", "ط"], "answer": 0, "explain": ["Right.", "ز is a sun letter.", "س is a sun letter.", "ط is a sun letter."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-26-q10", "q": "In 75:9 the words for 'the sun' and 'the moon' stand side by side. What do you hear?", "options": ["The sun word: no lam, ش doubled; the moon word: a clear lam", "Both lams said", "Both lams silent", "Only the moon word has 'al-'"], "answer": 0, "explain": ["Right.", "The first lam is a sun lam, so it is silent.", "The second lam is a moon lam, so it is said.", "Both words are written with 'al-'."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-26-q11", "q": "You start reading on a word with a sun lam (like 'ash-sh…'). How do you begin?", "options": ["With 'a', then the doubled letter", "With 'al-' and a clear lam", "Straight on the doubled letter, without 'a'", "With 'i'"], "answer": 0, "explain": ["Right.", "With a sun letter the lam is silent.", "When you start, you must say the joining hamza.", "'al-' always starts with 'a'."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-26-q12", "q": "When 'al-' comes before a ل, is that ل a sun or a moon letter?", "options": ["Sun: the two lams merge into one doubled lam", "Moon: say both lams", "Neither", "It depends on the vowel"], "answer": 0, "explain": ["Right: ل is one of the 14 sun letters.", "The first lam merges into the second.", "Every letter is either sun or moon.", "The group never depends on the vowel."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-26-q13", "q": "With a sun lam, which of these must you NOT do?", "options": ["Pronounce the lam", "Double the next letter", "Say 'a' when you start on the word", "Skip the lam"], "answer": 0, "explain": ["Right: the sun lam is silent.", "Doubling the next letter is correct.", "Saying the joining hamza when you start is correct.", "Skipping the lam is exactly right."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "contrast", "set": "sun-moon", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "word-audio", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "Sun letters (14) == ت ث د ذ ر ز س ش ص ض ط ظ ل ن: the lam of al- is silent, the next letter doubled",
+    "Moon letters (14) == ء ب ج ح خ ع غ ف ق ك م و ه ي: the lam of al- is said with sukun",
+    "How the mushaf marks a sun lam == No mark on the lam, shadda on the next letter"
+  ],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Read 75:9 five times with Sheikh al-Minshawi (silent lam on the sun word, clear lam on the moon word); record the fifth time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

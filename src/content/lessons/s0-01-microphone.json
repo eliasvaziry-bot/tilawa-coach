@@ -1,0 +1,34 @@
+{
+  "id": "s0-01-microphone",
+  "stage": 0,
+  "order": 1,
+  "title": "Your phone as a listening partner",
+  "minutes": 6,
+  "prerequisites": [],
+  "bigIdea": { "text": "The app can only help if it hears you clearly. In 5 minutes we check the microphone, the room and your headphones.", "provenance": { "kind": "app" } },
+  "proper": [
+    { "text": "Analysis works best with the phone's own microphone or wired headphones with a mic, in a quiet room, at your normal reciting volume.", "provenance": { "kind": "app" } },
+    { "text": "Bluetooth headphones (like AirPods) add a delay of a fifth of a second or more, and some switch the microphone to a low-quality mode while recording. Use wired headphones or the speaker for checks.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Your recordings stay on this phone. Nothing is uploaded unless you share it yourself.", "provenance": { "kind": "app" } }
+  ],
+  "visual": { "kind": "arrows", "steps": ["Allow microphone", "Measure room noise", "Record a test", "Play it back"], "provenance": { "kind": "app" } },
+  "memoryHook": { "text": "Quiet room, wired or speaker, normal voice.", "provenance": { "kind": "app" } },
+  "extras": [],
+  "examples": [],
+  "letters": [],
+  "listen": [],
+  "drills": [{ "kind": "setup", "component": "mic" }, { "kind": "setup", "component": "noise" }, { "kind": "setup", "component": "record" }],
+  "cr": [],
+  "check": { "quiz": { "practice": 4, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s0-01-q1", "q": "Which setup gives the app the clearest recording for checks?", "options": ["Phone speaker or wired headphones in a quiet room", "Bluetooth earbuds in a busy café", "Holding the phone far away while music plays", "Covering the microphone with your hand"], "answer": 0, "explain": ["Right: a quiet room and a direct microphone give clean audio.", "Bluetooth adds delay and noise makes checks unreliable.", "Distance and music bury your voice.", "A covered mic muffles the sound."], "provenance": { "kind": "app" }, "heldOut": false },
+    { "id": "s0-01-q2", "q": "Why does the app warn you about Bluetooth headphones?", "options": ["They add delay and can lower microphone quality", "They are too loud", "They change the Quran text", "They stop the app working offline"], "answer": 0, "explain": ["Right: the delay spoils timing feedback and the headset mic is lower quality.", "Loudness is not the issue.", "Headphones cannot change text.", "Offline use is unrelated."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s0-01-q3", "q": "Where are your practice recordings kept?", "options": ["Only on this phone, unless you share them", "On a public website", "In the app's repository", "On the reciter's server"], "answer": 0, "explain": ["Right: they stay on the device.", "Nothing is published.", "The public repository never holds recordings.", "Nothing is sent to audio hosts."], "provenance": { "kind": "app" }, "heldOut": false },
+    { "id": "s0-01-q4", "q": "The level check says 'too quiet'. What should you do first?", "options": ["Come closer or recite a little louder", "Turn on Bluetooth", "Shout as loud as you can", "Give up on checks"], "answer": 0, "explain": ["Right: a normal, closer voice fixes most quiet takes.", "Bluetooth makes it worse.", "Shouting can clip and strain your voice.", "One small change usually fixes it."], "provenance": { "kind": "app" }, "heldOut": false }
+  ],
+  "generators": [],
+  "remnote": ["Best recording setup for Tilawa Coach checks == Phone speaker or wired headphones, quiet room, normal voice", "Why avoid Bluetooth for checks == Big delay and a lower-quality headset microphone"],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Press Allow microphone, measure the room noise, then record 3 seconds of 'Bismillah' and play it back."
+}

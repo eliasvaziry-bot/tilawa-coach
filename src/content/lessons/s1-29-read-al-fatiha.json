@@ -1,0 +1,85 @@
+{
+  "id": "s1-29-read-al-fatiha",
+  "stage": 1,
+  "order": 29,
+  "title": "Reading Al-Fatiha",
+  "minutes": 15,
+  "prerequisites": ["s1-28-syllables-to-words"],
+  "bigIdea": { "text": "Al-Fatiha uses almost everything you have learned: harakat, sukun, shadda, long vowels, small alifs, the joining hamza and sun letters. Read it ayah by ayah, then all together.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "In this text Al-Fatiha has 7 ayat, and the basmala is ayah 1 (1:1).", "provenance": { "kind": "dataset", "source": "Tanzil text, surah 1 (public/data/quran/s001.json)" } },
+    { "text": "What to look for: small alifs in 1:1, 1:2, 1:3, 1:4, 1:6 and 1:7; a joining hamza to glide past in every ayah except 1:5; sun letters after 'al-' in 1:1, 1:3, 1:4, 1:6 and 1:7; moon letters after 'al-' in 1:2, 1:6 and 1:7.", "provenance": { "kind": "dataset", "source": "rebuilt cpfair/quran-tajweed annotations (madd_2, hamzat_wasl, lam_shamsiyyah) and Tanzil text for 1:1–1:7" } },
+    { "text": "Stop and breathe at the end of each ayah. While you are learning, don't stop inside an ayah.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Every ayah of Al-Fatiha ends with a long vowel just before its last letter. When you stop there you may hold it 2, 4 or 6 counts: choose one length and keep it the same at every ayah end. The last word (1:7) has a maddah before a shadda: always 6 counts.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": { "kind": "arrows", "steps": ["Listen to one ayah", "Read it slowly, syllable by syllable", "Echo after Sheikh al-Minshawi", "Read all seven ayat in a row"], "provenance": { "kind": "app" } },
+  "memoryHook": { "text": "Seven ayat: stop and breathe at each end.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "Counting the basmala as the first ayah of Al-Fatiha is the Kufan way of numbering, which the Hafs mushaf follows.", "provenance": { "kind": "model-knowledge" }, "extra": true },
+    { "text": "Persian/Urdu readers: watch ح (1:1, 1:2, 1:3), ع (1:2, 1:5, 1:7) and ض (1:7). Don't flatten them into ه, ء or a 'z'.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "1:1", "rule": "hamzat_wasl", "note": { "text": "Glide past the ٱ of the second, third and fourth words; the third and fourth have a sun letter (ر) after 'al-'.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "1:2", "rule": "madd_2", "note": { "text": "You start on 'al-' before ح (a moon letter, lam said). The last word has a small alif.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "1:3", "rule": "lam_shamsiyyah", "note": { "text": "Two sun lams before ر; a small alif in the first word.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "1:4", "rule": "madd_2", "note": { "text": "A small alif on the first letter; a sun letter (د) after 'al-' in the last word.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "1:5", "note": { "text": "Two doubled ي, each followed by a long alif; ع in the second and fourth words.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "1:6", "rule": "hamzat_wasl", "note": { "text": "Start with 'i'; glide past the ٱ of the next two words (sun letter ص, then moon letter م).", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "1:7", "rule": "madd_6", "note": { "text": "The longest ayah (9 words). The last word has a maddah before a shadda: 6 counts.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "letters": [],
+  "listen": [
+    { "source": "nuraniah", "lesson": 15, "note": "Mapped by order (our lesson 29 → Nuraniah lesson 15) — please confirm. The video titles carry no topic, so check it fits this lesson and mark its segments when you watch." },
+    { "source": "minshawi-ayah", "ref": "1:1" },
+    { "source": "minshawi-ayah", "ref": "1:2" },
+    { "source": "minshawi-ayah", "ref": "1:3" },
+    { "source": "minshawi-ayah", "ref": "1:4" },
+    { "source": "minshawi-ayah", "ref": "1:5" },
+    { "source": "minshawi-ayah", "ref": "1:6" },
+    { "source": "minshawi-ayah", "ref": "1:7" }
+  ],
+  "drills": [
+    { "kind": "echo", "ref": "1:7" },
+    { "kind": "say", "prompt": "Read 1:1 to 1:7 by yourself once, slowly, stopping at each ayah end; then compare with Sheikh al-Minshawi.", "times": 1, "record": true }
+  ],
+  "cr": [
+    { "ref": "1:1", "mode": "echo" },
+    { "ref": "1:2", "mode": "echo" },
+    { "ref": "1:3", "mode": "echo" },
+    { "ref": "1:4", "mode": "echo" },
+    { "ref": "1:5", "mode": "echo" },
+    { "ref": "1:6", "mode": "echo" },
+    { "ref": "1:7", "mode": "echo" },
+    { "ref": "1:7", "mode": "buildup" }
+  ],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true, "recitation": { "ref": "1:2", "checks": ["madd", "tempo"] } },
+  "questions": [
+    { "id": "s1-29-q1", "q": "How many ayat does Al-Fatiha have in this text?", "options": ["7", "6", "8", "5"], "answer": 0, "explain": ["Right: 1:1 to 1:7, with the basmala as 1:1.", "6 would leave out the basmala, which is ayah 1 here.", "There are 7.", "There are 7."], "provenance": { "kind": "dataset", "source": "Tanzil text, surah 1" }, "heldOut": false },
+    { "id": "s1-29-q2", "q": "Where should a beginner stop in Al-Fatiha?", "options": ["At the end of each ayah", "After every word", "In the middle of each ayah", "Only at the end of the surah"], "answer": 0, "explain": ["Right.", "That breaks the words apart.", "Stopping inside an ayah can break the meaning.", "The ayat are short enough to stop at each end."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-29-q3", "q": "In 1:1, how do you read the ٱ at the start of the second word?", "options": ["Glide past it: join the first word straight to the lam", "Say a clear hamza", "Pause before it", "Read it as a long 'aa'"], "answer": 0, "explain": ["Right.", "A joining hamza is skipped when you read on.", "There is no pause sign there.", "ٱ is not a madd letter."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-29-q4", "q": "The last word of Al-Fatiha has a maddah before a shadda. How long is it held?", "options": ["6 counts", "2 counts", "4 counts", "1 count"], "answer": 0, "explain": ["Right.", "Too short for a maddah before a shadda.", "4 is for other cases; here it is 6.", "One count is a short vowel."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-29-q5", "q": "At an ayah end, a long vowel comes just before the last letter. What is the rule for you when you stop there?", "options": ["Choose 2, 4 or 6 counts and keep the same length at every ayah end", "Always 1 count", "Change the length every time", "Never stop at the ayah end"], "answer": 0, "explain": ["Right.", "It is a long vowel, so at least 2.", "Lengths must stay consistent.", "Ayah ends are the right places to stop."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-29-q6", "q": "How is the small alif on the first letter of 1:4 read?", "options": ["As a long 'aa', 2 counts", "As a short 'a'", "Not at all", "As 'ii'"], "answer": 0, "explain": ["Right.", "A small alif is a full long vowel.", "It is pronounced.", "It is 'aa', not 'ii'."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-29-q7", "q": "In 1:2 the first word starts with 'al-' before ح. Is the lam said?", "options": ["Yes: ح is a moon letter, so the lam has sukun and is said", "No: ح is a sun letter", "Only when you stop", "The lam turns into ح"], "answer": 0, "explain": ["Right.", "ح is a moon letter.", "Stopping doesn't change the lam.", "Only sun letters absorb the lam."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-29-q8", "q": "In 1:4 the last word has 'al-' before د. What happens?", "options": ["The lam is silent and د is doubled (a sun letter)", "The lam is said with sukun", "Both the lam and د are silent", "د is silent"], "answer": 0, "explain": ["Right.", "That would be a moon letter.", "د is pronounced, doubled.", "د is pronounced, doubled."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-29-q9", "q": "You start 1:6. Its first word begins with ٱ. Which vowel do you start with?", "options": ["'i' (the third letter has a kasra)", "'a'", "'u'", "No vowel: start on the second letter"], "answer": 0, "explain": ["Right.", "'a' is for 'al-'.", "'u' would need a damma on the third letter.", "The second letter is sakin; you can't start on it."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-29-q10", "q": "Why keep your ayah-end lengths the same through the surah?", "options": ["Consistency is part of correct recitation", "It makes the recitation faster", "It is only needed in prayer", "The mushaf marks each one differently"], "answer": 0, "explain": ["Right.", "Speed is not the reason.", "It applies to every recitation.", "These ends carry no special sign."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-29-q11", "q": "What is the best way to learn to read Al-Fatiha?", "options": ["Ayah by ayah: listen, read slowly, echo, then join", "Read all seven at full speed from day one", "Memorise the sounds without looking at the text", "Read only the first and last ayat"], "answer": 0, "explain": ["Right.", "Speed comes after accuracy.", "This lesson is about reading the text.", "Every ayah matters."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-29-q12", "q": "In 1:5 the first word has a shadda on ي. How do you read it?", "options": ["Close on ي after the 'i', then 'yaa'", "Say ي once, quickly", "Skip the ي", "Read only a long 'ii'"], "answer": 0, "explain": ["Right: the doubled ي splits across two syllables.", "That loses the doubling.", "Every letter is read.", "The shadda needs a closing ي and an opening one."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-29-q13", "q": "In 1:7 the second word starts with ٱ and a lam with shadda. Reading on from the first word, what do you do?", "options": ["Glide past ٱ straight into the doubled lam", "Say a clear hamza first", "Pause before the word", "Say 'al-' with a clear lam, then the doubled lam"], "answer": 0, "explain": ["Right.", "A joining hamza drops when you read on.", "There is no pause sign there.", "Only the doubled lam is heard."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "word-audio", "surahs": [1]},
+    {"kind": "rule-id", "rules": ["hamzat_wasl", "lam_shamsiyyah", "madd_2"], "surahs": [1]},
+    {"kind": "harakah-id", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "Al-Fatiha in this mushaf (Hafs) == 7 ayat, with the basmala as 1:1",
+    "Where a beginner stops in Al-Fatiha == At the end of each ayah",
+    "Last word of Al-Fatiha (maddah before a shadda) == 6 counts",
+    "Long vowel before the last letter when you stop at an ayah end == 2, 4 or 6 counts: choose one and keep it"
+  ],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Record yourself reading Al-Fatiha from 1:1 to 1:7, stopping and breathing at each ayah end, then self-rate it against Sheikh al-Minshawi."
+}

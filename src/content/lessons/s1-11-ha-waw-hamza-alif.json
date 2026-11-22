@@ -1,0 +1,84 @@
+{
+  "id": "s1-11-ha-waw-hamza-alif",
+  "stage": 1,
+  "order": 11,
+  "title": "The last four: ه و ء ا",
+  "minutes": 12,
+  "prerequisites": ["s1-10-kaf-lam-mim"],
+  "bigIdea": { "text": "Four letters finish the alphabet: ه (ha), a soft breath from deep in the throat; و (waw), a 'w' or a long 'oo'; ء (hamza), a clean catch in the throat; and ا (alif), which stretches the vowel before it.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "ه changes shape the most: standing alone it is a small round ه, at the start هـ, in the middle ـهـ, at the end ـه. و is a small loop with a tail curving below the line. ء is a small mark that sits on the line or on a seat (أ ؤ ئ); the seat is not read, only the hamza. ا is a plain upright stroke. و and ا never join the letter after them.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sounds: ه is a soft, open breath like the 'h' in 'hat'. و is 'w' as in 'wet', with rounded lips, never 'v'; a و with no vowel after a damma stretches the 'u' into a long 'oo'. ء is a clean catch in the throat, like the break in 'uh-oh'. ا never takes a vowel of its own: after a fatha it stretches the 'a' into a long 'aa'.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sifat: ه is whispered (hams) and soft (rakhawa). ء is strong (shiddah: its sound stops fully) and holds the breath back (jahr). A و with sukun after a fatha has 'ease' (leen): it is said smoothly, without strain.", "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" } },
+    { "text": "Heavy or light: ه, و and ء are light. ا has no weight of its own: it sounds heavy after a heavy letter and light after a light one.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Common mistakes. Persian/Urdu readers: و said as 'v', and ه mixed up with ح. English speakers: English never ends a syllable with 'h', so a ه at the end of a syllable fades away; a ء between two vowels gets blurred instead of a clean catch; and long vowels are cut short.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": {
+    "kind": "makhraj",
+    "points": [
+      { "letter": "ء", "region": "halq", "detail": "Deepest part of the throat, nearest the chest (shared with ه)" },
+      { "letter": "ه", "region": "halq", "detail": "Deepest part of the throat, nearest the chest (shared with ء)" },
+      { "letter": "و", "region": "shafatan", "detail": "As a consonant: between the two lips (shared with ب and م)" },
+      { "letter": "و", "region": "jawf", "detail": "As a long vowel (madd letter): the open space of the mouth and throat" },
+      { "letter": "ا", "region": "jawf", "detail": "Always a long vowel (madd letter): the open space of the mouth and throat" }
+    ],
+    "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }
+  },
+  "memoryHook": { "text": "Ha breathes, hamza catches, waw rounds, alif stretches.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "Two more shapes appear at the ends of words: ى looks like ي without dots, and ة looks like ه with two dots (ta marbuta). They get their own lesson later.", "provenance": { "kind": "model-knowledge" }, "extra": true },
+    { "text": "A few letters in the mushaf are written but not read; they carry a small 'zero' sign. That sign gets its own lesson later.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "112:1", "words": [1, 2], "note": { "text": "Has ه and then و.", "provenance": { "kind": "dataset", "source": "Tanzil text 112:1 recited word 1" } } },
+    { "ref": "113:1", "words": [1, 2], "note": { "text": "Starts with hamza on a seat (أ); later a و after a damma.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:1 recited word 1" } } },
+    { "ref": "114:1", "words": [3, 4], "note": { "text": "Has ا after a fatha.", "provenance": { "kind": "dataset", "source": "Tanzil text 114:1 recited word 3" } } },
+    { "ref": "110:1", "words": [1, 2], "note": { "text": "Ends in ء.", "provenance": { "kind": "dataset", "source": "Tanzil text 110:1 recited word 1" } } }
+  ],
+  "letters": ["ه", "و", "ء", "ا"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 2, "note": "Mapped by order — please confirm this is the right video, then mark where the teacher says ه, و, ء and ا." },
+    { "source": "minshawi-words", "ref": "112:1", "words": [1, 2] },
+    { "source": "minshawi-words", "ref": "113:1", "words": [1, 2] },
+    { "source": "minshawi-words", "ref": "110:1", "words": [1, 2] }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Say each letter with a fatha: هَ وَ ءَ", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Waw with rounded lips, teeth off the lip (never 'v'): وَ وِ وُ", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["ه", "ء"], "tip": { "text": "Both come from the deepest part of the throat. ه is an open breath that flows. ء is a sudden catch that stops.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "cr": [{ "ref": "110:1", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-11-q1", "q": "Which letter changes its shape the most between the start, middle and end of a word?", "options": ["ه (ha)", "ا (alif)", "و (waw)", "د (dal)"], "answer": 0, "explain": ["Right: ha has four quite different forms.", "alif is always an upright stroke.", "waw keeps its loop and tail.", "dal keeps its corner."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-11-q2", "q": "Where are ء and ه made?", "options": ["The deepest part of the throat, nearest the chest", "The middle of the throat", "The part of the throat nearest the mouth", "Between the lips"], "answer": 0, "explain": ["Right.", "That is the place of ع and ح.", "That is the place of غ and خ.", "That is the place of ب, م and و."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-11-q3", "q": "How is و said as a consonant?", "options": ["'w' as in 'wet', with rounded lips", "'v' as in 'van'", "'f' as in 'fun'", "Only as 'oo', never as a consonant"], "answer": 0, "explain": ["Right.", "'v' puts the teeth on the lip; that is a Persian/Urdu habit to drop.", "'f' is the letter ف.", "With its own vowel, waw is the consonant 'w'."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-11-q4", "q": "What does ا do after a fatha?", "options": ["Stretches the 'a' into a long 'aa'", "Adds a vowel of its own", "Makes a catch in the throat", "Nothing at all"], "answer": 0, "explain": ["Right: alif lengthens the fatha before it.", "alif never carries a vowel of its own.", "A catch is hamza, not alif.", "After a fatha, alif is read as length (unless a small 'zero' sign marks it silent — a later lesson)."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-11-q5", "q": "Which letter of this group is strong (shiddah: its sound stops fully)?", "options": ["ء (hamza)", "ه (ha)", "و (waw)", "ا (alif)"], "answer": 0, "explain": ["Right: hamza is one of the strong letters (أجد قط بكت).", "ha is soft: its sound flows.", "waw is soft: its sound flows.", "alif is a long vowel: its sound flows."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-11-q6", "q": "Persian and Urdu readers often say و like…", "options": ["…'v'", "…'b'", "…'f'", "…'y'"], "answer": 0, "explain": ["Right: Arabic waw is 'w' (or a long 'oo'), never 'v'.", "'b' closes the lips completely; waw only rounds them.", "'f' is the letter ف.", "'y' is the letter ي."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-11-q7", "q": "In أ, hamza sits on a seat. What do you read?", "options": ["Only the hamza, with its vowel; the seat is silent", "Both the seat and the hamza", "Only the seat", "Nothing"], "answer": 0, "explain": ["Right: the seat just carries the hamza.", "The seat is not read.", "The seat is not read; the hamza is.", "The hamza is read with its vowel."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-11-q8", "q": "Which letter of this group is whispered (hams: the breath flows)?", "options": ["ه (ha)", "ء (hamza)", "و (waw)", "ا (alif)"], "answer": 0, "explain": ["Right: ha is in the whispered group.", "hamza holds the breath back (jahr).", "waw is not in the whispered group.", "alif is not in the whispered group."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-11-q9", "q": "Where do the long vowels (madd letters) come from?", "options": ["The open space of the mouth and throat (al-jawf)", "The lips only", "The nasal passage", "The tip of the tongue"], "answer": 0, "explain": ["Right: that is why they are called the jawf letters.", "waw as a consonant uses the lips, but the long vowels come from the jawf.", "The nasal passage carries the hum of ن and م.", "The tongue tip makes letters like ت, د and ن."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-11-q10", "q": "Which quality does a و with sukun after a fatha have?", "options": ["Ease (leen): it is said smoothly, without strain", "Whistle (safir)", "Bounce (qalqalah)", "Repetition (takrir)"], "answer": 0, "explain": ["Right: leen belongs to و and ي with sukun after a fatha.", "The whistle belongs to ص ز س.", "The bounce belongs to ق ط ب ج د.", "Repetition belongs to ر."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-11-q11", "q": "Which pair of letters never join the letter after them?", "options": ["و and ا", "ه and م", "ء and ه", "ك and ل"], "answer": 0, "explain": ["Right: waw and alif join only the letter before them.", "ha and mim join on both sides.", "ha joins on both sides (a hamza on the line joins neither).", "kaf and lam join on both sides."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-11-q12", "q": "Some London accents drop the 'h' in 'hat'. Why does that matter for ه?", "options": ["ه is a real letter: leaving it out changes the word", "It does not matter: ه is silent", "ه is only a spelling mark", "Only ح matters, not ه"], "answer": 0, "explain": ["Right: say every ha, even softly.", "ha is pronounced.", "ha is a full letter, not a mark.", "Both are letters; each must be said."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-11-q13", "q": "What does ة look like?", "options": ["ه with two dots above", "ي without dots", "و with a dot", "ا with a hamza"], "answer": 0, "explain": ["Right: that is ta marbuta.", "That is ى.", "There is no such letter.", "That is أ."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "letter-id", "letters": ["ه", "و", "ء", "ا"]},
+    {"kind": "letter-in-word", "letters": ["ء", "ه", "و", "ا"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "ه (ha) == Many shapes (ه هـ ـهـ ـه); deepest part of the throat; soft open breath; light",
+    "و (waw) == Loop with a tail; 'w' with rounded lips (never 'v'); after a damma, a long 'oo'",
+    "ء (hamza) == Small mark, alone or on a seat (أ ؤ ئ); deepest part of the throat; a clean catch",
+    "ا (alif) == Upright stroke; never takes its own vowel; after a fatha, a long 'aa'",
+    "Madd letters == ا, و after a damma, ي after a kasra; from the open space of the mouth and throat (al-jawf)"
+  ],
+  "sources": [
+    { "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" },
+    { "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }
+  ],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say هَ وَ ءَ three times, record the third time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

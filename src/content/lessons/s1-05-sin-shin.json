@@ -1,0 +1,78 @@
+{
+  "id": "s1-05-sin-shin",
+  "stage": 1,
+  "order": 5,
+  "title": "Three teeth: س ش",
+  "minutes": 10,
+  "prerequisites": ["s1-04-ra-zay"],
+  "bigIdea": { "text": "س (sin) and ش (shin) share one body with three small teeth. No dots = 's'. Three dots above = 'sh'.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "The body is three small teeth in a row; standing alone or at the end of a word it also has a round tail below the line. ش has three dots above, like ث. In joined writing the teeth can be shallow, so count the bumps and check for dots.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sounds: س is a clean 's' as in 'sun': the tongue tip near the front teeth with a narrow gap, so the air whistles. ش is 'sh' as in 'ship': the middle of the tongue rises toward the roof of the mouth and the air spreads out.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sifat: both are 'whispered' (hams: the breath flows) and 'soft' (rakhawa: the sound flows). س has a 'whistle' (safir), like ص and ز. ش has 'spreading' (tafashshi): its air spreads through the mouth.", "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" } },
+    { "text": "Heavy or light: both are light. Neither is one of the seven heavy letters (خ ص ض غ ط ق ظ).", "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" } },
+    { "text": "Common mistakes. Persian/Urdu readers: ص and ث are read like س, so three letters merge; keep this plain 's' for س only (ص and ث get their own lessons). English speakers reading transliteration: an 's' between vowels is not 'z' (as in 'rose'); س is always 's'. Everyone: keep س light next to heavy letters so it does not slide toward ص.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": {
+    "kind": "makhraj",
+    "points": [
+      { "letter": "س", "region": "lisan", "detail": "Tip of the tongue with the front teeth (shared with ص and ز)" },
+      { "letter": "ش", "region": "lisan", "detail": "Middle of the tongue (shared with ج and ي)" }
+    ],
+    "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }
+  },
+  "memoryHook": { "text": "Three teeth: add three dots and 's' becomes 'sh'.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "ث and ش both carry three dots above, on different bodies: a boat for ث, three teeth for ش.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "114:1", "words": [3, 4], "note": { "text": "Ends in س.", "provenance": { "kind": "dataset", "source": "Tanzil text 114:1 recited word 3" } } },
+    { "ref": "113:2", "words": [1, 2], "note": { "text": "Starts with ش.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:2 recited word 1" } } },
+    { "ref": "114:5", "words": [1, 2], "note": { "text": "Has س twice.", "provenance": { "kind": "dataset", "source": "Tanzil text 114:5 recited word 1" } } }
+  ],
+  "letters": ["س", "ش"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 1, "note": "Mapped by order — please confirm this is the right video, then mark where the teacher says س and ش." },
+    { "source": "minshawi-words", "ref": "114:1", "words": [3, 4] },
+    { "source": "minshawi-words", "ref": "113:2", "words": [1, 2] },
+    { "source": "minshawi-words", "ref": "114:5", "words": [1, 2] }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Say each letter with a fatha: سَ شَ", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Say them with kasra and damma: سِ شِ سُ شُ", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["س", "ش"], "tip": { "text": "س: tongue tip near the front teeth, a thin whistle. ش: the middle of the tongue rises and the air spreads wide, with no whistle.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "cr": [{ "ref": "114:4", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-05-q1", "q": "Which letter has three teeth AND three dots above?", "options": ["ش (shin)", "س (sin)", "ث (tha)", "ص (ṣad)"], "answer": 0, "explain": ["Right: three teeth with three dots is shin.", "sin has the three teeth but no dots.", "tha also has three dots, but on a boat-shaped body.", "ṣad has a loop, not three teeth, and no dots."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-05-q2", "q": "Where is ش made?", "options": ["The middle of the tongue", "Tip of the tongue with the front teeth", "The part of the throat nearest the mouth", "Between the lips"], "answer": 0, "explain": ["Right: shin shares this place with ج and ي.", "That is the place of س, ص and ز.", "That is the place of خ and غ.", "That is the place of ب, م and و."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-05-q3", "q": "Which quality does ش have that س does not?", "options": ["Spreading of air (tafashshi)", "Whistle (safir)", "Bounce (qalqalah)", "Repetition (takrir)"], "answer": 0, "explain": ["Right: tafashshi belongs to shin.", "The whistle is sin's (with ص and ز), not shin's.", "Neither of them bounces; that is ق ط ب ج د.", "Repetition belongs to ra."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-05-q4", "q": "Which letter of this pair whistles (safir)?", "options": ["س (sin)", "ش (shin)", "Both", "Neither"], "answer": 0, "explain": ["Right: sin is one of the three whistling letters (ص ز س).", "shin spreads its air instead (tafashshi).", "Only sin whistles.", "sin does whistle."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-05-q5", "q": "Which English sound is closest to ش?", "options": ["'sh' in 'ship'", "'s' in 'sun'", "'ch' in 'chip'", "'th' in 'think'"], "answer": 0, "explain": ["Right.", "That is closer to س.", "'ch' starts with a stop (like t + sh); ش just flows.", "That is closer to ث."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-05-q6", "q": "Persian/Urdu readers often read which letters as س?", "options": ["ص and ث", "ش and ج", "ز and ذ", "ح and ه"], "answer": 0, "explain": ["Right: in Persian and Urdu all three are a plain 's'.", "shin and jim keep their own sounds.", "zay and dhal merge as 'z', not 's'.", "ḥa and ha merge as 'h', not 's'."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-05-q7", "q": "How do you tell س from ش?", "options": ["ش has three dots above; س has none", "س has more teeth", "ش has a longer tail", "By the colour"], "answer": 0, "explain": ["Right: the dots are the only difference in shape.", "Both have three teeth.", "Their tails are the same.", "Colours show tajweed rules, not letters."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-05-q8", "q": "Where is س made?", "options": ["Tip of the tongue with the front teeth", "The middle of the tongue", "Tongue against the edges of the upper front teeth", "The lower lip with the upper front teeth"], "answer": 0, "explain": ["Right: sin shares this place with ص and ز.", "That is the place of ش, ج and ي.", "That is the place of ث, ذ and ظ.", "That is the place of ف."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-05-q9", "q": "Are س and ش whispered (breath flows) or held (jahr)?", "options": ["Both whispered", "Both held", "س whispered, ش held", "ش whispered, س held"], "answer": 0, "explain": ["Right: both are in the whispered (hams) group.", "Neither holds the breath back.", "shin is whispered too.", "sin is whispered too."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-05-q10", "q": "Are س and ش heavy or light?", "options": ["Both light", "Both heavy", "س heavy, ش light", "ش heavy, س light"], "answer": 0, "explain": ["Right: neither is one of the seven heavy letters.", "The heavy letters are خ ص ض غ ط ق ظ.", "sin is light; its heavy partner is ص.", "shin is light."], "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-05-q11", "q": "A transliteration shows 's' between two vowels. How do you say س?", "options": ["Always 's', never 'z'", "As 'z', like the 's' in 'rose'", "As 'sh'", "Leave it silent"], "answer": 0, "explain": ["Right: English spelling sometimes turns 's' into 'z'; Arabic sin never changes.", "'z' is the letter ز.", "'sh' is the letter ش.", "sin is pronounced."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-05-q12", "q": "Your س sounds deep and heavy next to a heavy letter. What fixes it?", "options": ["Keep the back of the tongue low so it stays light", "Raise the back of the tongue more", "Round the lips", "Add a bounce"], "answer": 0, "explain": ["Right: sin is light whatever its neighbours are.", "Raising the back of the tongue turns it toward ص.", "Rounding the lips does not make it lighter.", "sin is not a bouncing letter."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-05-q13", "q": "Which two letters BOTH carry three dots above?", "options": ["ث and ش", "ت and ش", "ث and ن", "ش and ي"], "answer": 0, "explain": ["Right: a boat for tha, three teeth for shin.", "ta has two dots.", "nun has one dot.", "ya has two dots below."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "letter-id", "letters": ["س", "ش"]},
+    {"kind": "letter-in-word", "letters": ["ش", "س"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "س (sin) == Three teeth, no dots; tip of the tongue with the front teeth; 's' with a whistle; light",
+    "ش (shin) == Three teeth, three dots above; middle of the tongue; 'sh' with the air spreading; light",
+    "Persian/Urdu fix for س == Keep the plain 's' for س; ص and ث are different sounds"
+  ],
+  "sources": [
+    { "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" },
+    { "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" },
+    { "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }
+  ],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say سَ شَ سَ شَ three times, record the third time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

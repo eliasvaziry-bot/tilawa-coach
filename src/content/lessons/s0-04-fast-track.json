@@ -1,0 +1,122 @@
+{
+  "id": "s0-04-fast-track",
+  "stage": 0,
+  "order": 4,
+  "title": "Fast-track for Persian and Urdu readers",
+  "minutes": 15,
+  "prerequisites": ["s0-03-voice-range"],
+  "bigIdea": { "text": "If you read Persian or Urdu, you already know the letters. The work is the sounds: the Quran keeps apart letters that Persian and Urdu say the same way.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "The fast-track is for readers who already know this script from Persian or Urdu: you know the shapes, so the work is the sounds. Switch it on in Settings → Learning ('I already read Persian/Urdu script').", "provenance": { "kind": "app" } },
+    { "text": "Persian says ث and ص like س ('s'); ذ, ض and ظ like ز ('z'); ط like ت ('t'); and ح like ه ('h'). It says ع and ء both as a small catch in the throat. Persian has no pharyngealised sounds at all, so the heavy letters ط ص ض ظ lose their weight.", "provenance": { "kind": "reference", "title": "Persian alphabet (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Persian_alphabet", "opened": "2026-11-22" } },
+    { "text": "Urdu does the same: ث س ص are all 's', ذ ز ض ظ are all 'z', ت and ط are both 't', and ح and ہ are both 'h'. The hamza, and ع at the start or end of a word, are usually silent.", "provenance": { "kind": "reference", "title": "Urdu alphabet (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Urdu_alphabet", "opened": "2026-11-22" } },
+    { "text": "Standard Iranian Persian also says ق and غ with little or no difference, turns و into a 'v', and shifts the short vowels: 'a' moves towards the 'a' of 'cat', 'i' becomes 'e', and 'u' becomes 'o'.", "provenance": { "kind": "reference", "title": "Persian phonology (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Persian_phonology", "opened": "2026-11-22" } },
+    { "text": "In the Quran each of these letters keeps its own sound. ث is the 'th' of 'think', ذ the 'th' of 'this'. ط ص ض ظ are heavy: the back of the tongue rises and the sound fills the mouth. ح and ع come from the middle of the throat, ه and ء from its deepest part. ق stops the air; غ flows. و is a true 'w'. Short vowels stay pure: fatha 'a', kasra 'i', damma 'u'.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": {
+    "kind": "makhraj",
+    "points": [
+      { "letter": "ء", "region": "halq", "detail": "deepest part of the throat: a clean catch" },
+      { "letter": "ه", "region": "halq", "detail": "deepest part of the throat: a soft breath" },
+      { "letter": "ع", "region": "halq", "detail": "middle of the throat: a voiced squeeze" },
+      { "letter": "ح", "region": "halq", "detail": "middle of the throat: a strong, smooth breath" },
+      { "letter": "غ", "region": "halq", "detail": "top of the throat: the air keeps flowing" },
+      { "letter": "ق", "region": "lisan", "detail": "very back of the tongue on the soft palate: the air stops" },
+      { "letter": "ض", "region": "lisan", "detail": "side of the tongue on the upper back teeth; heavy" },
+      { "letter": "ت", "region": "lisan", "detail": "tongue tip on the gum behind the upper front teeth; light" },
+      { "letter": "ط", "region": "lisan", "detail": "same spot as ت, back of the tongue raised; heavy" },
+      { "letter": "ث", "region": "lisan", "detail": "tongue tip at the edges of the upper front teeth; light, no voice" },
+      { "letter": "ذ", "region": "lisan", "detail": "same spot as ث, with voice; light" },
+      { "letter": "ظ", "region": "lisan", "detail": "same spot as ذ, back of the tongue raised; heavy" },
+      { "letter": "س", "region": "lisan", "detail": "tongue tip close behind the front teeth: a light hiss" },
+      { "letter": "ز", "region": "lisan", "detail": "same spot as س, with voice: a buzz" },
+      { "letter": "ص", "region": "lisan", "detail": "same spot as س, back of the tongue raised; heavy" },
+      { "letter": "و", "region": "shafatan", "detail": "both lips rounded, not touching the teeth" }
+    ],
+    "provenance": { "kind": "model-knowledge" }
+  },
+  "memoryHook": { "text": "In the Quran, no two letters share a sound.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "Urdu readers: Urdu keeps ق ('q') and غ apart, and says و somewhere between a 'v' and a 'w'.", "provenance": { "kind": "reference", "title": "Urdu alphabet (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Urdu_alphabet", "opened": "2026-11-22" }, "extra": true },
+    { "text": "Urdu readers: Urdu's short vowels are a weak 'uh', a short 'i' and a short 'u' (ə, ɪ, ʊ).", "provenance": { "kind": "reference", "title": "Urdu alphabet (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Urdu_alphabet", "opened": "2026-11-22" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "1:6", "words": [1, 3], "note": { "text": "The first word has ص and ط; the second has س and ت. Compare them.", "provenance": { "kind": "dataset", "source": "Tanzil text 1:6, recited words 1-2" } } },
+    { "ref": "113:4", "words": [2, 3], "note": { "text": "One word with both ث and ت.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:4, recited word 2" } } },
+    { "ref": "1:7", "words": [1, 2], "note": { "text": "This word has ذ.", "provenance": { "kind": "dataset", "source": "Tanzil text 1:7, recited word 1" } } },
+    { "ref": "99:1", "words": [1, 2], "note": { "text": "ز twice in one word.", "provenance": { "kind": "dataset", "source": "Tanzil text 99:1, recited word 1" } } },
+    { "ref": "94:3", "words": [2, 3], "note": { "text": "This word starts with ظ.", "provenance": { "kind": "dataset", "source": "Tanzil text 94:3, recited word 2" } } },
+    { "ref": "1:7", "words": [8, 9], "note": { "text": "ض with a shadda.", "provenance": { "kind": "dataset", "source": "Tanzil text 1:7, recited word 8" } } },
+    { "ref": "112:1", "note": { "text": "First word: ق with a damma. Second word: ه, then و. Last word: ح.", "provenance": { "kind": "dataset", "source": "Tanzil text 112:1, recited words 0, 1 and 3" } } },
+    { "ref": "113:1", "words": [1, 2], "note": { "text": "A hamza (on an alif), then ع, in one word.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:1, recited word 1" } } },
+    { "ref": "113:3", "words": [2, 3], "note": { "text": "غ at the start, ق at the end.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:3, recited word 2" } } },
+    { "ref": "1:1", "words": [0, 1], "note": { "text": "Two kasras, on ب and on م.", "provenance": { "kind": "dataset", "source": "Tanzil text 1:1, recited word 0" } } }
+  ],
+  "letters": ["ت", "ط", "ث", "س", "ص", "ذ", "ز", "ض", "ظ", "ح", "ه", "ع", "ء", "ق", "غ", "و"],
+  "listen": [
+    { "source": "minshawi-words", "ref": "1:6", "words": [1, 3] },
+    { "source": "minshawi-words", "ref": "113:4", "words": [2, 3] },
+    { "source": "minshawi-words", "ref": "1:7", "words": [8, 9] },
+    { "source": "minshawi-words", "ref": "113:1", "words": [1, 2] },
+    { "source": "minshawi-words", "ref": "113:3", "words": [2, 3] },
+    { "source": "minshawi-ayah", "ref": "112:1" }
+  ],
+  "drills": [
+    { "kind": "minimal-pair", "pair": ["ت", "ط"], "tip": { "text": "ت: light; tongue tip on the gum just behind the upper front teeth, with a small puff of air. ط: same spot, but the back of the tongue rises: a full, deep sound with no puff.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["ث", "س"], "tip": { "text": "ث: tongue tip at the edges of the upper front teeth, soft air ('th' in 'think'). س: tongue tip behind the front teeth, a sharp hiss ('s').", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["س", "ص"], "tip": { "text": "Same place, same hiss. For ص, raise the back of the tongue towards the roof of the mouth so the hiss turns deep and full. س stays light.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["ذ", "ز"], "tip": { "text": "ذ: tongue tip at the edges of the upper front teeth, with voice ('th' in 'this'). ز: tongue tip behind the front teeth, a buzzing 'z'.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["ذ", "ظ"], "tip": { "text": "Same place: tongue tip at the edges of the upper front teeth. ذ is light. For ظ, raise the back of the tongue so the sound fills the mouth.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["ض", "ظ"], "tip": { "text": "ض: the side of the tongue presses along the upper back teeth. ظ: the tongue tip touches the edges of the upper front teeth and the sound flows. Both are heavy; neither is a 'z'.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["ح", "ه"], "tip": { "text": "ه: a soft, easy 'h' from the deepest part of the throat. ح: narrow the middle of the throat and push a strong, smooth breath, with no scrape (a scrape makes خ).", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["ع", "ء"], "tip": { "text": "ء: a clean catch at the deepest part of the throat, like the break in 'uh-oh'. ع: from the middle of the throat; tighten it and let your voice through.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["ق", "غ"], "tip": { "text": "ق: the very back of the tongue touches the soft palate, stops the air, then lets go: a deep 'q'. غ: from the top of the throat; the air never stops, like a soft gargle.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "say", "prompt": "Say وَ like the 'w' in 'water': round your lips and keep them away from your teeth (not 'v').", "target": "وَ", "times": 5, "record": true },
+    { "kind": "say", "prompt": "Say بَ بِ بُ with pure vowels: a clear 'a', then 'i' (not 'e'), then 'u' (not 'o').", "target": "بَ بِ بُ", "times": 3, "record": true }
+  ],
+  "cr": [],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s0-04-q1", "q": "Persian and Urdu say ث, س and ص all as 's'. How many different sounds are they in the Quran?", "options": ["Three: ث is 'th', س a light 's', ص a heavy 's'", "One: all three are 's'", "Two: ث is 'th', and س and ص are the same 's'", "Two: ث and س are 's', and ص is 'sh'"], "answer": 0, "explain": ["Right: each letter keeps its own sound.", "That is the Persian/Urdu habit this lesson fixes.", "ص is heavy: the same hiss, with the back of the tongue raised.", "'sh' is ش, and ث is 'th', not 's'."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s0-04-q2", "q": "How is ط different from ت?", "options": ["Same tongue spot, but the back of the tongue rises: a heavy, full sound", "ط is just a longer ت", "ط is just a louder ت", "ط is made in the throat"], "answer": 0, "explain": ["Right: ط is heavy; ت is light, with a small puff of air.", "Length does not change a letter.", "Volume does not make a letter heavy.", "Both use the tongue tip behind the upper front teeth."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s0-04-q3", "q": "Which letter is the 'th' of 'this'?", "options": ["ذ (dhal)", "ث (tha)", "ز (zay)", "ظ (ẓa)"], "answer": 0, "explain": ["Right: a light 'th' with voice.", "ث is the 'th' of 'think', with no voice.", "ز is a buzzing 'z' with the tongue behind the teeth.", "ظ is the heavy partner of ذ."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s0-04-q4", "q": "Where is ض made?", "options": ["The side of the tongue presses on the upper back teeth", "The tongue tip at the edges of the upper front teeth", "The tongue tip behind the front teeth, with a buzz", "The two lips"], "answer": 0, "explain": ["Right, and ض is heavy.", "That is the place of ذ and ظ.", "That buzzing 'z' is ز.", "The lips make ب, م and و, and ف uses the lip and teeth."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s0-04-q5", "q": "What is the difference between ح and ه?", "options": ["ح is a strong, smooth breath from the middle of the throat; ه is a soft 'h' from its deepest part", "There is no difference", "ح is a scraping sound", "ه is silent"], "answer": 0, "explain": ["Right: two places, two sounds.", "That is the Persian/Urdu habit; the Quran keeps them apart.", "A scrape makes خ, not ح.", "In the Quran, ه is a real, soft 'h'."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s0-04-q6", "q": "Which describes ع?", "options": ["A voiced squeeze in the middle of the throat", "A quick catch, like the break in 'uh-oh'", "A silent letter", "A long 'aa' vowel"], "answer": 0, "explain": ["Right: the same area as ح, but tighter and voiced.", "That clean catch is ء (hamza).", "Urdu often drops it, but in the Quran it is a full consonant.", "A long 'aa' is written with an alif."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s0-04-q7", "q": "How should و sound in the Quran?", "options": ["Like the 'w' in 'water': rounded lips that do not touch the teeth", "Like the 'v' in 'van'", "Like the 'f' in 'fan'", "Like the 'b' in 'ban'"], "answer": 0, "explain": ["Right.", "'v' puts the lower lip on the upper teeth: that is the Persian habit.", "That lip-on-teeth sound is ف.", "Closing both lips makes ب."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s0-04-q8", "q": "A Persian reader says kasra like the 'e' in 'bed'. What is the kasra in the Quran?", "options": ["A clear short 'i', as in 'sit'", "The 'e' of 'bed' is correct", "A short 'a'", "A short 'u'"], "answer": 0, "explain": ["Right: keep kasra a pure 'i'.", "That is the Persian shift this lesson fixes.", "A short 'a' is fatha.", "A short 'u' is damma."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s0-04-q9", "q": "What is the key difference between ق and غ?", "options": ["ق stops the air at the back of the tongue; غ lets it flow from the top of the throat", "There is no difference", "ق is light and غ is heavy", "غ is made with the lips"], "answer": 0, "explain": ["Right: a stop versus a flowing sound.", "Many Persian speakers merge them; the Quran keeps them apart.", "Both are heavy letters.", "غ comes from the throat, not the lips."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s0-04-q10", "q": "Which pair is BOTH heavy?", "options": ["ص and ط", "س and ت", "ث and ذ", "ه and ح"], "answer": 0, "explain": ["Right: both are said with the back of the tongue raised.", "Both are light: they are the light partners of ص and ط.", "Both are light 'th' sounds.", "Both are light throat letters."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s0-04-q11", "q": "Which of these is a real 'z' sound in the Quran?", "options": ["ز (zay)", "ذ (dhal)", "ظ (ẓa)", "ض (ḍad)"], "answer": 0, "explain": ["Right: a buzzing 'z' with the tongue behind the teeth.", "ذ is the 'th' of 'this'.", "ظ is a heavy 'th' sound.", "ض is a heavy letter made with the side of the tongue."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s0-04-q12", "q": "Which letter is the clean catch, like the break in 'uh-oh'?", "options": ["ء (hamza)", "ع (ʿayn)", "ه (ha)", "ح (ḥa)"], "answer": 0, "explain": ["Right: it comes from the deepest part of the throat.", "ع is a voiced squeeze in the middle of the throat.", "ه is a soft breath, not a catch.", "ح is a strong breath, not a catch."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s0-04-q13", "q": "Tongue tip at the edges of the upper front teeth, back of the tongue raised. Which letter is that?", "options": ["ظ (ẓa)", "ذ (dhal)", "ض (ḍad)", "ز (zay)"], "answer": 0, "explain": ["Right: the heavy partner of ذ.", "Same place, but light: the back of the tongue stays down.", "ض uses the side of the tongue on the back teeth.", "ز is a buzz with the tongue behind the teeth."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s0-04-q14", "q": "Why does the fast-track work on sounds, not letter shapes?", "options": ["Persian and Urdu readers already know the shapes; the sounds are what get merged", "The letter shapes are different in the Quran", "Sounds matter less than shapes", "Shapes are only taught in Stage 3"], "answer": 0, "explain": ["Right: the letters are shared, but not all their sounds.", "The Quran uses the same letters you already read.", "Both matter, and the sounds are what these readers need to fix.", "Shapes are Stage 1 work, and you already know them."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s0-04-q15", "q": "A damma should sound like…", "options": ["the 'u' in 'put'", "the 'o' in 'go'", "the 'a' in 'cat'", "the 'e' in 'bed'"], "answer": 0, "explain": ["Right: a short, pure 'u'.", "'o' is the Persian shift; keep damma a 'u'.", "That is close to the Persian short 'a', not a damma.", "That is the Persian kasra habit, not a damma."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s0-04-q16", "q": "Which letter is a voiced, flowing sound from the top of the throat, like a soft gargle?", "options": ["غ (ghayn)", "ق (qaf)", "خ (kha)", "ك (kaf)"], "answer": 0, "explain": ["Right.", "ق stops the air at the back of the tongue.", "خ comes from the same place, but without voice: a scrape.", "ك is a light stop further forward in the mouth."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s0-04-q17", "q": "Why does it matter if you say ط like ت in the Quran?", "options": ["It swaps one letter for another: a clear mistake that can change the meaning", "It does not matter: only the melody counts", "It only matters when reciting fast", "It is just an accent, like British and American English"], "answer": 0, "explain": ["Right: changing a letter is a clear mistake (lahn jali).", "Correct letters always come before melody.", "It matters at every speed.", "An accent changes the colour of a sound; this changes the letter itself."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "letter-in-word", "letters": ["ت", "ط", "ث", "س", "ص", "ذ", "ز", "ض", "ظ", "ح", "ه", "ع", "ء", "ق", "غ", "و"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "letter-id", "letters": ["ت", "ط", "ث", "س", "ص", "ذ", "ز", "ض", "ظ", "ح", "ه", "ع", "ء", "ق", "غ", "و"]}
+  ],
+  "remnote": [
+    "ث in the Quran == 'th' as in 'think' (not 's')",
+    "ص in the Quran == A heavy 's': the back of the tongue raised",
+    "ذ in the Quran == 'th' as in 'this' (not 'z')",
+    "ظ in the Quran == A heavy ذ: tongue tip at the upper front teeth, back of the tongue raised",
+    "ض in the Quran == Side of the tongue on the upper back teeth; heavy (not 'z')",
+    "ط versus ت == ط is heavy with no puff; ت is light with a small puff",
+    "ح versus ه == ح: strong breath from the middle of the throat; ه: soft 'h' from its deepest part",
+    "ع versus ء == ع: voiced squeeze in the middle of the throat; ء: clean catch at its deepest part",
+    "ق versus غ == ق stops the air at the soft palate; غ flows from the top of the throat",
+    "و in the Quran == 'w' with rounded lips (not 'v')",
+    "Short vowels in the Quran == fatha 'a', kasra 'i' (not 'e'), damma 'u' (not 'o')"
+  ],
+  "sources": [
+    { "title": "Persian alphabet (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Persian_alphabet", "opened": "2026-11-22" },
+    { "title": "Urdu alphabet (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Urdu_alphabet", "opened": "2026-11-22" },
+    { "title": "Persian phonology (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Persian_phonology", "opened": "2026-11-22" }
+  ],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say سَ then صَ as a pair five times, record the 5th pair, then press Play mine (step 5, Practise) and compare it with the reference."
+}

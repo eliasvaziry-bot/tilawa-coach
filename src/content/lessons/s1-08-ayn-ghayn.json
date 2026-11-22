@@ -1,0 +1,79 @@
+{
+  "id": "s1-08-ayn-ghayn",
+  "stage": 1,
+  "order": 8,
+  "title": "The open mouth: ع غ",
+  "minutes": 12,
+  "prerequisites": ["s1-07-ta-za-heavy"],
+  "bigIdea": { "text": "ع (ʿayn) and غ (ghayn) share one open, mouth-like head. No dot = ʿayn, a squeezed sound from the middle of the throat. One dot above = ghayn, a soft gargle near the top of the throat.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Standing alone, both have an open head like a 'c' and a round tail below the line. In the middle of a word the head closes into a small loop. غ has one dot above.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sounds: ع comes from the middle of the throat, the same place as ح, but with voice: squeeze the throat and let a voiced sound come through. English has no letter for it. غ is a soft gargle near the top of the throat, like the French 'r' in 'Paris'; it is the voiced partner of خ.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sifat: both hold the breath back (jahr). ع is 'in between' (tawassut): its sound neither stops fully nor flows fully. غ is 'soft' (rakhawa: its sound flows) and 'raised' (isti'la).", "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" } },
+    { "text": "Heavy or light: غ is heavy (one of the seven: خ ص ض غ ط ق ظ). ع is light.", "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" } },
+    { "text": "Common mistakes. English speakers: ع is dropped or turned into a quick catch (ء), and غ becomes a 'g'. Persian/Urdu readers: ع is said like ء or as a plain vowel, and غ like ق (in Persian the two letters sound the same). Fix ع by squeezing the middle of the throat; keep غ a flowing gargle that never stops.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": {
+    "kind": "makhraj",
+    "points": [
+      { "letter": "ع", "region": "halq", "detail": "Middle of the throat (shared with ح)" },
+      { "letter": "غ", "region": "halq", "detail": "Part of the throat nearest the mouth (shared with خ)" }
+    ],
+    "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }
+  },
+  "memoryHook": { "text": "ʿAyn squeezes the middle of the throat; a dot lifts it to ghayn's gargle.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "A way in for ع: say a long 'aah' and gently tighten the middle of the throat until the sound becomes squeezed. Stop if it hurts.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "1:7", "words": [3, 4], "note": { "text": "Starts with ع.", "provenance": { "kind": "dataset", "source": "Tanzil text 1:7 recited word 3" } } },
+    { "ref": "1:7", "words": [4, 5], "note": { "text": "Starts with غ.", "provenance": { "kind": "dataset", "source": "Tanzil text 1:7 recited word 4" } } },
+    { "ref": "113:3", "words": [2, 3], "note": { "text": "Starts with غ.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:3 recited word 2" } } }
+  ],
+  "letters": ["ع", "غ"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 2, "note": "Mapped by order — please confirm this is the right video, then mark where the teacher says ع and غ." },
+    { "source": "minshawi-words", "ref": "1:7", "words": [3, 4] },
+    { "source": "minshawi-words", "ref": "1:7", "words": [4, 5] },
+    { "source": "minshawi-words", "ref": "113:3", "words": [2, 3] }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Say each letter with a fatha: عَ غَ", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Squeeze the middle of the throat for each vowel: عَ عِ عُ", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["ع", "غ"], "tip": { "text": "ع: middle of the throat, a squeezed voiced sound, light. غ: higher, near the mouth, a flowing gargle, heavy.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "cr": [{ "ref": "1:7", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-08-q1", "q": "Which letter has an open head like a 'c' and one dot above?", "options": ["غ (ghayn)", "ع (ʿayn)", "خ (kha)", "ف (fa)"], "answer": 0, "explain": ["Right: the open head with a dot is ghayn.", "ʿayn is the same body with no dot.", "kha has one dot above, but its body is a hook.", "fa has one dot above a small round head."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-08-q2", "q": "Where is ع made?", "options": ["The middle of the throat", "The deepest part of the throat", "The part of the throat nearest the mouth", "The back of the tongue"], "answer": 0, "explain": ["Right: ʿayn shares this place with ح.", "That is the place of ء and ه.", "That is the place of غ and خ.", "The back of the tongue makes ق and ك."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-08-q3", "q": "Which letter of this pair is heavy?", "options": ["غ (ghayn)", "ع (ʿayn)", "Both", "Neither"], "answer": 0, "explain": ["Right: ghayn is one of the seven heavy letters.", "ʿayn is light.", "Only ghayn is heavy.", "ghayn is heavy."], "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-08-q4", "q": "Which sound is closest to غ?", "options": ["The French 'r' in 'Paris': a soft gargle", "'g' in 'go'", "'h' in 'hat'", "'k' in 'kite'"], "answer": 0, "explain": ["Right: a voiced gargle that keeps flowing.", "'g' stops; ghayn flows.", "'h' has no voice and no gargle.", "'k' is a whispered stop."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-08-q5", "q": "English speakers often replace ع with…", "options": ["…a quick catch (ء) or nothing at all", "…a 'g'", "…an 's'", "…a 'w'"], "answer": 0, "explain": ["Right: both lose the squeezed throat sound.", "A 'g' is the usual slip for غ, not ع.", "An 's' has nothing in common with ʿayn.", "A 'w' is a lip sound."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-08-q6", "q": "In Persian, غ and which other letter sound the same?", "options": ["ق (qaf)", "خ (kha)", "ع (ʿayn)", "ك (kaf)"], "answer": 0, "explain": ["Right: Persian readers need to separate ghayn and qaf.", "kha is whispered; Persian keeps it apart from ghayn.", "ʿayn is a middle-throat letter.", "kaf is a light 'k'."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-08-q7", "q": "In the middle of a word, what happens to the open head of ع and غ?", "options": ["It closes into a small loop", "It disappears", "It grows a tall stroke", "It loses its dot"], "answer": 0, "explain": ["Right: the 'c' closes into a little loop.", "The head is still there.", "There is no tall stroke.", "ghayn keeps its dot."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-08-q8", "q": "Where is غ made?", "options": ["The part of the throat nearest the mouth", "The middle of the throat", "The deepest part of the throat", "The middle of the tongue"], "answer": 0, "explain": ["Right: ghayn shares this place with خ.", "That is the place of ع and ح.", "That is the place of ء and ه.", "That is the place of ج, ش and ي."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-08-q9", "q": "Which quality does ع have?", "options": ["In between (tawassut): its sound neither stops nor flows fully", "Whispered (hams): only breath comes out", "Raised (isti'la): the back of the tongue rises", "Bounce (qalqalah) with a sukun"], "answer": 0, "explain": ["Right: ʿayn is in the in-between group (ل ن ع م ر).", "ʿayn holds the breath back (jahr).", "ʿayn is not one of the raised letters.", "ʿayn is not a qalqalah letter."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-08-q10", "q": "Which describes غ?", "options": ["Raised and soft: the back of the tongue rises and the sound flows", "Whispered and strong", "In between, like ع", "A bouncing (qalqalah) letter"], "answer": 0, "explain": ["Right: ghayn is raised (isti'la) and soft (rakhawa).", "ghayn holds the breath back (jahr) and its sound flows.", "ghayn is soft (rakhawa), not in between.", "ghayn is not a qalqalah letter."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-08-q11", "q": "Your ع sounds like a hamza (a quick catch). What fixes it?", "options": ["Move it to the middle of the throat and let a squeezed, voiced sound continue", "Close the lips", "Add a whistle", "Raise the back of the tongue"], "answer": 0, "explain": ["Right: ʿayn is squeezed and voiced, not a quick catch.", "The lips are not used for ʿayn.", "ʿayn has no whistle.", "Raising the tongue would make it heavy; ʿayn is light."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-08-q12", "q": "Which letter is the voiced partner of خ (same place, with voice)?", "options": ["غ (ghayn)", "ع (ʿayn)", "ح (ḥa)", "ق (qaf)"], "answer": 0, "explain": ["Right: kha and ghayn share a place; ghayn adds voice.", "ʿayn pairs with ḥa, in the middle of the throat.", "ḥa is whispered and comes from the middle of the throat.", "qaf is made with the back of the tongue, and it stops."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-08-q13", "q": "ع comes from deep in the throat. Is it heavy?", "options": ["No: ع is light", "Yes: every throat letter is heavy", "Only with a fatha", "Only at the end of a word"], "answer": 0, "explain": ["Right: ʿayn is not one of the seven heavy letters.", "Of the throat letters, only غ and خ are heavy.", "Its vowel does not make ʿayn heavy.", "Its position does not make ʿayn heavy."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "letter-id", "letters": ["ع", "غ"]},
+    {"kind": "letter-in-word", "letters": ["غ", "ع"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "ع (ʿayn) == Open head, no dot; middle of the throat; squeezed voiced sound; light",
+    "غ (ghayn) == Open head, one dot above; part of the throat nearest the mouth; soft gargle like the French 'r'; heavy",
+    "Fix for ع said as ء == Squeeze the middle of the throat and let the voice continue",
+    "Persian fix for غ == Keep غ a flowing gargle; ق is a different, stopped sound"
+  ],
+  "sources": [
+    { "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" },
+    { "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" },
+    { "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }
+  ],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say عَ غَ عَ غَ three times, record the third time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

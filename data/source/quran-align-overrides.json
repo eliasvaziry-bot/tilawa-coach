@@ -1,0 +1,9 @@
+{
+  "comment": "Explicit quran-align index maps (qaToWord[q] = index into the 2016/17 word list, basmala excluded; -1 = no word). Decided from audio evidence: scripts/sync-check.ts + the pause after the muqatta'at (each has a pause mark ۚ after it). See DECISIONS.md D-006.",
+  "Minshawy_Murattal_128kbps": {
+    "10:1": { "qaToWord": [0, 0, 0, 1, 2, 3, 4], "reason": "recogniser counted الٓر as 3 words", "evidence": "audio: pause 5.0–5.75 s; qa [0,1) 550–5850 ms = الٓر incl. the pause, so qa 3 (5860 ms) is تِلْكَ" },
+    "14:1": { "qaToWord": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "reason": "recogniser counted الٓر as 2 words", "evidence": "audio: pause 5070–5650 ms ends where qa 2 starts (5660 ms) → qa 2 = كِتَٰبٌ; last segment ends 21150 ms before the trailing silence (21450 ms)" },
+    "15:1": { "qaToWord": [0, 0, 1, 2, 3, 4, 5], "reason": "recogniser counted الٓر as 2 words", "evidence": "audio: pause 5260–5620 ms falls inside qa 2 (2750–6240); the alternative (+2) leaves 630 ms of speech before تِلْكَ unassigned and drops مُّبِينٍ; voice ends ≈11.3 s = end of qa 6" }
+  },
+  "Minshawy_Mujawwad_192kbps": {}
+}

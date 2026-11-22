@@ -1,0 +1,94 @@
+{
+  "id": "s1-27-mushaf-signs",
+  "stage": 1,
+  "order": 27,
+  "title": "Signs in the mushaf: pauses, zeros and small letters",
+  "minutes": 15,
+  "prerequisites": ["s1-26-lam-shamsi-qamari"],
+  "bigIdea": { "text": "Small signs above the line tell you where you must stop, where you should not, and which written letters to skip. Learn their meanings once and every page gets easier.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Pause signs (waqf signs) sit above the line after a word. ۘ (small meem): you must stop. ۙ (lā): do not stop here. ۗ (qilā): stopping is better. ۖ (ṣilā): continuing is better. ۚ (small jim): stopping or continuing are both fine. ۛ (three dots, always in a pair): stop at one of the two, not both.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "You may always stop at the end of an ayah, the circle with its number.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sakt (ۜ, a small seen standing as its own sign): a brief pause, shorter than a real stop and without taking a breath, then carry on. Hafs has four obligatory sakt places: 18:1, 36:52, 75:27 and 83:14. The sign also appears at 69:28, but there Hafs may either pause (sakt) or merge (idgham); it is not one of the four.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Zeros over letters: a rounded zero (۟) means the letter is not pronounced, whether you continue or stop — with one exception in Hafs that Stage 2 teaches (76:4, where a stop may be read with the alif). An upright oval zero (۠) on an alif means: skip it when you continue, say it when you stop. 76:15 and 76:16 show both on the same word.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Small meem and seen on letters: a small meem (ۢ above a ن or a tanween, ۭ below a tanween kasr) means say 'm' instead of the n sound; it always comes before ب (iqlab, Stage 2). A small seen above a ص means read it as س; a small seen below a ص (ۣ) means ص is the better-known reading, and س is also allowed.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": { "kind": "letters", "letters": ["ـۘ", "ـۙ", "ـۗ", "ـۖ", "ـۚ", "ـۛ", "ـۜ"], "caption": "must stop · don't stop · better to stop · better to go on · either · one of a pair · short pause (sakt)" },
+  "memoryHook": { "text": "Meem: must stop · Lā: don't · Qilā: better stop · Ṣilā: better go on · Jīm: either.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "In this text the sakt sign ۜ stands on its own five times (18:1, 36:52, 69:28, 75:27, 83:14) and sits over a ص inside a word twice (2:245, 7:69). The three-dot sign ۛ appears 12 times, as 6 pairs; the first pair is in 2:2.", "provenance": { "kind": "dataset", "source": "Tanzil text (public/data/quran, field t): U+06DC as its own token / inside a word; U+06DB tokens" }, "extra": true },
+    { "text": "۩ marks a place of prostration (sajdah) during recitation; it appears 15 times in this text, for example at the end of 96:19. Ask your teacher how to do it.", "provenance": { "kind": "dataset", "source": "Tanzil text: U+06E9 count (sajdah signs on); meaning is model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "6:36", "words": [0, 5], "note": { "text": "ۘ after the fourth word: a stop you must make, because joining on would change the meaning.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "16:32", "words": [0, 5], "note": { "text": "ۙ after the fourth word: don't stop here; read on.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "16:17", "note": { "text": "ۗ after the fifth word: stopping here is better, continuing is allowed.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "104:4", "words": [0, 2], "rule": "iqlab", "note": { "text": "ۖ after the first word: continuing is better, stopping is allowed. The next word has a small meem over its ن: say 'm'.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "110:3", "words": [2, 5], "note": { "text": "ۚ after the fourth word: stopping or continuing are both fine.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "2:2", "words": [2, 6], "note": { "text": "ۛ … ۛ: a pair. Stop at one of them, not at both.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "18:1", "words": [9, 11], "note": { "text": "ۜ after the last word: when you join this ayah to the next, make the short breathless pause here. One of the four obligatory sakt places.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "36:52", "words": [4, 7], "note": { "text": "ۜ (next to ۗ) after the sixth word: one of the four obligatory sakt places.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "75:27", "note": { "text": "ۜ after the second word: a short pause without breath, then carry on. One of the four obligatory sakt places.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "83:14", "words": [1, 3], "note": { "text": "ۜ after the first of these two words: one of the four obligatory sakt places.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "69:28", "words": [2, 4], "note": { "text": "ۜ at the end of this ayah too, but here Hafs may pause (sakt) or merge into the next ayah (idgham). It is not one of the four, and it only matters if you join the two ayat.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "103:3", "words": [2, 4], "rule": "silent", "note": { "text": "Rounded zeros on the alifs after the plural waw: never pronounced.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "76:15", "words": [7, 8], "note": { "text": "Upright oval zero on the last alif: say it only if you stop here.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "76:16", "words": [0, 1], "rule": "silent", "note": { "text": "The same word with a rounded zero: this alif is never said.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "2:245", "words": [13, 14], "note": { "text": "A small seen above the ص: read it as س.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "52:37", "words": [6, 7], "note": { "text": "A small seen below the ص: ص is the better-known reading; س is also allowed.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "96:19", "words": [3, 5], "note": { "text": "Extra: ۩ after the last word marks a place of prostration (sajdah).", "provenance": { "kind": "model-knowledge" }, "extra": true } }
+  ],
+  "letters": [],
+  "listen": [
+    { "source": "nuraniah", "lesson": 13, "note": "Mapped by order (our lesson 27 → Nuraniah lesson 13) — please confirm. The video titles carry no topic, so check it fits this lesson and mark its segments when you watch." },
+    { "source": "minshawi-ayah", "ref": "75:27" },
+    { "source": "minshawi-ayah", "ref": "83:14" },
+    { "source": "minshawi-ayah", "ref": "76:15" }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Say each sign's name and meaning aloud: meem, must stop · lā, don't stop · qilā, better to stop · ṣilā, better to go on · jīm, either · three dots, one of the pair · seen, a short pause without breath.", "times": 2, "record": false },
+    { "kind": "echo", "ref": "75:27" },
+    { "kind": "echo", "ref": "83:14" },
+    { "kind": "echo", "ref": "76:15" }
+  ],
+  "cr": [{ "ref": "75:27", "mode": "echo" }, { "ref": "83:14", "mode": "echo" }, { "ref": "110:3", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-27-q1", "q": "What does ـۘ (a small meem above the line) mean?", "options": ["You must stop here", "Do not stop here", "Stopping is better", "Continuing is better"], "answer": 0, "explain": ["Right: joining on would change the meaning.", "That is ـۙ (lā).", "That is ـۗ (qilā).", "That is ـۖ (ṣilā)."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-27-q2", "q": "What does ـۙ (lā) mean?", "options": ["Do not stop here", "You must stop here", "Stopping or continuing are both fine", "Pause without breath"], "answer": 0, "explain": ["Right.", "That is ـۘ (meem).", "That is ـۚ (jīm).", "That is the sakt sign ـۜ."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-27-q3", "q": "What does ـۚ (a small jim) mean?", "options": ["Stopping or continuing are both fine", "You must stop", "Do not stop", "Stop at one of a pair"], "answer": 0, "explain": ["Right.", "That is ـۘ (meem).", "That is ـۙ (lā).", "That is the three-dot sign ـۛ."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-27-q4", "q": "What is a sakt (ـۜ standing as its own sign)?", "options": ["A short pause without taking a breath, then carry on", "A full stop with a breath", "A sign to repeat the word", "A silent letter"], "answer": 0, "explain": ["Right.", "A sakt is shorter than a stop and has no breath.", "Nothing is repeated.", "Silent letters are shown with a rounded zero."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-27-q5", "q": "A rounded zero (۟) sits on a letter. What do you do?", "options": ["Never pronounce that letter", "Pronounce it only when stopping", "Stretch it for 2 counts", "Double it"], "answer": 0, "explain": ["Right (one exception in Hafs: stopping at 76:4, taught in Stage 2).", "That is the upright oval zero, on an alif.", "It is not read at all.", "Doubling is shadda."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-27-q6", "q": "An upright oval zero (۠) sits on an alif. What do you do?", "options": ["Skip it when you continue; say it when you stop", "Never say it", "Always say it", "Stretch it for 6 counts"], "answer": 0, "explain": ["Right.", "That is the rounded zero.", "When you continue, it is skipped.", "It is at most a normal long vowel when you stop."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-27-q7", "q": "A small meem (ـۢ) appears on a ن, or with a tanween, before ب. How do you read it?", "options": ["With an 'm' sound instead of the n", "Silent", "With a clear 'n'", "With a pause"], "answer": 0, "explain": ["Right (iqlab, Stage 2).", "The sound is changed, not dropped.", "The small meem tells you not to say a clear n.", "It is not a pause sign."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-27-q8", "q": "Which sign means 'continuing is better, but stopping is allowed'?", "options": ["ـۖ (ṣilā)", "ـۗ (qilā)", "ـۘ (meem)", "ـۙ (lā)"], "answer": 0, "explain": ["Right.", "Qilā means stopping is better.", "Meem means you must stop.", "Lā means don't stop."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-27-q9", "q": "Which sign means 'stopping is better'?", "options": ["ـۗ (qilā)", "ـۖ (ṣilā)", "ـۚ (jīm)", "ـۛ (three dots)"], "answer": 0, "explain": ["Right.", "Ṣilā means continuing is better.", "Jīm means both are fine.", "Three dots come in pairs: stop at one."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-27-q10", "q": "The three-dot sign (ـۛ) comes in pairs. What is the rule?", "options": ["Stop at one of the two, not both", "Stop at both", "Never stop at either", "Take a breath at both"], "answer": 0, "explain": ["Right.", "Stopping at both is what the pair warns against.", "You may stop at one of them.", "Breathing means stopping, so only at one."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-27-q11", "q": "How many obligatory sakt places does Hafs have (all marked in this text)?", "options": ["Four: 18:1, 36:52, 75:27, 83:14", "One: 69:28", "Seven", "None"], "answer": 0, "explain": ["Right.", "69:28 has the sign, but there sakt or idgham are both allowed; it is not one of the four.", "There are four.", "Hafs has four obligatory places."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-27-q12", "q": "The sign ـۜ also appears at 69:28. What is true there for Hafs?", "options": ["Sakt or idgham (merging) are both allowed; it is not one of the four", "Sakt is obligatory there", "Stopping there is forbidden", "It is a printing error"], "answer": 0, "explain": ["Right.", "It is optional there, unlike the four places.", "You may stop at the end of the ayah as usual.", "It is deliberate."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-27-q13", "q": "Is stopping at the end of an ayah allowed?", "options": ["Yes, always", "Only where there is a ـۘ", "Never", "Only in Al-Fatiha"], "answer": 0, "explain": ["Right.", "Ayah ends need no extra sign.", "Ayah ends are the most natural places to stop.", "It applies to every surah."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-27-q14", "q": "A small seen sits ABOVE a ص (as in 2:245). How do you read the letter?", "options": ["As س (seen)", "As ص (sad)", "Silent", "As ش (shin)"], "answer": 0, "explain": ["Right.", "The small seen above tells you to read س.", "The letter is pronounced.", "Nothing here points to ش."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-27-q15", "q": "A small seen sits BELOW the ص (as in 52:37). What does it tell you?", "options": ["ص is the better-known reading; س is also allowed", "Only س is allowed", "The letter is silent", "Pause there"], "answer": 0, "explain": ["Right.", "That would be the small seen above.", "The letter is pronounced.", "It is not a pause sign."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-27-q16", "q": "On 76:15 the last word's alif has an oval zero; on 76:16 the same word has a rounded zero. What is the difference?", "options": ["76:15: say the alif if you stop; 76:16: never say it", "There is no difference", "76:15: never say it; 76:16: always say it", "Both alifs are always said"], "answer": 0, "explain": ["Right.", "The two zeros mean different things.", "It is the other way round.", "The rounded zero means never."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "rule-id", "rules": ["hamzat_wasl", "lam_shamsiyyah", "silent"], "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "word-audio", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "Pause sign ـۘ (small meem) == You must stop",
+    "Pause sign ـۙ (lā) == Do not stop here",
+    "Pause sign ـۗ (qilā) == Stopping is better",
+    "Pause sign ـۖ (ṣilā) == Continuing is better",
+    "Pause sign ـۚ (jīm) == Stopping or continuing are both fine",
+    "Pause sign ـۛ (three dots, in a pair) == Stop at one of the two, not both",
+    "Sakt sign ـۜ == Short pause without breath; Hafs's four obligatory places: 18:1, 36:52, 75:27, 83:14 (69:28: sakt or idgham)",
+    "Rounded zero ـ۟ on a letter == Not pronounced (Hafs exception when stopping at 76:4)",
+    "Upright oval zero ـ۠ on an alif == Skipped when you continue, said when you stop",
+    "Small meem (ـۢ or ـۭ) before ب == Say 'm' instead of the n sound (iqlab)",
+    "Small seen above ص / below ص == Read س / ص is better known (س also allowed)"
+  ],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Read 75:27 five times with a short, breathless pause at the ۜ sign; record the fifth time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

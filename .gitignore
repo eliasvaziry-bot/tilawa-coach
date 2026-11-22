@@ -1,0 +1,67 @@
+# --- build / tooling ---
+node_modules/
+dist/
+dev-dist/
+coverage/
+playwright-report/
+test-results/
+blob-report/
+.vite/
+*.log
+.DS_Store
+.toolchain/
+
+# --- PERSONAL / PRIVATE: never commit (public repo) ---
+private/
+recordings/
+my-clips/
+*.private.*
+*.local.*
+reports/personal/
+
+# --- raw downloads & caches (re-downloadable, checksummed in scripts) ---
+.cache/
+vendor/
+data-raw/
+tests/fixtures/generated/
+
+# --- audio, video, models, datasets (the repo guard also enforces this) ---
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.ogg
+*.oga
+*.opus
+*.flac
+*.caf
+*.aif
+*.aiff
+*.webm
+*.mp4
+*.mov
+*.onnx
+*.ort
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.tflite
+*.gguf
+*.parquet
+*.arrow
+*.zip
+*.tar
+*.tgz
+*.tar.gz
+*.xz
+*.7z
+
+# translations are build-time only (Tanzil translation terms: non-commercial; kept out of git, conservative)
+public/data/trans/
+
+# reviewer screenshots (working files; findings are summarised in PROGRESS.md)
+reviews/
+
+# local dev environment (machine-specific paths)
+.dev-env

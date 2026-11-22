@@ -1,0 +1,80 @@
+{
+  "id": "s1-06-sad-dad",
+  "stage": 1,
+  "order": 6,
+  "title": "Loop and tooth: ص ض",
+  "minutes": 12,
+  "prerequisites": ["s1-05-sin-shin"],
+  "bigIdea": { "text": "ص (ṣad) and ض (ḍad) share one body: an oval loop with a small tooth. Both are heavy. No dot = ṣad, a heavy 's'. One dot above = ḍad, made with the side of the tongue.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Both have an oval loop followed by a small tooth; standing alone or at the end of a word they also have a round tail below the line. ض has one dot above the loop.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sounds: ص is a heavy 's'. The tongue tip sits where it does for س, but the back of the tongue rises and the tongue presses up toward the roof of the mouth, so the sound is deep and full. ض is heavy and voiced, made with the side of the tongue pressed along the upper back teeth. Never replace it with a light د or with ظ; copy your teacher and Minshawi for it.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sifat: both are 'raised' (isti'la: the tongue rises toward the roof of the mouth) and 'closed' (itbaq: the tongue and the roof of the mouth meet). ص is whispered (hams) and has a whistle (safir). ض holds the breath back (jahr) and has 'stretching' (istitala): its sound runs along the edge of the tongue.", "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" } },
+    { "text": "Heavy or light: both are heavy. They are two of the seven heavy letters (خ ص ض غ ط ق ظ).", "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" } },
+    { "text": "Common mistakes. Persian/Urdu readers: ص is read as س and ض as 'z' (like ز), so both lose their weight and ض loses its own place. English speakers: ص comes out as a plain 's' and ض as a plain 'd'. Fix: first find the heavy sound by raising the back of the tongue, then keep it for the whole letter.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": {
+    "kind": "makhraj",
+    "points": [
+      { "letter": "ص", "region": "lisan", "detail": "Tip of the tongue with the front teeth (shared with س and ز)" },
+      { "letter": "ض", "region": "lisan", "detail": "Side of the tongue pressed against the upper molars" }
+    ],
+    "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }
+  },
+  "memoryHook": { "text": "Loop and tooth means heavy; a dot turns ṣad into ḍad.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "Linguists think the old ض was made along the side of the tongue; in most modern spoken Arabic it has become a heavy 'd'-like stop.", "provenance": { "kind": "reference", "title": "Standard Arabic phonology — Wikipedia", "url": "https://en.wikipedia.org/wiki/Arabic_phonology", "opened": "2026-11-22" }, "extra": true },
+    { "text": "Arabic is often called 'the language of ḍad', because this letter is so distinctive.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "112:2", "words": [1, 2], "note": { "text": "Contains ص (with a shadda).", "provenance": { "kind": "dataset", "source": "Tanzil text 112:2 recited word 1" } } },
+    { "ref": "1:7", "words": [8, 9], "note": { "text": "Contains ض (with a shadda).", "provenance": { "kind": "dataset", "source": "Tanzil text 1:7 recited word 8" } } },
+    { "ref": "93:1", "words": [0, 1], "note": { "text": "Contains ض (with a shadda).", "provenance": { "kind": "dataset", "source": "Tanzil text 93:1 recited word 0" } } }
+  ],
+  "letters": ["ص", "ض"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 1, "note": "Mapped by order — please confirm this is the right video, then mark where the teacher says ص and ض." },
+    { "source": "minshawi-words", "ref": "112:2", "words": [1, 2] },
+    { "source": "minshawi-words", "ref": "1:7", "words": [8, 9] },
+    { "source": "minshawi-words", "ref": "93:1", "words": [0, 1] }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Say each letter with a fatha: صَ ضَ", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Light, then heavy, with the same tongue tip: سَ صَ", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["ص", "ض"], "tip": { "text": "ص: tongue tip at the front teeth, whispered, with a whistle. ض: the side of the tongue along the upper back teeth, voiced, no whistle. Keep both heavy.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "cr": [{ "ref": "112:2", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-06-q1", "q": "Which letter is an oval loop and tooth with one dot above?", "options": ["ض (ḍad)", "ص (ṣad)", "ظ (ẓa)", "ف (fa)"], "answer": 0, "explain": ["Right: the loop and tooth with a dot is ḍad.", "ṣad is the same body with no dot.", "ẓa also has a loop and a dot, but a tall upright stroke instead of the tooth.", "fa has a small round head with one dot, not an oval loop with a tooth."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-06-q2", "q": "Are ص and ض heavy or light?", "options": ["Both heavy", "Both light", "ص heavy, ض light", "ض heavy, ص light"], "answer": 0, "explain": ["Right: both are among the seven heavy letters.", "Neither is light.", "ḍad is heavy too.", "ṣad is heavy too."], "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-06-q3", "q": "Where is ض made?", "options": ["The side of the tongue pressed against the upper molars", "Tongue against the roots of the upper front teeth", "Tongue against the edges of the upper front teeth", "The middle of the throat"], "answer": 0, "explain": ["Right: ḍad has its own place along the side of the tongue.", "That is the place of د, ت and ط.", "That is the place of ذ, ث and ظ.", "That is the place of ع and ح."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-06-q4", "q": "Which quality belongs to ض alone?", "options": ["Stretching (istitala): the sound runs along the edge of the tongue", "Whistle (safir)", "Spreading of air (tafashshi)", "Repetition (takrir)"], "answer": 0, "explain": ["Right: istitala is ḍad's own quality.", "The whistle belongs to ص ز س.", "Spreading of air belongs to ش.", "Repetition belongs to ر."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-06-q5", "q": "Persian/Urdu readers often say ض like which letter?", "options": ["ز (zay)", "د (dal)", "ص (ṣad)", "ط (ṭa)"], "answer": 0, "explain": ["Right: in Persian and Urdu ḍad is read as 'z'.", "A plain 'd' is the usual English-speaker slip, not the Persian/Urdu one.", "ṣad is a different heavy letter: whispered and whistling.", "ṭa is a different heavy letter, made at the roots of the upper front teeth."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-06-q6", "q": "What turns س into ص?", "options": ["Raising the back of the tongue so the sound becomes deep and heavy", "Adding voice", "Moving the tongue to the edges of the front teeth", "Closing the lips"], "answer": 0, "explain": ["Right: same tongue tip, heavier body.", "Adding voice to س gives ز, not ص.", "That gives ث.", "The lips are not used for these letters."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-06-q7", "q": "How do you tell ص from ض?", "options": ["ض has one dot above; ص has none", "ص has a longer loop", "ض has two teeth", "You can't; they are the same letter"], "answer": 0, "explain": ["Right: the dot is the only difference in shape.", "The loops are the same.", "Both have one small tooth.", "They are different letters with different sounds."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-06-q8", "q": "Where is ص made?", "options": ["Tip of the tongue with the front teeth", "Side of the tongue against the upper molars", "The middle of the tongue", "The part of the throat nearest the mouth"], "answer": 0, "explain": ["Right: ṣad shares this place with س and ز.", "That is the place of ض.", "That is the place of ج, ش and ي.", "That is the place of خ and غ."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-06-q9", "q": "Which letter of this pair whistles (safir)?", "options": ["ص (ṣad)", "ض (ḍad)", "Both", "Neither"], "answer": 0, "explain": ["Right: ṣad is one of the three whistling letters (ص ز س).", "ḍad has stretching (istitala) instead.", "Only ṣad whistles.", "ṣad does whistle."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-06-q10", "q": "What does 'itbaq' (closing), shared by ص and ض, mean?", "options": ["The tongue and the roof of the mouth meet as the letter is said", "The lips close", "The throat closes", "The breath goes through the nose"], "answer": 0, "explain": ["Right: the itbaq letters are ص ض ط ظ.", "Itbaq is not about the lips.", "Itbaq happens in the mouth, not the throat.", "Itbaq is not about the nose."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-06-q11", "q": "Which is the right description of ض?", "options": ["Heavy and voiced, from the side of the tongue along the upper back teeth", "A light 'd' from the tongue tip", "A light 'z' with a whistle", "A heavy 'th' from the tongue at the edges of the teeth"], "answer": 0, "explain": ["Right.", "That is د.", "That is ز.", "That is ظ."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-06-q12", "q": "Which letter of this pair is whispered (the breath flows)?", "options": ["ص (ṣad)", "ض (ḍad)", "Both", "Neither"], "answer": 0, "explain": ["Right: ṣad is in the whispered (hams) group.", "ḍad holds the breath back (jahr).", "ḍad is not whispered.", "ṣad is whispered."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-06-q13", "q": "An English speaker says ض as a plain 'd'. What is missing?", "options": ["Its weight and its own place along the side of the tongue", "A whistle", "A bounce", "Rounded lips"], "answer": 0, "explain": ["Right: ḍad is heavy and has its own place.", "ḍad has no whistle.", "ḍad is not a bouncing letter.", "The lips are not used for ḍad."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "letter-id", "letters": ["ص", "ض"]},
+    {"kind": "letter-in-word", "letters": ["ض", "ص"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "ص (ṣad) == Loop + tooth, no dot; tip of the tongue with the front teeth; heavy whispered 's' with a whistle",
+    "ض (ḍad) == Loop + tooth, one dot above; side of the tongue against the upper molars; heavy, voiced, stretched",
+    "Persian/Urdu fix for ص and ض == ص is a heavy 's' (not س); ض has its own place (not 'z')"
+  ],
+  "sources": [
+    { "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" },
+    { "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" },
+    { "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" },
+    { "title": "Standard Arabic phonology — Wikipedia", "url": "https://en.wikipedia.org/wiki/Arabic_phonology", "opened": "2026-11-22" }
+  ],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say صَ ضَ صَ ضَ three times, record the third time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

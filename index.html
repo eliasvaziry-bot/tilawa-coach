@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-GB" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <!-- GitHub Pages cannot send headers, so the CSP and referrer policy live here (frame-ancestors can't be set via meta). -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' https://www.youtube.com https://s.ytimg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://i.ytimg.com https://*.ytimg.com; media-src 'self' blob: https://everyayah.com https://download.quranicaudio.com https://audio.qurancdn.com https://verses.quran.com; connect-src 'self' https://everyayah.com https://api.quran.com https://download.quranicaudio.com https://audio.qurancdn.com https://verses.quran.com https://huggingface.co https://*.huggingface.co https://*.hf.co; frame-src https://www.youtube-nocookie.com; font-src 'self'; worker-src 'self' blob:; manifest-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'"
+    />
+    <!-- Keep the default: "no-referrer" breaks YouTube embeds (error 153). -->
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="theme-color" content="#0f4c4a" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b1f1e" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Personal recitation coach: reading, tajweed, call-and-response with Sheikh al-Minshawi, plus a private career desk." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Tilawa" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/fonts/AmiriQuran.ttf" as="font" type="font/ttf" crossorigin />
+    <title>Tilawa Coach</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <noscript>Tilawa Coach needs JavaScript.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "id": "s1-01-ba-family",
+  "stage": 1,
+  "order": 1,
+  "title": "One boat, five letters: ب ت ث ن ي",
+  "minutes": 12,
+  "prerequisites": [],
+  "bigIdea": { "text": "Five letters share the same boat-shaped body. Only the dots tell them apart.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "ب (ba) has one dot below. ت (ta) has two dots above. ث (tha) has three dots above.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "ن (nun) has one dot above and, standing alone, a deeper round bowl. ي (ya) has two dots below and, standing alone, a curling tail.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "In the middle of a word all five can look like a small tooth with dots, so always count the dots and check above or below.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sounds: ba like 'b', ta like a light 't' (tongue tip on the gum ridge), tha like 'th' in 'think', nun like 'n', ya like 'y' in 'yes'.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": { "kind": "letter-forms", "letters": ["ب", "ت", "ث", "ن", "ي"] },
+  "memoryHook": { "text": "One below = b, two above = t, three above = th.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [{ "text": "Persian/Urdu readers: ث is a real 'th' here, not an 's' sound.", "provenance": { "kind": "model-knowledge" }, "extra": true }],
+  "examples": [{ "ref": "112:1" }, { "ref": "114:1" }],
+  "letters": ["ب", "ت", "ث", "ن", "ي"],
+  "listen": [{ "source": "nuraniah", "lesson": 1, "note": "Teacher reading of the single letters (mapped by lesson order; mark the segment for each letter when you watch)." }],
+  "drills": [
+    { "kind": "say", "prompt": "Say each letter with a fatha: بَ تَ ثَ نَ يَ", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["ث", "س"], "tip": { "text": "ث: tongue tip lightly between the teeth, air flows ('th'). س: tongue behind the teeth, a hiss ('s').", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["ث", "ت"], "tip": { "text": "ت is a stop: the tongue touches and releases. ث flows: air keeps going between tongue and teeth.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "cr": [{ "ref": "112:1", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-01-q1", "q": "Which letter has three dots above?", "options": ["ث (tha)", "ت (ta)", "ب (ba)", "ش (shin)"], "answer": 0, "explain": ["Right: three dots above = tha.", "ta has two dots above.", "ba has one dot below.", "shin also has three dots, but on a different body (the s-shape)."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-01-q2", "q": "How do you tell ب from ي in the middle of a word?", "options": ["Count the dots below: one is ba, two is ya", "Look at the colour", "ي is always bigger", "You can't; they are the same letter"], "answer": 0, "explain": ["Right: in the middle both are a small tooth; the dots decide.", "Colours show tajweed, not letters.", "Size is not reliable in joined writing.", "They are different letters with different sounds."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-01-q3", "q": "Which English sound is closest to ث?", "options": ["'th' in 'think'", "'s' in 'sun'", "'t' in 'tea'", "'th' in 'this'"], "answer": 0, "explain": ["Right: a soft 'th' with air flowing.", "That is closer to س.", "That is closer to ت.", "That voiced 'th' is closer to ذ."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-01-q4", "q": "Where are ت's dots?", "options": ["Two dots above", "One dot below", "Two dots below", "Three dots above"], "answer": 0, "explain": ["Right.", "That is ب.", "That is ي.", "That is ث."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-01-q5", "q": "Standing alone, which letter of this family has a curling tail?", "options": ["ي (ya)", "ن (nun)", "ب (ba)", "ت (ta)"], "answer": 0, "explain": ["Right: ya ends with a tail and has two dots below.", "nun has a deeper round bowl and one dot above.", "ba is a flat boat with one dot below.", "ta is a flat boat with two dots above."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-01-q6", "q": "A Persian/Urdu reader often says ث like 's'. What fixes it?", "options": ["Let the tongue tip touch the edge of the teeth and let air flow", "Hiss harder", "Press the tongue on the roof of the mouth", "Close the lips"], "answer": 0, "explain": ["Right: that makes the Arabic 'th'.", "A stronger hiss is still 's'.", "That makes a different sound.", "Lips are not used for ث."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-01-q7", "q": "Which pair has the SAME number of dots?", "options": ["ت and ي (two each)", "ب and ت", "ث and ن", "ب and ث"], "answer": 0, "explain": ["Right: both have two dots — above for ta, below for ya.", "ba one, ta two.", "tha three, nun one.", "ba one, tha three."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-01-q8", "q": "Which letter of this family has ONE dot ABOVE?", "options": ["ن (nun)", "ب (ba)", "ي (ya)", "ث (tha)"], "answer": 0, "explain": ["Right.", "ba's dot is below.", "ya has two below.", "tha has three above."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-01-q9", "q": "Why should you never guess these letters from shape alone in the middle of a word?", "options": ["Because all five share one body there; only dots differ", "Because they change colour", "Because they have no dots in the middle", "Because the Quran writes them differently each time"], "answer": 0, "explain": ["Right.", "Colour is for tajweed rules.", "They keep their dots.", "The script is consistent; the dots carry the difference."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-01-q10", "q": "ت is pronounced with the tongue tip on…", "options": ["the gum ridge behind the upper teeth", "the soft palate", "the lips", "the throat"], "answer": 0, "explain": ["Right (light, not heavy like ط).", "That area makes ك/ق-type sounds.", "Lips make ب/م/و.", "The throat makes ع/ح/ه/ء-type sounds."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-01-q11", "q": "Which is the best memory hook for ب ت ث?", "options": ["One below = b, two above = t, three above = th", "Big = b, tall = t, thick = th", "Left = b, right = t, middle = th", "Red = b, green = t, blue = th"], "answer": 0, "explain": ["Right.", "Size does not decide.", "Position in the word does not decide.", "Colours are for tajweed only."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "letter-id", "letters": ["ب", "ت", "ث", "ن", "ي"]},
+    {"kind": "letter-in-word", "letters": ["ب", "ت", "ث", "ن", "ي"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": ["ب dots == One dot below (ba)", "ت dots == Two dots above (ta)", "ث dots == Three dots above (tha, like 'think')", "ن dots == One dot above (nun)", "ي dots == Two dots below (ya)"],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say بَ تَ ثَ نَ يَ three times, record the third time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

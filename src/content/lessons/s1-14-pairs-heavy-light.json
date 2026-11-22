@@ -1,0 +1,90 @@
+{
+  "id": "s1-14-pairs-heavy-light",
+  "stage": 1,
+  "order": 14,
+  "title": "Heavy or light: ص/س · ض/د · ط/ت",
+  "minutes": 12,
+  "prerequisites": ["s1-13-pairs-back"],
+  "bigIdea": { "text": "Three pairs where one letter is heavy and the other light. ص/س and ط/ت share a place, so only the weight changes. ض/د differ in place as well as weight.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "What makes ص ض ط heavy: they are 'raised' (isti'la: the tongue rises toward the roof of the mouth) and 'closed' (itbaq: the tongue and the roof of the mouth meet). Their light partners س د ت are 'lowered' (istifal) and 'open' (infitah).", "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" } },
+    { "text": "Places: ص and س both come from the tip of the tongue with the front teeth; ط and ت both from the tongue against the roots of the upper front teeth. ض has its own place (the side of the tongue against the upper molars), while د shares the place of ت and ط.", "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" } },
+    { "text": "How to make the heavy one: keep the tongue tip where it is for the light letter, then lift the back of the tongue and press the tongue up toward the roof of the mouth. The sound becomes deeper and fuller.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Breath (hams/jahr): ص and س are both whispered; ت is whispered but ط holds the breath back; د and ض both hold the breath back.", "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" } },
+    { "text": "Common mistakes. Persian/Urdu readers merge each heavy letter into its light partner (ص→س, ط→ت) and say ض as 'z'. English speakers make all six light. The opposite slip also happens: a light letter next to a heavy one turns heavy. Keep each letter's own weight.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": {
+    "kind": "makhraj",
+    "points": [
+      { "letter": "ص", "region": "lisan", "detail": "Tip of the tongue with the front teeth (same place as س)" },
+      { "letter": "س", "region": "lisan", "detail": "Tip of the tongue with the front teeth (same place as ص)" },
+      { "letter": "ط", "region": "lisan", "detail": "Tongue against the roots of the upper front teeth (same place as ت and د)" },
+      { "letter": "ت", "region": "lisan", "detail": "Tongue against the roots of the upper front teeth (same place as ط and د)" },
+      { "letter": "د", "region": "lisan", "detail": "Tongue against the roots of the upper front teeth (same place as ت and ط)" },
+      { "letter": "ض", "region": "lisan", "detail": "Side of the tongue against the upper molars (its own place)" }
+    ],
+    "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }
+  },
+  "memoryHook": { "text": "Same tongue tip, lift the back: light becomes heavy.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "Listen to the vowel too: a fatha after ص, ض or ط sounds deeper and darker; after س, د or ت it sounds bright.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "112:2", "words": [1, 2], "note": { "text": "Contains ص.", "provenance": { "kind": "dataset", "source": "Tanzil text 112:2 recited word 1" } } },
+    { "ref": "114:1", "words": [3, 4], "note": { "text": "Ends in س.", "provenance": { "kind": "dataset", "source": "Tanzil text 114:1 recited word 3" } } },
+    { "ref": "1:7", "words": [8, 9], "note": { "text": "Contains ض.", "provenance": { "kind": "dataset", "source": "Tanzil text 1:7 recited word 8" } } },
+    { "ref": "1:4", "words": [2, 3], "note": { "text": "Contains د.", "provenance": { "kind": "dataset", "source": "Tanzil text 1:4 recited word 2" } } },
+    { "ref": "108:1", "words": [1, 2], "note": { "text": "Contains ط.", "provenance": { "kind": "dataset", "source": "Tanzil text 108:1 recited word 1" } } },
+    { "ref": "1:7", "words": [2, 3], "note": { "text": "Ends in ت.", "provenance": { "kind": "dataset", "source": "Tanzil text 1:7 recited word 2" } } }
+  ],
+  "letters": ["ص", "س", "ض", "د", "ط", "ت"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 3, "note": "Mapped by order — please confirm this is the right video. If the teacher says a heavy letter and its light partner (ص/س, ض/د, ط/ت) in it, mark both segments so you can play them side by side." },
+    { "source": "minshawi-words", "ref": "112:2", "words": [1, 2] },
+    { "source": "minshawi-words", "ref": "114:1", "words": [3, 4] },
+    { "source": "minshawi-words", "ref": "1:7", "words": [8, 9] },
+    { "source": "minshawi-words", "ref": "1:4", "words": [2, 3] },
+    { "source": "minshawi-words", "ref": "108:1", "words": [1, 2] },
+    { "source": "minshawi-words", "ref": "1:7", "words": [2, 3] }
+  ],
+  "drills": [
+    { "kind": "minimal-pair", "pair": ["ص", "س"], "tip": { "text": "Same tongue tip, same whistle. For ص lift the back of the tongue and press up: deep and full. For س keep the tongue low: thin and bright.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["ض", "د"], "tip": { "text": "د: the tongue tip touches behind the upper front teeth, light, and bounces with a sukun. ض: the side of the tongue presses along the upper back teeth, heavy and drawn out.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["ط", "ت"], "tip": { "text": "Same place. ت: light, with a little breath after it. ط: lift the back of the tongue and press up, no breath after it; with a sukun it bounces.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "say", "prompt": "Light, then heavy: سَ صَ — دَ ضَ — تَ طَ", "times": 3, "record": true }
+  ],
+  "cr": [{ "ref": "1:6", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-14-q1", "q": "Which pair shares ONE place and differs only in weight?", "options": ["ص and س", "ض and د", "ط and ت", "ظ and ز"], "answer": 0, "explain": ["Right: same place, same whistle, same breath; only the weight changes.", "ḍad and dal come from different places.", "ṭa and ta share a place, but they also differ in breath (ṭa holds it back).", "ẓa and zay come from different places."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-14-q2", "q": "What makes ص, ض and ط heavy?", "options": ["The tongue rises (isti'la) and meets the roof of the mouth (itbaq)", "They are said more loudly", "They have a whistle", "They bounce with a sukun"], "answer": 0, "explain": ["Right.", "Volume is not weight.", "Only ṣad whistles, and that is not what makes them heavy.", "Only ṭa bounces, and that is not what makes them heavy."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-14-q3", "q": "Where are ض and د made?", "options": ["ض: side of the tongue against the upper molars; د: tongue against the roots of the upper front teeth", "Both at the roots of the upper front teeth", "Both at the edges of the upper front teeth", "ض in the throat; د between the lips"], "answer": 0, "explain": ["Right: they differ in place as well as weight.", "Only dal (with ت and ط) is made there.", "That is the place of ث, ذ and ظ.", "Neither is a throat or lip letter."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-14-q4", "q": "How do you turn ت into ط?", "options": ["Keep the place, lift the back of the tongue, press up and hold the breath back", "Move the tongue to the edges of the teeth", "Hum through the nose", "Let the sound flow without stopping"], "answer": 0, "explain": ["Right.", "That gives ث.", "A hum is not part of ṭa.", "ṭa is a strong letter: its sound stops."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-14-q5", "q": "Which slip is typical for Persian/Urdu readers in this lesson?", "options": ["Saying ص and ط like س and ت", "Saying س like ش", "Saying ت like ث", "Saying د like ذ"], "answer": 0, "explain": ["Right: the heavy letters merge into the light ones.", "That is not the usual merge.", "That is not the usual merge.", "That is not the usual merge (ذ is usually said as 'z')."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-14-q6", "q": "What happens to a fatha after a heavy letter?", "options": ["It sounds deeper and darker", "It disappears", "It becomes a long 'aa'", "It turns into a kasra"], "answer": 0, "explain": ["Right: the weight colours the vowel.", "The fatha is still said.", "Length comes from madd letters, not from weight.", "Weight does not change which vowel it is."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-14-q7", "q": "Which pair differs in breath as well as weight (one whispered, one held back)?", "options": ["ط and ت", "ص and س", "ض and د", "None of them"], "answer": 0, "explain": ["Right: ṭa holds the breath back (jahr); ta is whispered (hams).", "ṣad and sin are both whispered.", "ḍad and dal both hold the breath back.", "ṭa and ta do differ in breath."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-14-q8", "q": "Which of these letters has a place of its own, shared with no other letter?", "options": ["ض (ḍad)", "ص (ṣad)", "ط (ṭa)", "ت (ta)"], "answer": 0, "explain": ["Right: only ḍad uses the side of the tongue against the upper molars.", "ṣad shares its place with س and ز.", "ṭa shares its place with ت and د.", "ta shares its place with ط and د."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-14-q9", "q": "Which group is all heavy?", "options": ["ص ض ط", "س د ت", "ص س ط", "ض د ت"], "answer": 0, "explain": ["Right: all three are among the seven heavy letters.", "All three are light.", "sin is light.", "dal and ta are light."], "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-14-q10", "q": "A light letter sits right next to a heavy one. What should you do?", "options": ["Keep each letter's own weight", "Make both heavy", "Make both light", "Skip the light letter"], "answer": 0, "explain": ["Right: switch weight cleanly from letter to letter.", "The light letter must stay light.", "The heavy letter must stay heavy.", "Every letter is said."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-14-q11", "q": "Which tip fits the pair ض/د?", "options": ["ض uses the side of the tongue and is heavy; د uses the tongue tip and is light", "Both use the tongue tip; ض is just louder", "ض whistles; د does not", "د is heavy; ض is light"], "answer": 0, "explain": ["Right.", "They come from different places; volume is not the difference.", "Neither whistles.", "It is the other way round."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-14-q12", "q": "Which of these letters bounces (qalqalah) when it has a sukun?", "options": ["ط (ṭa)", "ت (ta)", "ص (ṣad)", "س (sin)"], "answer": 0, "explain": ["Right: ṭa is one of ق ط ب ج د.", "ta is not a qalqalah letter.", "ṣad is not a qalqalah letter.", "sin is not a qalqalah letter."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-14-q13", "q": "English speakers tend to say all six letters of this lesson…", "options": ["…light", "…heavy", "…with a whistle", "…through the nose"], "answer": 0, "explain": ["Right: English has no heavy consonants like ص ض ط, so they come out light.", "The usual slip is the other way: everything light.", "Only ص and س whistle.", "None of these letters is nasal."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "letter-id", "letters": ["ص", "س", "ض", "د", "ط", "ت"]},
+    {"kind": "letter-in-word", "letters": ["ض", "ط", "ص", "د", "س", "ت"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "ص vs س == Same place and whistle; ص heavy (tongue raised and pressed up), س light",
+    "ض vs د == ض: side of the tongue against the upper molars, heavy; د: tongue at the roots of the upper teeth, light, bounces",
+    "ط vs ت == Same place; ط heavy, breath held, bounces; ت light, a little breath flows",
+    "What makes ص ض ط ظ heavy == The tongue rises (isti'la) and meets the roof of the mouth (itbaq)"
+  ],
+  "sources": [
+    { "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" },
+    { "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" },
+    { "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }
+  ],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say سَ صَ دَ ضَ تَ طَ three times, record the third time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

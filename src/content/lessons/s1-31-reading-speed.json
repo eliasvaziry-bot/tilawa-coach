@@ -1,0 +1,70 @@
+{
+  "id": "s1-31-reading-speed",
+  "stage": 1,
+  "order": 31,
+  "title": "Reading speed, and reading without transliteration",
+  "minutes": 12,
+  "prerequisites": ["s1-30-read-juz-amma-short"],
+  "bigIdea": { "text": "Fluent reading means accurate first, then quicker. Every week, read a short passage aloud, count your mistakes and your words per minute, and watch both improve. From now on, read from the Arabic only.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Accuracy comes first: a reading counts only if every letter, vowel and length is right. Aim for 98% or more correct words (master mode) before you try to go faster.", "provenance": { "kind": "app" } },
+    { "text": "Words per minute (wpm) = words read ÷ minutes taken. In this text Al-Ikhlas (112:1–4) has 15 words and Al-Fatiha (1:1–1:7) has 29, so reading Al-Fatiha in 1.5 minutes is about 19 wpm.", "provenance": { "kind": "dataset", "source": "Tanzil text: recited-word counts of surahs 1 and 112" } },
+    { "text": "Measure the same way every time: the same passage, a calm and clear pace, and one counting rule: a word is wrong if any letter, vowel or length in it is wrong.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Transliteration (Arabic written in Latin letters) only helps at the very start. It can't show the Arabic sounds exactly, so read from the Arabic alone from now on. By the end of Stage 1 you read without it.", "provenance": { "kind": "app" } },
+    { "text": "Speed is not the goal of recitation: the Quran is recited calmly and clearly (tartil). Reading speed only shows that your eyes now recognise words quickly.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": { "kind": "arrows", "steps": ["Read the passage aloud, timed", "Count the wrong words", "Accuracy % = right ÷ total × 100", "Speed = words ÷ minutes", "Repeat weekly and compare"], "provenance": { "kind": "model-knowledge" } },
+  "memoryHook": { "text": "Right first, then quick.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "Keep a simple log: date, passage, accuracy % and words per minute. Comparing week 1 with week 6 shows real progress, even on days that feel slow.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "112:1", "note": { "text": "Al-Ikhlas has 15 words in all (112:1–4): a good first timing passage.", "provenance": { "kind": "dataset", "source": "Tanzil text, surah 112 recited-word counts" } } },
+    { "ref": "112:2" },
+    { "ref": "112:3" },
+    { "ref": "112:4" }
+  ],
+  "letters": [],
+  "listen": [
+    { "source": "nuraniah", "lesson": 17, "note": "Mapped by order (our lesson 31 → Nuraniah lesson 17) — please confirm. The video titles carry no topic, so check it fits this lesson and mark its segments when you watch." },
+    { "source": "minshawi-ayah", "ref": "112:1" },
+    { "source": "minshawi-ayah", "ref": "112:2" },
+    { "source": "minshawi-ayah", "ref": "112:3" },
+    { "source": "minshawi-ayah", "ref": "112:4" }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Timed read: read 112:1–4 aloud at a calm pace while timing yourself, then count any wrong words.", "times": 1, "record": true },
+    { "kind": "say", "prompt": "Read 113:1–5 from the Arabic only, without any Latin letters, then check it with Sheikh al-Minshawi.", "times": 1, "record": true },
+    { "kind": "echo", "ref": "112:1" }
+  ],
+  "cr": [{ "ref": "112:1", "mode": "ladder" }, { "ref": "112:2", "mode": "ladder" }, { "ref": "112:3", "mode": "ladder" }, { "ref": "112:4", "mode": "ladder" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true, "recitation": { "ref": "112:1", "checks": ["tempo"] } },
+  "questions": [
+    { "id": "s1-31-q1", "q": "What comes first in fluent reading?", "options": ["Accuracy", "Speed", "Volume", "Melody"], "answer": 0, "explain": ["Right.", "Speed only counts once the reading is accurate.", "Loudness is not fluency.", "Melody comes much later and never before correctness."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-31-q2", "q": "You read 30 words in 2 minutes. What is your speed?", "options": ["15 words per minute", "60 words per minute", "32 words per minute", "28 words per minute"], "answer": 0, "explain": ["Right: 30 ÷ 2.", "That multiplies instead of dividing.", "That adds the numbers.", "That subtracts the numbers."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-31-q3", "q": "When does a word count as wrong in a speed test?", "options": ["If any letter, vowel or length in it is wrong", "Only if you skip it", "Only if you read it twice", "Never: only time counts"], "answer": 0, "explain": ["Right.", "A wrong vowel is a mistake too.", "Repeating is not the only error.", "Accuracy is the first measure."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-31-q4", "q": "Why fade out transliteration?", "options": ["Latin letters can't show Arabic sounds exactly, and your eyes must learn the Arabic", "Because it loads slowly", "Because it is forbidden", "Because it shows tajweed colours"], "answer": 0, "explain": ["Right.", "Speed of loading is not the reason.", "It isn't forbidden; it is just a crutch.", "Tajweed colours are on the Arabic text."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-31-q5", "q": "What accuracy should you reach before pushing your speed?", "options": ["98% or more", "50%", "75%", "Accuracy doesn't matter"], "answer": 0, "explain": ["Right: the master-mode target.", "Half the words wrong is far too many.", "One in four words wrong is still too many.", "Accuracy matters most."], "provenance": { "kind": "app" }, "heldOut": false },
+    { "id": "s1-31-q6", "q": "Your speed went up, but your mistakes doubled. What should you do?", "options": ["Slow down until accuracy is back to 98% or more", "Go even faster", "Stop measuring", "Ignore the mistakes"], "answer": 0, "explain": ["Right.", "That makes the mistakes worse.", "Measuring is how you notice this.", "Mistakes left alone become habits."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-31-q7", "q": "Al-Fatiha has 29 words in this text. You read it in 1 minute 30 seconds. About how many words per minute is that?", "options": ["About 19", "About 29", "About 44", "About 10"], "answer": 0, "explain": ["Right: 29 ÷ 1.5.", "That forgets the extra 30 seconds.", "That multiplies by 1.5 instead of dividing.", "That is too slow for these numbers."], "provenance": { "kind": "dataset", "source": "Tanzil text: 29 recited words in surah 1" }, "heldOut": true },
+    { "id": "s1-31-q8", "q": "How often should you repeat the speed test?", "options": ["Regularly, for example once a week, on the same passage", "Only once", "Every few minutes", "Never"], "answer": 0, "explain": ["Right.", "One test can't show progress.", "That measures tiredness, not progress.", "Without tests you can't see change."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-31-q9", "q": "Is reading fast the goal of recitation?", "options": ["No: recite calmly (tartil); speed only shows your eyes recognise words quickly", "Yes: faster is always better", "Yes, especially in prayer", "Only for children"], "answer": 0, "explain": ["Right.", "Rushing harms correctness.", "Calm, clear recitation is the aim there too.", "It applies to everyone."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-31-q10", "q": "What does accuracy % mean?", "options": ["Right words ÷ total words × 100", "Words ÷ minutes", "Mistakes × 100", "Time ÷ words"], "answer": 0, "explain": ["Right.", "That is speed.", "That is not a percentage of anything.", "That is the time per word."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-31-q11", "q": "You read 15 words and 1 is wrong. What is your accuracy?", "options": ["About 93%", "About 99%", "About 85%", "100%"], "answer": 0, "explain": ["Right: 14 ÷ 15 × 100.", "That would need far more words with one mistake.", "That would be about 2 mistakes in 15.", "One word was wrong."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-31-q12", "q": "Which is a fair way to compare your speed over time?", "options": ["Same passage, same calm pace, same counting rule", "A different passage each time", "Only time the parts you know best", "Count only the easy words"], "answer": 0, "explain": ["Right.", "Different passages aren't comparable.", "That hides the hard parts.", "Every word counts."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-31-q13", "q": "By the end of Stage 1, how should you read?", "options": ["From the Arabic text alone, without transliteration", "Only with transliteration", "Only by listening", "Only with tajweed colours switched on"], "answer": 0, "explain": ["Right.", "Transliteration fades out during Stage 1.", "Listening helps, but you must read.", "Colours help, but you read the letters themselves."], "provenance": { "kind": "app" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "word-audio", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "harakah-id", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "Reading speed == Words per minute = words read ÷ minutes",
+    "Reading accuracy == Right words ÷ total words × 100; aim for 98%+ before going faster",
+    "When a word counts as wrong == Any wrong letter, vowel or length",
+    "Transliteration by the end of Stage 1 == Gone: read from the Arabic only"
+  ],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Time yourself reading Al-Ikhlas (112:1–4) aloud at a calm pace, count your wrong words, and write down your accuracy and your words per minute (15 words ÷ your minutes)."
+}

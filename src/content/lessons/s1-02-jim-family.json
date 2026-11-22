@@ -1,0 +1,82 @@
+{
+  "id": "s1-02-jim-family",
+  "stage": 1,
+  "order": 2,
+  "title": "One hook, three letters: ج ح خ",
+  "minutes": 12,
+  "prerequisites": ["s1-01-ba-family"],
+  "bigIdea": { "text": "Three letters share one hooked body. The dot decides: dot below = ج (jim), no dot = ح (ḥa), dot above = خ (kha).", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Standing alone, all three have a hook on top and a round tail below the line. ج keeps its dot inside the curve, ح has no dot, خ has one dot above. At the start or in the middle of a word only the hook is left, so look for the dot.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sounds: ج is a firm 'j' as in 'jam'. ح is a strong, smooth breath squeezed in the middle of the throat, with no scrape. خ is like 'ch' in Scottish 'loch': a light scrape near the top of the throat.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sifat (letter qualities): ج is 'strong' (shiddah: its sound is held back fully) and one of the five bouncing letters (qalqalah), so with a sukun it bounces. ح and خ are 'whispered' (hams: the breath keeps flowing).", "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" } },
+    { "text": "Heavy or light: خ is one of the seven heavy letters (خ ص ض غ ط ق ظ). ج and ح are light.", "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" } },
+    { "text": "Common mistakes. English speakers: ح comes out as a plain 'h', and خ as 'k'. Persian/Urdu readers: ح is said like ه; squeeze the middle of the throat for ح. Everyone: keep ج firm, not 'zh' (as in 'measure') and not 'g'.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": {
+    "kind": "makhraj",
+    "points": [
+      { "letter": "ج", "region": "lisan", "detail": "Middle of the tongue (shared with ش and ي)" },
+      { "letter": "ح", "region": "halq", "detail": "Middle of the throat (shared with ع)" },
+      { "letter": "خ", "region": "halq", "detail": "Part of the throat nearest the mouth (shared with غ)" }
+    ],
+    "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }
+  },
+  "memoryHook": { "text": "Dot below = j, no dot = ḥ, dot above = kh.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "In everyday Arabic, ج changes by region: 'j' in many places, 'zh' in much of North-West Africa, and 'g' in Egypt.", "provenance": { "kind": "reference", "title": "Standard Arabic phonology — Wikipedia", "url": "https://en.wikipedia.org/wiki/Arabic_phonology", "opened": "2026-11-22" }, "extra": true },
+    { "text": "ح and خ are both whispered, but only خ is heavy. That is why خ sounds fuller and deeper.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "110:1", "words": [1, 2], "note": { "text": "Starts with ج.", "provenance": { "kind": "dataset", "source": "Tanzil text 110:1 recited word 1" } } },
+    { "ref": "112:1", "words": [3, 4], "note": { "text": "ح is the second letter.", "provenance": { "kind": "dataset", "source": "Tanzil text 112:1 recited word 3" } } },
+    { "ref": "113:2", "words": [3, 4], "note": { "text": "Starts with خ.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:2 recited word 3" } } }
+  ],
+  "letters": ["ج", "ح", "خ"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 1, "note": "Mapped by order — please confirm this is the right video, then mark where the teacher says ج, ح and خ." },
+    { "source": "minshawi-words", "ref": "110:1", "words": [1, 2] },
+    { "source": "minshawi-words", "ref": "112:1", "words": [3, 4] },
+    { "source": "minshawi-words", "ref": "113:2", "words": [3, 4] }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Say each letter with a fatha: جَ حَ خَ", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Say ḥa with each vowel, keeping the throat squeezed: حَ حِ حُ", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["ح", "خ"], "tip": { "text": "ح: smooth breath from the middle of the throat, no scrape, light. خ: higher, near the mouth, with a light scrape, heavy.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "cr": [{ "ref": "113:2", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-02-q1", "q": "Which letter has one dot ABOVE the hook?", "options": ["خ (kha)", "ج (jim)", "ح (ḥa)", "ذ (dhal)"], "answer": 0, "explain": ["Right: one dot above the hook is kha.", "jim's dot is below the hook (inside the curve when it stands alone).", "ḥa has no dot at all.", "dhal also has one dot above, but its body is a small angle, not a hook."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-02-q2", "q": "Where is ح (ḥa) made?", "options": ["The middle of the throat", "The deepest part of the throat, nearest the chest", "The middle of the tongue", "The part of the throat nearest the mouth"], "answer": 0, "explain": ["Right: ḥa (with ʿayn) comes from the middle of the throat.", "That is the place of hamza and ha (ه).", "That is the place of jim, shin and ya.", "That is the place of kha and ghayn."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-02-q3", "q": "Which letter of this family is heavy?", "options": ["خ (kha)", "ح (ḥa)", "ج (jim)", "All three"], "answer": 0, "explain": ["Right: kha is one of the seven heavy letters.", "ḥa is light.", "jim is light.", "Only kha is heavy; jim and ḥa are light."], "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-02-q4", "q": "Which letter of this family bounces (qalqalah) when it has a sukun?", "options": ["ج (jim)", "ح (ḥa)", "خ (kha)", "None of them"], "answer": 0, "explain": ["Right: jim is one of the five qalqalah letters (ق ط ب ج د).", "ḥa is not a qalqalah letter.", "kha is not a qalqalah letter.", "jim is a qalqalah letter."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-02-q5", "q": "Which English sound is closest to خ?", "options": ["'ch' in Scottish 'loch'", "'k' in 'kite'", "'h' in 'hat'", "'j' in 'jam'"], "answer": 0, "explain": ["Right: a light scrape near the top of the throat.", "'k' stops completely; خ keeps flowing.", "'h' has no scrape; it is closer to ه.", "That is jim."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-02-q6", "q": "Persian and Urdu readers often say ح like which letter?", "options": ["ه (ha)", "خ (kha)", "ع (ʿayn)", "ج (jim)"], "answer": 0, "explain": ["Right: in Persian and Urdu both are a plain 'h', so they merge.", "kha scrapes; the usual merge is with the plain 'h' of ه.", "ʿayn is a voiced throat letter; the usual merge is with ه.", "jim is made with the tongue, not the throat."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-02-q7", "q": "Which letter has no dot?", "options": ["ح (ḥa)", "ج (jim)", "خ (kha)", "ن (nun)"], "answer": 0, "explain": ["Right: ḥa is the hook alone.", "jim has one dot below.", "kha has one dot above.", "nun has one dot above."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-02-q8", "q": "In the middle of a word, what tells ج, ح and خ apart?", "options": ["The dot: below, none or above", "The length of the tail", "The colour of the letter", "Whether it joins the next letter"], "answer": 0, "explain": ["Right: the hook looks the same; only the dot differs.", "The tail appears only at the end of a word or standing alone.", "Colours show tajweed rules, not letters.", "All three join the next letter."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-02-q9", "q": "Where is خ made?", "options": ["The part of the throat nearest the mouth", "The middle of the throat", "The deepest part of the throat", "The middle of the tongue"], "answer": 0, "explain": ["Right: kha and ghayn come from the part of the throat nearest the mouth.", "That is ḥa and ʿayn.", "That is hamza and ha (ه).", "That is jim, shin and ya."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-02-q10", "q": "Where is ج made?", "options": ["The middle of the tongue", "The middle of the throat", "Between the lips", "The part of the throat nearest the mouth"], "answer": 0, "explain": ["Right: jim, shin and ya come from the middle of the tongue.", "That is ḥa and ʿayn.", "That is ba, mim and waw.", "That is kha and ghayn."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-02-q11", "q": "Your ح has a scrape in it, like خ. What fixes it?", "options": ["Bring it down to the middle of the throat and let the breath flow smoothly", "Raise the back of the tongue higher", "Add voice, like a gargle", "Press the lips together"], "answer": 0, "explain": ["Right: ḥa is a smooth, squeezed breath with no scrape.", "Raising the tongue makes it heavier, more like kha.", "Voice and a gargle push it towards ghayn.", "The lips are not used for ḥa."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-02-q12", "q": "Which TWO letters of this family are whispered (the breath keeps flowing)?", "options": ["ح and خ", "ج and ح", "ج and خ", "All three"], "answer": 0, "explain": ["Right: both are in the whispered (hams) group.", "jim holds its breath back (jahr); only ḥa of these two is whispered.", "jim holds its breath back; only kha of these two is whispered.", "jim is not whispered."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-02-q13", "q": "How should ج sound in recitation?", "options": ["A firm 'j' as in 'jam'", "A soft 'zh' as in 'measure'", "A hard 'g' as in 'go'", "A 'y' as in 'yes'"], "answer": 0, "explain": ["Right: the tongue presses, holds, then releases cleanly.", "'zh' keeps flowing; jim is a strong letter that stops.", "'g' is made further back in the mouth; it is not jim.", "'y' is the letter ي."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "letter-id", "letters": ["ج", "ح", "خ"]},
+    {"kind": "letter-in-word", "letters": ["ج", "خ", "ح"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "ج (jim) == Dot below; middle of the tongue; firm 'j' as in 'jam'; light; bounces with sukun",
+    "ح (ḥa) == No dot; middle of the throat; smooth whispered breath, no scrape; light",
+    "خ (kha) == Dot above; part of the throat nearest the mouth; 'ch' in 'loch'; heavy",
+    "Persian/Urdu fix for ح == Squeeze the middle of the throat so it does not become ه"
+  ],
+  "sources": [
+    { "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" },
+    { "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" },
+    { "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" },
+    { "title": "Standard Arabic phonology — Wikipedia", "url": "https://en.wikipedia.org/wiki/Arabic_phonology", "opened": "2026-11-22" }
+  ],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say جَ حَ خَ three times, record the third time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

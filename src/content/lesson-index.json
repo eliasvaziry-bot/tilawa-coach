@@ -1,0 +1,394 @@
+[
+ {
+  "id": "s0-01-microphone",
+  "stage": 0,
+  "order": 1,
+  "title": "Your phone as a listening partner",
+  "minutes": 6,
+  "prerequisites": [],
+  "setup": true
+ },
+ {
+  "id": "s0-02-headphones-latency",
+  "stage": 0,
+  "order": 2,
+  "title": "Headphones and timing",
+  "minutes": 6,
+  "prerequisites": [
+   "s0-01-microphone"
+  ],
+  "setup": true
+ },
+ {
+  "id": "s0-03-voice-range",
+  "stage": 0,
+  "order": 3,
+  "title": "A quiet room and your voice range",
+  "minutes": 6,
+  "prerequisites": [
+   "s0-02-headphones-latency"
+  ],
+  "setup": true
+ },
+ {
+  "id": "s0-04-fast-track",
+  "stage": 0,
+  "order": 4,
+  "title": "Fast-track for Persian and Urdu readers",
+  "minutes": 15,
+  "prerequisites": [
+   "s0-03-voice-range"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s0-05-placement",
+  "stage": 0,
+  "order": 5,
+  "title": "Placement: find your starting point",
+  "minutes": 12,
+  "prerequisites": [
+   "s0-03-voice-range"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-01-ba-family",
+  "stage": 1,
+  "order": 1,
+  "title": "One boat, five letters: ب ت ث ن ي",
+  "minutes": 12,
+  "prerequisites": [],
+  "setup": false
+ },
+ {
+  "id": "s1-02-jim-family",
+  "stage": 1,
+  "order": 2,
+  "title": "One hook, three letters: ج ح خ",
+  "minutes": 12,
+  "prerequisites": [
+   "s1-01-ba-family"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-03-dal-dhal",
+  "stage": 1,
+  "order": 3,
+  "title": "The corner pair: د ذ",
+  "minutes": 10,
+  "prerequisites": [
+   "s1-02-jim-family"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-04-ra-zay",
+  "stage": 1,
+  "order": 4,
+  "title": "The dipping pair: ر ز",
+  "minutes": 10,
+  "prerequisites": [
+   "s1-03-dal-dhal"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-05-sin-shin",
+  "stage": 1,
+  "order": 5,
+  "title": "Three teeth: س ش",
+  "minutes": 10,
+  "prerequisites": [
+   "s1-04-ra-zay"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-06-sad-dad",
+  "stage": 1,
+  "order": 6,
+  "title": "Loop and tooth: ص ض",
+  "minutes": 12,
+  "prerequisites": [
+   "s1-05-sin-shin"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-07-ta-za-heavy",
+  "stage": 1,
+  "order": 7,
+  "title": "Loop and pole: ط ظ",
+  "minutes": 10,
+  "prerequisites": [
+   "s1-06-sad-dad"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-08-ayn-ghayn",
+  "stage": 1,
+  "order": 8,
+  "title": "The open mouth: ع غ",
+  "minutes": 12,
+  "prerequisites": [
+   "s1-07-ta-za-heavy"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-09-fa-qaf",
+  "stage": 1,
+  "order": 9,
+  "title": "Round heads: ف ق",
+  "minutes": 10,
+  "prerequisites": [
+   "s1-08-ayn-ghayn"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-10-kaf-lam-mim",
+  "stage": 1,
+  "order": 10,
+  "title": "Tall and round: ك ل م",
+  "minutes": 12,
+  "prerequisites": [
+   "s1-09-fa-qaf"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-11-ha-waw-hamza-alif",
+  "stage": 1,
+  "order": 11,
+  "title": "The last four: ه و ء ا",
+  "minutes": 12,
+  "prerequisites": [
+   "s1-10-kaf-lam-mim"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-12-pairs-throat",
+  "stage": 1,
+  "order": 12,
+  "title": "Throat pairs: ح/ه · ع/ء · ح/خ",
+  "minutes": 12,
+  "prerequisites": [
+   "s1-11-ha-waw-hamza-alif"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-13-pairs-back",
+  "stage": 1,
+  "order": 13,
+  "title": "Back-of-the-mouth pairs: ق/ك · غ/خ",
+  "minutes": 12,
+  "prerequisites": [
+   "s1-12-pairs-throat"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-14-pairs-heavy-light",
+  "stage": 1,
+  "order": 14,
+  "title": "Heavy or light: ص/س · ض/د · ط/ت",
+  "minutes": 12,
+  "prerequisites": [
+   "s1-13-pairs-back"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-15-pairs-teeth",
+  "stage": 1,
+  "order": 15,
+  "title": "Tongue-and-teeth pairs: ظ/ذ/ز · ث/س · ث/ت · ذ/د",
+  "minutes": 12,
+  "prerequisites": [
+   "s1-14-pairs-heavy-light"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-16-pairs-ra-lam-vowels",
+  "stage": 1,
+  "order": 16,
+  "title": "ر/ل, and long vs short vowels",
+  "minutes": 12,
+  "prerequisites": [
+   "s1-15-pairs-teeth"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-17-letter-forms",
+  "stage": 1,
+  "order": 17,
+  "title": "Letter shapes: how letters join (and the six that don't)",
+  "minutes": 12,
+  "prerequisites": [
+   "s1-16-pairs-ra-lam-vowels"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-18-harakat",
+  "stage": 1,
+  "order": 18,
+  "title": "Short vowels: fatha, damma, kasra",
+  "minutes": 12,
+  "prerequisites": [
+   "s1-17-letter-forms"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-19-sukun",
+  "stage": 1,
+  "order": 19,
+  "title": "Sukun: the letter with no vowel",
+  "minutes": 10,
+  "prerequisites": [
+   "s1-18-harakat"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-20-shadda",
+  "stage": 1,
+  "order": 20,
+  "title": "Shadda: say the letter twice",
+  "minutes": 10,
+  "prerequisites": [
+   "s1-19-sukun"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-21-tanween",
+  "stage": 1,
+  "order": 21,
+  "title": "Tanween: the hidden 'n' at the end",
+  "minutes": 10,
+  "prerequisites": [
+   "s1-20-shadda"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-22-long-vowels",
+  "stage": 1,
+  "order": 22,
+  "title": "Long vowels: ا و ي held for two counts",
+  "minutes": 12,
+  "prerequisites": [
+   "s1-21-tanween"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-23-small-letters",
+  "stage": 1,
+  "order": 23,
+  "title": "Small letters and the maddah sign",
+  "minutes": 12,
+  "prerequisites": [
+   "s1-22-long-vowels"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-24-hamza-wasl-qat",
+  "stage": 1,
+  "order": 24,
+  "title": "Two hamzas: the joining one and the cutting one",
+  "minutes": 12,
+  "prerequisites": [
+   "s1-23-small-letters"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-25-ta-marbuta-alif-maqsura",
+  "stage": 1,
+  "order": 25,
+  "title": "Two special endings: ta marbuta and alif maqsura",
+  "minutes": 10,
+  "prerequisites": [
+   "s1-24-hamza-wasl-qat"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-26-lam-shamsi-qamari",
+  "stage": 1,
+  "order": 26,
+  "title": "Sun and moon letters: when the lam of 'al-' disappears",
+  "minutes": 12,
+  "prerequisites": [
+   "s1-25-ta-marbuta-alif-maqsura"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-27-mushaf-signs",
+  "stage": 1,
+  "order": 27,
+  "title": "Signs in the mushaf: pauses, zeros and small letters",
+  "minutes": 15,
+  "prerequisites": [
+   "s1-26-lam-shamsi-qamari"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-28-syllables-to-words",
+  "stage": 1,
+  "order": 28,
+  "title": "From syllables to words",
+  "minutes": 12,
+  "prerequisites": [
+   "s1-27-mushaf-signs"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-29-read-al-fatiha",
+  "stage": 1,
+  "order": 29,
+  "title": "Reading Al-Fatiha",
+  "minutes": 15,
+  "prerequisites": [
+   "s1-28-syllables-to-words"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-30-read-juz-amma-short",
+  "stage": 1,
+  "order": 30,
+  "title": "Reading short surahs: 108, 112, 113, 114, 103",
+  "minutes": 15,
+  "prerequisites": [
+   "s1-29-read-al-fatiha"
+  ],
+  "setup": false
+ },
+ {
+  "id": "s1-31-reading-speed",
+  "stage": 1,
+  "order": 31,
+  "title": "Reading speed, and reading without transliteration",
+  "minutes": 12,
+  "prerequisites": [
+   "s1-30-read-juz-amma-short"
+  ],
+  "setup": false
+ }
+]

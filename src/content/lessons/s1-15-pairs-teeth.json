@@ -1,0 +1,94 @@
+{
+  "id": "s1-15-pairs-teeth",
+  "stage": 1,
+  "order": 15,
+  "title": "Tongue-and-teeth pairs: ظ/ذ/ز · ث/س · ث/ت · ذ/د",
+  "minutes": 12,
+  "prerequisites": ["s1-14-pairs-heavy-light"],
+  "bigIdea": { "text": "The front of the mouth has three neighbouring places: the edges of the upper front teeth (ث ذ ظ), the roots of the upper front teeth (ت د ط), and the tongue tip with the front teeth (س ز ص). Most pairs here differ only in where the tongue goes.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Three places: ث ذ ظ come from the tongue with the edges of the upper front teeth; ت د ط from the tongue against the roots of the upper front teeth; س ز ص from the tip of the tongue with the front teeth.", "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" } },
+    { "text": "Flow or stop: ث ذ ظ and س ز are soft (rakhawa): their sound flows. ت and د are strong (shiddah): their sound stops. س and ز (with ص) also whistle (safir); ث ذ ظ do not.", "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" } },
+    { "text": "The pairs: ظ/ذ share a place, but ظ is heavy and ذ light. ذ/ز are both voiced and flowing: ذ has the tongue at the edges of the teeth (no whistle), ز behind them (whistle). ث/س are the same contrast, whispered. ث/ت and ذ/د: ث and ذ flow, while ت and د stop.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Heavy or light: of the letters in these pairs, only ظ is heavy (one of the seven: خ ص ض غ ط ق ظ). ذ ز ث س ت د are light.", "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" } },
+    { "text": "Common mistakes. Persian/Urdu readers: ث becomes 's', and ذ and ظ become 'z', because the tongue never reaches the teeth. English speakers: ظ comes out light, like ذ; and many London accents turn 'th' into 'f' or 'v' (as in 'fink'), so keep the tongue on the teeth.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": {
+    "kind": "makhraj",
+    "points": [
+      { "letter": "ث", "region": "lisan", "detail": "Tongue against the edges of the upper front teeth (with ذ and ظ)" },
+      { "letter": "ذ", "region": "lisan", "detail": "Tongue against the edges of the upper front teeth (with ث and ظ)" },
+      { "letter": "ظ", "region": "lisan", "detail": "Tongue against the edges of the upper front teeth (with ث and ذ)" },
+      { "letter": "س", "region": "lisan", "detail": "Tip of the tongue with the front teeth (with ز and ص)" },
+      { "letter": "ز", "region": "lisan", "detail": "Tip of the tongue with the front teeth (with س and ص)" },
+      { "letter": "ت", "region": "lisan", "detail": "Tongue against the roots of the upper front teeth (with د and ط)" },
+      { "letter": "د", "region": "lisan", "detail": "Tongue against the roots of the upper front teeth (with ت and ط)" }
+    ],
+    "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }
+  },
+  "memoryHook": { "text": "Teeth edges: th. Behind the teeth, whistling: s, z. Stop at the roots: t, d.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "A mirror check: for ث ذ ظ the tip of the tongue shows at the edges of the upper teeth; for س and ز it stays hidden behind the teeth.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "94:3", "words": [2, 3], "note": { "text": "Starts with ظ.", "provenance": { "kind": "dataset", "source": "Tanzil text 94:3 recited word 2" } } },
+    { "ref": "113:1", "words": [1, 2], "note": { "text": "Ends in ذ.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:1 recited word 1" } } },
+    { "ref": "102:2", "words": [1, 2], "note": { "text": "Starts with ز.", "provenance": { "kind": "dataset", "source": "Tanzil text 102:2 recited word 1" } } },
+    { "ref": "108:1", "words": [2, 3], "note": { "text": "Contains ث.", "provenance": { "kind": "dataset", "source": "Tanzil text 108:1 recited word 2" } } },
+    { "ref": "113:4", "words": [2, 3], "note": { "text": "Has ث and then ت.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:4 recited word 2" } } },
+    { "ref": "1:4", "words": [2, 3], "note": { "text": "Contains د.", "provenance": { "kind": "dataset", "source": "Tanzil text 1:4 recited word 2" } } }
+  ],
+  "letters": ["ظ", "ذ", "ز", "ث", "س", "ت", "د"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 3, "note": "Mapped by order — please confirm this is the right video. If the teacher says ث, ذ or ظ next to س, ز, ت or د in it, mark both segments so you can play them side by side." },
+    { "source": "minshawi-words", "ref": "94:3", "words": [2, 3] },
+    { "source": "minshawi-words", "ref": "113:1", "words": [1, 2] },
+    { "source": "minshawi-words", "ref": "102:2", "words": [1, 2] },
+    { "source": "minshawi-words", "ref": "108:1", "words": [2, 3] },
+    { "source": "minshawi-words", "ref": "113:4", "words": [2, 3] },
+    { "source": "minshawi-words", "ref": "1:4", "words": [2, 3] }
+  ],
+  "drills": [
+    { "kind": "minimal-pair", "pair": ["ظ", "ذ"], "tip": { "text": "Same place: the tongue at the edges of the upper front teeth. ذ is light; for ظ lift the back of the tongue and press up, so it sounds deep and full.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["ذ", "ز"], "tip": { "text": "ذ: the tongue tip touches the edges of the upper teeth, no whistle. ز: the tongue tip pulls back behind the teeth and the air whistles.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["ث", "س"], "tip": { "text": "ث: the tongue tip at the edges of the upper teeth, soft breath, no whistle. س: the tongue tip behind the teeth, a thin whistle.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["ث", "ت"], "tip": { "text": "ث flows: the breath keeps passing the tongue at the edges of the teeth. ت stops: the tongue presses at the roots of the upper teeth, then lets go.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["ذ", "د"], "tip": { "text": "ذ flows with voice at the edges of the teeth. د stops at the roots of the upper teeth, and bounces when it has a sukun.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "say", "prompt": "Edges, whistle, stop: ثَ سَ تَ — ذَ زَ دَ — then ذَ ظَ", "times": 3, "record": true }
+  ],
+  "cr": [{ "ref": "113:4", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-15-q1", "q": "Which three letters come from the tongue against the edges of the upper front teeth?", "options": ["ث ذ ظ", "ت د ط", "س ز ص", "ف ب م"], "answer": 0, "explain": ["Right.", "They come from the roots of the upper front teeth.", "They come from the tongue tip with the front teeth (the whistling letters).", "These use the lips."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-15-q2", "q": "Which of these letters whistles (safir)?", "options": ["ز (zay)", "ذ (dhal)", "ظ (ẓa)", "ث (tha)"], "answer": 0, "explain": ["Right: zay is one of ص ز س.", "dhal has no whistle.", "ẓa has no whistle.", "tha has no whistle."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-15-q3", "q": "What is the main difference between ذ and ز?", "options": ["Where the tongue goes: the edges of the teeth for ذ, behind them with a whistle for ز", "ذ is heavy and ز is light", "ذ is whispered and ز is not", "There is no difference"], "answer": 0, "explain": ["Right.", "Both are light.", "Neither is whispered; both hold the breath back (jahr).", "They are different letters with different places."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-15-q4", "q": "Persian/Urdu readers often say ث as…", "options": ["…'s' (like س)", "…'t' (like ت)", "…'f' (like ف)", "…'z' (like ز)"], "answer": 0, "explain": ["Right: the tongue stays behind the teeth instead of reaching their edges.", "'t' is not the usual merge.", "'f' for 'th' is a London-accent habit, not a Persian/Urdu one.", "'z' is the merge for the voiced letters ذ and ظ."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-15-q5", "q": "Which pair differs by flow versus stop (rakhawa versus shiddah)?", "options": ["ث and ت", "ث and س", "ظ and ذ", "ذ and ز"], "answer": 0, "explain": ["Right: tha flows, ta stops.", "tha and sin both flow.", "ẓa and dhal both flow.", "dhal and zay both flow."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-15-q6", "q": "Which of these letters is heavy?", "options": ["ظ (ẓa)", "ذ (dhal)", "ز (zay)", "ث (tha)"], "answer": 0, "explain": ["Right: ẓa is one of the seven heavy letters.", "dhal is light.", "zay is light.", "tha is light."], "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-15-q7", "q": "Where are ت and د made?", "options": ["The tongue against the roots of the upper front teeth", "The tongue against the edges of the upper front teeth", "The tongue tip with the front teeth", "Between the lips"], "answer": 0, "explain": ["Right: with ط.", "That is ث, ذ and ظ.", "That is س, ز and ص.", "That is ب, م and و."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-15-q8", "q": "In a mirror, for which letters should the tip of your tongue show at the edges of the upper teeth?", "options": ["ث ذ ظ", "س ز ص", "ت د ط", "ب م و"], "answer": 0, "explain": ["Right.", "For the whistling letters the tongue stays behind the teeth.", "For these the tongue presses at the roots, behind the teeth.", "These are lip letters."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-15-q9", "q": "Many London accents say 'th' as 'f' or 'v'. Which letters suffer?", "options": ["ث and ذ", "س and ز", "ت and د", "ق and ك"], "answer": 0, "explain": ["Right: they are the Arabic 'th' sounds.", "sin and zay are not 'th' sounds.", "ta and dal are not 'th' sounds.", "qaf and kaf are not 'th' sounds."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-15-q10", "q": "How do د and ذ differ in their sifat?", "options": ["د is strong (its sound stops) and bounces with a sukun; ذ is soft and flows", "د is whispered; ذ is not", "د whistles; ذ does not", "They have the same sifat"], "answer": 0, "explain": ["Right.", "Both hold the breath back (jahr).", "Neither whistles.", "They differ in shiddah/rakhawa and in qalqalah."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-15-q11", "q": "Your ظ sounds exactly like ذ. What fixes it?", "options": ["Keep the tongue at the teeth edges and lift the back of the tongue to make it heavy", "Pull the tongue behind the teeth", "Whisper it", "Stop the sound, then release it"], "answer": 0, "explain": ["Right.", "That turns it into ز.", "Whispering turns it into ث.", "Stopping turns it into a 'd'-type sound."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-15-q12", "q": "Which pair is the whispered version of the pair ذ/ز?", "options": ["ث/س", "ت/د", "ظ/ض", "ح/ه"], "answer": 0, "explain": ["Right: the same two tongue positions, with breath instead of voice.", "ta and dal are stops at the roots of the teeth.", "ẓa and ḍad are heavy letters.", "ḥa and ha are throat letters."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-15-q13", "q": "Which letter shares its place with ث and ذ?", "options": ["ظ (ẓa)", "ز (zay)", "د (dal)", "س (sin)"], "answer": 0, "explain": ["Right.", "zay shares its place with س and ص.", "dal shares its place with ت and ط.", "sin shares its place with ز and ص."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "letter-id", "letters": ["ظ", "ذ", "ز", "ث", "س", "ت", "د"]},
+    {"kind": "letter-in-word", "letters": ["ظ", "ز", "ث", "ذ", "س", "د", "ت"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "ث ذ ظ == Tongue at the edges of the upper front teeth; sound flows, no whistle; only ظ is heavy",
+    "ذ vs ز == ذ: tongue at the teeth edges, no whistle; ز: tongue behind the teeth, whistle",
+    "ث vs س == ث: tongue at the teeth edges, no whistle; س: tongue behind the teeth, whistle",
+    "ث vs ت and ذ vs د == ث and ذ flow at the teeth edges; ت and د stop at the roots of the upper teeth",
+    "London 'f/v for th' habit == Keep the tongue on the teeth for ث and ذ"
+  ],
+  "sources": [
+    { "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" },
+    { "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" },
+    { "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }
+  ],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say ثَ سَ تَ ذَ زَ دَ ظَ three times, record the third time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

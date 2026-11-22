@@ -1,0 +1,4 @@
+{
+  "comment": "Items a qualified teacher has approved (from TEACHER_REVIEW.md). Lesson ids here flip reviewStatus to teacher-approved; rule ids as 'rule:<id>'.",
+  "approved": []
+}

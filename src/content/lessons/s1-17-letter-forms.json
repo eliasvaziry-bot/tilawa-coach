@@ -1,0 +1,72 @@
+{
+  "id": "s1-17-letter-forms",
+  "stage": 1,
+  "order": 17,
+  "title": "Letter shapes: how letters join (and the six that don't)",
+  "minutes": 12,
+  "prerequisites": ["s1-16-pairs-ra-lam-vowels"],
+  "bigIdea": { "text": "Inside a word, Arabic letters hold hands, so most letters change shape a little depending on where they stand. Six letters never hold the hand of the letter after them.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "A letter can have four forms: isolated (alone), initial (at the start of a joined piece), medial (in the middle) and final (at the end). Mostly the joining stroke changes; the core shape and the dots stay the same.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Six letters join only to the letter before them, never to the letter after: ا د ذ ر ز و. After one of them the next letter starts fresh, in its initial form (or isolated, if it is the last letter).", "provenance": { "kind": "model-knowledge" } },
+    { "text": "So a gap inside a word does not start a new word. A gap after ا د ذ ر ز و is part of the same word; the space between two words is wider.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Some joining letters change a lot: ه looks quite different at the start, middle and end; ع and غ are an open cup at the start but closed in the middle and at the end; ك loses the small mark inside it when another letter follows. Trust the dots and the core shape.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "When ل is followed by ا, the two fuse into one special shape called lam-alif. Read it as lam, then alif.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": { "kind": "letters", "letters": ["ـا", "ـد", "ـذ", "ـر", "ـز", "ـو"], "caption": "The six non-joiners: they take a hand from the right, never give one to the left." },
+  "memoryHook": { "text": "Six never reach left: ا د ذ ر ز و.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "The thin joining line is called tatweel (or kashida). Calligraphers stretch it for beauty; it never changes the sound.", "provenance": { "kind": "model-knowledge" }, "extra": true },
+    { "text": "Persian/Urdu readers: the same six letters refuse to join forward in your script too (Persian adds ژ). Your eyes already know this pattern.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "114:5", "words": [3, 4], "note": { "text": "One word, two breaks: د and و never join the letter after them.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "113:1", "words": [1, 2], "note": { "text": "Breaks after the alif (with its hamza) and after و; ع takes its initial form after the first break.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "114:4", "words": [2, 3], "note": { "text": "Five pieces in one word: breaks after ٱ, after each و and after ا.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "1:2", "words": [3, 4], "note": { "text": "After ٱ the rest is one joined piece; look for ع in its middle form.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "112:1", "words": [1, 2], "note": { "text": "ه in its initial form, joined to a final و.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "1:7", "words": [7, 8], "note": { "text": "و stands alone, then ل and ا fuse into lam-alif.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "letters": ["ا", "د", "ذ", "ر", "ز", "و"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 3, "note": "Mapped by order (our lesson 17 → Nuraniah lesson 3) — please confirm. The video titles carry no topic, so check it fits this lesson and mark its segments when you watch." },
+    { "source": "minshawi-words", "ref": "114:5", "words": [3, 4] }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Say the six non-joiners by name: alif, dal, dhal, ra, zay, waw (ا د ذ ر ز و).", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Read these joined pairs slowly and notice the break after the second letter: بَدَ · بَرَ · بَوَ · بَزَ", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["د", "ذ"], "tip": { "text": "Same shape, one dot apart. د: tongue tip on the gum ridge (a 'd'). ذ: tongue tip lightly between the teeth, voiced like 'th' in 'this'. Neither joins forward.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "echo", "ref": "114:5", "words": [3, 4] }
+  ],
+  "cr": [{ "ref": "114:5", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-17-q1", "q": "Which group lists exactly the six letters that never join the letter after them?", "options": ["ا د ذ ر ز و", "ا ب ت ث ج ح", "د ذ ر ز س ش", "ا د ر و ي ن"], "answer": 0, "explain": ["Right: alif, dal, dhal, ra, zay and waw.", "ب ت ث ج ح join on both sides; only the alif belongs to the six.", "س and ش join on both sides.", "ي and ن join on both sides."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-17-q2", "q": "A word on screen has a small gap right after a ر. What does the gap mean?", "options": ["Nothing special: ر never joins forward, so the same word goes on", "A new word starts after the gap", "You must pause there", "The ر is silent"], "answer": 0, "explain": ["Right: gaps after the six non-joiners are normal inside a word.", "Words are separated by a wider space; this gap is inside the word.", "Pauses are shown by pause signs, not by gaps.", "The ر is read as usual; it just doesn't join forward."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-17-q3", "q": "In which form does a letter join on BOTH sides?", "options": ["Medial (middle)", "Isolated", "Initial", "Final"], "answer": 0, "explain": ["Right: in the middle it joins the letter before and the letter after.", "Alone it joins nothing.", "At the start of a piece it joins only the letter after it.", "At the end it joins only the letter before it."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-17-q4", "q": "Inside a word, a letter comes right after a د. Which form does that letter take?", "options": ["Initial (or isolated if it is the last letter)", "Medial", "Final", "None: it is hidden"], "answer": 0, "explain": ["Right: د does not join forward, so the next letter starts fresh.", "Medial needs a joining letter before it; د cannot give that join.", "Final means joined to the letter before, which د does not allow.", "Every letter is written and read; nothing is hidden."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-17-q5", "q": "Do a letter's dots change when it joins other letters?", "options": ["No: the dots stay the same in every form", "Yes: they move below the line", "Yes: joined letters lose their dots", "Only at the end of a word"], "answer": 0, "explain": ["Right: only the joining strokes change; the dots tell you the letter.", "Dots stay where they are (above or below).", "Dots are kept; without them ب ت ث ن ي could not be told apart.", "Dots are the same at the start, middle and end."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-17-q6", "q": "Which set of letters would be written as ONE unbroken shape, in this order?", "options": ["ب ت ي ن", "ب ا ب", "ك و ن", "س ر د"], "answer": 0, "explain": ["Right: all four are joiners, so they link up into one piece.", "ا does not join forward, so the second ب starts a new piece.", "و does not join forward, so ن starts a new piece.", "ر does not join forward, so د stands apart."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-17-q7", "q": "Which letter joins the letter before it but NOT the letter after it?", "options": ["ز (zay)", "س (sin)", "ل (lam)", "م (mim)"], "answer": 0, "explain": ["Right: zay is one of the six non-joiners.", "sin joins on both sides.", "lam joins on both sides.", "mim joins on both sides."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-17-q8", "q": "How many forms can a joining letter like ب have?", "options": ["Four: isolated, initial, medial, final", "Two: big and small", "Three: top, middle, bottom", "One: it never changes"], "answer": 0, "explain": ["Right.", "Size is not what changes; the joins do.", "Forms depend on the position in the word, not on height.", "Joining letters change their joining strokes."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-17-q9", "q": "Inside a word, a ب comes right after an ا. Which form is that ب in?", "options": ["Initial (or isolated if it is the last letter)", "Medial", "Final, joined to the alif", "It disappears"], "answer": 0, "explain": ["Right: alif never joins forward, so ب starts a new piece.", "Medial would need a join from the alif.", "Alif cannot join the letter after it.", "The ب is written and read normally."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-17-q10", "q": "Which statement about gaps inside a word is true?", "options": ["A gap after ا د ذ ر ز و is normal inside one word", "Every gap means a new word", "A gap means a long vowel", "A gap is a pause sign"], "answer": 0, "explain": ["Right.", "Only the wider space separates words.", "Long vowels come from madd letters, not from gaps.", "Pause signs are small marks above the line."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-17-q11", "q": "Which pair is told apart only by a dot, in every form?", "options": ["ر and ز", "ر and و", "د and ر", "ا and و"], "answer": 0, "explain": ["Right: same shape; zay has one dot above.", "و has a round head; ر does not.", "د is angular and sits on the line; ر curves below it.", "ا is a straight stroke; و has a round head."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-17-q12", "q": "In which form does a letter join ONLY the letter before it?", "options": ["Final", "Initial", "Medial", "Isolated"], "answer": 0, "explain": ["Right: at the end of a piece it takes a hand from the right only.", "Initial joins only the letter after it.", "Medial joins both sides.", "Isolated joins nothing."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-17-q13", "q": "Why do ا د ذ ر ز و so often end a joined piece of a word?", "options": ["Because they cannot join forward, so the piece stops after them", "Because they are always silent", "Because they are always long vowels", "Because a pause always follows them"], "answer": 0, "explain": ["Right.", "They are pronounced like any other letter.", "Only ا and و can be long vowels, and that is not about joining.", "Pauses are shown by pause signs, not by letters."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "letter-in-word", "letters": ["ذ", "ز", "د", "ر", "و", "ا"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "letter-in-word", "letters": ["غ", "ع", "ه", "ك", "خ", "ح", "ج"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "Letters that never join the next letter == ا د ذ ر ز و (alif, dal, dhal, ra, zay, waw)",
+    "The four letter forms == Isolated, initial, medial, final",
+    "A gap after ا د ذ ر ز و inside a word == Same word: those six simply don't join forward",
+    "Do dots change when letters join? == No, only the joining strokes change",
+    "ل followed by ا == They fuse into one shape, lam-alif"
+  ],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say the six non-joiners ا د ذ ر ز و by name three times, record the third time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

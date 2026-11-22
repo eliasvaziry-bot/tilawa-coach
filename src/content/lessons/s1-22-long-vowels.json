@@ -1,0 +1,74 @@
+{
+  "id": "s1-22-long-vowels",
+  "stage": 1,
+  "order": 22,
+  "title": "Long vowels: ا و ي held for two counts",
+  "minutes": 12,
+  "prerequisites": ["s1-21-tanween"],
+  "bigIdea": { "text": "Three letters stretch the vowel before them: alif after a fatha ('aa'), waw after a damma ('uu'), ya after a kasra ('ii'). Hold them for two counts, twice as long as a short vowel.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "The madd ('stretch') letters are ا و ي. They make a long vowel only after their matching short vowel: fatha + ا = 'aa' (بَا), damma + و = 'uu' (بُو), kasra + ي = 'ii' (بِي).", "provenance": { "kind": "model-knowledge" } },
+    { "text": "A madd letter carries no mark of its own (no vowel, no sukun). It simply lengthens the vowel before it.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "This natural madd (madd tabee'i) lasts 2 counts. One count is the time of one short vowel; keep every count the same length, like a steady pulse.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Not every و or ي is a long vowel. With its own vowel (وَ, يَ) it is a consonant, 'w' or 'y'. With sukun after a fatha (ـَوْ, ـَيْ) it is a glide, 'aw' or 'ay' (called leen), not 'uu' or 'ii'.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "In this mushaf a long 'aa' is sometimes written as a small alif above the letter (ـٰ) instead of a full ا; it is still 2 counts (next lesson). The app's tajweed colours give these small long vowels the 2-count colour; full-size madd letters are left uncoloured, but you still hold them 2 counts.", "provenance": { "kind": "dataset", "source": "rebuilt cpfair/quran-tajweed annotations (tj field): madd_2 marks only small alif/waw/ya (ٰ ۥ ۦ); 2 counts from src/data/rules.ts" } }
+  ],
+  "visual": { "kind": "letters", "letters": ["بَا", "بُو", "بِي"], "caption": "baa · buu · bii — two counts each" },
+  "memoryHook": { "text": "Matching pairs stretch: fatha-alif, damma-waw, kasra-ya, two counts.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "Persian/Urdu readers: after a light letter the Arabic alif is an open 'aa' (as in 'father'), not the rounded Persian 'â' (close to 'aw' in 'law'). ي after kasra is 'ii' and و after damma is 'uu', never 'e' or 'o'.", "provenance": { "kind": "model-knowledge" }, "extra": true },
+    { "text": "Many teachers keep counts even by folding one finger per count at a steady pace.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "113:2", "words": [2, 3], "note": { "text": "Fatha + a bare alif: 'aa', 2 counts.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "113:1", "words": [1, 2], "note": { "text": "Damma + a bare و: 'uu', 2 counts.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "114:5", "words": [0, 1], "note": { "text": "Kasra + a final ya (written here without dots): 'ii', 2 counts.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "113:3", "words": [2, 3], "note": { "text": "Fatha + ا in the middle of the word.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "114:5", "words": [3, 4], "note": { "text": "Damma + و in the middle of the word.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "1:4", "words": [1, 2], "note": { "text": "و with sukun after a fatha: the glide 'aw', not a long 'uu'.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "1:2", "words": [3, 4], "rule": "madd_2", "note": { "text": "Here the long 'aa' is a small alif above ع: still 2 counts.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "letters": ["ا", "و", "ي"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 8, "note": "Mapped by order (our lesson 22 → Nuraniah lesson 8) — please confirm. The video titles carry no topic, so check it fits this lesson and mark its segments when you watch." },
+    { "source": "minshawi-ayah", "ref": "113:1" },
+    { "source": "minshawi-ayah", "ref": "113:2" }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Say بَا بُو بِي, two even counts each (fold a finger per count).", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Short, then long: بَ بَا · بُ بُو · بِ بِي", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["بَ", "بَا"], "tip": { "text": "بَ: one count. بَا: two counts. The alif doubles the length; the vowel quality stays the same.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["بِ", "بِي"], "tip": { "text": "بِ: a short 'i'. بِي: the same 'i' held for two counts.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "echo", "ref": "113:2" }
+  ],
+  "cr": [{ "ref": "113:1", "mode": "echo" }, { "ref": "113:2", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-22-q1", "q": "Which three letters can make a long vowel?", "options": ["ا و ي", "ب ت ث", "ن م ل", "ء ه ع"], "answer": 0, "explain": ["Right: the madd letters.", "These are consonants only.", "These are consonants (ن and م can hum, but they don't lengthen vowels).", "These are throat letters, not madd letters."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-22-q2", "q": "How long is a natural madd (madd tabee'i)?", "options": ["2 counts", "1 count", "4 counts", "6 counts"], "answer": 0, "explain": ["Right.", "One count is a short vowel.", "Four counts belongs to longer madd types (Stage 2).", "Six counts is the necessary madd (Stage 2)."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-22-q3", "q": "Which pairing gives a long 'uu'?", "options": ["Damma before a bare و", "Fatha before و with sukun", "Kasra before و", "و with its own fatha (وَ)"], "answer": 0, "explain": ["Right.", "That is the glide 'aw'.", "A kasra doesn't pair with و.", "With its own vowel, و is the consonant 'w'."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-22-q4", "q": "How do you read بِي?", "options": ["bii (two counts)", "bi (one count)", "bay", "biy-ya"], "answer": 0, "explain": ["Right.", "The ya lengthens the 'i' to two counts.", "'bay' would need a fatha before ي with sukun.", "That would need a shadda on ي."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-22-q5", "q": "و carries its own fatha (وَ). What is it?", "options": ["A consonant 'w'", "A long 'uu'", "A silent letter", "A glide 'aw'"], "answer": 0, "explain": ["Right.", "A long 'uu' needs a damma before a bare و.", "It is pronounced.", "A glide needs a sukun on و after a fatha."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-22-q6", "q": "What is the small alif above a letter (ـٰ)?", "options": ["A long 'aa' written small: still 2 counts", "A stress mark", "A sign to stop", "A silent letter"], "answer": 0, "explain": ["Right (more in the next lesson).", "Arabic marks don't show stress.", "Stops are shown by pause signs.", "It is pronounced as a long vowel."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-22-q7", "q": "What sound do you make for بَوْ?", "options": ["'baw': a glide, not a long vowel", "'buu': a long 'u'", "'bawa'", "'ba' only"], "answer": 0, "explain": ["Right: fatha + و with sukun.", "A long 'uu' needs a damma before the و.", "The و has a sukun, so no vowel after it.", "The و is heard as a glide."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-22-q8", "q": "A fatha followed by a bare ا gives…", "options": ["'aa' for 2 counts", "'a' for 1 count", "'an'", "'ii'"], "answer": 0, "explain": ["Right.", "The alif makes it long.", "'an' is tanween fath.", "'ii' needs a kasra and ي."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-22-q9", "q": "Does a madd letter carry its own vowel mark?", "options": ["No: it is bare and only stretches the vowel before it", "Yes: always a fatha", "Yes: always a sukun", "Only at the end of an ayah"], "answer": 0, "explain": ["Right.", "A vowel on it would make it a consonant.", "A sukun on و or ي after a fatha makes a glide instead.", "Madd letters look the same everywhere."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-22-q10", "q": "Which of these is a SHORT vowel?", "options": ["بِ", "بِي", "بَا", "بُو"], "answer": 0, "explain": ["Right: a kasra alone, one count.", "Kasra + ي is long.", "Fatha + ا is long.", "Damma + و is long."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-22-q11", "q": "What is the best way to keep madd lengths even?", "options": ["Count steadily, for example one finger per count", "Stretch until you run out of breath", "Make each madd a different length", "Stop counting once you know the word"], "answer": 0, "explain": ["Right.", "Length is measured in counts, not breath.", "Lengths must be consistent.", "Even known words need steady counts."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-22-q12", "q": "Which pairing gives a long 'ii'?", "options": ["Kasra before a bare ي", "Fatha before ي with sukun", "Damma before ي", "ي with its own fatha (يَ)"], "answer": 0, "explain": ["Right.", "That is the glide 'ay'.", "A damma doesn't pair with ي.", "With its own vowel, ي is the consonant 'y'."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-22-q13", "q": "Persian/Urdu readers often round the long alif (like 'aw' in 'law'). What should it be after a light letter?", "options": ["An open 'aa' as in 'father'", "A rounded 'aw'", "A short 'a'", "An 'ee'"], "answer": 0, "explain": ["Right.", "That is the Persian habit to avoid.", "It must be long: 2 counts.", "'ee' is the sound of kasra + ي."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "contrast", "set": "long-vowel", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "word-audio", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "Madd letters == ا و ي (alif, waw, ya)",
+    "Long vowels == Fatha + ا = aa, damma + و = uu, kasra + ي = ii",
+    "Natural madd (madd tabee'i) length == 2 counts",
+    "و or ي with sukun after a fatha == A glide (aw, ay), not a long vowel"
+  ],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say بَا بُو بِي five times, two even counts each, record the fifth time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

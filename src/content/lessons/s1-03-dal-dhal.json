@@ -1,0 +1,80 @@
+{
+  "id": "s1-03-dal-dhal",
+  "stage": 1,
+  "order": 3,
+  "title": "The corner pair: د ذ",
+  "minutes": 10,
+  "prerequisites": ["s1-02-jim-family"],
+  "bigIdea": { "text": "د (dal) and ذ (dhal) share one small corner shape. No dot = 'd'. One dot above = the 'th' in 'this'.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Both look like a small bent corner sitting on the line. ذ has one dot above. They join the letter before them but never the letter after them, so a small gap often follows them.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sounds: د is a clean 'd': the tongue touches behind the upper front teeth, holds, and lets go. ذ is the 'th' in 'this': the tongue tip meets the edges of the upper front teeth and the voiced sound keeps flowing.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sifat: د is 'strong' (shiddah: its sound stops fully) and a bouncing letter (qalqalah), so with a sukun it bounces. ذ is 'soft' (rakhawa: its sound flows). Neither is whispered: both hold the breath back (jahr).", "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" } },
+    { "text": "Heavy or light: both are light. Neither is one of the seven heavy letters (خ ص ض غ ط ق ظ).", "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" } },
+    { "text": "Common mistakes. Persian/Urdu readers: ذ is read as 'z'; it must be the 'th' of 'this'. English speakers: a د with sukun at the end of a syllable fades away; give it its small bounce. Some learners turn ذ into د: keep the air flowing for ذ.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": {
+    "kind": "makhraj",
+    "points": [
+      { "letter": "د", "region": "lisan", "detail": "Tongue against the roots of the upper front teeth (shared with ت and ط)" },
+      { "letter": "ذ", "region": "lisan", "detail": "Tongue against the edges of the upper front teeth (shared with ث and ظ)" }
+    ],
+    "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }
+  },
+  "memoryHook": { "text": "Dot on top = the 'th' of 'this'; no dot = d.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "Six letters never join the letter after them: ا د ذ ر ز و. You have just met two of them.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "1:4", "words": [2, 3], "note": { "text": "Contains د (with a shadda).", "provenance": { "kind": "dataset", "source": "Tanzil text 1:4 recited word 2" } } },
+    { "ref": "112:3", "words": [1, 2], "rule": "qalqalah", "note": { "text": "Ends in د with a sukun: listen for the bounce.", "provenance": { "kind": "dataset", "source": "Tanzil text 112:3 recited word 1; qalqalah from cpfair/quran-tajweed (rebuilt)" } } },
+    { "ref": "113:1", "words": [1, 2], "note": { "text": "Ends in ذ.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:1 recited word 1" } } }
+  ],
+  "letters": ["د", "ذ"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 1, "note": "Mapped by order — please confirm this is the right video, then mark where the teacher says د and ذ." },
+    { "source": "minshawi-words", "ref": "1:4", "words": [2, 3] },
+    { "source": "minshawi-words", "ref": "112:3", "words": [1, 2] },
+    { "source": "minshawi-words", "ref": "113:1", "words": [1, 2] }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Say each letter with a fatha: دَ ذَ", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Say them with kasra and damma: دِ ذِ دُ ذُ", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["د", "ذ"], "tip": { "text": "د stops: the tongue touches behind the upper front teeth and lets go. ذ flows: the tongue tip meets the edges of the upper teeth and the voice keeps going.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["ذ", "ز"], "tip": { "text": "ذ: tongue tip at the edges of the upper front teeth, no whistle. ز: tongue tip behind the front teeth, with a buzzing whistle. Persian/Urdu readers: this is the pair to practise.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "cr": [{ "ref": "112:3", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-03-q1", "q": "Which letter is a small corner with one dot above?", "options": ["ذ (dhal)", "د (dal)", "ز (zay)", "ر (ra)"], "answer": 0, "explain": ["Right: the corner shape with a dot is dhal.", "dal is the same corner with no dot.", "zay also has one dot, but its body is a curve that drops below the line.", "ra has no dot, and its curve drops below the line."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-03-q2", "q": "Which English sound is closest to ذ?", "options": ["'th' in 'this'", "'th' in 'think'", "'z' in 'zoo'", "'d' in 'day'"], "answer": 0, "explain": ["Right: a voiced 'th' with the tongue at the edges of the teeth.", "That whispered 'th' is ث.", "'z' is the letter ز.", "'d' is the letter د."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-03-q3", "q": "What happens to د when it has a sukun?", "options": ["It bounces slightly (qalqalah)", "It hums through the nose", "It becomes silent", "It whistles"], "answer": 0, "explain": ["Right: dal is one of the five qalqalah letters (ق ط ب ج د).", "Humming is not a quality of dal.", "A dal with sukun is still said clearly.", "Whistling (safir) belongs to ص ز س, not dal."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-03-q4", "q": "Where is ذ made?", "options": ["Tongue against the edges of the upper front teeth", "Tongue against the roots of the upper front teeth", "The middle of the tongue", "Between the lips"], "answer": 0, "explain": ["Right: dhal shares this place with ث and ظ.", "That is the place of د, ت and ط.", "That is the place of ج, ش and ي.", "That is the place of ب, م and و."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-03-q5", "q": "Persian and Urdu readers often say ذ like which sound?", "options": ["'z' (like ز)", "'d' (like د)", "'s' (like س)", "'th' in 'think' (like ث)"], "answer": 0, "explain": ["Right: in Persian and Urdu ذ is read as 'z', so it merges with ز.", "That turns it into a stop; the usual merge is with 'z'.", "'s' is whispered; the usual merge is with 'z'.", "That is ث, the whispered partner of ذ."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-03-q6", "q": "Which of these letters never joins the letter after it?", "options": ["د (dal)", "ب (ba)", "ج (jim)", "ن (nun)"], "answer": 0, "explain": ["Right: dal joins only the letter before it.", "ba joins on both sides.", "jim joins on both sides.", "nun joins on both sides."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-03-q7", "q": "How do you tell د from ذ?", "options": ["ذ has one dot above; د has none", "د is always bigger", "ذ drops below the line", "You can't; they are the same letter"], "answer": 0, "explain": ["Right: the dot is the only difference in shape.", "Size is not reliable.", "Neither drops below the line; that is ر and ز.", "They are different letters with different sounds."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-03-q8", "q": "Are د and ذ heavy or light?", "options": ["Both light", "Both heavy", "د heavy, ذ light", "ذ heavy, د light"], "answer": 0, "explain": ["Right: neither is one of the seven heavy letters.", "The heavy letters are خ ص ض غ ط ق ظ.", "dal is light.", "dhal is light."], "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-03-q9", "q": "Where is د made?", "options": ["Tongue against the roots of the upper front teeth", "Tongue against the edges of the upper front teeth", "The part of the throat nearest the mouth", "The lower lip with the upper front teeth"], "answer": 0, "explain": ["Right: dal shares this place with ت and ط.", "That is the place of ذ, ث and ظ.", "That is the place of خ and غ.", "That is the place of ف."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-03-q10", "q": "Which describes ذ?", "options": ["Soft: its sound keeps flowing", "Strong: its sound stops fully", "It bounces when it has a sukun", "Whispered: only breath comes out"], "answer": 0, "explain": ["Right: dhal is a soft (rakhawa) letter.", "That describes dal.", "That is dal again (qalqalah).", "dhal holds the breath back (jahr); its whispered partner is ث."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-03-q11", "q": "A learner reads ذ as 'z'. What fixes it?", "options": ["Let the tongue tip meet the edges of the upper front teeth and keep the voice flowing", "Hiss more strongly", "Press the tongue behind the teeth and release it", "Round the lips"], "answer": 0, "explain": ["Right: that makes the Arabic 'th' of 'this'.", "A stronger hiss is still 'z' or 's'.", "That makes د.", "The lips are not used for ذ."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-03-q12", "q": "Which pair of letters BOTH never join the letter after them?", "options": ["د and ذ", "ب and ت", "ج and خ", "ن and ي"], "answer": 0, "explain": ["Right: dal and dhal join only the letter before them.", "ba and ta join on both sides.", "jim and kha join on both sides.", "nun and ya join on both sides."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-03-q13", "q": "Why is there often a small gap after د in a word?", "options": ["Because د never joins the letter after it", "Because د is a heavy letter", "Because the next letter is silent", "Because a vowel is missing"], "answer": 0, "explain": ["Right: the gap comes from the writing, not the sound.", "dal is light, and weight does not affect joining.", "The next letter is read normally.", "Vowels are marks; they do not create gaps."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "letter-id", "letters": ["د", "ذ"]},
+    {"kind": "letter-in-word", "letters": ["ذ", "د"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "د (dal) == No dot; tongue against the roots of the upper front teeth; clean 'd'; light; bounces with sukun",
+    "ذ (dhal) == One dot above; tongue against the edges of the upper front teeth; 'th' in 'this'; light; sound flows",
+    "Persian/Urdu fix for ذ == The 'th' of 'this', never 'z'",
+    "Letters that never join the next letter == ا د ذ ر ز و"
+  ],
+  "sources": [
+    { "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" },
+    { "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" },
+    { "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }
+  ],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say دَ ذَ دَ ذَ three times, record the third time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

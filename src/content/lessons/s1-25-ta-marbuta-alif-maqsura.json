@@ -1,0 +1,73 @@
+{
+  "id": "s1-25-ta-marbuta-alif-maqsura",
+  "stage": 1,
+  "order": 25,
+  "title": "Two special endings: ta marbuta and alif maqsura",
+  "minutes": 10,
+  "prerequisites": ["s1-24-hamza-wasl-qat"],
+  "bigIdea": { "text": "Two letters live only at the end of a word. Ta marbuta (ة) is a 't' when you read on and an 'h' when you stop. Alif maqsura (ى after a fatha) looks like a ya but is read as a long 'aa'.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Ta marbuta ('tied ta', ة; joined: ـة) looks like ه with two dots on top. When you continue, read it as ت with its vowel. When you stop on it, it becomes ه with sukun: 'h'.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "The same with tanween: continuing gives '-tan', '-tun' or '-tin'; stopping gives just 'h'. Unlike ـًا, a ـةً does not turn into a long 'aa' when you stop.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Alif maqsura ('shortened alif') is written like a ي without dots (ى) at the end of a word, after a fatha. It is a long 'aa', 2 counts. In this mushaf it often carries a small alif (ىٰ) to show this.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Careful: in this mushaf the final ya is written without dots too. So look at what comes before or on it: after a kasra (and no mark of its own) it is a long 'ii'; with its own vowel it is the consonant 'y'; after a fatha (often as ىٰ) it is the long 'aa' of alif maqsura.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "ة is not ه: ه is a real 'h' everywhere, while ة is a 't' unless you stop on it.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": { "kind": "letters", "letters": ["ة", "ـة", "ى", "ـى"], "caption": "ta marbuta · alif maqsura" },
+  "memoryHook": { "text": "ة: 't' on the move, 'h' at the stop. ى after a fatha: long 'aa'.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "A few words that usually end in ة are spelled in the mushaf with an open ت. For Hafs you stop on those with 't', following the spelling.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "114:6", "words": [1, 2], "note": { "text": "You read on to the next word, so the ة is a 't' with its kasra.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "97:1", "words": [3, 5], "note": { "text": "ة in the middle of the reading: a 't' joined to the next word.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "101:1", "words": [0, 1], "note": { "text": "A one-word ayah: when you stop at its end, the ة becomes 'h'.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "104:1", "words": [2, 4], "note": { "text": "Two ta marbutas: the first is a 't' joined to the next word; the last, where you stop, is 'h'.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "79:24", "words": [3, 4], "note": { "text": "Alif maqsura with a small alif on it (ىٰ): a long 'aa'.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "93:1", "words": [0, 1], "note": { "text": "A one-word ayah ending in alif maqsura (ىٰ): a long 'aa'.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "114:5", "words": [2, 3], "note": { "text": "A dotless final ya after a kasra: a long 'ii', not alif maqsura.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "97:5", "words": [1, 2], "note": { "text": "A dotless final ya with its own fatha: the consonant 'y'.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "letters": ["ة", "ى"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 11, "note": "Mapped by order (our lesson 25 → Nuraniah lesson 11) — please confirm. The video titles carry no topic, so check it fits this lesson and mark its segments when you watch." },
+    { "source": "minshawi-ayah", "ref": "101:1" },
+    { "source": "minshawi-ayah", "ref": "104:1" },
+    { "source": "minshawi-ayah", "ref": "114:6" }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Ta marbuta: say ـةَ ـةُ ـةِ as 'ta, tu, ti' (continuing), then the stop form ـهْ ('h') for each.", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Alif maqsura: say بَىٰ and تَىٰ as 'baa' and 'taa', 2 counts each. Then the dotless ya after a kasra: ثِى as 'thii', 2 counts.", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["ة", "ه"], "tip": { "text": "ه is always 'h'. ة is 't' when you read on, and 'h' only when you stop on it.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "echo", "ref": "104:1" }
+  ],
+  "cr": [{ "ref": "104:1", "mode": "echo" }, { "ref": "114:6", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-25-q1", "q": "How do you read ة when you continue to the next word?", "options": ["As ت ('t') with its vowel", "As ه ('h')", "Silent", "As a long 'aa'"], "answer": 0, "explain": ["Right.", "'h' is only for stopping.", "It is always pronounced.", "It is a consonant, not a long vowel."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-25-q2", "q": "How do you read ة when you stop on it?", "options": ["As ه with sukun ('h')", "As ت with its vowel", "As a long 'aa'", "As 'n'"], "answer": 0, "explain": ["Right.", "That is for continuing.", "That is how you stop on ـًا, not on ة.", "Tanween's n drops when you stop."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-25-q3", "q": "What does ta marbuta look like?", "options": ["ه with two dots on top", "ت with three dots", "ي without dots", "و with a small head"], "answer": 0, "explain": ["Right.", "Three dots on that shape would be ث.", "That is the shape of alif maqsura (ى).", "That is not a letter shape used here."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-25-q4", "q": "Alif maqsura is read as…", "options": ["A long 'aa' (2 counts)", "A long 'ii'", "The consonant 'y'", "A short 'i'"], "answer": 0, "explain": ["Right.", "A long 'ii' is a dotless ya after a kasra.", "The consonant 'y' has its own vowel.", "It is long, and it is 'a', not 'i'."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-25-q5", "q": "In this mushaf, a final dotless ya comes after a kasra and has no mark of its own. How is it read?", "options": ["Long 'ii'", "Long 'aa'", "Consonant 'y'", "Silent"], "answer": 0, "explain": ["Right.", "Long 'aa' needs a fatha before it.", "A consonant 'y' has its own vowel.", "It is a madd letter, so it is read."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-25-q6", "q": "You stop on a word ending in ـةً (ta marbuta with tanween fath). How do you end?", "options": ["With 'h' (ـهْ)", "With a long 'aa'", "With '-tan'", "With 't' and sukun"], "answer": 0, "explain": ["Right.", "That is only for ـًا without ة.", "'-tan' is for continuing.", "Ta marbuta becomes 'h', not 't', at a stop."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-25-q7", "q": "Which clue shows that a final ى is alif maqsura (a long 'aa')?", "options": ["A fatha before it, often with a small alif on it (ىٰ)", "A kasra before it", "Two dots under it", "A sukun on it"], "answer": 0, "explain": ["Right.", "After a kasra it is a long 'ii'.", "With dots it is a ya.", "Alif maqsura carries no sukun."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-25-q8", "q": "How is ه different from ة?", "options": ["ه is always 'h'; ة is 't' unless you stop", "They are the same letter", "ه is silent at the end of a word", "ة is always 'h'"], "answer": 0, "explain": ["Right.", "They are different letters.", "ه is always pronounced.", "Only when you stop on it."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-25-q9", "q": "Where does ta marbuta appear?", "options": ["Only at the end of a word", "Only at the start", "Anywhere in a word", "Only on its own"], "answer": 0, "explain": ["Right.", "It never starts a word.", "It is limited to the end.", "It usually ends a longer word."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-25-q10", "q": "A dotless final ى carries its own fatha (ـىَ). How is it read?", "options": ["As the consonant 'y' with 'a'", "Long 'aa'", "Long 'ii'", "Silent"], "answer": 0, "explain": ["Right: it has its own vowel, so it is a consonant.", "Alif maqsura has no vowel of its own.", "A long 'ii' has no vowel of its own.", "It is pronounced."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-25-q11", "q": "You continue past a ta marbuta with a damma (ـةُ). What do you say?", "options": ["'tu'", "'h'", "'hu'", "'taa'"], "answer": 0, "explain": ["Right.", "'h' is only for stopping.", "When continuing it is a 't', not an 'h'.", "There is no long vowel here."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-25-q12", "q": "Why must you look at the vowel before a final ى in this mushaf?", "options": ["Because ى can be 'aa', 'ii' or 'y' depending on it", "Because ى is always silent", "Because ى is only decoration", "Because the vowel before it is always a fatha"], "answer": 0, "explain": ["Right.", "It is read in all three cases.", "It is a real letter.", "A kasra or its own vowel are common too."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-25-q13", "q": "In Hafs, how do you stop on the few words the mushaf spells with an open ت where you might expect ة?", "options": ["With 't', following the spelling", "With 'h'", "With a long 'aa'", "You may not stop on them"], "answer": 0, "explain": ["Right.", "'h' is for words written with ة.", "There is no alif to lengthen.", "Stopping on them is allowed."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "word-audio", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "harakah-id", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "Ta marbuta (ة) == 't' with its vowel when you read on; 'h' (ـهْ) when you stop",
+    "Alif maqsura (ى after a fatha, often ىٰ) == Long 'aa', 2 counts",
+    "Dotless final ى after a kasra == Long 'ii'"
+  ],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Read 104:1 five times after Sheikh al-Minshawi, with 't' on the first ة and 'h' on the last; record the fifth time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

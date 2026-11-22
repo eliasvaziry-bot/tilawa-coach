@@ -1,0 +1,175 @@
+{
+ "generated": "2026-11-22",
+ "text": {
+  "ayat": 6236,
+  "sha256": "18c719bb3ba26d32ef457f40dad77cd28c4c5a34156833e26a8e5fcfdd246fb1",
+  "ayatDifferingFrom2017": 309,
+  "saktMarkTokens": [
+   "18:1",
+   "36:52",
+   "69:28",
+   "75:27",
+   "83:14"
+  ]
+ },
+ "annotations": {
+  "ruleCounts": {
+   "hamzat_wasl": 13588,
+   "lam_shamsiyyah": 2957,
+   "madd_2": 9140,
+   "madd_246": 4655,
+   "madd_6": 149,
+   "idghaam_no_ghunnah": 1035,
+   "silent": 4174,
+   "ghunnah": 4946,
+   "qalqalah": 3834,
+   "ikhfa": 5301,
+   "madd_munfasil": 3172,
+   "madd_muttasil": 1997,
+   "idghaam_ghunnah": 3933,
+   "ikhfa_shafawi": 496,
+   "idghaam_shafawi": 832,
+   "iqlab": 562,
+   "idghaam_mutajanisayn": 58,
+   "idghaam_mutaqaribayn": 13
+  },
+  "primary": 60024,
+  "waslOnly": 925,
+  "waslOnlyNotNearMark": 0,
+  "from2017": 34,
+  "from2017ViaSubstitution": 34,
+  "rebuildOnly": 1,
+  "marksOnly": 27,
+  "waqfOnlyAdded": 0,
+  "unmapped2017": 0,
+  "basmalaCopied": 784,
+  "disputedFlagged": 561,
+  "engineFlagged": 52,
+  "implausibleCount": 0,
+  "implausible": [],
+  "marksOnlyExamples": [
+   "2:88 iqlab [27,30) «ٌۢ »",
+   "2:154 iqlab [60,63) «ٌۢ »",
+   "3:169 iqlab [66,70) «ًۢا »",
+   "4:155 iqlab [137,140) «ٌۢ »",
+   "16:28 iqlab [118,121) «ٍۭ »",
+   "16:101 iqlab [115,118) «ٍۭ »",
+   "18:1 silent [130,131) « »",
+   "18:48 iqlab [89,92) «ٍۭ »",
+   "18:50 iqlab [219,222) «ٌۢ »",
+   "20:123 iqlab [29,33) «ًۢا »",
+   "20:132 ghunnah [82,85) «نَّ»",
+   "23:70 iqlab [28,31) «ٌۢ »",
+   "32:10 iqlab [72,75) «ٍۭ »",
+   "34:8 iqlab [49,52) «ٌۢ »",
+   "36:52 silent [53,54) « »",
+   "37:30 iqlab [41,44) «ٍۭ »",
+   "38:44 ghunnah [87,90) «نِّ»",
+   "39:49 iqlab [123,126) «ٍۭ »",
+   "43:58 iqlab [77,81) «ًۢا »",
+   "46:28 iqlab [80,83) «ًۢ »",
+   "46:35 iqlab [174,177) «ٍۭ »",
+   "48:11 iqlab [268,272) «ًۢا »",
+   "59:14 iqlab [83,86) «ٍۭ »",
+   "62:5 iqlab [103,107) «ًۢا »",
+   "69:28 silent [30,31) « »",
+   "75:27 silent [12,13) « »",
+   "83:14 silent [13,14) « »"
+  ]
+ },
+ "timings": {
+  "Minshawy_Murattal_128kbps": {
+   "ayat": 6236,
+   "words": 77433,
+   "ayatWithRepairs": 127,
+   "repairsByKind": {
+    "overlap": 96,
+    "split": 22,
+    "absorbed": 15,
+    "duration": 19,
+    "order": 9,
+    "interpolated": 6,
+    "remapped": 24
+   },
+   "wordsInterpolated": 24,
+   "wordsSplit": 54,
+   "pctWordsDirectlyTimed": 99.9,
+   "autoExpansions": [],
+   "overridesApplied": [
+    "10:1",
+    "14:1",
+    "15:1"
+   ],
+   "pauseData": {
+    "ayatWithMeasuredPauses": 586,
+    "ayatSnapped": 71,
+    "boundariesSnapped": 90
+   },
+   "syncVsMeasuredPauses": {
+    "beforeSnapping": {
+     "innerPauses": 158,
+     "withinTolerance": 135,
+     "pct": 85.4,
+     "medianErrMs": 50,
+     "p90ErrMs": 360,
+     "wordsSpanningAPause": 46,
+     "leadingErrors": 3
+    },
+    "afterSnapping": {
+     "innerPauses": 158,
+     "withinTolerance": 156,
+     "pct": 98.7,
+     "medianErrMs": 0,
+     "p90ErrMs": 80,
+     "wordsSpanningAPause": 1,
+     "leadingErrors": 0
+    }
+   }
+  },
+  "Minshawy_Mujawwad_192kbps": {
+   "ayat": 6236,
+   "words": 77433,
+   "ayatWithRepairs": 573,
+   "repairsByKind": {
+    "split": 660,
+    "overlap": 54,
+    "absorbed": 82,
+    "interpolated": 2,
+    "duration": 3,
+    "remapped": 12
+   },
+   "wordsInterpolated": 112,
+   "wordsSplit": 1755,
+   "pctWordsDirectlyTimed": 97.59,
+   "autoExpansions": [
+    "13:1: qa max 17 > 15 words; assumed word 0 expanded by 2 (needs audio evidence)"
+   ],
+   "overridesApplied": [],
+   "pauseData": {
+    "ayatWithMeasuredPauses": 0,
+    "ayatSnapped": 0,
+    "boundariesSnapped": 0
+   },
+   "syncVsMeasuredPauses": {
+    "beforeSnapping": {
+     "innerPauses": 0,
+     "withinTolerance": 0,
+     "pct": null,
+     "medianErrMs": 0,
+     "p90ErrMs": 0,
+     "wordsSpanningAPause": 0,
+     "leadingErrors": 0
+    },
+    "afterSnapping": {
+     "innerPauses": 0,
+     "withinTolerance": 0,
+     "pct": null,
+     "medianErrMs": 0,
+     "p90ErrMs": 0,
+     "wordsSpanningAPause": 0,
+     "leadingErrors": 0
+    }
+   }
+  }
+ }
+}

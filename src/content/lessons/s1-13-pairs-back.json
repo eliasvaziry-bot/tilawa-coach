@@ -1,0 +1,84 @@
+{
+  "id": "s1-13-pairs-back",
+  "stage": 1,
+  "order": 13,
+  "title": "Back-of-the-mouth pairs: ق/ك · غ/خ",
+  "minutes": 12,
+  "prerequisites": ["s1-12-pairs-throat"],
+  "bigIdea": { "text": "Two pairs sit at the back of the mouth. ق and ك are neighbours on the back of the tongue: ق deeper and heavy, ك a little forward and light. غ and خ share one place near the top of the throat: غ buzzes with voice, خ is only breath.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Places: ق is the back of the tongue opposite the root of the uvula; ك is the back of the tongue with the roof of the mouth above it. Both are called 'uvula letters' (lahawiyyatan). غ and خ both come from the part of the throat nearest the mouth.", "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" } },
+    { "text": "ق vs ك in sifat: both are strong (shiddah). ق holds the breath back (jahr), is raised (isti'la) and bounces with a sukun (qalqalah). ك is whispered (hams: the breath flows with it) and lowered (istifal).", "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" } },
+    { "text": "غ vs خ in sifat: both are raised (isti'la) and soft (rakhawa). The difference is the breath: غ holds it back (jahr); خ lets it flow (hams).", "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" } },
+    { "text": "Heavy or light: ق, غ and خ are heavy; ك is light. So ق/ك is a heavy/light pair, while غ and خ are both heavy.", "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" } },
+    { "text": "Common mistakes. English speakers: ق said as ك, and غ or خ said as 'g' or 'k'. Persian readers: ق said like غ — ق must stop, غ must flow. Fix ق first (press the very back of the tongue, stop, release), then let غ flow from just behind it.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": {
+    "kind": "makhraj",
+    "points": [
+      { "letter": "ق", "region": "lisan", "detail": "Back of the tongue, opposite the root of the uvula" },
+      { "letter": "ك", "region": "lisan", "detail": "Back of the tongue with the roof of the mouth above it" },
+      { "letter": "غ", "region": "halq", "detail": "Part of the throat nearest the mouth" },
+      { "letter": "خ", "region": "halq", "detail": "Part of the throat nearest the mouth" }
+    ],
+    "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }
+  },
+  "memoryHook": { "text": "Qaf deep and heavy, kaf forward and light; ghayn buzzes, kha breathes.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "Linguists describe Arabic ك (like ت) as aspirated — said with a puff of air — and ق (like ط) as unaspirated.", "provenance": { "kind": "reference", "title": "Standard Arabic phonology — Wikipedia", "url": "https://en.wikipedia.org/wiki/Arabic_phonology", "opened": "2026-11-22" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "112:1", "words": [0, 1], "note": { "text": "Starts with ق.", "provenance": { "kind": "dataset", "source": "Tanzil text 112:1 recited word 0" } } },
+    { "ref": "108:1", "words": [2, 3], "note": { "text": "Contains ك.", "provenance": { "kind": "dataset", "source": "Tanzil text 108:1 recited word 2" } } },
+    { "ref": "1:7", "words": [4, 5], "note": { "text": "Starts with غ.", "provenance": { "kind": "dataset", "source": "Tanzil text 1:7 recited word 4" } } },
+    { "ref": "113:2", "words": [3, 4], "note": { "text": "Starts with خ and ends with ق.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:2 recited word 3" } } }
+  ],
+  "letters": ["ق", "ك", "غ", "خ"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 2, "note": "Mapped by order — please confirm this is the right video. If the teacher says ق and ك (or غ and خ) in it, mark both segments so you can play them side by side." },
+    { "source": "minshawi-words", "ref": "112:1", "words": [0, 1] },
+    { "source": "minshawi-words", "ref": "108:1", "words": [2, 3] },
+    { "source": "minshawi-words", "ref": "1:7", "words": [4, 5] },
+    { "source": "minshawi-words", "ref": "113:2", "words": [3, 4] }
+  ],
+  "drills": [
+    { "kind": "minimal-pair", "pair": ["ق", "ك"], "tip": { "text": "ق: the very back of the tongue presses near the uvula; heavy, no puff, and a bounce when it has a sukun. ك: a little further forward; light, with a small puff of breath.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["غ", "خ"], "tip": { "text": "Same place. Say خ (only breath, as in 'loch'), then add voice without moving anything: that is غ. Keep both heavy.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "say", "prompt": "Alternate: قَ كَ قَ كَ", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Alternate: خَ غَ خَ غَ", "times": 3, "record": true }
+  ],
+  "cr": [{ "ref": "113:3", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-13-q1", "q": "Which of these is a heavy/light pair?", "options": ["ق and ك", "غ and خ", "ص and ض", "ط and ظ"], "answer": 0, "explain": ["Right: qaf is heavy, kaf is light.", "ghayn and kha are both heavy.", "ṣad and ḍad are both heavy.", "ṭa and ẓa are both heavy."], "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-13-q2", "q": "What is the main difference between غ and خ?", "options": ["غ holds the breath back (jahr); خ lets it flow (hams)", "غ is light; خ is heavy", "They come from different places", "غ bounces with a sukun"], "answer": 0, "explain": ["Right: same place, different breath.", "Both are heavy.", "They share one place near the top of the throat.", "ghayn is not a qalqalah letter."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-13-q3", "q": "Your ق sounds like ك. What fixes it?", "options": ["Move it further back, raise the back of the tongue, and stop with no puff", "Add more breath", "Round the lips", "Let it flow like a gargle"], "answer": 0, "explain": ["Right: that gives the deep, heavy qaf.", "More breath makes it even more like kaf.", "The lips are not involved.", "Flowing turns it into ghayn."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-13-q4", "q": "Start with خ and add voice without moving anything. Which letter do you get?", "options": ["غ (ghayn)", "ق (qaf)", "ع (ʿayn)", "ك (kaf)"], "answer": 0, "explain": ["Right.", "qaf is a stop made with the back of the tongue.", "ʿayn comes from the middle of the throat.", "kaf is a whispered stop."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-13-q5", "q": "Which of these four letters bounces (qalqalah) when it has a sukun?", "options": ["ق (qaf)", "ك (kaf)", "غ (ghayn)", "خ (kha)"], "answer": 0, "explain": ["Right: qaf is one of ق ط ب ج د.", "kaf is not a qalqalah letter.", "ghayn is not a qalqalah letter.", "kha is not a qalqalah letter."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-13-q6", "q": "What is the main problem for Persian readers in this lesson?", "options": ["Saying ق like غ", "Saying ك like ق", "Saying خ like ه", "Saying غ like ع"], "answer": 0, "explain": ["Right: in Persian the two sound the same.", "Persian has its own 'k'; kaf is usually fine.", "Persian has its own kha; it is usually fine.", "ghayn and ʿayn are not usually merged."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-13-q7", "q": "Which letter is made with the back of the tongue opposite the root of the uvula?", "options": ["ق (qaf)", "ك (kaf)", "غ (ghayn)", "خ (kha)"], "answer": 0, "explain": ["Right.", "kaf uses the back of the tongue with the roof of the mouth above it.", "ghayn comes from the throat, nearest the mouth.", "kha comes from the throat, nearest the mouth."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-13-q8", "q": "Where do غ and خ come from?", "options": ["The part of the throat nearest the mouth", "The back of the tongue", "The middle of the throat", "The deepest part of the throat"], "answer": 0, "explain": ["Right.", "That is ق and ك.", "That is ع and ح.", "That is ء and ه."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-13-q9", "q": "Which letter of the pair ق/ك is whispered (the breath flows with it)?", "options": ["ك (kaf)", "ق (qaf)", "Both", "Neither"], "answer": 0, "explain": ["Right: kaf is in the whispered (hams) group.", "qaf holds the breath back (jahr).", "Only kaf is whispered.", "kaf is whispered."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-13-q10", "q": "Are غ and خ heavy or light?", "options": ["Both heavy", "Both light", "غ heavy, خ light", "خ heavy, غ light"], "answer": 0, "explain": ["Right: both are among the seven heavy letters.", "Neither is light.", "kha is heavy too.", "ghayn is heavy too."], "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-13-q11", "q": "Linguists describe which of these letters as said with a puff of air (aspirated)?", "options": ["ك (kaf)", "ق (qaf)", "ط (ṭa)", "None of them"], "answer": 0, "explain": ["Right: kaf (like ta) is aspirated.", "qaf is described as unaspirated.", "ṭa is described as unaspirated.", "kaf is aspirated."], "provenance": { "kind": "reference", "title": "Standard Arabic phonology — Wikipedia", "url": "https://en.wikipedia.org/wiki/Arabic_phonology", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-13-q12", "q": "Your غ sounds like a 'g'. What fixes it?", "options": ["Don't stop the sound: let it flow as a gargle", "Stop it harder", "Make it light", "Use the lips"], "answer": 0, "explain": ["Right: ghayn is soft (rakhawa); its sound flows.", "Stopping makes a 'g' or a qaf.", "ghayn is heavy.", "The lips are not used."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-13-q13", "q": "Which pair shares ONE place and differs only in the breath?", "options": ["غ and خ", "ق and ك", "ح and ه", "ع and ء"], "answer": 0, "explain": ["Right: ghayn holds the breath back, kha lets it flow.", "qaf and kaf are neighbours, not one place, and differ in weight too.", "ḥa and ha come from different levels of the throat.", "ʿayn and hamza come from different levels of the throat."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "letter-id", "letters": ["ق", "ك", "غ", "خ"]},
+    {"kind": "letter-in-word", "letters": ["غ", "خ", "ق", "ك"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "ق vs ك == ق: deepest back of the tongue, heavy, no puff, bounces with sukun; ك: a little forward, light, a little breath",
+    "غ vs خ == Same place near the top of the throat, both heavy; غ holds the breath (voice), خ lets it flow",
+    "Persian fix for ق and غ == ق stops; غ flows"
+  ],
+  "sources": [
+    { "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" },
+    { "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" },
+    { "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" },
+    { "title": "Standard Arabic phonology — Wikipedia", "url": "https://en.wikipedia.org/wiki/Arabic_phonology", "opened": "2026-11-22" }
+  ],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say قَ كَ خَ غَ three times, record the third time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

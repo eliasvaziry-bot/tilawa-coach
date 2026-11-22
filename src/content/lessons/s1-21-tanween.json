@@ -1,0 +1,70 @@
+{
+  "id": "s1-21-tanween",
+  "stage": 1,
+  "order": 21,
+  "title": "Tanween: the hidden 'n' at the end",
+  "minutes": 10,
+  "prerequisites": ["s1-20-shadda"],
+  "bigIdea": { "text": "A doubled vowel mark on the last letter adds an 'n' sound: '-an', '-un' or '-in'. You hear the n, but it is not written as a letter.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Tanween fath ( ً ): two fathas, '-an'. Tanween damm ( ٌ ): two dammas (often drawn as a damma with a small tail), '-un'. Tanween kasr ( ٍ ): two kasras below, '-in'.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Tanween only comes on the last letter of a word. It is an extra n sound (a noon with sukun) that is pronounced but not written.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Tanween fath usually has an alif after it (ـًا). When you continue, that alif is not read: say '-an'. When you stop on the word, drop the n and say a long 'aa' (2 counts).", "provenance": { "kind": "model-knowledge" } },
+    { "text": "When you stop on tanween damm or tanween kasr, drop both the vowel and the n: end on the letter with sukun.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Before some letters the n of tanween hides or merges into the next word; Stage 2 covers this. Before a hamza, as in the examples below, it stays a clear 'n'.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": { "kind": "letters", "letters": ["بً", "بٌ", "بٍ"], "caption": "ban · bun · bin" },
+  "memoryHook": { "text": "Two marks, one hidden n: -an, -un, -in.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "In printed Madinah mushafs the two marks are drawn stacked when the n is said clearly, and staggered (one slightly after the other) when it hides or merges into the next letter. This app's text does not show that difference, so listen to Sheikh al-Minshawi.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "112:4", "words": [3, 4], "note": { "text": "Tanween fath with its alif: '-an' when you continue (here a hamza follows, so the n is clear).", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "113:3", "words": [2, 4], "note": { "text": "Tanween kasr on the first word: a clear '-in' before the hamza of the next word.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "113:5", "words": [2, 4], "note": { "text": "The same pattern: tanween kasr, then a word starting with hamza.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "112:1", "words": [3, 4], "note": { "text": "Tanween damm at the end of the ayah: when you stop, drop '-un' and end on د with sukun.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "103:2", "words": [3, 4], "note": { "text": "Tanween kasr at the end of the ayah: stopping, you end on ر with sukun.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "letters": ["ً", "ٌ", "ٍ"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 7, "note": "Mapped by order (our lesson 21 → Nuraniah lesson 7) — please confirm. The video titles carry no topic, so check it fits this lesson and mark its segments when you watch." },
+    { "source": "minshawi-ayah", "ref": "113:3" },
+    { "source": "minshawi-ayah", "ref": "112:1" }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Say بً بٌ بٍ (ban, bun, bin), then تً تٌ تٍ.", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Stopping practice: say بَتًا as 'batan' (continuing), then as 'bataa' (stopping). Say بَتٌ as 'batun', then 'bat'.", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["بُ", "بٌ"], "tip": { "text": "بُ is 'bu'. بٌ is 'bun': the doubled damma adds an n.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "echo", "ref": "113:3" }
+  ],
+  "cr": [{ "ref": "113:3", "mode": "echo" }, { "ref": "112:4", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-21-q1", "q": "What sound does tanween add?", "options": ["An 'n' after the vowel", "An 'm' after the vowel", "A long 'aa'", "A pause"], "answer": 0, "explain": ["Right: '-an', '-un', '-in'.", "Tanween is an n sound (it only turns into m in a special case, Stage 2).", "A long 'aa' comes from fatha + alif, or from stopping on tanween fath.", "Tanween is a sound, not a pause."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-21-q2", "q": "How do you read بٍ?", "options": ["bin", "bun", "ban", "bi"], "answer": 0, "explain": ["Right: two kasras, '-in'.", "'bun' needs tanween damm.", "'ban' needs tanween fath.", "'bi' is a single kasra, without the n."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-21-q3", "q": "Where does tanween appear?", "options": ["Only on the last letter of a word", "On the first letter of a word", "On any letter", "Only on alif"], "answer": 0, "explain": ["Right.", "It never starts a word.", "It is always at the end.", "It sits on the last letter, whatever that letter is."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-21-q4", "q": "Tanween fath often has an alif after it (ـًا). Is that alif read when you continue?", "options": ["No: say '-an' and move on", "Yes: say a long 'aa' and then 'n'", "Yes, as a hamza", "Yes: it turns the tanween into '-in'"], "answer": 0, "explain": ["Right: the alif only matters when you stop.", "That adds a long vowel that isn't there when continuing.", "This alif carries no hamza.", "The vowel stays 'a'."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-21-q5", "q": "You stop on a word ending in tanween fath with alif (ـًا). How do you finish?", "options": ["With a long 'aa' (2 counts), no 'n'", "With '-an'", "With a short 'a'", "With 'n' only"], "answer": 0, "explain": ["Right.", "The n is dropped when you stop.", "When stopping it becomes long, not short.", "The vowel stays; it is the n that drops."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-21-q6", "q": "Which of these is NOT tanween?", "options": ["بّ", "بً", "بٌ", "بٍ"], "answer": 0, "explain": ["Right: that is a shadda.", "That is tanween fath ('ban').", "That is tanween damm ('bun').", "That is tanween kasr ('bin')."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-21-q7", "q": "Which mark gives '-un'?", "options": ["بٌ (tanween damm)", "بً (tanween fath)", "بٍ (tanween kasr)", "بُ (damma)"], "answer": 0, "explain": ["Right.", "That gives '-an'.", "That gives '-in'.", "A single damma gives 'u' without the n."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-21-q8", "q": "You stop on a word ending in tanween damm (ـٌ). How do you finish?", "options": ["Drop the '-un' and end on the letter with sukun", "Say '-un' fully", "Say a long 'uu'", "Say '-an'"], "answer": 0, "explain": ["Right.", "The vowel and the n drop when you stop.", "There is no long vowel here.", "The vowel is not changed to 'a'."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-21-q9", "q": "Why is tanween called a 'hidden n'?", "options": ["It is pronounced but not written as a ن letter", "It is never pronounced", "It is written as a small ن", "It only appears in names"], "answer": 0, "explain": ["Right.", "You do pronounce it when you continue.", "It is written as doubled vowel marks, not as a ن.", "It appears on many kinds of words."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-21-q10", "q": "How do you read بً when you continue to the next word?", "options": ["ban", "baa", "bun", "bin"], "answer": 0, "explain": ["Right.", "'baa' is how you stop on ـًا, not how you continue.", "'bun' needs two dammas.", "'bin' needs two kasras."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-21-q11", "q": "Which pair differs only by tanween?", "options": ["تُ and تٌ", "تُ and تْ", "تُ and تّ", "تُ and تِ"], "answer": 0, "explain": ["Right: 'tu' versus 'tun'.", "That is damma versus sukun.", "That is damma versus shadda.", "That is damma versus kasra."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-21-q12", "q": "Tanween is really which sound added at the end of a word?", "options": ["A noon with sukun", "A meem with sukun", "A long alif", "A hamza"], "answer": 0, "explain": ["Right.", "It is an n, not an m.", "A long alif only appears when you stop on tanween fath.", "Tanween has no hamza."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-21-q13", "q": "You stop on a word with tanween kasr (ـٍ). What do you say at the end?", "options": ["Just the letter with sukun: no '-in'", "'-in' clearly", "A long 'ii'", "'-an'"], "answer": 0, "explain": ["Right.", "The vowel and the n drop when you stop.", "There is no long vowel here.", "The vowel is not changed to 'a'."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "harakah-id", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "word-audio", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "Tanween ( ً ٌ ٍ ) == Doubled vowel mark on the last letter: -an, -un, -in (a hidden n)",
+    "Tanween fath + alif (ـًا) when continuing == Say '-an'; the alif is not read",
+    "Stopping on tanween fath (ـًا) == Say a long 'aa' (2 counts), no n",
+    "Stopping on tanween damm or kasr == Drop the vowel and the n; end with sukun"
+  ],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say بً بٌ بٍ (ban, bun, bin) five times, record the fifth time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

@@ -1,0 +1,487 @@
+{
+  "id": "s0-05-placement",
+  "stage": 0,
+  "order": 5,
+  "title": "Placement: find your starting point",
+  "minutes": 12,
+  "prerequisites": [
+    "s0-03-voice-range"
+  ],
+  "bigIdea": {
+    "text": "A short test finds where you should start, so you don't repeat what you know or skip what you don't.",
+    "provenance": {
+      "kind": "app"
+    }
+  },
+  "proper": [
+    {
+      "text": "The ladder has 4 levels: (1) letters; (2) letters with harakat; (3) joined words, as printed in the mushaf (the written Quran); (4) a short ayah aloud.",
+      "provenance": {
+        "kind": "app"
+      }
+    },
+    {
+      "text": "Harakat (singular: harakah) are the small vowel marks on letters. Fatha is a short 'a' (a small stroke above), kasra a short 'i' (a small stroke below) and damma a short 'u' (a small waw-shape above).",
+      "provenance": {
+        "kind": "model-knowledge"
+      }
+    },
+    {
+      "text": "You start at level 1. Pass a level and you climb to the next. Two fails at the same level stop the test, and you start learning at that level.",
+      "provenance": {
+        "kind": "app"
+      }
+    },
+    {
+      "text": "Level 4: listen to Sheikh al-Minshawi recite a short ayah, recite it back, then rate your attempt honestly against his.",
+      "provenance": {
+        "kind": "app"
+      }
+    },
+    {
+      "text": "Placement is not a grade. Starting a little low costs a few minutes; starting too high leaves gaps that cost far more later.",
+      "provenance": {
+        "kind": "model-knowledge"
+      }
+    }
+  ],
+  "visual": {
+    "kind": "arrows",
+    "steps": [
+      "1 · Letters",
+      "2 · Letters with harakat",
+      "3 · Joined words",
+      "4 · A short ayah aloud"
+    ],
+    "provenance": {
+      "kind": "app"
+    }
+  },
+  "memoryHook": {
+    "text": "Climb until you slip twice: that step is where you start.",
+    "provenance": {
+      "kind": "app"
+    }
+  },
+  "extras": [
+    {
+      "text": "Level 2 can also show sukun (no vowel), shadda (the letter is doubled) and tanwin (an added 'n': -an, -in, -un).",
+      "provenance": {
+        "kind": "model-knowledge"
+      },
+      "extra": true
+    }
+  ],
+  "examples": [
+    {
+      "ref": "112:1",
+      "note": {
+        "text": "The short ayah used in this lesson's listen and echo steps.",
+        "provenance": {
+          "kind": "app"
+        }
+      }
+    }
+  ],
+  "letters": [],
+  "listen": [
+    {
+      "source": "minshawi-ayah",
+      "ref": "112:1"
+    }
+  ],
+  "drills": [
+    {
+      "kind": "setup",
+      "component": "placement"
+    },
+    {
+      "kind": "echo",
+      "ref": "112:1"
+    }
+  ],
+  "cr": [],
+  "check": {
+    "quiz": {
+      "practice": 12,
+      "mastery": 20
+    },
+    "selfRate": true
+  },
+  "questions": [
+    {
+      "id": "s0-05-q1",
+      "q": "When does the placement ladder stop?",
+      "options": [
+        "After two fails at the same level",
+        "After your first mistake anywhere",
+        "Only after all 4 levels, whatever happens",
+        "After exactly 10 minutes"
+      ],
+      "answer": 0,
+      "explain": [
+        "Right: two fails at one level show that this is your starting point.",
+        "One slip is allowed; a second fail at the same level stops it.",
+        "It stops early when a level is clearly too hard, to save you time.",
+        "It is not timed; it follows your answers."
+      ],
+      "provenance": {
+        "kind": "app"
+      },
+      "heldOut": false
+    },
+    {
+      "id": "s0-05-q2",
+      "q": "What does level 2 check?",
+      "options": [
+        "Letters with harakat (vowel marks)",
+        "Single letters with no marks",
+        "A short ayah aloud",
+        "Your voice range"
+      ],
+      "answer": 0,
+      "explain": [
+        "Right.",
+        "That is level 1.",
+        "That is level 4.",
+        "Your voice range was measured during setup, not in placement."
+      ],
+      "provenance": {
+        "kind": "app"
+      },
+      "heldOut": false
+    },
+    {
+      "id": "s0-05-q3",
+      "q": "At level 4, how is your short ayah judged in this placement?",
+      "options": [
+        "You listen to Sheikh al-Minshawi, recite it, then rate your attempt against his",
+        "A teacher online marks it",
+        "It is not judged at all",
+        "The app only checks how loud you were"
+      ],
+      "answer": 0,
+      "explain": [
+        "Right: an honest self-rating against the reference voice.",
+        "Nothing is sent to anyone; your recordings stay on your phone.",
+        "It is judged, by you, against Sheikh al-Minshawi.",
+        "Loudness says nothing about correct reading."
+      ],
+      "provenance": {
+        "kind": "app"
+      },
+      "heldOut": false
+    },
+    {
+      "id": "s0-05-q4",
+      "q": "What are harakat?",
+      "options": [
+        "Small marks on letters that show the short vowels",
+        "The dots that tell letters apart",
+        "The numbers at the end of each ayah",
+        "Signs that show where you may pause"
+      ],
+      "answer": 0,
+      "explain": [
+        "Right: fatha, kasra and damma are the main three.",
+        "The dots are part of the letters themselves.",
+        "Those are ayah numbers.",
+        "Those are pause (waqf) signs."
+      ],
+      "provenance": {
+        "kind": "model-knowledge"
+      },
+      "heldOut": false
+    },
+    {
+      "id": "s0-05-q5",
+      "q": "A small slanted stroke ABOVE a letter is…",
+      "options": [
+        "fatha: a short 'a'",
+        "kasra: a short 'i'",
+        "damma: a short 'u'",
+        "tanwin: an added 'n'"
+      ],
+      "answer": 0,
+      "explain": [
+        "Right.",
+        "Kasra is the stroke BELOW the letter.",
+        "Damma looks like a small waw above the letter.",
+        "Tanwin is a doubled vowel mark, not a single stroke."
+      ],
+      "provenance": {
+        "kind": "model-knowledge"
+      },
+      "heldOut": false
+    },
+    {
+      "id": "s0-05-q6",
+      "q": "Which mark gives a short 'i'?",
+      "options": [
+        "Kasra: a small stroke below the letter",
+        "Fatha: a small stroke above the letter",
+        "Damma: a small waw-shape above the letter",
+        "Shadda: a small w-shape above the letter"
+      ],
+      "answer": 0,
+      "explain": [
+        "Right.",
+        "Fatha gives 'a'.",
+        "Damma gives 'u'.",
+        "Shadda doubles the letter; it is not a vowel."
+      ],
+      "provenance": {
+        "kind": "model-knowledge"
+      },
+      "heldOut": false
+    },
+    {
+      "id": "s0-05-q7",
+      "q": "What does level 3, 'joined words', test?",
+      "options": [
+        "Reading letters joined into whole words, as printed in the mushaf",
+        "Reciting two ayat in one breath",
+        "Reciting at the same time as Sheikh al-Minshawi",
+        "Writing words by hand"
+      ],
+      "answer": 0,
+      "explain": [
+        "Right: the mushaf is the written Quran.",
+        "Breath planning comes in Stage 3.",
+        "That is a different practice mode, not this level.",
+        "The app checks reading, not handwriting."
+      ],
+      "provenance": {
+        "kind": "app"
+      },
+      "heldOut": false
+    },
+    {
+      "id": "s0-05-q8",
+      "q": "In the echo drill, what do you do?",
+      "options": [
+        "Listen to Sheikh al-Minshawi recite a phrase, then recite it back",
+        "Recite first, then listen to him",
+        "Recite at exactly the same time as him",
+        "Read silently without recording"
+      ],
+      "answer": 0,
+      "explain": [
+        "Right: he calls, you answer.",
+        "In echo he goes first, so you copy a fresh model.",
+        "Reciting together is a different practice mode.",
+        "Echo records your answer so you can compare."
+      ],
+      "provenance": {
+        "kind": "app"
+      },
+      "heldOut": false
+    },
+    {
+      "id": "s0-05-q9",
+      "q": "Where does the placement test start?",
+      "options": [
+        "At level 1, letters",
+        "At level 4, the short ayah",
+        "At whichever level you pick",
+        "At Stage 2, tajweed"
+      ],
+      "answer": 0,
+      "explain": [
+        "Right: everyone starts at the bottom and climbs.",
+        "You reach the ayah only after passing the first three levels.",
+        "The ladder decides, so the result is fair.",
+        "Placement covers reading, which comes before tajweed."
+      ],
+      "provenance": {
+        "kind": "app"
+      },
+      "heldOut": false
+    },
+    {
+      "id": "s0-05-q10",
+      "q": "You fail level 2 twice. What happens?",
+      "options": [
+        "The test stops, and you start learning at letters with harakat",
+        "You move on to level 3 anyway",
+        "You go back to the start of level 1",
+        "You are locked out of the app"
+      ],
+      "answer": 0,
+      "explain": [
+        "Right: that level is your starting point.",
+        "Two fails at a level stop the climb.",
+        "You keep what you passed; level 1 is already done.",
+        "Placement only chooses where you start."
+      ],
+      "provenance": {
+        "kind": "app"
+      },
+      "heldOut": true
+    },
+    {
+      "id": "s0-05-q11",
+      "q": "You slip once at level 3, then read the next items well. What happens?",
+      "options": [
+        "You carry on: only a second fail at the same level stops the test",
+        "The test stops at once",
+        "You drop back to level 1",
+        "Level 3 is skipped"
+      ],
+      "answer": 0,
+      "explain": [
+        "Right: one slip is allowed.",
+        "One slip is not enough to stop it.",
+        "A slip does not send you back.",
+        "Each level is checked in turn."
+      ],
+      "provenance": {
+        "kind": "app"
+      },
+      "heldOut": true
+    },
+    {
+      "id": "s0-05-q12",
+      "q": "In what order does the ladder climb?",
+      "options": [
+        "Letters → letters with harakat → joined words → short ayah",
+        "Short ayah → joined words → letters with harakat → letters",
+        "Letters → joined words → letters with harakat → short ayah",
+        "Letters with harakat → letters → short ayah → joined words"
+      ],
+      "answer": 0,
+      "explain": [
+        "Right: each step builds on the one before.",
+        "That is upside down: the ayah is the top step.",
+        "Harakat come before joined words.",
+        "Plain letters come first."
+      ],
+      "provenance": {
+        "kind": "app"
+      },
+      "heldOut": true
+    },
+    {
+      "id": "s0-05-q13",
+      "q": "Why should you rate your level-4 recitation honestly?",
+      "options": [
+        "A start that is too high leaves gaps; an honest rating puts you where lessons help most",
+        "Low ratings are punished",
+        "A high rating unlocks the maqam lessons early",
+        "Your rating is shared with other learners"
+      ],
+      "answer": 0,
+      "explain": [
+        "Right: placement is not a grade.",
+        "Nothing is punished; the rating only chooses where you start.",
+        "Maqamat come after correct reading and tajweed.",
+        "Ratings and recordings stay on your phone."
+      ],
+      "provenance": {
+        "kind": "model-knowledge"
+      },
+      "heldOut": true
+    },
+    {
+      "id": "s0-05-q14",
+      "q": "When you compare your ayah with Sheikh al-Minshawi's, what comes first?",
+      "options": [
+        "Correct letters and vowels, then melody",
+        "Melody, then the letters",
+        "Speed: match his tempo exactly",
+        "Loudness: match his volume"
+      ],
+      "answer": 0,
+      "explain": [
+        "Right: beauty never comes before correct reading.",
+        "A beautiful tune with wrong letters is still wrong.",
+        "Speed matters least at this stage.",
+        "Volume is not part of correct reading."
+      ],
+      "provenance": {
+        "kind": "app"
+      },
+      "heldOut": true
+    },
+    {
+      "id": "s0-05-q15",
+      "q": "A shadda (a small w-shape above a letter) means…",
+      "options": [
+        "The letter is doubled: said once without a vowel, then again with its vowel",
+        "The letter is silent",
+        "The vowel is long",
+        "The letter is heavy"
+      ],
+      "answer": 0,
+      "explain": [
+        "Right.",
+        "Shadda makes a letter stronger, not silent.",
+        "Long vowels come from the letters alif, waw and ya, not from shadda.",
+        "Heaviness belongs to certain letters, not to the shadda."
+      ],
+      "provenance": {
+        "kind": "model-knowledge"
+      },
+      "heldOut": true
+    },
+    {
+      "id": "s0-05-q16",
+      "q": "Tanwin (a doubled vowel mark) at the end of a word adds…",
+      "options": [
+        "An 'n' sound after the vowel: -an, -in or -un",
+        "A long vowel",
+        "A stop with no vowel",
+        "A heavy sound"
+      ],
+      "answer": 0,
+      "explain": [
+        "Right.",
+        "Long vowels come from the letters alif, waw and ya.",
+        "No vowel is shown by sukun.",
+        "Tanwin does not make a letter heavy."
+      ],
+      "provenance": {
+        "kind": "model-knowledge"
+      },
+      "heldOut": true
+    },
+    {
+      "id": "s0-05-q17",
+      "q": "What does placement decide?",
+      "options": [
+        "Where you begin learning; it is not a grade",
+        "Whether you may use the app",
+        "Your final mark for the course",
+        "Which reciter you hear"
+      ],
+      "answer": 0,
+      "explain": [
+        "Right.",
+        "Everyone can use the whole app.",
+        "There is no final mark; mastery is per lesson.",
+        "Sheikh al-Minshawi is always the reference voice."
+      ],
+      "provenance": {
+        "kind": "app"
+      },
+      "heldOut": true
+    }
+  ],
+  "generators": [
+    {"kind": "harakah-id", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "word-audio", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "letter-id", "letters": ["ا", "ب", "ت", "ث", "ج", "ح", "خ", "د", "ذ", "ر", "ز", "س", "ش", "ص", "ض", "ط", "ظ", "ع", "غ", "ف", "ق", "ك", "ل", "م", "ن", "ه", "و", "ي", "ء"]}
+  ],
+  "remnote": [
+    "Placement ladder levels == 1 letters, 2 letters with harakat, 3 joined words, 4 a short ayah aloud",
+    "When placement stops == After two fails at the same level",
+    "Placement level 4 judging == Self-rated against Sheikh al-Minshawi's recitation",
+    "Harakat == Short-vowel marks: fatha 'a' (stroke above), kasra 'i' (stroke below), damma 'u' (small waw above)",
+    "Shadda == The letter is doubled",
+    "Tanwin == An added 'n' after the vowel: -an, -in, -un",
+    "Self-rating order == Correct letters and vowels first, melody second"
+  ],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Start the placement ladder at level 1 and keep going until it stops; at level 4, rate your ayah honestly against Sheikh al-Minshawi."
+}

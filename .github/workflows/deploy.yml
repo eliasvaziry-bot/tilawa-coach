@@ -1,0 +1,50 @@
+name: Deploy to GitHub Pages
+# Builds the site (plus build-time-only translations) and publishes it. Also called by workflows that commit data,
+# because commits pushed with GITHUB_TOKEN do not trigger other workflows (BRIEF B2.2).
+on:
+  # only after CI passed on main (a red main never goes live — non-negotiable 11)
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+  workflow_call:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.ref }}
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Translations (fetched at build time, never committed — Tanzil non-commercial terms)
+        run: node scripts/fetch-sources.ts --only tanzil-trans-en.qarai,tanzil-trans-en.shakir && node scripts/build-translations.ts
+      - run: npm run build
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}/
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

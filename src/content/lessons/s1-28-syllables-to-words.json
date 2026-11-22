@@ -1,0 +1,69 @@
+{
+  "id": "s1-28-syllables-to-words",
+  "stage": 1,
+  "order": 28,
+  "title": "From syllables to words",
+  "minutes": 12,
+  "prerequisites": ["s1-27-mushaf-signs"],
+  "bigIdea": { "text": "Every Arabic word is a chain of syllables. A syllable starts with a letter and its vowel; it can end there, stretch, or close on a sukun. Read the chain one link at a time, then smoothly.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Three building blocks: an open short syllable (letter + short vowel: بَ 'ba'), an open long syllable (letter + long vowel: بَا 'baa', 2 counts) and a closed syllable (letter + vowel + a sakin letter: بَبْ 'bab').", "provenance": { "kind": "model-knowledge" } },
+    { "text": "A shadda splits across two syllables: its first copy closes one syllable and its second opens the next (ـبَّـ = 'b | ba').", "provenance": { "kind": "model-knowledge" } },
+    { "text": "A syllable always starts with a consonant (hamza counts as one), never with a vowel alone or with a sakin letter. That is why a word starting with ٱ needs its joining vowel when you start on it, or a link from the word before.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Method for a new word: split it into syllables with your finger, say each one slowly, say them again joined at an even pace, then check against Sheikh al-Minshawi.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "In 112:3 every word ends in a closed syllable; in 113:2 the last word is three open short syllables.", "provenance": { "kind": "dataset", "source": "Tanzil text 112:3 (each word ends with sukun) and 113:2 word 3 (three letters, each with fatha)" } }
+  ],
+  "visual": { "kind": "arrows", "steps": ["Letters", "Letter + vowel = syllable", "Syllables in a chain = word", "Words in a flow = ayah"], "provenance": { "kind": "model-knowledge" } },
+  "memoryHook": { "text": "Split, say, join, check.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "Reading syllable by syllable is a stage, not the goal. As your eyes learn common words, you will read them whole; keep splitting only the new or difficult ones.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "112:3", "note": { "text": "Every word ends in a closed syllable (a letter with sukun).", "provenance": { "kind": "dataset", "source": "Tanzil text 112:3" } } },
+    { "ref": "1:2", "words": [0, 1], "note": { "text": "Three syllables: two closed by a sukun, then an open one.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "113:2", "words": [3, 4], "note": { "text": "Three open short syllables: each letter has a fatha.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "1:5", "words": [0, 1], "note": { "text": "The shadda on ي splits across two syllables, then comes a long alif.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "114:4", "words": [2, 3], "note": { "text": "Starting on this word: four syllables, closed, closed, long, then open short.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "letters": [],
+  "listen": [
+    { "source": "nuraniah", "lesson": 14, "note": "Mapped by order (our lesson 28 → Nuraniah lesson 14) — please confirm. The video titles carry no topic, so check it fits this lesson and mark its segments when you watch." },
+    { "source": "minshawi-ayah", "ref": "112:3" },
+    { "source": "minshawi-ayah", "ref": "1:2" }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Open, long, closed: بَ · بَا · بَبْ, then تِ · تِي · تِبْ", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Build a chain: بَ + تَبْ, first slowly as two syllables, then smoothly as one word (ba-tab).", "times": 3, "record": true },
+    { "kind": "echo", "ref": "112:3" },
+    { "kind": "echo", "ref": "1:2" }
+  ],
+  "cr": [{ "ref": "112:3", "mode": "buildup" }, { "ref": "1:2", "mode": "buildup" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-28-q1", "q": "Which of these is a CLOSED syllable?", "options": ["بَبْ (bab)", "بَ (ba)", "بَا (baa)", "بِي (bii)"], "answer": 0, "explain": ["Right: it ends on a sakin letter.", "That is open short.", "That is open long.", "That is open long."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-28-q2", "q": "Which of these is an open LONG syllable?", "options": ["بُو (buu)", "بُ (bu)", "بُبْ (bub)", "بّ (doubled b)"], "answer": 0, "explain": ["Right: damma + و, 2 counts.", "That is open short.", "That is closed.", "A shadda alone is not a syllable; it splits across two."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-28-q3", "q": "How does a shadda affect syllables?", "options": ["Its first copy closes one syllable and its second opens the next", "It makes one long syllable", "It removes a syllable", "It starts a new word"], "answer": 0, "explain": ["Right.", "Length comes from madd letters, not from shadda.", "It adds a consonant; nothing is removed.", "It works inside a word."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-28-q4", "q": "Why does a word starting with ٱ need a vowel when you start on it?", "options": ["A syllable can't start with a sakin letter, so the joining hamza and its vowel are said", "Because ٱ is always long", "Because ٱ is silent everywhere", "To mark the end of the word"], "answer": 0, "explain": ["Right.", "ٱ is not a madd letter.", "It is said when you start on it.", "It is at the start of the word."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-28-q5", "q": "What is the best order for reading a new word?", "options": ["Split into syllables, say each slowly, then join them evenly", "Guess from the first letter", "Read it as fast as you can first", "Read it left to right"], "answer": 0, "explain": ["Right.", "Guessing builds mistakes.", "Accuracy first, speed later.", "Arabic is read right to left."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-28-q6", "q": "How many counts does the vowel of an open long syllable last?", "options": ["2", "1", "4", "0"], "answer": 0, "explain": ["Right: a natural madd.", "One count is a short vowel.", "Four counts is a longer madd (Stage 2).", "It is a vowel, so it has length."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-28-q7", "q": "How many syllables are in بَتَبْ (ba-tab)?", "options": ["2", "1", "3", "5"], "answer": 0, "explain": ["Right: 'ba' + 'tab'.", "There are two vowels, so at least two syllables.", "The final sakin ب closes 'tab'; it is not a syllable on its own.", "That counts letters and marks, not syllables."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-28-q8", "q": "A syllable always begins with…", "options": ["A consonant carrying a vowel", "A vowel on its own", "A letter with sukun", "A shadda"], "answer": 0, "explain": ["Right (hamza counts as a consonant).", "Arabic syllables never start with a bare vowel.", "A sakin letter closes a syllable; it can't open one.", "A shadda is split across two syllables."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-28-q9", "q": "Which sign tells you a syllable is closed?", "options": ["A sukun on its last letter", "A fatha", "A madd letter", "A kasra"], "answer": 0, "explain": ["Right.", "A fatha opens a syllable.", "A madd letter makes it long, not closed.", "A kasra opens a syllable."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-28-q10", "q": "After splitting a word, how should the joined reading sound?", "options": ["Even, with no stops between the syllables", "With a pause after every syllable", "With every syllable stretched to 2 counts", "With the last letter stressed"], "answer": 0, "explain": ["Right.", "Pauses inside a word break it apart.", "Only long vowels get 2 counts.", "Keep the rhythm even."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-28-q11", "q": "In a chain, a long vowel (ا و ي after its matching vowel) makes its syllable…", "options": ["Longer: 2 counts", "Closed", "Silent", "Doubled"], "answer": 0, "explain": ["Right.", "A sukun closes a syllable; a madd letter lengthens it.", "Long vowels are clearly heard.", "Doubling is shadda."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-28-q12", "q": "Which of these is NOT a syllable type in Quran reading?", "options": ["A syllable that starts with a vowel alone", "Open short (بَ)", "Open long (بَا)", "Closed (بَبْ)"], "answer": 0, "explain": ["Right: every syllable starts with a consonant.", "This is a real type.", "This is a real type.", "This is a real type."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-28-q13", "q": "Your reading of a word doesn't match Sheikh al-Minshawi. What do you do?", "options": ["Split it again and check each syllable's vowel and length", "Ignore it and move on", "Read it faster", "Skip that word next time"], "answer": 0, "explain": ["Right.", "Mistakes left alone become habits.", "Speed hides mistakes.", "Every word must be read."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "word-audio", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "harakah-id", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "Three syllable types == Open short (بَ), open long (بَا, 2 counts), closed (بَبْ)",
+    "Shadda in syllables == First copy closes one syllable, second opens the next",
+    "Reading a new word == Split, say each syllable, join evenly, check with Minshawi"
+  ],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Read 112:3 syllable by syllable, then smoothly, five times; record the fifth time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

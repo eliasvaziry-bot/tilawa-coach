@@ -1,0 +1,85 @@
+{
+  "id": "s1-12-pairs-throat",
+  "stage": 1,
+  "order": 12,
+  "title": "Throat pairs: ح/ه · ع/ء · ح/خ",
+  "minutes": 12,
+  "prerequisites": ["s1-11-ha-waw-hamza-alif"],
+  "bigIdea": { "text": "Six letters live in the throat, two at each level. To new ears ح/ه, ع/ء and ح/خ can sound alike, but each is a different letter: swap them and you change the word.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Three levels, two letters each: the deepest part of the throat (nearest the chest) gives ء and ه; the middle gives ع and ح; the part nearest the mouth gives غ and خ.", "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" } },
+    { "text": "ح vs ه: ه is an open, relaxed breath from the deepest part of the throat. ح comes from the middle of the throat: squeezed, stronger and sharper, but with no scrape. If you hear no difference, your ح is too relaxed.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "ع vs ء: ء is 'strong' (shiddah): its sound stops completely, one clean catch. ع is 'in between' (tawassut): its sound neither stops fully nor flows fully.", "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" } },
+    { "text": "ح vs خ: both are whispered, but خ comes from higher up, near the mouth, is heavy, and has a light scrape. ح is light and smooth.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Common mistakes. Persian/Urdu readers merge ح into ه, and ع into ء or a plain vowel. English speakers often drop ع and ء, and say ح as a plain 'h'. Train the ear first: listen to each pair until you always hear the difference, then say it.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": {
+    "kind": "makhraj",
+    "points": [
+      { "letter": "ء", "region": "halq", "detail": "Deepest part of the throat, nearest the chest" },
+      { "letter": "ه", "region": "halq", "detail": "Deepest part of the throat, nearest the chest" },
+      { "letter": "ع", "region": "halq", "detail": "Middle of the throat" },
+      { "letter": "ح", "region": "halq", "detail": "Middle of the throat" },
+      { "letter": "خ", "region": "halq", "detail": "Part of the throat nearest the mouth (with غ)" }
+    ],
+    "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }
+  },
+  "memoryHook": { "text": "Deep: ء ه. Middle: ع ح. Top: غ خ.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "A hand check: rest your fingers lightly on your throat. ع should buzz (voice) and ح should not, although both come from the middle of the throat.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "112:1", "words": [1, 2], "note": { "text": "Starts with ه.", "provenance": { "kind": "dataset", "source": "Tanzil text 112:1 recited word 1" } } },
+    { "ref": "112:1", "words": [3, 4], "note": { "text": "Hamza on a seat (أ), then ح.", "provenance": { "kind": "dataset", "source": "Tanzil text 112:1 recited word 3" } } },
+    { "ref": "113:1", "words": [1, 2], "note": { "text": "Hamza on a seat (أ), then ع.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:1 recited word 1" } } },
+    { "ref": "113:2", "words": [3, 4], "note": { "text": "Starts with خ.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:2 recited word 3" } } }
+  ],
+  "letters": ["ح", "ه", "ع", "ء", "خ"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 2, "note": "Mapped by order — please confirm this is the right video. If the teacher says ح and ه (or ع and ء) in it, mark both segments so you can play them side by side." },
+    { "source": "minshawi-words", "ref": "112:1", "words": [1, 2] },
+    { "source": "minshawi-words", "ref": "112:1", "words": [3, 4] },
+    { "source": "minshawi-words", "ref": "113:1", "words": [1, 2] },
+    { "source": "minshawi-words", "ref": "113:2", "words": [3, 4] }
+  ],
+  "drills": [
+    { "kind": "minimal-pair", "pair": ["ح", "ه"], "tip": { "text": "ه: relax the throat and breathe out, as in a sigh. ح: squeeze the middle of the throat and push the breath through: stronger and sharper, never scraping.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["ع", "ء"], "tip": { "text": "ء: close the throat and release it in one clean catch. ع: squeeze the middle of the throat and let a voiced sound continue for a moment.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["ح", "خ"], "tip": { "text": "Start with a smooth ح in the middle of the throat, then move up toward the mouth and add a light scrape: that is خ, and it is heavy.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "say", "prompt": "Alternate the pairs: هَ حَ — ءَ عَ — حَ خَ", "times": 3, "record": true }
+  ],
+  "cr": [{ "ref": "112:1", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-12-q1", "q": "Which pair comes from the SAME level of the throat?", "options": ["ع and ح", "ح and ه", "ع and ء", "ح and خ"], "answer": 0, "explain": ["Right: both come from the middle of the throat.", "ḥa is the middle of the throat; ha is the deepest part.", "ʿayn is the middle; hamza is the deepest part.", "ḥa is the middle; kha is the part nearest the mouth."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-12-q2", "q": "You can't hear a difference between your ح and your ه. What is usually wrong?", "options": ["The ح is too relaxed: squeeze the middle of the throat", "The ه is too quiet", "Both need a whistle", "The lips are too open"], "answer": 0, "explain": ["Right: ḥa needs the squeeze.", "ha is meant to be soft; the fix is in ḥa.", "Neither letter whistles.", "The lips are not involved."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-12-q3", "q": "What separates ء from ع in their sifat?", "options": ["ء stops fully (strong); ع is in between", "ء is whispered; ع is not", "ء whistles; ع does not", "There is no difference"], "answer": 0, "explain": ["Right: hamza is shiddah, ʿayn is tawassut.", "Neither is whispered: both hold the breath back (jahr).", "Neither whistles; the whistling letters are ص ز س.", "Their sifat differ."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-12-q4", "q": "Persian/Urdu readers often merge ع into…", "options": ["…ء or a plain vowel", "…غ", "…ح", "…ه"], "answer": 0, "explain": ["Right: the squeeze of ʿayn gets lost.", "ghayn is a gargle; that is not the usual merge.", "ḥa shares ʿayn's place, but the usual merge is with hamza.", "ha is the usual merge for ḥa, not for ʿayn."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-12-q5", "q": "Which of these throat letters is heavy?", "options": ["خ (kha)", "ح (ḥa)", "ه (ha)", "ع (ʿayn)"], "answer": 0, "explain": ["Right: kha is one of the seven heavy letters.", "ḥa is light.", "ha is light.", "ʿayn is light."], "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-12-q6", "q": "Which English expression has a sound like ء in the middle?", "options": ["'uh-oh'", "'ahead'", "'hello'", "'loch'"], "answer": 0, "explain": ["Right: the catch between 'uh' and 'oh' is a hamza-like stop.", "'ahead' has an 'h' (like ه) in the middle.", "'hello' starts with an 'h'.", "'loch' has a scrape like خ."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-12-q7", "q": "Where is ه made?", "options": ["The deepest part of the throat, nearest the chest", "The middle of the throat", "The part of the throat nearest the mouth", "The back of the tongue"], "answer": 0, "explain": ["Right: ha shares this place with ء.", "That is the place of ع and ح.", "That is the place of غ and خ.", "The back of the tongue makes ق and ك."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-12-q8", "q": "Which two letters come from the part of the throat nearest the mouth?", "options": ["غ and خ", "ع and ح", "ء and ه", "ق and ك"], "answer": 0, "explain": ["Right.", "They come from the middle of the throat.", "They come from the deepest part of the throat.", "They come from the back of the tongue, not the throat."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-12-q9", "q": "Your ح sounds like خ. What fixes it?", "options": ["Bring it down to the middle of the throat and remove the scrape", "Raise the back of the tongue", "Add voice", "Close the lips"], "answer": 0, "explain": ["Right: ḥa is smooth.", "That makes it heavier, more like kha.", "Voice turns it toward ʿayn or ghayn.", "The lips are not used."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-12-q10", "q": "Your ع sounds like ء. What fixes it?", "options": ["Keep a squeezed, voiced sound going from the middle of the throat", "Make the catch sharper", "Whisper it", "Use the lips"], "answer": 0, "explain": ["Right: ʿayn continues a little; hamza stops dead.", "A sharper catch makes it even more like hamza.", "Whispering turns it into ḥa.", "The lips are not used."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-12-q11", "q": "What do ح and ه have in common?", "options": ["Both are whispered: the breath flows", "Both are strong: the sound stops", "Both bounce with a sukun", "Both whistle"], "answer": 0, "explain": ["Right: both are in the whispered (hams) group.", "Neither stops; both are soft (rakhawa).", "Neither is a qalqalah letter.", "Neither whistles."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-12-q12", "q": "With your fingers resting on your throat, which letter of the pair ع/ح should buzz?", "options": ["ع (ʿayn)", "ح (ḥa)", "Both", "Neither"], "answer": 0, "explain": ["Right: ʿayn is voiced.", "ḥa is only breath.", "Only ʿayn buzzes.", "ʿayn does buzz."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-12-q13", "q": "Which pair do Persian/Urdu readers most often merge into a plain 'h'?", "options": ["ح and ه", "ع and ء", "غ and خ", "خ and ك"], "answer": 0, "explain": ["Right: both become 'h'.", "ʿayn and hamza merge as a catch or a vowel, not 'h'.", "ghayn and kha are not merged into 'h'.", "kha and kaf are not merged into 'h'."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "letter-id", "letters": ["ح", "ه", "ع", "ء", "خ"]},
+    {"kind": "letter-in-word", "letters": ["ء", "خ", "ح", "ع", "ه"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "ح vs ه == ح: squeezed breath from the middle of the throat; ه: relaxed breath from the deepest part",
+    "ع vs ء == ع: squeezed voiced sound, middle of the throat, in between; ء: one clean catch that stops, deepest part",
+    "ح vs خ == ح: smooth and light, middle of the throat; خ: light scrape, heavy, nearest the mouth",
+    "Throat levels == Deepest: ء ه; middle: ع ح; nearest the mouth: غ خ"
+  ],
+  "sources": [
+    { "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" },
+    { "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" },
+    { "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }
+  ],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say هَ حَ ءَ عَ three times, record the third time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

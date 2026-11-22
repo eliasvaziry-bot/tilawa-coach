@@ -1,0 +1,81 @@
+{
+  "id": "s1-09-fa-qaf",
+  "stage": 1,
+  "order": 9,
+  "title": "Round heads: ف ق",
+  "minutes": 10,
+  "prerequisites": ["s1-08-ayn-ghayn"],
+  "bigIdea": { "text": "ف (fa) and ق (qaf) share a small round head. One dot above = fa, said with the lip and teeth. Two dots above = qaf, a deep, heavy 'q' from the back of the tongue.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Both have a small round head. ف has one dot above, ق has two. Standing alone or at the end of a word, ف has a flatter, boat-like tail and ق a deeper, round bowl. At the start or in the middle of a word only the head is left, so count the dots.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sounds: ف is 'f' as in 'fun': the lower lip lightly touches the edges of the upper front teeth. ق is a deep, heavy 'q': the very back of the tongue presses against the back of the roof of the mouth, near the uvula, then releases. It is not a 'k' and not a gargle.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sifat: ف is whispered (hams: the breath flows) and soft (rakhawa). ق holds the breath back (jahr), is strong (shiddah: its sound stops fully), is raised (isti'la), and bounces with a sukun (qalqalah).", "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" } },
+    { "text": "Heavy or light: ق is heavy (one of the seven: خ ص ض غ ط ق ظ). ف is light.", "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" } },
+    { "text": "Common mistakes. English speakers: ق becomes a 'k'. Persian readers: ق is said like غ (in Persian the two sound the same). Some Urdu speakers say ق as 'k' in everyday speech. Fix: press the very back of the tongue, stop the sound fully, then release; with a sukun, add the small bounce.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": {
+    "kind": "makhraj",
+    "points": [
+      { "letter": "ف", "region": "shafatan", "detail": "Lower lip with the edges of the upper front teeth" },
+      { "letter": "ق", "region": "lisan", "detail": "Back of the tongue, opposite the root of the uvula" }
+    ],
+    "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }
+  },
+  "memoryHook": { "text": "One dot: f from the lip. Two dots: q from deep in the mouth.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "ق and ك are called the two 'uvula letters' (lahawiyyatan), because they come from near the uvula.", "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "extra": true },
+    { "text": "Many London accents say 'think' as 'fink'. In Arabic, ث (tongue at the teeth) and ف (lip on the teeth) are different letters, so keep them apart.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "112:1", "words": [0, 1], "note": { "text": "Starts with ق.", "provenance": { "kind": "dataset", "source": "Tanzil text 112:1 recited word 0" } } },
+    { "ref": "113:1", "words": [3, 4], "note": { "text": "Has ف and then ق.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:1 recited word 3" } } },
+    { "ref": "108:2", "words": [0, 1], "note": { "text": "Starts with ف.", "provenance": { "kind": "dataset", "source": "Tanzil text 108:2 recited word 0" } } }
+  ],
+  "letters": ["ف", "ق"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 2, "note": "Mapped by order — please confirm this is the right video, then mark where the teacher says ف and ق." },
+    { "source": "minshawi-words", "ref": "112:1", "words": [0, 1] },
+    { "source": "minshawi-words", "ref": "113:1", "words": [3, 4] },
+    { "source": "minshawi-words", "ref": "108:2", "words": [0, 1] }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Say each letter with a fatha: فَ قَ", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Keep qaf deep and heavy with each vowel: قَ قِ قُ", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["ق", "غ"], "tip": { "text": "ق stops: the back of the tongue presses and releases (and bounces with a sukun). غ never stops: a flowing gargle from the top of the throat, just behind qaf's place. Persian readers: this is your pair.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["ف", "ث"], "tip": { "text": "ف: the lower lip touches the upper front teeth. ث: the tongue tip meets the edges of the upper front teeth, and the lips stay apart.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "cr": [{ "ref": "113:1", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-09-q1", "q": "Which letter has a round head with TWO dots above?", "options": ["ق (qaf)", "ف (fa)", "ت (ta)", "ث (tha)"], "answer": 0, "explain": ["Right: two dots over the round head is qaf.", "fa has only one dot.", "ta has two dots above, but on a flat boat, not a round head.", "tha has three dots on a boat."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-09-q2", "q": "Where is ف made?", "options": ["The lower lip with the edges of the upper front teeth", "Between the two lips", "Tongue against the edges of the upper front teeth", "The back of the tongue"], "answer": 0, "explain": ["Right.", "That is the place of ب, م and و.", "That is the place of ث, ذ and ظ.", "That is the place of ق and ك."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-09-q3", "q": "Where is ق made?", "options": ["The back of the tongue, opposite the root of the uvula", "The middle of the tongue", "The middle of the throat", "The lower lip with the upper front teeth"], "answer": 0, "explain": ["Right.", "That is the place of ج, ش and ي.", "That is the place of ع and ح.", "That is the place of ف."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-09-q4", "q": "Which letter of this pair is heavy?", "options": ["ق (qaf)", "ف (fa)", "Both", "Neither"], "answer": 0, "explain": ["Right: qaf is one of the seven heavy letters.", "fa is light.", "Only qaf is heavy.", "qaf is heavy."], "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-09-q5", "q": "What should you hear when ق has a sukun?", "options": ["A small bounce (qalqalah)", "A whistle", "Air spreading through the mouth", "A long hum"], "answer": 0, "explain": ["Right: qaf is one of the five qalqalah letters (ق ط ب ج د).", "The whistle belongs to ص ز س.", "Spreading of air belongs to ش.", "A hum is not part of qaf."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-09-q6", "q": "English speakers often say ق like…", "options": ["…a 'k'", "…a 'g'", "…an 'h'", "…an 'f'"], "answer": 0, "explain": ["Right: 'k' is made further forward and is light.", "'g' is voiced and made further forward; it is not qaf.", "'h' does not stop; qaf stops fully.", "'f' is a lip sound."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-09-q7", "q": "Standing alone, how does ق's tail differ from ف's?", "options": ["ق has a deeper, round bowl; ف has a flatter, boat-like tail", "ق has no tail", "ف has a tall stroke", "They are identical"], "answer": 0, "explain": ["Right: the deep bowl and the two dots both mark qaf.", "Standing alone, qaf does have a tail.", "fa has no tall stroke.", "Their tails and dots differ."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-09-q8", "q": "Which describes ف?", "options": ["Whispered and soft: breath and sound flow", "Strong: its sound stops fully", "Raised: the back of the tongue rises", "It bounces when it has a sukun"], "answer": 0, "explain": ["Right: fa is whispered (hams) and soft (rakhawa).", "That describes qaf (shiddah).", "That describes qaf (isti'la).", "That describes qaf (qalqalah)."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-09-q9", "q": "Which two letters are called the 'uvula letters' (lahawiyyatan)?", "options": ["ق and ك", "ف and ق", "غ and خ", "ع and ح"], "answer": 0, "explain": ["Right: both come from near the uvula.", "fa is a lip letter.", "ghayn and kha are throat letters.", "ʿayn and ḥa are throat letters."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-09-q10", "q": "Persian readers often say ق like which letter?", "options": ["غ (ghayn)", "ك (kaf)", "خ (kha)", "ف (fa)"], "answer": 0, "explain": ["Right: in Persian the two sound the same.", "'k' is the English-speaker slip.", "kha is whispered; it is not the Persian merge.", "fa is a lip letter."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-09-q11", "q": "Your ق sounds like a gargle (like غ). What fixes it?", "options": ["Press the back of the tongue so the sound stops fully, then release", "Let the air flow more", "Bring the lips together", "Add a whistle"], "answer": 0, "explain": ["Right: qaf is a strong letter that stops.", "More flow makes it more like ghayn.", "The lips are not used for qaf.", "qaf has no whistle."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-09-q12", "q": "Many London accents say 'think' as 'fink'. Which two Arabic letters must you keep apart?", "options": ["ث and ف", "ق and ك", "س and ش", "ب and م"], "answer": 0, "explain": ["Right: tha uses the tongue at the teeth; fa uses the lower lip.", "qaf and kaf are a different pair (back of the tongue).", "sin and shin are a different pair (tongue tip vs middle).", "ba and mim are both lip letters, but not the 'fink' problem."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-09-q13", "q": "Is ف heavy or light?", "options": ["Light", "Heavy", "Heavy only with a fatha", "Heavy only at the end of a word"], "answer": 0, "explain": ["Right: fa is not one of the seven heavy letters.", "The heavy letters are خ ص ض غ ط ق ظ.", "Its vowel does not make fa heavy.", "Its position does not make fa heavy."], "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "letter-id", "letters": ["ف", "ق"]},
+    {"kind": "letter-in-word", "letters": ["ف", "ق"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "ف (fa) == Round head, one dot above; lower lip with the edges of the upper front teeth; 'f'; light",
+    "ق (qaf) == Round head, two dots above; back of the tongue near the uvula; deep 'q' that stops; heavy; bounces with sukun",
+    "Fix for ق == Not 'k' and not a gargle: stop deep at the back of the tongue, then release",
+    "London 'fink' habit == Keep ث (tongue at the teeth) apart from ف (lip on the teeth)"
+  ],
+  "sources": [
+    { "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" },
+    { "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" },
+    { "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }
+  ],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say فَ قَ فَ قَ three times, record the third time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

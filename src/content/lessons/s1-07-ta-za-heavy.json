@@ -1,0 +1,80 @@
+{
+  "id": "s1-07-ta-za-heavy",
+  "stage": 1,
+  "order": 7,
+  "title": "Loop and pole: ط ظ",
+  "minutes": 10,
+  "prerequisites": ["s1-06-sad-dad"],
+  "bigIdea": { "text": "ط (ṭa) and ظ (ẓa) share one body: an oval loop with a tall upright stroke. Both are heavy. No dot = ṭa, a heavy 't'. One dot = ẓa, a heavy 'th' as in 'this'.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "The loop sits on the line and a tall stroke stands up from it. ظ has one dot beside the stroke, above the loop. Their shape hardly changes at the start, middle or end of a word, and they have no tail below the line.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sounds: ط is a heavy 't'. The tongue touches where it does for ت, but the back of the tongue rises and the tongue presses up, so the sound is deep, with no puff of air after it. ظ is a heavy 'th' as in 'this': the tongue meets the edges of the upper front teeth as for ذ, with the back of the tongue raised.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sifat: both are 'raised' (isti'la) and 'closed' (itbaq), and both hold the breath back (jahr). ط is 'strong' (shiddah: its sound stops fully) and bounces with a sukun (qalqalah). ظ is 'soft' (rakhawa: its sound flows).", "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" } },
+    { "text": "Heavy or light: both are heavy. They are two of the seven heavy letters (خ ص ض غ ط ق ظ).", "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" } },
+    { "text": "Common mistakes. Persian/Urdu readers: ط is read like ت, and ظ like 'z' (ز). English speakers: ط comes out as a light English 't' with a puff of air, and ظ as a light 'th' or as 'z'. Fix: raise the back of the tongue first, then say the letter.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": {
+    "kind": "makhraj",
+    "points": [
+      { "letter": "ط", "region": "lisan", "detail": "Tongue against the roots of the upper front teeth (shared with ت and د)" },
+      { "letter": "ظ", "region": "lisan", "detail": "Tongue against the edges of the upper front teeth (shared with ث and ذ)" }
+    ],
+    "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }
+  },
+  "memoryHook": { "text": "Loop and pole means heavy: ṭa is a heavy t, ẓa a heavy 'th'.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "Linguists describe Arabic ت and ك as said with a puff of air (aspirated), and ط and ق without one.", "provenance": { "kind": "reference", "title": "Standard Arabic phonology — Wikipedia", "url": "https://en.wikipedia.org/wiki/Arabic_phonology", "opened": "2026-11-22" }, "extra": true },
+    { "text": "Of the 28 letters, ظ is the rarest in the app's Quran text: 853 times (hamza counted together with its seats).", "provenance": { "kind": "dataset", "source": "letter counts over public/data/quran/s001–s114.json, field ayat[].t (Tanzil Uthmani), hamza forms ء أ إ ؤ ئ counted together, computed 2026-11-22" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "108:1", "words": [1, 2], "note": { "text": "Contains ط (with a fatha).", "provenance": { "kind": "dataset", "source": "Tanzil text 108:1 recited word 1" } } },
+    { "ref": "94:3", "words": [2, 3], "note": { "text": "Starts with ظ.", "provenance": { "kind": "dataset", "source": "Tanzil text 94:3 recited word 2" } } },
+    { "ref": "84:14", "words": [1, 2], "note": { "text": "Starts with ظ.", "provenance": { "kind": "dataset", "source": "Tanzil text 84:14 recited word 1" } } }
+  ],
+  "letters": ["ط", "ظ"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 2, "note": "Mapped by order — please confirm this is the right video, then mark where the teacher says ط and ظ." },
+    { "source": "minshawi-words", "ref": "108:1", "words": [1, 2] },
+    { "source": "minshawi-words", "ref": "94:3", "words": [2, 3] },
+    { "source": "minshawi-words", "ref": "84:14", "words": [1, 2] }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Say each letter with a fatha: طَ ظَ", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Light, then heavy, from the same place: تَ طَ then ذَ ظَ", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["ط", "ظ"], "tip": { "text": "ط stops: the tongue presses at the roots of the upper front teeth, then releases. ظ flows: the tongue meets the edges of the upper teeth and the voice keeps going. Keep both heavy.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "cr": [{ "ref": "108:1", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-07-q1", "q": "Which letter is a loop with a tall stroke and one dot?", "options": ["ظ (ẓa)", "ط (ṭa)", "ض (ḍad)", "ك (kaf)"], "answer": 0, "explain": ["Right: loop, pole and a dot is ẓa.", "ṭa is the same body with no dot.", "ḍad has a loop and a dot, but a small tooth instead of the tall stroke.", "kaf is tall, but it has no loop and no dot."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-07-q2", "q": "Are ط and ظ heavy or light?", "options": ["Both heavy", "Both light", "ط heavy, ظ light", "ظ heavy, ط light"], "answer": 0, "explain": ["Right: both are among the seven heavy letters.", "Neither is light.", "ẓa is heavy too.", "ṭa is heavy too."], "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-07-q3", "q": "Which letter of this pair bounces (qalqalah) when it has a sukun?", "options": ["ط (ṭa)", "ظ (ẓa)", "Both", "Neither"], "answer": 0, "explain": ["Right: ṭa is one of the five qalqalah letters (ق ط ب ج د).", "ẓa is not a qalqalah letter.", "Only ṭa bounces.", "ṭa does bounce."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-07-q4", "q": "Where is ظ made?", "options": ["Tongue against the edges of the upper front teeth", "Tongue against the roots of the upper front teeth", "Side of the tongue against the upper molars", "The part of the throat nearest the mouth"], "answer": 0, "explain": ["Right: ẓa shares this place with ث and ذ.", "That is the place of ط, ت and د.", "That is the place of ض.", "That is the place of خ and غ."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-07-q5", "q": "Persian/Urdu readers often read ط like which letter?", "options": ["ت (ta)", "د (dal)", "ظ (ẓa)", "ث (tha)"], "answer": 0, "explain": ["Right: in Persian and Urdu both are a plain 't'.", "dal is voiced; the usual merge is with ت.", "ẓa is a 'th'-type sound, not a 't'.", "tha is a flowing 'th', not a 't'."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-07-q6", "q": "Which English sound is the best starting point for ظ?", "options": ["'th' in 'this', made heavy", "'th' in 'think'", "'z' in 'zoo'", "'d' in 'day'"], "answer": 0, "explain": ["Right: voiced 'th', then raise the back of the tongue.", "That whispered 'th' is ث.", "'z' is ز, the usual Persian/Urdu substitute.", "'d' is د."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-07-q7", "q": "Which pair has a loop with a tall upright stroke?", "options": ["ط and ظ", "ص and ض", "ف and ق", "ع and غ"], "answer": 0, "explain": ["Right.", "ṣad and ḍad have a loop with a small tooth.", "fa and qaf have a small round head.", "ʿayn and ghayn have an open head like a 'c'."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-07-q8", "q": "Where is ط made?", "options": ["Tongue against the roots of the upper front teeth", "Tongue against the edges of the upper front teeth", "The middle of the tongue", "Between the lips"], "answer": 0, "explain": ["Right: ṭa shares this place with ت and د.", "That is the place of ظ, ث and ذ.", "That is the place of ج, ش and ي.", "That is the place of ب, م and و."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-07-q9", "q": "Which describes ظ?", "options": ["Soft: its sound keeps flowing", "Strong: its sound stops fully", "It bounces when it has a sukun", "Whispered: only breath comes out"], "answer": 0, "explain": ["Right: ẓa is a soft (rakhawa) letter.", "That describes ṭa.", "That is ṭa again (qalqalah).", "ẓa holds the breath back (jahr)."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-07-q10", "q": "Linguists describe which of these Arabic letters as said WITHOUT a puff of air?", "options": ["ط (ṭa)", "ت (ta)", "ك (kaf)", "All three"], "answer": 0, "explain": ["Right: ṭa (like qaf) has no puff of air.", "ta is described with a puff of air (aspirated).", "kaf is described with a puff of air (aspirated).", "Only ṭa is unaspirated here."], "provenance": { "kind": "reference", "title": "Standard Arabic phonology — Wikipedia", "url": "https://en.wikipedia.org/wiki/Arabic_phonology", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-07-q11", "q": "Your ط sounds like an English 't'. What fixes it?", "options": ["Raise the back of the tongue and press the tongue up, with no puff of air", "Move the tongue to the edges of the teeth", "Hum through the nose", "Round the lips"], "answer": 0, "explain": ["Right: that gives the heavy ṭa.", "That makes a 'th'-type sound (ث ذ ظ).", "A hum is not part of ṭa.", "The lips are not used for ṭa."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-07-q12", "q": "Which letter is the heavy partner of ذ (same place, back of the tongue raised)?", "options": ["ظ (ẓa)", "ط (ṭa)", "ض (ḍad)", "ز (zay)"], "answer": 0, "explain": ["Right: ẓa shares dhal's place but is heavy.", "ṭa shares the place of ت and د.", "ḍad has its own place along the side of the tongue.", "zay is a light letter with a whistle."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-07-q13", "q": "At the start, middle and end of a word, the shapes of ط and ظ…", "options": ["…hardly change, and never drop below the line", "…lose the tall stroke in the middle", "…grow a tail below the line at the end", "…lose their dot at the end"], "answer": 0, "explain": ["Right: loop and pole stay the same.", "The stroke stays.", "They have no tail below the line.", "ẓa keeps its dot everywhere."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "letter-id", "letters": ["ط", "ظ"]},
+    {"kind": "letter-in-word", "letters": ["ظ", "ط"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "ط (ṭa) == Loop + tall stroke, no dot; tongue at the roots of the upper front teeth; heavy 't' with no puff; bounces with sukun",
+    "ظ (ẓa) == Loop + tall stroke, one dot; tongue at the edges of the upper front teeth; heavy 'th' as in 'this'",
+    "Persian/Urdu fix for ط and ظ == ط is not ت; ظ is a heavy 'th', not 'z'"
+  ],
+  "sources": [
+    { "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" },
+    { "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" },
+    { "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" },
+    { "title": "Standard Arabic phonology — Wikipedia", "url": "https://en.wikipedia.org/wiki/Arabic_phonology", "opened": "2026-11-22" }
+  ],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say تَ طَ ذَ ظَ three times, record the third time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

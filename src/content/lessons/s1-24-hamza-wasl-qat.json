@@ -1,0 +1,74 @@
+{
+  "id": "s1-24-hamza-wasl-qat",
+  "stage": 1,
+  "order": 24,
+  "title": "Two hamzas: the joining one and the cutting one",
+  "minutes": 12,
+  "prerequisites": ["s1-23-small-letters"],
+  "bigIdea": { "text": "Hamza is a small catch in the throat, like the break in 'uh-oh'. The cutting hamza is always said. The joining hamza (ٱ) is said only when you start with it; in the middle of reading you glide straight past it.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Hamzat al-qat' ('cutting hamza') is a real letter: a short closing of the throat, then its vowel. It is written ء, often on a seat: أ or إ on an alif, ؤ on a waw, ئ on a dotless ya-shape. Say it every time, at the start, middle or end of a word.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Hamzat al-wasl ('joining hamza') only comes at the start of a word. In this mushaf it is an alif with a small head and no vowel mark: ٱ.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "When you read on from the word before, the joining hamza and its vowel drop out: go straight from the last vowel of the previous word to the next letter you pronounce.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "When you START on ٱ (at the start of an ayah, or again after a stop), say it: with 'a' in 'al-' ('the'); in a verb, with 'u' if its third letter has a damma, otherwise with 'i'; in the few nouns that have it (such as the words for 'name' and 'son'), with 'i'. A few verbs are exceptions; Stage 2 covers them.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "The app's colours grey out ٱ as silent everywhere except at the very start of an ayah: none of the 231 ayat that begin with ٱ have it greyed, because there you start with it and say it.", "provenance": { "kind": "dataset", "source": "rebuilt cpfair/quran-tajweed hamzat_wasl annotations vs Tanzil text: 0 of 231 ayah-initial ٱ marked; every other ٱ outside the basmala marked" } }
+  ],
+  "visual": { "kind": "letters", "letters": ["ٱ", "أ", "إ", "ء", "ؤ", "ئ"], "caption": "ٱ joining hamza (wasl) · أ إ ء ؤ ئ cutting hamza (qat')" },
+  "memoryHook": { "text": "Joining hamza: say it to start, skip it to join. Cutting hamza: always say it.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "English has a hamza too: the catch in 'uh-oh', or at the start of 'apple' said sharply.", "provenance": { "kind": "model-knowledge" }, "extra": true },
+    { "text": "Persian/Urdu readers: ء and ع are different letters. Keep ء a light catch in the throat and ع a deeper squeeze from the middle of the throat.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "1:1", "words": [0, 2], "rule": "hamzat_wasl", "note": { "text": "Inside the ayah the ٱ of the second word is not said: go from the first word's kasra straight to the lam.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "112:1", "words": [1, 3], "rule": "hamzat_wasl", "note": { "text": "Joined reading: from the fatha at the end of the second word straight into the doubled lam.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "1:2", "words": [0, 1], "note": { "text": "Starting the ayah on 'al-': begin with 'a'.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "1:6", "words": [0, 1], "note": { "text": "Starting the ayah on ٱ in a verb: the third letter (د) has a kasra, so begin with 'i'.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "7:55", "words": [0, 1], "note": { "text": "Starting on ٱ in a verb whose third letter (ع) has a damma: begin with 'u'.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "112:1", "words": [3, 4], "note": { "text": "A cutting hamza on an alif (أ): always said.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "1:5", "words": [0, 1], "note": { "text": "A cutting hamza under the alif (إ): 'i'.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "108:3", "words": [1, 2], "note": { "text": "A cutting hamza in the middle of a word, on a ya-shaped seat (ئ).", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "letters": ["ٱ", "أ", "إ", "ء", "ؤ", "ئ"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 10, "note": "Mapped by order (our lesson 24 → Nuraniah lesson 10) — please confirm. The video titles carry no topic, so check it fits this lesson and mark its segments when you watch." },
+    { "source": "minshawi-ayah", "ref": "1:1" },
+    { "source": "minshawi-ayah", "ref": "1:6" },
+    { "source": "minshawi-ayah", "ref": "112:1" }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Cutting hamza with each vowel: أَ أُ إِ, a clean catch in the throat each time.", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["أَ", "عَ"], "tip": { "text": "أَ: a light catch, then 'a'. عَ: squeeze the middle of the throat; the sound is deeper and has a slight strain.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "echo", "ref": "1:1" },
+    { "kind": "echo", "ref": "112:1" }
+  ],
+  "cr": [{ "ref": "1:1", "mode": "echo" }, { "ref": "112:1", "mode": "echo" }, { "ref": "1:6", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-24-q1", "q": "Which sign shows a joining hamza (hamzat al-wasl)?", "options": ["ٱ (alif with a small head, no vowel)", "أ (hamza above an alif)", "إ (hamza below an alif)", "ء (hamza on the line)"], "answer": 0, "explain": ["Right.", "That is a cutting hamza, always said.", "That is a cutting hamza with kasra.", "That is a cutting hamza without a seat."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-24-q2", "q": "You read on from the word before into a word that starts with ٱ. What do you do?", "options": ["Skip the ٱ: go straight to the next letter you pronounce", "Say a clear hamza", "Pause before it", "Say a long 'aa'"], "answer": 0, "explain": ["Right: that is what 'joining' means.", "Only the cutting hamza is always said.", "There is no pause sign there.", "ٱ is not a madd letter."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-24-q3", "q": "You start reading at a word that begins with 'al-' (ٱلْ). How do you begin?", "options": ["With 'a'", "With 'i'", "With 'u'", "With the lam, no vowel"], "answer": 0, "explain": ["Right.", "'i' is for most verbs and a few nouns.", "'u' is for verbs whose third letter has a damma.", "A word can't begin with a sakin letter."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-24-q4", "q": "Which hamza is said in every position (start, middle, end)?", "options": ["Hamzat al-qat' (cutting)", "Hamzat al-wasl (joining)", "Neither", "Only the one written ٱ"], "answer": 0, "explain": ["Right.", "The joining hamza is said only when you start with it.", "The cutting hamza is always said.", "ٱ is the joining hamza."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-24-q5", "q": "You start on a verb that begins with ٱ, and its third letter has a damma. Which vowel do you start with (in most verbs)?", "options": ["'u'", "'i'", "'a'", "No vowel"], "answer": 0, "explain": ["Right.", "'i' is for a third letter with fatha or kasra.", "'a' is for 'al-'.", "You must say the hamza when you start."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-24-q6", "q": "Where can hamzat al-wasl appear?", "options": ["Only at the start of a word", "Only at the end of a word", "Anywhere in a word", "Only in the middle of a word"], "answer": 0, "explain": ["Right.", "It never ends a word.", "It is limited to the start.", "Hamza in the middle of a word is a cutting hamza."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-24-q7", "q": "Which of these is a cutting hamza (qat')?", "options": ["ؤ", "ٱ", "ا (plain alif)", "ـٰ (dagger alif)"], "answer": 0, "explain": ["Right: a hamza on a waw seat.", "That is the joining hamza.", "A plain alif has no hamza.", "A dagger alif is a long 'aa'."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-24-q8", "q": "In 1:1 the second word starts with ٱ. Reading the whole ayah, do you say that hamza?", "options": ["No: glide from the first word straight into the lam", "Yes: a clear hamza", "Yes: a long 'aa'", "Only if you take a breath first"], "answer": 0, "explain": ["Right.", "You are joining, so it drops.", "ٱ is not a long vowel.", "You don't breathe in the middle of this ayah."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-24-q9", "q": "You start on a verb with ٱ whose third letter has a fatha or kasra. Which vowel do you start with?", "options": ["'i'", "'u'", "'a'", "Start on the second letter"], "answer": 0, "explain": ["Right.", "'u' is for a damma on the third letter.", "'a' is for 'al-'.", "The second letter is sakin; you can't start on it."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-24-q10", "q": "Why does the app grey out ٱ inside an ayah but not at its start?", "options": ["Inside you glide past it; at the start you begin with it and say it", "It is a printing mistake", "Grey means 'hold 2 counts'", "Grey means you must stop"], "answer": 0, "explain": ["Right.", "It follows the reading rule.", "Grey is the colour for silent letters.", "Stops are shown by pause signs."], "provenance": { "kind": "app" }, "heldOut": true },
+    { "id": "s1-24-q11", "q": "A hamza sounds like…", "options": ["The catch in 'uh-oh'", "The 'h' in 'hat'", "The deep squeeze of ع", "A long 'aa'"], "answer": 0, "explain": ["Right.", "That breathy sound is ه.", "That is ع, a different letter.", "Hamza is a consonant, not a vowel."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-24-q12", "q": "What is true about the vowel of a joining hamza?", "options": ["It isn't written; you work it out when you start with it", "It is always fatha", "It is written as a small alif", "It is always kasra"], "answer": 0, "explain": ["Right: 'a' for al-, otherwise 'u' or 'i' by the rule.", "Only in 'al-'.", "ٱ carries no vowel mark.", "Not for 'al-' or verbs with a damma on the third letter."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-24-q13", "q": "A cutting hamza sits under an alif (إ). How is it read?", "options": ["Hamza with kasra: 'i'", "Hamza with fatha: 'a'", "Silent", "A long 'aa'"], "answer": 0, "explain": ["Right.", "Fatha goes with أ.", "A cutting hamza is always said.", "It is a short vowel unless a madd letter follows."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "contrast", "set": "wasl-qat", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "word-audio", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "Hamzat al-qat' (أ إ ء ؤ ئ) == Cutting hamza: always pronounced",
+    "Hamzat al-wasl (ٱ) == Joining hamza: said only when you start with it; skipped when you read on",
+    "Starting on ٱ == 'a' in al-; in verbs 'u' if the 3rd letter has a damma, else 'i'; nouns like 'name', 'son': 'i'"
+  ],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Read 1:1 with Sheikh al-Minshawi five times, gliding past the ٱ of the second word; record the fifth time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

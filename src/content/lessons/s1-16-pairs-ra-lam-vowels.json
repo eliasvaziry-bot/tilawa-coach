@@ -1,0 +1,92 @@
+{
+  "id": "s1-16-pairs-ra-lam-vowels",
+  "stage": 1,
+  "order": 16,
+  "title": "ر/ل, and long vs short vowels",
+  "minutes": 12,
+  "prerequisites": ["s1-15-pairs-teeth"],
+  "bigIdea": { "text": "Two last contrasts. ر is one quick tap of the tongue tip; ل is a clear 'l' that touches and holds. And vowel length matters: a short vowel lasts one count, a long one two. Get the length wrong and you can change the word.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Places: ل is made with the front edges of the tongue against the upper teeth, on one or both sides. ر is made with the tip of the tongue, toward its top, at the roots of the upper front teeth.", "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" } },
+    { "text": "How they differ: for ل the tongue touches and stays while the sound flows out around its sides; for ر the tip gives one quick tap and lets go, so keep its repetition small. ل is light (except in the word Allah after a fatha or damma); ر is heavy with a fatha or damma and light with a kasra. English speakers: avoid the curled English 'r' and the dark 'l' of 'ball'.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Sifat: both are 'in between' (tawassut), both hold the breath back (jahr), and both 'lean' (inhiraf). Only ر has 'repetition' (takrir: the tongue tip can vibrate).", "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" } },
+    { "text": "Vowel length: Arabic has three short vowels (a, i, u) and three matching long ones (aa, ii, uu), and length is part of the word.", "provenance": { "kind": "reference", "title": "Standard Arabic phonology — Wikipedia", "url": "https://en.wikipedia.org/wiki/Arabic_phonology", "opened": "2026-11-22" } },
+    { "text": "Counting: a short vowel (fatha, kasra or damma) lasts one count. A vowel followed by its madd letter (ا after a fatha, و after a damma, ي after a kasra) lasts two counts: the natural madd. Common mistakes: English speakers clip long vowels and stretch short ones; Persian readers let kasra drift to 'e' and damma to 'o'.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": {
+    "kind": "makhraj",
+    "points": [
+      { "letter": "ل", "region": "lisan", "detail": "Front edges of the tongue against the upper teeth, on one or both sides" },
+      { "letter": "ر", "region": "lisan", "detail": "Tip of the tongue, toward its top, at the roots of the upper front teeth" },
+      { "letter": "ا", "region": "jawf", "detail": "Madd letter (long 'aa'): the open space of the mouth and throat" },
+      { "letter": "و", "region": "jawf", "detail": "Madd letter (long 'uu'): the open space of the mouth and throat" },
+      { "letter": "ي", "region": "jawf", "detail": "Madd letter (long 'ii'): the open space of the mouth and throat" }
+    ],
+    "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }
+  },
+  "memoryHook": { "text": "Ra taps, lam holds; one count short, two counts long.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "Tap a steady beat with one finger: one tap for a short vowel, two taps for a long one. Keep every count the same length.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "1:2", "words": [2, 3], "note": { "text": "Starts with ر with a fatha.", "provenance": { "kind": "dataset", "source": "Tanzil text 1:2 recited word 2" } } },
+    { "ref": "112:3", "words": [0, 1], "note": { "text": "Starts with ل.", "provenance": { "kind": "dataset", "source": "Tanzil text 112:3 recited word 0" } } },
+    { "ref": "113:5", "words": [2, 3], "note": { "text": "Has ا after a fatha.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:5 recited word 2" } } },
+    { "ref": "113:5", "words": [4, 5], "note": { "text": "No madd letter: a fatha on every letter.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:5 recited word 4" } } },
+    { "ref": "113:1", "words": [1, 2], "note": { "text": "Has و after a damma.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:1 recited word 1" } } },
+    { "ref": "1:7", "words": [1, 2], "note": { "text": "Has ي after a kasra.", "provenance": { "kind": "dataset", "source": "Tanzil text 1:7 recited word 1" } } }
+  ],
+  "letters": ["ر", "ل"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 3, "note": "Mapped by order — please confirm this is the right video. If the teacher contrasts a short and a long vowel (or ر and ل) in it, mark both segments so you can play them side by side." },
+    { "source": "minshawi-words", "ref": "1:2", "words": [2, 3] },
+    { "source": "minshawi-words", "ref": "112:3", "words": [0, 1] },
+    { "source": "minshawi-words", "ref": "113:5", "words": [2, 3] },
+    { "source": "minshawi-words", "ref": "113:5", "words": [4, 5] },
+    { "source": "minshawi-words", "ref": "113:1", "words": [1, 2] },
+    { "source": "minshawi-words", "ref": "1:7", "words": [1, 2] }
+  ],
+  "drills": [
+    { "kind": "minimal-pair", "pair": ["ر", "ل"], "tip": { "text": "ل: the tongue touches and stays; the sound flows around its sides. ر: one quick tap with the tip, and the tongue lets go at once.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["بَ", "بَا"], "tip": { "text": "Same 'a', different length: بَ is one count, بَا is two. Do not change the vowel, only hold it.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["بِ", "بِي"], "tip": { "text": "Same 'i', different length: one count, then two. Keep it a clear 'i', not 'e'.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "minimal-pair", "pair": ["بُ", "بُو"], "tip": { "text": "Same 'u', different length: one count, then two. Keep it a clear 'u', not 'o'.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "say", "prompt": "Tap and hold: رَ لَ رَ لَ", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Short, then long, tapping the counts: بَ بَا — بِ بِي — بُ بُو", "times": 3, "record": true }
+  ],
+  "cr": [{ "ref": "113:5", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-16-q1", "q": "Which letter is made with the FRONT edges of the tongue against the upper teeth?", "options": ["ل (lam)", "ر (ra)", "ن (nun)", "ض (ḍad)"], "answer": 0, "explain": ["Right.", "ra uses the tip of the tongue, toward its top.", "nun uses the tip of the tongue at the roots of the upper front teeth.", "ḍad uses the side of the tongue further back, against the upper molars."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-16-q2", "q": "Which quality does ر have that ل does not?", "options": ["Repetition (takrir)", "Leaning (inhiraf)", "In between (tawassut)", "Holding the breath back (jahr)"], "answer": 0, "explain": ["Right: takrir belongs to ra alone.", "Both ra and lam lean.", "Both are in between.", "Both hold the breath back."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-16-q3", "q": "How many counts does a vowel followed by its madd letter last (natural madd)?", "options": ["2", "1", "4–5", "6"], "answer": 0, "explain": ["Right: the natural madd is two counts.", "One count is a short vowel with no madd letter.", "4–5 counts is for a madd followed by a hamza (Stage 2).", "6 counts is for a madd followed by a shadda (Stage 2)."], "provenance": { "kind": "reference", "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }, "heldOut": false },
+    { "id": "s1-16-q4", "q": "Which syllable lasts ONE count?", "options": ["بُ", "بُو", "بَا", "بِي"], "answer": 0, "explain": ["Right: a damma alone is a short vowel.", "Damma + و is a long 'uu', two counts.", "Fatha + ا is a long 'aa', two counts.", "Kasra + ي is a long 'ii', two counts."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-16-q5", "q": "What changes between بَ and بَا?", "options": ["Only the length: one count, then two", "The vowel turns into 'i'", "The letter changes", "بَا becomes heavy"], "answer": 0, "explain": ["Right.", "The vowel stays 'a'.", "It is ba both times.", "Length does not make a letter heavy; ba stays light."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-16-q6", "q": "Persian readers often let kasra and damma drift toward…", "options": ["…'e' and 'o'", "…'aa' and 'uu'", "…'a' and 'a'", "…silence"], "answer": 0, "explain": ["Right: kasra should be a clear 'i', damma a clear 'u'.", "That would be a length problem, not a quality problem.", "Each mark keeps its own vowel.", "The vowels must be said."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-16-q7", "q": "Where is ر made?", "options": ["The tip of the tongue, toward its top, at the roots of the upper front teeth", "The front edges of the tongue against the upper teeth", "The middle of the tongue", "The back of the tongue"], "answer": 0, "explain": ["Right.", "That is lam.", "That is ج, ش and ي.", "That is ق and ك."], "provenance": { "kind": "reference", "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-16-q8", "q": "Which qualities do ر and ل share?", "options": ["Leaning (inhiraf) and in between (tawassut)", "Whistle (safir) and bounce (qalqalah)", "Spreading (tafashshi) and stretching (istitala)", "Repetition (takrir) only"], "answer": 0, "explain": ["Right.", "Neither whistles or bounces.", "Those belong to ش and ض.", "Repetition belongs to ra alone."], "provenance": { "kind": "reference", "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-16-q9", "q": "How many vowels does Arabic have?", "options": ["Three short and three long", "Five short and five long", "Three short and no long ones", "One short and one long"], "answer": 0, "explain": ["Right: a, i, u and aa, ii, uu.", "Arabic has three pairs, not five.", "The long vowels are real and count for the meaning.", "There are three of each."], "provenance": { "kind": "reference", "title": "Standard Arabic phonology — Wikipedia", "url": "https://en.wikipedia.org/wiki/Arabic_phonology", "opened": "2026-11-22" }, "heldOut": true },
+    { "id": "s1-16-q10", "q": "Which pair is the SAME vowel, short and then long?", "options": ["بِ then بِي", "بِ then بُو", "بَ then بُ", "بُو then بَا"], "answer": 0, "explain": ["Right: 'i' for one count, then 'ii' for two.", "Those are different vowels.", "Both are short, and they are different vowels.", "Both are long, and they are different vowels."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-16-q11", "q": "You read a two-count vowel for only one count. What is the risk?", "options": ["You may say a different word", "None: length does not matter", "The letter becomes heavy", "The next letter disappears"], "answer": 0, "explain": ["Right: length is part of the word.", "In Arabic length does matter.", "Weight does not come from length.", "The next letter is still read."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-16-q12", "q": "Your ر sounds like a rolling drum. What fixes it?", "options": ["One quick tap of the tongue tip, then let go", "Hold the tongue in place, as for ل", "Curl the tongue back like an English 'r'", "Leave the ر out"], "answer": 0, "explain": ["Right: keep the repetition small.", "Holding the tongue makes it sound like lam.", "The English 'r' is a different sound.", "Every ra is said."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-16-q13", "q": "Which three letters make a long vowel after their matching short vowel?", "options": ["ا و ي", "ن م ر", "ه ء ع", "ل ر ن"], "answer": 0, "explain": ["Right: alif after a fatha, waw after a damma, ya after a kasra.", "These are consonants, not madd letters.", "These are throat letters, not madd letters.", "These are tongue letters, not madd letters."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "letter-id", "letters": ["ر", "ل"]},
+    {"kind": "letter-in-word", "letters": ["ر", "ل"], "surahs": [1, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "ر vs ل == ر: one quick tap of the tongue tip (keep takrir small); ل: the front edges of the tongue touch and hold",
+    "Short vowel (fatha, kasra, damma) == 1 count",
+    "Natural madd (vowel + its madd letter ا و ي) == 2 counts",
+    "Persian fix for short vowels == Kasra is a clear 'i' (not 'e'); damma is a clear 'u' (not 'o')"
+  ],
+  "sources": [
+    { "title": "مخارج الحروف (Makharij al-huruf) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%A7%D8%B1%D8%AC_%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81", "opened": "2026-11-22" },
+    { "title": "صفة حرف (العربية) (Sifat of Arabic letters) — Arabic Wikipedia", "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%81%D8%A9_%D8%AD%D8%B1%D9%81_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)", "opened": "2026-11-22" },
+    { "title": "Standard Arabic phonology — Wikipedia", "url": "https://en.wikipedia.org/wiki/Arabic_phonology", "opened": "2026-11-22" },
+    { "title": "Tajwid — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tajwid", "opened": "2026-11-22" }
+  ],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say بَ بَا بِ بِي بُ بُو three times, tapping the counts; record the third time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

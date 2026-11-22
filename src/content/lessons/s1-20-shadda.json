@@ -1,0 +1,71 @@
+{
+  "id": "s1-20-shadda",
+  "stage": 1,
+  "order": 20,
+  "title": "Shadda: say the letter twice",
+  "minutes": 10,
+  "prerequisites": ["s1-19-sukun"],
+  "bigIdea": { "text": "A small 'w'-shaped sign on a letter means the letter is doubled: you say it once to close the syllable before it, and once more with its vowel, in one smooth go.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Shadda ( ّ ) means the letter counts twice: the first copy has sukun and closes the syllable before it; the second carries the vowel written with the shadda. In the middle of a word, ـبَّـ is read بْ + بَ ('b-ba').", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Hold the doubled letter a moment longer than a single one, but put no gap and no vowel between the two copies.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "The vowel goes with the shadda: a fatha or damma sits above it. A kasra belongs below the letter, but many mushaf prints draw it just under the shadda instead. It is still a kasra: read 'i'.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "A letter with shadda is called mushaddad. ن and م with shadda also get a nasal hum (ghunnah) of about two counts; Stage 2 teaches it.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": { "kind": "letters", "letters": ["بّ", "بَّ", "بُّ", "بِّ"], "caption": "Shadda alone, then with fatha, damma and kasra." },
+  "memoryHook": { "text": "Shadda = the same letter twice: once to close, once to go.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "English does something similar across words: in 'midday' one d closes 'mid' and the next opens 'day'. A shadda does that inside one word.", "provenance": { "kind": "model-knowledge" }, "extra": true },
+    { "text": "Persian/Urdu readers know the tashdid sign. In recitation make the doubling clearly audible every time; it can change the meaning of a word.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "113:1", "words": [2, 3], "note": { "text": "The last ب has a shadda with a kasra: close on ب, then say it again with 'i'.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "113:2", "words": [1, 2], "note": { "text": "ر doubled, with a kasra.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:2 word 1" } } },
+    { "ref": "108:2", "words": [0, 1], "note": { "text": "ل doubled, with a kasra.", "provenance": { "kind": "dataset", "source": "Tanzil text 108:2 word 0" } } },
+    { "ref": "1:5", "words": [0, 1], "note": { "text": "ي doubled, with a fatha, then a long alif.", "provenance": { "kind": "dataset", "source": "Tanzil text 1:5 word 0" } } },
+    { "ref": "114:1", "words": [3, 4], "rule": "ghunnah", "note": { "text": "ن doubled: you also hear a nasal hum (ghunnah).", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "letters": ["ّ"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 6, "note": "Mapped by order (our lesson 20 → Nuraniah lesson 6) — please confirm. The video titles carry no topic, so check it fits this lesson and mark its segments when you watch." },
+    { "source": "minshawi-ayah", "ref": "113:2" },
+    { "source": "minshawi-ayah", "ref": "108:2" }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Single, then doubled: بَتَ then بَتَّ. Hold the doubled ت a moment; no gap, no extra vowel.", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Doubled with each vowel: بَتَّ بَتُّ بَتِّ (batta, battu, batti).", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["تَ", "تَّ"], "tip": { "text": "تَ is one 'ta'. تَّ is ت doubled: close on 't' after the vowel before it, then say 'ta'.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "echo", "ref": "113:2" }
+  ],
+  "cr": [{ "ref": "113:2", "mode": "echo" }, { "ref": "108:2", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-20-q1", "q": "What does a shadda tell you?", "options": ["The letter is doubled: once with sukun, once with its vowel", "The letter is silent", "Stretch the vowel for two counts", "Stop after the letter"], "answer": 0, "explain": ["Right.", "A shadda letter is said twice, not skipped.", "Stretching is a long vowel (madd).", "Stopping is shown by pause signs."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-20-q2", "q": "In the middle of a word, how is بَّ read?", "options": ["بْ + بَ: close on 'b', then 'ba'", "Just 'ba', said louder", "'baa' with a long vowel", "'b' with no vowel"], "answer": 0, "explain": ["Right.", "Loudness is not doubling; you need two copies.", "There is no alif, so no long vowel.", "The fatha on the shadda must be read."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-20-q3", "q": "What is a letter with shadda called?", "options": ["Mushaddad ('doubled')", "Sakin ('still')", "Munawwan (with tanween)", "Mamdud ('stretched')"], "answer": 0, "explain": ["Right.", "Sakin is a letter with sukun.", "Munawwan words end in tanween (lesson 21).", "A stretched vowel is a madd (lesson 22)."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-20-q4", "q": "In many mushaf prints, where can the kasra of a doubled letter be drawn?", "options": ["Just under the shadda, above the letter", "On the next letter", "Nowhere: it is dropped", "At the end of the word"], "answer": 0, "explain": ["Right; read it as 'i' as usual.", "Each mark belongs to its own letter.", "The vowel is always written.", "Marks sit on their letter, not at the word's end."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-20-q5", "q": "Which letters with shadda also get a nasal hum (ghunnah)?", "options": ["ن and م", "ب and ت", "ر and ل", "ق and ك"], "answer": 0, "explain": ["Right: about two counts of humming through the nose (Stage 2).", "ب and ت are not nasal letters.", "ر and ل have no ghunnah of their own.", "ق and ك are not nasal letters."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-20-q6", "q": "What is the most common mistake with shadda?", "options": ["Saying the letter only once, too quickly", "Holding it a moment longer", "Joining it to the vowel before it", "Reading its vowel"], "answer": 0, "explain": ["Right: a missed shadda can change the word.", "A slightly longer hold is correct.", "The first copy should join the vowel before it.", "The vowel on the shadda must be read."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-20-q7", "q": "Which sign means 'this letter is doubled'?", "options": ["بّ (shadda)", "بْ (sukun)", "بٌ (tanween)", "بِ (kasra)"], "answer": 0, "explain": ["Right.", "Sukun means no vowel.", "Tanween adds '-un'.", "Kasra is the vowel 'i'."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-20-q8", "q": "The shadda on a letter carries a damma. How do you finish the doubled letter?", "options": ["With 'u'", "With 'a'", "With 'i'", "With no vowel"], "answer": 0, "explain": ["Right: the second copy takes the vowel written with the shadda.", "That would need a fatha.", "That would need a kasra.", "The second copy always has the written vowel."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-20-q9", "q": "How long is a doubled letter compared with a single one?", "options": ["A little longer, as one smooth doubled sound", "Exactly the same", "Twice as long, with a pause in between", "Four counts"], "answer": 0, "explain": ["Right.", "Then the doubling is lost.", "There is no pause or vowel between the two copies.", "Counts measure vowels and ghunnah, not a doubled letter."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-20-q10", "q": "In ـتَّـ, the first copy of ت belongs to…", "options": ["The syllable before it (it closes it)", "The next word", "Nothing: it is silent", "The vowel after it"], "answer": 0, "explain": ["Right.", "A shadda works inside the word.", "Both copies are heard.", "The second copy carries the vowel; the first closes the syllable before."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-20-q11", "q": "Which English word has a doubled sound like a shadda?", "options": ["'midday' (d + d)", "'mid'", "'day'", "'made'"], "answer": 0, "explain": ["Right: one d closes, the next opens.", "Only one d.", "Only one d.", "Only one d."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-20-q12", "q": "You see نّ with a fatha. What does the rule ask you to add there?", "options": ["A nasal hum (ghunnah) of about two counts", "A bounce (qalqalah)", "A pause", "A long 'aa'"], "answer": 0, "explain": ["Right.", "Qalqalah is a bounce on ق ط ب ج د with sukun.", "No pause is marked there.", "There is no alif, so no long vowel."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-20-q13", "q": "Which pair shows a single letter versus a doubled one?", "options": ["تَ and تَّ", "تَ and تْ", "تَ and تً", "تَ and تِ"], "answer": 0, "explain": ["Right: the second has a shadda.", "تْ has a sukun, not a shadda.", "تً has tanween, not a shadda.", "تِ only changes the vowel."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "contrast", "set": "shadda", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "harakah-id", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "word-audio", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "Shadda ( ّ ) == The letter is doubled: first copy with sukun, second with the vowel",
+    "Mushaddad == A letter with shadda",
+    "Kasra on a doubled letter in many prints == Drawn just under the shadda, above the letter",
+    "ن or م with shadda == Doubled, plus a nasal hum (ghunnah) of about 2 counts"
+  ],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say بَتَ then بَتَّ five times, making the doubled ت clearly longer, record the fifth time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

@@ -1,0 +1,68 @@
+{
+  "id": "s1-19-sukun",
+  "stage": 1,
+  "order": 19,
+  "title": "Sukun: the letter with no vowel",
+  "minutes": 10,
+  "prerequisites": ["s1-18-harakat"],
+  "bigIdea": { "text": "A small round sign on a letter means: no vowel here. You close the sound on that letter, joined to the vowel before it.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Sukun ( ْ ) sits above a letter that has no vowel of its own. It closes the syllable before it: بَبْ is 'bab', not 'baba'.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "A letter with sukun is called sakin ('still'). Say it clearly but briefly, and don't add a tiny vowel after it: 'ab', not 'ab-uh'.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "In printed Madinah mushafs the sukun is drawn like a small head of the letter خ without its dot; other prints use a small circle. Both mean 'no vowel'.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Mushaf habit: a letter with NO mark at all (no vowel, no sukun) is not plain sukun. Its sound hides into the next letter, or merges into it when the next letter has a shadda. You will often see this on ن. Stage 2 explains how; for now, never add a vowel to it.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": { "kind": "letters", "letters": ["بْ", "تْ", "مْ", "نْ"], "caption": "A letter with sukun: no vowel, close the sound." },
+  "memoryHook": { "text": "Little circle, closed door: no vowel here.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "Five letters, ق ط ب ج د, get a light 'bounce' when they carry sukun. It is called qalqalah and comes properly in Stage 2; you can already hear it on the final د of the second and fourth words of 112:3.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "112:3", "note": { "text": "All four words end on a letter with sukun.", "provenance": { "kind": "dataset", "source": "Tanzil text 112:3" } } },
+    { "ref": "112:1", "words": [0, 1], "note": { "text": "The ل carries a sukun: one closed syllable.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "1:2", "words": [0, 1], "note": { "text": "Two letters with sukun in one word: ل and م.", "provenance": { "kind": "dataset", "source": "Tanzil text 1:2 word 0" } } },
+    { "ref": "113:2", "words": [0, 2], "rule": "ikhfa", "note": { "text": "The ن has no mark at all: its sound is hidden before ش (ikhfa, Stage 2). Don't add a vowel.", "provenance": { "kind": "model-knowledge" } } },
+    { "ref": "112:4", "words": [1, 3], "rule": "idghaam_no_ghunnah", "note": { "text": "The ن has no mark and the next ل has a shadda: the ن merges fully into it.", "provenance": { "kind": "model-knowledge" } } }
+  ],
+  "letters": ["ْ"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 5, "note": "Mapped by order (our lesson 19 → Nuraniah lesson 5) — please confirm. The video titles carry no topic, so check it fits this lesson and mark its segments when you watch." },
+    { "source": "minshawi-ayah", "ref": "112:3" }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Close each syllable cleanly, with no extra vowel at the end: بَتْ بِتْ بُتْ (bat, bit, but).", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Open, then closed: بَ · بَبْ · تِ · تِبْ", "times": 3, "record": true },
+    { "kind": "minimal-pair", "pair": ["بَ", "بْ"], "tip": { "text": "بَ is 'ba': a vowel follows the letter. بْ has no vowel: it only closes the syllable before it.", "provenance": { "kind": "model-knowledge" } } },
+    { "kind": "echo", "ref": "112:3" }
+  ],
+  "cr": [{ "ref": "112:3", "mode": "echo" }, { "ref": "112:1", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-19-q1", "q": "What does a sukun on a letter mean?", "options": ["The letter has no vowel; it closes the syllable", "Say the letter twice", "Stretch the vowel for two counts", "Skip the letter completely"], "answer": 0, "explain": ["Right.", "Doubling is shadda (next lesson).", "Stretching is a long vowel (madd).", "The letter is pronounced, just without a vowel."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-19-q2", "q": "How do you read بَبْ?", "options": ["bab", "baba", "bb", "baab"], "answer": 0, "explain": ["Right: 'ba', closed by the sakin ب.", "The second ب has no vowel, so no second 'a'.", "The first ب has a fatha, so you need the 'a'.", "There is no long vowel here."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-19-q3", "q": "What is a letter with sukun called?", "options": ["Sakin ('still')", "Mutaharrik ('moving')", "Mushaddad ('doubled')", "Munawwan (with tanween)"], "answer": 0, "explain": ["Right.", "Mutaharrik letters carry a vowel.", "Mushaddad letters carry a shadda (lesson 20).", "Munawwan words end with tanween (lesson 21)."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-19-q4", "q": "What is the most common mistake on a sakin letter at the end of a word?", "options": ["Adding a small extra vowel after it", "Saying it too clearly", "Joining it to the vowel before it", "Keeping it short"], "answer": 0, "explain": ["Right: say 'ab', not 'ab-uh'.", "Clear is good; just add no vowel.", "Joining it to the vowel before is exactly right.", "Short is right."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-19-q5", "q": "In printed Madinah mushafs, the sukun looks like…", "options": ["A small head of خ without its dot", "A tiny و", "A slash under the letter", "Two small slashes"], "answer": 0, "explain": ["Right; other prints use a small circle.", "A tiny و on top is a damma.", "A slash under the letter is a kasra.", "Two slashes are tanween."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-19-q6", "q": "Which of these is a CLOSED syllable (ending in sukun)?", "options": ["تِبْ", "تِبَ", "تَبُ", "بِتِ"], "answer": 0, "explain": ["Right: 'tib', closed by the sakin ب.", "Both letters carry a vowel: 'ti-ba'.", "Both letters carry a vowel: 'ta-bu'.", "Both letters carry a vowel: 'bi-ti'."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-19-q7", "q": "In the mushaf a ن has no mark at all (no vowel, no sukun). What does that tell you?", "options": ["Its sound hides into or merges with the next letter (details in Stage 2)", "Read it with a fatha", "It is a printing error", "Pause after it"], "answer": 0, "explain": ["Right: a bare letter is never read with a vowel.", "No vowel is written, so none is added.", "It is a deliberate mushaf convention.", "Pauses are shown by pause signs."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-19-q8", "q": "How many vowels does a sakin letter carry?", "options": ["None", "One short vowel", "Two vowels", "One long vowel"], "answer": 0, "explain": ["Right.", "That would be a mutaharrik letter.", "Doubled vowel marks are tanween, not sukun.", "Long vowels come from madd letters."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-19-q9", "q": "How do you read دُبْ?", "options": ["dub", "dubu", "dab", "bud"], "answer": 0, "explain": ["Right: 'du', closed by the sakin ب.", "The ب has no vowel, so no final 'u'.", "The د has a damma, not a fatha.", "Read right to left: د first, then ب."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-19-q10", "q": "In بَتْ, which vowel does the ت belong with?", "options": ["The fatha on ب: ت closes that syllable", "Its own fatha", "A hidden kasra", "None: ت is silent"], "answer": 0, "explain": ["Right: one syllable, 'bat'.", "ت has a sukun, not a fatha.", "Nothing hidden: sukun means no vowel.", "A sakin letter is heard; it just has no vowel."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-19-q11", "q": "Which sign means 'no vowel'?", "options": ["بْ (sukun)", "بّ (shadda)", "بٌ (tanween)", "بُ (damma)"], "answer": 0, "explain": ["Right.", "Shadda doubles the letter.", "Tanween adds '-un'.", "Damma is 'u'."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-19-q12", "q": "A bare ن (no mark) is followed by a letter with shadda. What happens?", "options": ["The ن merges fully into the next letter", "Read the ن with a fatha", "Pause on the ن", "Read the ن twice"], "answer": 0, "explain": ["Right: the shadda on the next letter shows the merge.", "No vowel is written, so none is added.", "There is no pause sign there.", "Doubling belongs to the next letter, not to the ن."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-19-q13", "q": "Why must a sakin letter still be heard clearly?", "options": ["It is a real letter; only its vowel is missing", "It is a silent letter", "It marks the end of the ayah", "It carries the main stress"], "answer": 0, "explain": ["Right.", "Silent letters are shown differently (lesson 27).", "Sukun can appear anywhere in a word.", "Sukun is about the vowel, not stress."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "harakah-id", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "word-audio", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "Sukun ( ْ ) == No vowel: the letter closes the syllable before it (بَبْ = bab)",
+    "Sakin letter == A letter with sukun; heard clearly, with no extra vowel after it",
+    "Sukun in printed Madinah mushafs == Drawn like a small dotless خ head",
+    "A letter with no mark at all (often ن) == Its sound hides or merges into the next letter; never add a vowel"
+  ],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say بَتْ بِتْ بُتْ five times with no extra vowel at the end, record the fifth time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

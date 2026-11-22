@@ -1,0 +1,70 @@
+{
+  "id": "s1-18-harakat",
+  "stage": 1,
+  "order": 18,
+  "title": "Short vowels: fatha, damma, kasra",
+  "minutes": 12,
+  "prerequisites": ["s1-17-letter-forms"],
+  "bigIdea": { "text": "Arabic writes short vowels as small marks on the letter. A slash on top says 'a', a little curl on top says 'u', a slash underneath says 'i'.", "provenance": { "kind": "model-knowledge" } },
+  "proper": [
+    { "text": "Fatha ( َ ) is a small slanted line above the letter: say the letter with a short 'a'. بَ = ba.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Damma ( ُ ) is a small curl like a tiny و above the letter: a short 'u' with rounded lips. بُ = bu.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Kasra ( ِ ) is a small slanted line below the letter: a short 'i'. بِ = bi.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Each of these marks is a haraka ('movement'; plural harakat), and a letter carrying one is called mutaharrik ('moving'). A short vowel lasts one count: short and crisp, never stretched.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Preview: you will also meet ْ (sukun: no vowel), ّ (shadda: a doubled letter) and the doubled marks ً ٌ ٍ (tanween: -an, -un, -in). The next three lessons cover them, and the quiz may already show them.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": { "kind": "letters", "letters": ["بَ", "بُ", "بِ"], "caption": "ba · bu · bi" },
+  "memoryHook": { "text": "Slash on top 'a', curl on top 'u', slash below 'i'.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [
+    { "text": "Persian/Urdu readers: kasra is a clear 'i' (as in 'sit'), not 'e'; damma is 'u' (as in 'put'), not 'o'; fatha is an open 'a', not the 'e' of Persian.", "provenance": { "kind": "model-knowledge" }, "extra": true },
+    { "text": "After a heavy letter (such as ص ض ط ظ ق) the vowel sounds deeper and fuller; after a light letter it stays bright. Your letter cards say which letters are heavy.", "provenance": { "kind": "model-knowledge" }, "extra": true }
+  ],
+  "examples": [
+    { "ref": "113:2", "words": [3, 4], "note": { "text": "Three letters, each with a fatha.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:2 word 3" } } },
+    { "ref": "114:2", "words": [0, 1], "note": { "text": "A fatha, then two kasras.", "provenance": { "kind": "dataset", "source": "Tanzil text 114:2 word 0" } } },
+    { "ref": "112:1", "words": [1, 2], "note": { "text": "A damma, then a fatha.", "provenance": { "kind": "dataset", "source": "Tanzil text 112:1 word 1" } } },
+    { "ref": "113:5", "words": [4, 5], "note": { "text": "Three letters, each with a fatha.", "provenance": { "kind": "dataset", "source": "Tanzil text 113:5 word 4" } } }
+  ],
+  "letters": ["َ", "ُ", "ِ"],
+  "listen": [
+    { "source": "nuraniah", "lesson": 4, "note": "Mapped by order (our lesson 18 → Nuraniah lesson 4) — please confirm. The video titles carry no topic, so check it fits this lesson and mark its segments when you watch." },
+    { "source": "minshawi-ayah", "ref": "114:2" },
+    { "source": "minshawi-words", "ref": "113:2", "words": [3, 4] }
+  ],
+  "drills": [
+    { "kind": "say", "prompt": "Say بَ بُ بِ (ba, bu, bi): short and crisp, one count each.", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Now a heavy letter: صَ صُ صِ. Notice the deeper, fuller vowel.", "times": 3, "record": true },
+    { "kind": "say", "prompt": "Read across: تَ تُ تِ · ثَ ثُ ثِ · نَ نُ نِ", "times": 2, "record": true },
+    { "kind": "echo", "ref": "114:2" }
+  ],
+  "cr": [{ "ref": "114:2", "mode": "echo" }, { "ref": "113:2", "mode": "echo" }],
+  "check": { "quiz": { "practice": 12, "mastery": 20 }, "selfRate": true },
+  "questions": [
+    { "id": "s1-18-q1", "q": "Which mark is a small slanted line ABOVE the letter?", "options": ["Fatha (a)", "Kasra (i)", "Damma (u)", "Sukun (no vowel)"], "answer": 0, "explain": ["Right: fatha sits on top and says 'a'.", "Kasra is the same slash but BELOW the letter.", "Damma is a small curl like a tiny و, not a slash.", "Sukun is a small round sign meaning no vowel."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-18-q2", "q": "How do you read بُ?", "options": ["bu", "ba", "bi", "b (no vowel)"], "answer": 0, "explain": ["Right: the curl on top is a damma, 'u'.", "'ba' needs a fatha (a slash on top).", "'bi' needs a kasra (a slash below).", "No vowel would need a sukun."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-18-q3", "q": "Where is the kasra written?", "options": ["Below the letter", "Above the letter", "After the letter, on the line", "Inside the letter"], "answer": 0, "explain": ["Right: a small slash under the letter.", "Above the letter you find fatha and damma.", "Vowel marks sit on the letter, not beside it.", "Marks are never written inside a letter."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-18-q4", "q": "How long is a short vowel (fatha, damma or kasra)?", "options": ["One count: short and crisp", "Two counts", "Four counts", "As long as your breath lasts"], "answer": 0, "explain": ["Right.", "Two counts is a long vowel (madd), lesson 22.", "Four counts belongs to longer madd types in Stage 2.", "Short vowels are never stretched."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-18-q5", "q": "What does 'haraka' mean here?", "options": ["A short vowel mark: fatha, damma or kasra", "A pause sign", "A letter that is not pronounced", "A long vowel letter"], "answer": 0, "explain": ["Right: haraka means 'movement'; the letter moves with a vowel.", "Pause signs are different marks (lesson 27).", "Harakat are pronounced; they are the vowels.", "Long vowels use the letters ا و ي (lesson 22)."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-18-q6", "q": "Which mark looks like a tiny و above the letter?", "options": ["Damma (u)", "Fatha (a)", "Kasra (i)", "Shadda (doubled)"], "answer": 0, "explain": ["Right.", "Fatha is a straight slash on top.", "Kasra is a straight slash below.", "Shadda looks like a small 'w' with three points."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s1-18-q7", "q": "You see a slash under the letter ت. How do you read it?", "options": ["ti", "ta", "tu", "t (no vowel)"], "answer": 0, "explain": ["Right: a slash below is a kasra, 'i'.", "'ta' would need the slash on top (fatha).", "'tu' would need a damma curl on top.", "No vowel would need a sukun."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-18-q8", "q": "A Persian/Urdu reader says kasra like the 'e' in 'bed'. What should it be?", "options": ["A clear 'i' as in 'sit'", "An 'o' as in 'go'", "An 'a' as in 'cat'", "No vowel at all"], "answer": 0, "explain": ["Right.", "That is closer to a Persian reading of damma, and still wrong for Arabic.", "That is closer to fatha.", "Kasra is a real vowel."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-18-q9", "q": "What is a letter that carries a fatha, damma or kasra called?", "options": ["Mutaharrik ('moving')", "Sakin ('still')", "Mushaddad ('doubled')", "Silent"], "answer": 0, "explain": ["Right.", "Sakin is a letter with sukun (next lesson).", "Mushaddad is a letter with shadda (lesson 20).", "A letter with a vowel is always pronounced."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-18-q10", "q": "Which reading matches نِ?", "options": ["ni", "na", "nu", "nin"], "answer": 0, "explain": ["Right: kasra under ن.", "'na' needs a fatha.", "'nu' needs a damma.", "'nin' would need two kasras (tanween, lesson 21)."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-18-q11", "q": "What is the best way to say a damma?", "options": ["Round the lips for a short 'u'", "Spread the lips for 'ee'", "Open wide for a long 'aa'", "Close the lips completely"], "answer": 0, "explain": ["Right.", "Spread lips make an 'i'-type sound, which belongs to kasra.", "A long 'aa' is fatha plus alif, not damma.", "Closed lips make ب or م, not a vowel."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-18-q12", "q": "Which three marks are the short vowels?", "options": ["Fatha, damma, kasra", "Sukun, shadda, tanween", "Fatha, sukun, maddah", "Damma, shadda, kasra"], "answer": 0, "explain": ["Right.", "These are other marks, covered in lessons 19–21.", "Sukun means no vowel and the maddah means 'stretch'.", "Shadda doubles a letter; it is not a vowel."], "provenance": { "kind": "model-knowledge" }, "heldOut": true },
+    { "id": "s1-18-q13", "q": "Two letters each carry a kasra, like بِ تِ. How do you read them?", "options": ["bi-ti", "ba-ta", "bu-tu", "bit"], "answer": 0, "explain": ["Right: each letter gets a short 'i'.", "That would need two fathas.", "That would need two dammas.", "'bit' would need a sukun on ت instead of a kasra."], "provenance": { "kind": "model-knowledge" }, "heldOut": true }
+  ],
+  "generators": [
+    {"kind": "harakah-id", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
+    {"kind": "word-audio", "surahs": [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]}
+  ],
+  "remnote": [
+    "Fatha ( َ ) == Slash above the letter: short 'a' (بَ = ba)",
+    "Damma ( ُ ) == Small curl like a tiny و above the letter: short 'u' (بُ = bu)",
+    "Kasra ( ِ ) == Slash below the letter: short 'i' (بِ = bi)",
+    "Length of a short vowel == One count, never stretched"
+  ],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Say بَ بُ بِ five times, record the fifth time, then press Play mine (step 5, Practise) and compare it with the reference."
+}

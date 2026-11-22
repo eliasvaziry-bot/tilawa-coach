@@ -1,0 +1,37 @@
+{
+  "id": "s0-03-voice-range",
+  "stage": 0,
+  "order": 3,
+  "title": "A quiet room and your voice range",
+  "minutes": 6,
+  "prerequisites": ["s0-02-headphones-latency"],
+  "bigIdea": { "text": "Your voice has a comfortable bottom note and a comfortable top note. The app finds both, gently, so later melodies sit where your voice is at ease.", "provenance": { "kind": "app" } },
+  "proper": [
+    { "text": "Start with the room. Stay silent for 2 seconds while the app measures the background noise. If it says 'noisy', move away from fans, traffic or a TV and measure again.", "provenance": { "kind": "app" } },
+    { "text": "Qarar is the low, settled level of your voice: your lowest comfortable note. Reciters usually begin there and come back to it.", "provenance": { "kind": "model-knowledge" } },
+    { "text": "Hold 'aa' for 2 seconds on your lowest comfortable note, then on your highest comfortable note. The app finds the pitch of each and shows the gap between them in semitones (a semitone is the smallest step on a piano).", "provenance": { "kind": "app" } },
+    { "text": "Your lowest comfortable note becomes your starting tonic: the home note your practice melodies start from. You can move it later with the slider.", "provenance": { "kind": "app" } },
+    { "text": "Never strain. A comfortable note can be held softly for a few seconds with no squeeze, crack or pain. A strained note gives a false range and can hurt your voice, so stop if your throat feels tight or sore.", "provenance": { "kind": "model-knowledge" } }
+  ],
+  "visual": { "kind": "pitch-graph" },
+  "memoryHook": { "text": "Low and easy, high and easy: never squeeze.", "provenance": { "kind": "model-knowledge" } },
+  "extras": [{ "text": "In Stage 3 you will meet the higher levels above the qarar: the jawab, and above it the jawab al-jawab.", "provenance": { "kind": "model-knowledge" }, "extra": true }],
+  "examples": [],
+  "letters": [],
+  "listen": [],
+  "drills": [{ "kind": "setup", "component": "noise" }, { "kind": "setup", "component": "range" }],
+  "cr": [],
+  "check": { "quiz": { "practice": 5, "mastery": 20 }, "selfRate": false },
+  "questions": [
+    { "id": "s0-03-q1", "q": "What is your qarar?", "options": ["Your lowest comfortable note: the low, settled level of your voice", "The loudest sound you can make", "The highest note you can squeeze out", "The speed at which you recite"], "answer": 0, "explain": ["Right: reciters usually begin at this low, settled level.", "Loudness is not pitch; qarar is about how low, not how loud.", "A squeezed note is strain, and qarar is the low end, not the top.", "Speed is tempo, not pitch."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s0-03-q2", "q": "While finding your top note, your throat feels tight and your voice cracks. What should you do?", "options": ["Stop, come back down and record a note that feels easy", "Push harder until the note comes out", "Shout so the microphone hears it", "Hold the strained note for longer"], "answer": 0, "explain": ["Right: comfortable means no squeeze or crack, and a strained note gives a false range.", "Pushing through strain can hurt your voice.", "Shouting adds strain and can distort the recording.", "Holding a strained note makes the strain worse."], "provenance": { "kind": "model-knowledge" }, "heldOut": false },
+    { "id": "s0-03-q3", "q": "The noise check says 'noisy'. What is the best next step?", "options": ["Move away from the noise and measure again", "Recite louder to cover the noise", "Ignore it: noise does not affect checks", "Switch to Bluetooth headphones"], "answer": 0, "explain": ["Right: a quieter spot makes every later check more reliable.", "Reciting over noise strains your voice, and the noise is still recorded.", "The app warns you because noise makes checks less reliable.", "Bluetooth does not remove room noise, and it adds delay."], "provenance": { "kind": "app" }, "heldOut": false },
+    { "id": "s0-03-q4", "q": "What does the app do with your lowest comfortable note?", "options": ["Uses it as your starting tonic, which you can change", "Nothing: it is only shown on screen", "Sets your playback speed", "Marks your tajweed"], "answer": 0, "explain": ["Right: your practice melodies start from this home note, and the slider moves it.", "It is used: it sets your starting tonic.", "Playback speed has its own setting.", "Your pitch range says nothing about tajweed."], "provenance": { "kind": "app" }, "heldOut": false },
+    { "id": "s0-03-q5", "q": "Why does the app ask you to hold 'aa' for 2 seconds?", "options": ["A steady note lets it measure your pitch reliably", "To test how long your breath lasts", "To check your tajweed", "To measure the room noise"], "answer": 0, "explain": ["Right: without a steady note it cannot find your pitch.", "Breath planning comes in Stage 3; this step only measures pitch.", "No tajweed is checked here.", "Noise is measured in silence, before this step."], "provenance": { "kind": "app" }, "heldOut": false }
+  ],
+  "generators": [],
+  "remnote": ["Qarar == Your lowest comfortable note: the low, settled level of your voice", "Voice range rule == Low and easy, high and easy: never strain", "Starting tonic == Your lowest comfortable note (you can change it)", "Noise check says noisy == Move away from the noise and measure again"],
+  "sources": [],
+  "reviewStatus": "unreviewed",
+  "taskNow": "Press Lowest note and hold a soft 'aa' for 2 seconds on your lowest comfortable note, then do the same with Highest note."
+}

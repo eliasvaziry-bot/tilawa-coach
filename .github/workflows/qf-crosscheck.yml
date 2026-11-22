@@ -1,0 +1,52 @@
+name: Tajweed two-source cross-check
+# Runs ONLY when the shipped text or annotations change (never on every push). Quran.com data is used transiently
+# in memory; only our own dispute summary is committed (BRIEF B3/B5).
+on:
+  push:
+    branches: [main]
+    paths:
+      - data/source/**
+      - public/data/quran/**
+      - scripts/build-quran-data.ts
+      - scripts/qf-crosscheck.ts
+      - scripts/lib/align.ts
+      - src/data/rules.ts
+      - src/data/quranText.ts
+      - src/data/crosscheck.ts
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  crosscheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - uses: actions/cache@v6
+        with:
+          path: .cache
+          key: sources-${{ hashFiles('data/source/SOURCES.json') }}
+      - run: node scripts/fetch-sources.ts
+      - run: node scripts/build-quran-data.ts
+      - run: node scripts/qf-crosscheck.ts
+      - run: node scripts/build-quran-data.ts && node scripts/teacher-review.ts
+      - name: Commit our summary (never Quran.com data)
+        run: |
+          npm run guard
+          git config user.name "tilawa-coach-bot"
+          git config user.email "tilawa-coach-bot@users.noreply.github.com"
+          git add data/derived public/data/quran TEACHER_REVIEW.md
+          git diff --cached --quiet || git commit -m "Cross-check: update dispute flags and teacher review"
+          git push
+  deploy:
+    needs: crosscheck
+    uses: ./.github/workflows/deploy.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
