@@ -19,10 +19,16 @@ export function levels(x: Float32Array): Levels {
   return { rmsDb: 10 * Math.log10(s / Math.max(1, x.length) + 1e-12), peak, clipped, clippedPct: (clipped / Math.max(1, x.length)) * 100 };
 }
 
-export type InputVerdict = 'ok' | 'too-quiet' | 'clipping' | 'noisy';
+export type InputVerdict = 'ok' | 'too-quiet' | 'clipping' | 'noisy' | 'no-signal';
+/** Shown when a take is digital silence: the phone delivered no sound at all, so "come closer" would be wrong. */
+export const NO_SIGNAL_MESSAGE =
+  'No sound reached the app: the microphone gave silence. Close other apps that use the microphone and tap Record again. Still silent? iPhone Settings → Safari → Microphone → Allow, then reopen the app.';
+/** Digital silence (or nothing recorded): a technical fault, never "too quiet". */
+export const isNoSignal = (l: Levels): boolean => l.peak < 1e-4;
 /** Judge an input take against the noise floor measured just before it (B4: measured before each check). */
 export function judgeInput(take: Levels, noiseFloorDb: number): { verdict: InputVerdict; snrDb: number; message: string } {
   const snrDb = take.rmsDb - noiseFloorDb;
+  if (isNoSignal(take)) return { verdict: 'no-signal', snrDb, message: NO_SIGNAL_MESSAGE };
   if (take.clippedPct > 0.05) return { verdict: 'clipping', snrDb, message: 'Too loud: the microphone is clipping. Move the phone a little further away.' };
   if (noiseFloorDb > -45) return { verdict: 'noisy', snrDb, message: 'The room is noisy. Results may be unreliable — find a quieter spot or use wired headphones with a mic.' };
   if (snrDb < 15 || take.rmsDb < -45) return { verdict: 'too-quiet', snrDb, message: 'Too quiet: come closer to the microphone or recite a little louder.' };

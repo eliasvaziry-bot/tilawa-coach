@@ -26,7 +26,27 @@ export function parseHash(h: string): Route {
   return { parts: p.split('/').filter(Boolean).map(dec), query };
 }
 export const route = signal<Route>(parseHash(typeof location === 'undefined' ? '' : location.hash));
-if (typeof window !== 'undefined') window.addEventListener('hashchange', () => (route.value = parseHash(location.hash)));
+// In-app history, so Back returns to where you came from: the installed app has no browser Back button.
+const navStack: string[] = typeof location === 'undefined' ? [] : [location.hash || '#/today'];
+if (typeof window !== 'undefined')
+  window.addEventListener('hashchange', () => {
+    route.value = parseHash(location.hash);
+    const h = location.hash;
+    if (navStack.length > 1 && navStack[navStack.length - 2] === h) navStack.pop();
+    else navStack.push(h);
+  });
+/** The screen "above" a route: a lesson → Learn, a surah → the surah list, a More page → More. null on main tabs. */
+export function parentOf(r: Route): string | null {
+  const [top = '', sub] = r.parts;
+  if (sub && (top === 'learn' || top === 'mushaf')) return top;
+  if (['settings', 'credits', 'diagnostics', 'audio', 'spot-check'].includes(top)) return 'more';
+  if (top === 'more') return 'today';
+  return null;
+}
+export function goBack(): void {
+  if (navStack.length > 1) history.back();
+  else go(parentOf(route.value) ?? 'today');
+}
 export function go(path: string): void {
   location.hash = `#/${path.replace(/^\//, '')}`;
 }

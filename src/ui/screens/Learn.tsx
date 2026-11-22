@@ -487,7 +487,7 @@ function Player({ lesson }: { lesson: Lesson }) {
           role="tablist"
           aria-label="Lesson steps"
           onKeyDown={(e) => {
-            if (quiz || (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft')) return;
+            if ((quiz && quiz.kind !== 'practice') || (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft')) return;
             const n = (step + (e.key === 'ArrowRight' ? 1 : total - 1)) % total;
             setStep(n);
             document.getElementById(`step-tab-${n}`)?.focus();
@@ -501,8 +501,8 @@ function Player({ lesson }: { lesson: Lesson }) {
               aria-selected={step === i}
               aria-controls="lesson-panel"
               tabIndex={step === i ? 0 : -1}
-              disabled={!!quiz && step !== i}
-              title={quiz && step !== i ? 'Finish or stop the quiz first' : undefined}
+              disabled={!!quiz && quiz.kind !== 'practice' && step !== i}
+              title={quiz && quiz.kind !== 'practice' && step !== i ? 'Finish or stop the test first' : undefined}
               class={`btn small${step === i ? ' primary' : ''}`}
               onClick={() => setStep(i)}
             >
@@ -528,6 +528,18 @@ function Player({ lesson }: { lesson: Lesson }) {
           </button>
         ) : null}
         {step === 5 && !quiz && !quizTaken ? <p class="small muted">Take a practice quiz first: this step counts as done after one.</p> : null}
+        {step > 0 && !quiz ? (
+          <button
+            class="btn block"
+            style={{ marginTop: 8 }}
+            onClick={() => {
+              setStep(step - 1);
+              window.scrollTo({ top: 0 });
+            }}
+          >
+            ‹ Previous step
+          </button>
+        ) : null}
         {step === total - 1 ? (
           <button class="btn block" style={{ marginTop: 12 }} onClick={() => void complete(step)}>
             Mark lesson steps complete

@@ -1,6 +1,6 @@
 import type { ComponentChildren } from 'preact';
 import { lazy, Suspense } from 'preact/compat';
-import { online, route, toast } from './state.ts';
+import { goBack, online, parentOf, route, toast } from './state.ts';
 import { IconCareer, IconLearn, IconMore, IconMushaf, IconPractice, IconToday } from './components/icons.tsx';
 import { PlayerBar } from './components/PlayerBar.tsx';
 import { TodayScreen } from './screens/Today.tsx';
@@ -80,6 +80,11 @@ export function App() {
   return (
     <div class="shell">
       <header class="topbar">
+        {parentOf(route.value) ? (
+          <button class="backbtn" onClick={goBack} aria-label="Back">
+            ‹ Back
+          </button>
+        ) : null}
         <h1>{TITLES[top] ?? 'Tilawa Coach'}</h1>
         {!online.value ? <span class="offline-pill" role="status">Offline</span> : null}
         {updateReady.value ? (

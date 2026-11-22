@@ -39,7 +39,11 @@ export function onLevel(fn: (l: { t: number; rmsDb: number; peak: number }) => v
 }
 
 export async function openMic(): Promise<Mic> {
-  if (mic) return mic;
+  if (mic) {
+    // playing Minshawi switches iOS to the 'playback' session, which mutes the microphone: switch back every time
+    setAudioSession('play-and-record');
+    return mic;
+  }
   const ctx = await resumeAudio();
   setAudioSession('play-and-record');
   let stream: MediaStream;
@@ -125,8 +129,20 @@ let media: MediaRecorder | null = null;
 let mediaChunks: Blob[] = [];
 let parts: { t0: number; data: Float32Array }[] = [];
 
-export async function startRecording(): Promise<void> {
+/** Before every capture: record mode (iOS mutes the mic in 'playback'), a running audio context, and a live track —
+ *  iOS can end or mute the track after an interruption (a call, Siri, switching apps); then the mic is reopened. */
+async function ensureCapture(): Promise<Mic> {
+  setAudioSession('play-and-record');
+  await resumeAudio();
+  const t = mic?.stream.getAudioTracks()[0];
+  if (mic && (!t || t.readyState !== 'live' || t.muted)) closeMic();
   const m = await openMic();
+  await resumeAudio();
+  return m;
+}
+
+export async function startRecording(): Promise<void> {
+  const m = await ensureCapture();
   parts = [];
   pcmSink = (t0, data) => parts.push({ t0, data });
   m.node.port.postMessage({ record: true });

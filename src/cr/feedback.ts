@@ -54,7 +54,7 @@ export function computeFeedback(i: FeedbackInput): CrFeedback {
   lv.clipped = levels(i.response).clipped;
   lv.clippedPct = (lv.clipped / Math.max(1, i.response.length)) * 100;
   const judged = judgeInput(lv, i.noiseFloorDb);
-  if (!resp || !call || judged.verdict === 'too-quiet') {
+  if (!resp || !call || judged.verdict === 'too-quiet' || judged.verdict === 'no-signal') {
     return { heard: false, input: judged.verdict, inputMessage: judged.message, entryMs: null, entry: 'not heard', durRatio: null, length: 'not heard', melodyCents: null, melody: 'not measured', confidence: 'low', score: 0 };
   }
   const entryMs = Math.round(i.responseStartMs + resp.s - i.latencyMs);

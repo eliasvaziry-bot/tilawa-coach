@@ -18,6 +18,13 @@ export function frameDb(x: Float32Array, sr: number, hopMs = 10, winMs = 20): Fl
   return out;
 }
 
+/** How loud the speaking part of a take is: the 90th percentile of 50 ms frame levels, so pauses before and after
+ *  you speak do not make a loud take look quiet. */
+export function speakingLevelDb(x: Float32Array, sr: number): number {
+  const db = frameDb(x, sr, 25, 50);
+  return db.length ? percentile(db, 90) : -120;
+}
+
 export function percentile(a: ArrayLike<number>, p: number): number {
   const s = Array.from(a).sort((x, y) => x - y);
   if (!s.length) return NaN;

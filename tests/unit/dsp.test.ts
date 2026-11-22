@@ -7,6 +7,7 @@ import { activeRegions, detectOnsets, estimateLatency, judgeInput, levels, match
 import { frameDb, findSilences } from '../../src/audio/dsp/energy.ts';
 import { pitchShift, resampleTo, wsolaStretch } from '../../src/audio/dsp/stretch.ts';
 import { centre, dtw } from '../../src/audio/dsp/dtw.ts';
+import { speakingLevelDb } from '../../src/audio/dsp/energy.ts';
 
 describe('pitch (YIN)', () => {
   for (const hz of [98, 147, 220, 330, 523]) {
@@ -144,5 +145,18 @@ describe('pitch after decimation (the live pitch worklet)', () => {
   });
   it('would read ~9% sharp at 44.1 kHz if YIN were told 16 kHz (the bug CI caught)', () => {
     expect(measure(44100, 220, 16000)).toBeGreaterThan(235);
+  });
+});
+
+describe('input checks (silent microphone vs quiet voice)', () => {
+  it('digital silence is "no sound reached the app", never "too quiet"', () => {
+    expect(judgeInput(levels(new Float32Array(16000)), -60).verdict).toBe('no-signal');
+    expect(judgeInput(levels(new Float32Array(0)), -60).verdict).toBe('no-signal');
+  });
+  it('a loud voice with long pauses around it still counts as loud', () => {
+    const sr = 16000;
+    const x = new Float32Array(sr * 6); // 6 s: 2 s silence, 2 s voice at about -12 dBFS, 2 s silence
+    for (let i = 2 * sr; i < 4 * sr; i++) x[i] = 0.35 * Math.sin((2 * Math.PI * 180 * i) / sr);
+    expect(speakingLevelDb(x, sr)).toBeGreaterThan(-20);
   });
 });
