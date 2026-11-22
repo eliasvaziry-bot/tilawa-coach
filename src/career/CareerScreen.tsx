@@ -7,6 +7,7 @@ import { shareOrDownload } from '../data/backup.ts';
 import {
   pack,
   packState,
+  packUpdate,
   unlockPack,
   STAGES,
   STAGE_LABEL,
@@ -516,15 +517,16 @@ function Me() {
   );
 }
 
-function Unlock() {
+function Unlock({ update = false }: { update?: boolean }) {
   const [pass, setPass] = useState('');
   const [busy, setBusy] = useState(false);
   return (
     <div class="card">
-      <h2>Unlock your career pack</h2>
+      <h2>{update ? 'New opportunities available' : 'Unlock your career pack'}</h2>
       <p class="small">
-        Your opportunity list, pay pathways and profile are encrypted, so the public website reveals nothing about you. Type
-        your passphrase once; the unlocked pack stays on this phone.
+        {update
+          ? 'Your list was updated on the website. Type your passphrase to load the new version on this phone.'
+          : 'Your opportunity list, pay pathways and profile are encrypted, so the public website reveals nothing about you. Type your passphrase once; the unlocked pack stays on this phone.'}
       </p>
       <label class="field">
         <span>Passphrase</span>
@@ -561,6 +563,7 @@ export default function CareerScreen() {
           </a>
         ))}
       </nav>
+      {!needsPack && packUpdate.value && (tab === 'opps' || tab === 'paths') ? <Unlock update /> : null}
       {needsPack ? <Unlock /> : tab === 'tracker' ? <Tracker /> : tab === 'apply' ? <Apply /> : tab === 'email' ? <Email /> : tab === 'paths' ? <Pathways /> : tab === 'inbox' ? <Inbox /> : tab === 'me' ? <Me /> : <Opportunities />}
     </>
   );

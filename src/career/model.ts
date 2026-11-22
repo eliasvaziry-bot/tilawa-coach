@@ -41,6 +41,8 @@ export interface CareerPack {
 }
 export const pack = signal<CareerPack | null>(null);
 export const packState = signal<'loading' | 'locked' | 'unlocked' | 'missing'>('loading');
+/** a newer encrypted pack is on the website than the one unlocked on this phone (keeps the list up to date) */
+export const packUpdate = signal(false);
 
 export const STAGES = ['interested', 'drafting', 'applied', 'interview', 'offer', 'closed'] as const;
 export type Stage = (typeof STAGES)[number];
@@ -87,6 +89,14 @@ export async function loadCareer(): Promise<void> {
     if (p) {
       pack.value = p;
       packState.value = 'unlocked';
+      // each published pack has a fresh salt: a different salt online means the list was updated
+      const seen = rows.find((r) => r.type === 'pack-salt')?.data as string | undefined;
+      void fetch(`${import.meta.env.BASE_URL}data/career/pack.enc.json`, { cache: 'no-cache' })
+        .then((r) => (r.ok ? (r.json() as Promise<EncryptedPack>) : null))
+        .then((enc) => {
+          if (enc?.salt && enc.salt !== seen) packUpdate.value = true;
+        })
+        .catch(() => undefined);
     }
   } catch {
     /* private mode: memory only */
@@ -106,10 +116,13 @@ export async function unlockPack(pass: string): Promise<boolean> {
   const r = await fetch(`${import.meta.env.BASE_URL}data/career/pack.enc.json`);
   if (!r.ok) return false;
   try {
-    const p = await decryptPack<CareerPack>((await r.json()) as EncryptedPack, pass);
+    const enc = (await r.json()) as EncryptedPack;
+    const p = await decryptPack<CareerPack>(enc, pass);
     pack.value = p;
     packState.value = 'unlocked';
+    packUpdate.value = false;
     await put('pack', 'pack', p);
+    await put('pack-salt', 'pack-salt', enc.salt);
     if (!profile.value.name && p.profile) await saveProfile({ ...EMPTY_PROFILE, ...p.profile } as Profile);
     return true;
   } catch {
