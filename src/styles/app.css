@@ -352,3 +352,28 @@ pre.draft { white-space: pre-wrap; font-family: var(--ui-font); background: var(
   .stone.next { animation: none; }
   .ring .fg { transition: none; }
 }
+
+/* ---------- polish: stage cards, segmented picker, transitions ---------- */
+.stage-head { display: flex; align-items: center; gap: 12px; }
+.stage-head h2 { margin: 0 0 2px; font-size: 18px; line-height: 1.25; }
+.stage-head p { margin: 0; line-height: 1.35; }
+.stage-num { flex: none; width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; font-weight: 800; font-size: 20px; color: var(--primary-ink); background: var(--primary); }
+.stage.complete .stage-num { background: var(--accent); }
+.stage.complete { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); }
+.stage-done { margin: 10px 0 0; padding: 8px 12px; border-radius: 10px; font-weight: 700; color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, var(--surface)); }
+.ring { flex: none; }
+.seg { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.seg > .btn { min-width: 0; padding: 0 4px; justify-content: center; }
+.screen-in { animation: screen-in 0.2s ease-out backwards; }
+@keyframes screen-in { from { opacity: 0; transform: translateY(6px); } }
+.step-in.fwd { animation: step-fwd 0.2s ease-out backwards; }
+.step-in.back { animation: step-back 0.2s ease-out backwards; }
+@keyframes step-fwd { from { opacity: 0; transform: translateX(16px); } }
+@keyframes step-back { from { opacity: 0; transform: translateX(-16px); } }
+@media (prefers-reduced-motion: reduce) {
+  .screen-in, .step-in.fwd, .step-in.back { animation: none; }
+}
+/* lesson step strip: compact pills, a fade on the right edge says "more this way" */
+.tabs.steps { gap: 6px; padding-right: 28px; -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent); }
+.tabs.steps .btn.small { font-size: 14px; padding: 0 11px; }
+.step-count { margin: 0 0 2px; font-size: 12px; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase; color: var(--muted); }

@@ -3,6 +3,8 @@ import { test, expect } from '@playwright/test';
 // Screenshots for the B13 screen checklist at 390×844 and 430×932, light and dark.
 const PAGES = [
   ['today', '#/today'],
+  ['learn', '#/learn'],
+  ['lesson', '#/learn/s1-01-ba-family'],
   ['mushaf-1', '#/mushaf/1'],
   ['mushaf-2', '#/mushaf/2'],
   ['mushaf-112', '#/mushaf/112'],

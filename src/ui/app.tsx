@@ -120,7 +120,10 @@ export function App() {
         </a>
       </header>
       <main class="main" id="main">
-        <Suspense fallback={<p class="muted">Loading…</p>}>{screenFor(top)}</Suspense>
+        {/* each screen fades in briefly (none with reduced motion) */}
+        <div key={route.value.parts.join('/')} class="screen-in">
+          <Suspense fallback={<p class="muted">Loading…</p>}>{screenFor(top)}</Suspense>
+        </div>
       </main>
       <PlayerBar />
       {newBadges.length ? <BadgeBanner key={newBadges.map((b) => b.title).join()} badges={newBadges} onClose={closeBadges} /> : null}

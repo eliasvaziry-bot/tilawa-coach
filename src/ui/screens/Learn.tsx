@@ -1,6 +1,6 @@
 // Learn: stage map with mastery (#/learn) and the lesson player (#/learn/<id>):
 // Big idea → Properly → Picture → Listen → Practise → Check → YOUR TASK NOW, progress % after every step.
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import { LESSONS, LESSON_BY_ID, STAGES, STEP_NAMES, lessonSurahs, loadAllLessons, loadLesson } from '../../content/lessons.ts';
 import type { Fact, Lesson } from '../../content/schema.ts';
 import { isSetupLesson, masterySet, practiceSet, reviewSet, type QuizItem } from '../../content/quiz.ts';
@@ -12,6 +12,7 @@ import { ReviewBadge } from '../components/ReviewBadge.tsx';
 import { QuranSnippet } from '../components/QuranSnippet.tsx';
 import { Quiz, type QuizResult } from '../components/Quiz.tsx';
 import { Celebrate, type CelebrateInfo } from '../components/Celebrate.tsx';
+import { Ring } from '../components/Ring.tsx';
 import { awardXp, XP_FOR } from '../../srs/game.ts';
 import { YouTubeLesson } from '../components/YouTubeLesson.tsx';
 import { MicCard, NoiseCard, RecordTestCard, LatencyCard, RangeCard } from '../components/AudioSetup.tsx';
@@ -49,6 +50,11 @@ function StageMap() {
   const p = progress.value;
   // the lesson to do next: the first open one not yet passed (setup done / mastery test passed) and not placed
   const nextId = LESSONS.find((l) => lessonOpen(l, p) && !p[l.id]?.placed && !(l.setup ? p[l.id]?.setupDone : masteryPassed(p[l.id]?.mastery ?? null)))?.id;
+  useEffect(() => {
+    const el = document.querySelector('.stone.next');
+    if (!el || el.getBoundingClientRect().top < window.innerHeight * 0.7) return;
+    el.closest('li')?.scrollIntoView({ block: 'center', behavior: reducedMotion() ? 'auto' : 'smooth' });
+  }, [nextId]);
   const overall = weightedPct(LESSONS, p);
   return (
     <>
@@ -68,14 +74,22 @@ function StageMap() {
       {STAGES.map((st) => {
         const ls = LESSONS.filter((l) => l.stage === st.n);
         const pct = weightedPct(ls, p);
+        const done = ls.length > 0 && ls.every((l) => isMastered(p[l.id]));
         return (
-          <div class="card" key={st.n}>
-            <div class="row">
-              <h2 class="grow" style={{ margin: 0 }}>
-                Stage {st.n} · {st.title}
-              </h2>
-              <span class="small muted">{ls.length ? `${pct}%` : st.planned}</span>
+          <div class={`card stage${done ? ' complete' : ''}`} key={st.n}>
+            <div class="stage-head">
+              <span class="stage-num" aria-hidden="true">
+                {done ? '✓' : st.n}
+              </span>
+              <div class="grow">
+                <h2>
+                  Stage {st.n} · {st.title}
+                </h2>
+                <p class="small muted">{ls.length ? st.goal : `Coming later: ${st.planned}.`}</p>
+              </div>
+              {ls.length ? <Ring value={pct} max={100} size={52} label={`Stage ${st.n}: ${pct}% mastered`} text={done ? '✓' : `${pct}%`} /> : null}
             </div>
+            {done ? <p class="stage-done">Stage complete — أحسنت</p> : null}
             {ls.length ? (
               <ol class="path">
                 {ls.map((l, i) => {
@@ -104,9 +118,7 @@ function StageMap() {
                   );
                 })}
               </ol>
-            ) : (
-              <p class="small muted">Coming later: {st.planned}.</p>
-            )}
+            ) : null}
           </div>
         );
       })}
@@ -115,6 +127,8 @@ function StageMap() {
 }
 
 
+
+const reducedMotion = () => typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 const SETUP_LABEL: Record<string, string> = {
   mic: 'Microphone allowed',
@@ -166,6 +180,16 @@ function Player({ lesson }: { lesson: Lesson }) {
   const [loadNote, setLoadNote] = useState<string | null>(null);
   const [quiz, setQuiz] = useState<{ items: QuizItem[]; kind: 'practice' | 'mastery' | 'review' } | null>(null);
   const [celebrate, setCelebrate] = useState<CelebrateInfo | null>(null);
+  // steps slide in from the side you are moving towards; the active step tab scrolls into view
+  const prevStep = useRef(step);
+  const dir = step >= prevStep.current ? 'fwd' : 'back';
+  useEffect(() => {
+    prevStep.current = step;
+    document.getElementById(`step-tab-${step}`)?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: reducedMotion() ? 'auto' : 'smooth' });
+  }, [step]);
+  /** every lesson in this lesson's stage is mastered */
+  const stageComplete = () => LESSONS.filter((l) => l.stage === lesson.stage).every((l) => isMastered(progress.value[l.id]));
+  const stageMoment = (lines: string[]): CelebrateInfo => ({ title: `Stage ${lesson.stage} complete! 🎉`, lines: ['Every lesson in this stage is mastered — أحسنت.', ...lines], confetti: true });
   const [nuraniah, setNuraniah] = useState<FeedItem[]>([]);
   useEffect(() => void loadNuraniah().then(setNuraniah), []);
   useEffect(() => {
@@ -215,7 +239,7 @@ function Player({ lesson }: { lesson: Lesson }) {
       void updateProgress(lesson.id, { setupDone: Date.now() }, total);
       if (needs.includes('mic')) updateSettings({ onboarded: true });
       void awardXp('setup');
-      setCelebrate({ title: 'Setup complete — أحسنت', lines: [`+${XP_FOR.setup} XP`, 'This lesson is done.'], confetti: true });
+      setCelebrate(stageComplete() ? stageMoment([`+${XP_FOR.setup} XP`]) : { title: 'Setup complete — أحسنت', lines: [`+${XP_FOR.setup} XP`, 'This lesson is done.'], confetti: true });
     }
   }, [s.setupChecks, s.placement, p?.checksPassed, done]);
   // ---------- quizzes: every answer is recorded at once (M-3) ----------
@@ -241,7 +265,7 @@ function Player({ lesson }: { lesson: Lesson }) {
         const after = { ...cur, ...patch };
         if (wasRetest && isMastered(after)) {
           xp += await awardXp('retest');
-          info = { title: 'Lesson mastered! 🏅', lines: [score, `+${xp} XP`, ...run, 'First review in about 7 days.'], confetti: true };
+          info = stageComplete() ? stageMoment([score, `+${xp} XP`]) : { title: 'Lesson mastered! 🏅', lines: [score, `+${xp} XP`, ...run, 'First review in about 7 days.'], confetti: true };
         } else if (wasRetest) info = { title: 'Retest: not yet', lines: [score, 'It needs 95% (19 of 20): practise, then take the retest again.', `+${xp} XP`] };
         else if (patch.mastery && masteryPassed(after.mastery)) {
           xp += await awardXp('mastery');
@@ -513,7 +537,7 @@ function Player({ lesson }: { lesson: Lesson }) {
         <h2 style={{ margin: '4px 0' }}>{lesson.title}</h2>
         {!open ? <p class="notice small">Locked: finish {lockedBy} first. You can read this lesson now; its mastery test opens later.</p> : null}
         <div
-          class="tabs"
+          class="tabs steps"
           role="tablist"
           aria-label="Lesson steps"
           onKeyDown={(e) => {
@@ -547,7 +571,10 @@ function Player({ lesson }: { lesson: Lesson }) {
           Lesson {lessonPct(progress.value[lesson.id])}% · Stage {lesson.stage} {stagePct}% · Overall {overall}%
         </p>
       </div>
-      <div class="card" id="lesson-panel" role="tabpanel" aria-labelledby={`step-tab-${step}`}>
+      <div key={step} class={`card step-in ${dir}`} id="lesson-panel" role="tabpanel" aria-labelledby={`step-tab-${step}`}>
+        <p class="step-count">
+          Step {step + 1} of {total}
+        </p>
         <h3 style={{ marginTop: 0 }}>{STEP_NAMES[step]}</h3>
         {celebrate ? <Celebrate info={celebrate} onClose={() => setCelebrate(null)} /> : body()}
         {step < total - 1 && !quiz && !celebrate ? (

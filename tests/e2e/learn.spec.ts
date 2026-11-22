@@ -92,7 +92,7 @@ test('offline: a Stage 1 lesson still runs its quiz, without listening questions
 test('Back works in the installed app: inner screens have a Back button, lessons have Previous step', async ({ page }) => {
   // opened directly (no in-app history): Back goes up a level
   await page.goto('./#/settings');
-  await page.getByRole('button', { name: 'Back' }).click();
+  await page.getByRole('button', { name: 'Back', exact: true }).click();
   await expect(page).toHaveURL(/#\/more$/);
   // navigated within the app: Back returns to where you came from
   await page.goto('./#/learn');
@@ -101,8 +101,8 @@ test('Back works in the installed app: inner screens have a Back button, lessons
   await page.getByRole('button', { name: 'Done — next step' }).click();
   await page.getByRole('button', { name: '‹ Previous step' }).click();
   await expect(page.getByRole('tab', { name: /Big idea/ })).toHaveAttribute('aria-selected', 'true');
-  await page.getByRole('button', { name: 'Back' }).click();
+  await page.getByRole('button', { name: 'Back', exact: true }).click();
   await expect(page).toHaveURL(/#\/learn$/);
   // main tabs have no Back button
-  await expect(page.getByRole('button', { name: 'Back' })).toHaveCount(0);
+  await expect(page.getByRole('button', { name: 'Back', exact: true })).toHaveCount(0);
 });

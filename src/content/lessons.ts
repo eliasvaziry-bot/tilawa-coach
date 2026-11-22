@@ -38,12 +38,12 @@ export function loadLesson(id: string): Promise<LessonT> {
 export const loadAllLessons = (): Promise<LessonT[]> => Promise.all(LESSONS.map((l) => loadLesson(l.id)));
 
 export const STAGES = [
-  { n: 0, title: 'Setup and placement', planned: '4–6 lessons' },
-  { n: 1, title: 'Reading (Qaida-style)', planned: '30–40 lessons' },
-  { n: 2, title: 'Tajweed', planned: '40–55 lessons (M5)' },
-  { n: 3, title: 'Reciting beautifully', planned: '15–20 lessons (M7)' },
-  { n: 4, title: 'Latmiya (Basim al-Karbalai)', planned: '10–16 lessons (M8)' },
-  { n: 5, title: 'Shoor (al-Khaqani)', planned: '8–14 lessons (M8)' },
+  { n: 0, title: 'Setup and placement', planned: '4–6 lessons', goal: 'Your phone is ready, and you know where to start.' },
+  { n: 1, title: 'Reading (Qaida-style)', planned: '30–40 lessons', goal: 'You can read the letters, vowels and words of the Mushaf on your own.' },
+  { n: 2, title: 'Tajweed', planned: '40–55 lessons (M5)', goal: 'You apply the tajweed rules as you recite.' },
+  { n: 3, title: 'Reciting beautifully', planned: '15–20 lessons (M7)', goal: 'You recite with breath control, melody and feeling.' },
+  { n: 4, title: 'Latmiya (Basim al-Karbalai)', planned: '10–16 lessons (M8)', goal: 'You recite latmiya with its rhythm and refrains.' },
+  { n: 5, title: 'Shoor (al-Khaqani)', planned: '8–14 lessons (M8)', goal: 'You lead shoor with its fast pulse.' },
 ];
 
 /** The 7 player steps (B8): simple → proper → visual → listen → practise → check → YOUR TASK NOW. */
