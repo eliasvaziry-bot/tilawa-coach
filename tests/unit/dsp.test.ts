@@ -2,7 +2,7 @@
 // times, a closure-then-burst, latency maths, levels, transposition, DTW.
 import { describe, expect, it } from 'vitest';
 import { SR, clicks, concat, noise, silence, sine, vowel } from './signals.ts';
-import { DEFAULT_YIN, medianPitch, pitchTrack, yin, hzToCents, noteName } from '../../src/audio/dsp/pitch.ts';
+import { DEFAULT_YIN, decimation, medianPitch, pitchTrack, yin, hzToCents, noteName } from '../../src/audio/dsp/pitch.ts';
 import { activeRegions, detectOnsets, estimateLatency, judgeInput, levels, matchOffsets } from '../../src/audio/dsp/onsets.ts';
 import { frameDb, findSilences } from '../../src/audio/dsp/energy.ts';
 import { pitchShift, resampleTo, wsolaStretch } from '../../src/audio/dsp/stretch.ts';
@@ -122,5 +122,27 @@ describe('DTW contour comparison', () => {
     expect(dtw(a, a)!.meanCents).toBe(0);
     expect(dtw(centre(a), centre(warped))!.meanCents).toBeLessThan(15);
     expect(dtw(a, a.map((x) => -x))!.meanCents).toBeGreaterThan(80);
+  });
+});
+
+describe('pitch after decimation (the live pitch worklet)', () => {
+  // the worklet averages blocks of `factor` samples, then runs YIN on the result
+  const measure = (sr: number, hz: number, rateForYin?: number) => {
+    const { factor, rate } = decimation(sr);
+    const n = Math.round(sr * 0.2);
+    const dec: number[] = [];
+    for (let i = 0; i + factor <= n; i += factor) {
+      let s = 0;
+      for (let k = 0; k < factor; k++) s += Math.sin((2 * Math.PI * hz * (i + k)) / sr);
+      dec.push(s / factor);
+    }
+    return yin(Float32Array.from(dec.slice(0, 800)), rateForYin ?? rate).hz;
+  };
+  it('reads 220 Hz as 220 Hz at 48 kHz and at 44.1 kHz', () => {
+    expect(decimation(44100)).toEqual({ factor: 3, rate: 14700 });
+    for (const sr of [48000, 44100, 96000]) expect(Math.abs(measure(sr, 220) - 220), `${sr} Hz`).toBeLessThan(3);
+  });
+  it('would read ~9% sharp at 44.1 kHz if YIN were told 16 kHz (the bug CI caught)', () => {
+    expect(measure(44100, 220, 16000)).toBeGreaterThan(235);
   });
 });

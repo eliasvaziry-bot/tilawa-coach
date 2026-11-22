@@ -1,6 +1,6 @@
 // AudioWorklet: all mic DSP off the main thread (B4). Captures PCM (with context-time stamps), reports levels,
 // and runs YIN pitch on a 16 kHz decimated copy every 20 ms.
-import { yin, DEFAULT_YIN } from '../dsp/pitch.ts';
+import { decimation, yin, DEFAULT_YIN } from '../dsp/pitch.ts';
 
 declare const sampleRate: number;
 declare const currentTime: number;
@@ -23,7 +23,9 @@ class MicProcessor extends AudioWorkletProcessor {
   private lvlPeak = 0;
   private lvlN = 0;
   private lvlBlocks = 0;
-  private dec = Math.max(1, Math.round(sampleRate / PITCH_SR));
+  // the true rate after decimation (16,000 at 48 kHz, 14,700 at 44.1 kHz): YIN must be told it
+  private dec = decimation(sampleRate, PITCH_SR).factor;
+  private pitchSr = decimation(sampleRate, PITCH_SR).rate;
   private decAcc = 0;
   private decCount = 0;
   private ring = new Float32Array(WIN);
@@ -88,7 +90,7 @@ class MicProcessor extends AudioWorkletProcessor {
           if (++this.sinceHop >= HOP) {
             this.sinceHop = 0;
             for (let k = 0; k < WIN; k++) this.frame[k] = this.ring[(this.ringPos + k) % WIN]!;
-            const p = yin(this.frame, PITCH_SR, DEFAULT_YIN, this.scratch);
+            const p = yin(this.frame, this.pitchSr, DEFAULT_YIN, this.scratch);
             this.port.postMessage({ type: 'pitch', t: blockT0 + i / sampleRate, hz: p.hz, clarity: p.clarity });
           }
         }

@@ -77,6 +77,13 @@ export function pitchTrack(x: Float32Array, sr: number, hopMs = 10, winMs = 50, 
   return { t, hz, clarity };
 }
 
+/** Integer decimation towards `target` Hz and the TRUE rate that results (14,700 Hz at 44.1 kHz, not 16,000):
+ *  pitch must be computed with the true rate or it reads ~9% sharp on 44.1 kHz devices. */
+export function decimation(sampleRate: number, target = 16000): { factor: number; rate: number } {
+  const factor = Math.max(1, Math.round(sampleRate / target));
+  return { factor, rate: sampleRate / factor };
+}
+
 export const hzToCents = (hz: number, refHz: number): number => 1200 * Math.log2(hz / refHz);
 export const centsToHz = (cents: number, refHz: number): number => refHz * 2 ** (cents / 1200);
 export const hzToMidi = (hz: number): number => 69 + 12 * Math.log2(hz / 440);
