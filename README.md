@@ -4,8 +4,9 @@ A personal, offline-first recitation coach (Quran reading → tajweed → beauti
 Sheikh Muhammad Siddiq al-Minshawi as the reference voice — plus a private **Career Desk** in the same app.
 Non-commercial; no ads, no tracking. Specs: [BRIEF.md](BRIEF.md) (master brief) and [CAREER_BRIEF.md](CAREER_BRIEF.md).
 
-## 1. Go live (your steps)
-Not live yet: this session ran on your Mac without GitHub access, so nothing has been pushed.
+## 1. Live
+**Live since 22 Nov 2026:** `https://<your-username>.github.io/tilawa-coach/` — every push to `main` runs CI, and the
+deploy publishes it only if CI passes. The steps below are kept for reference (they are how it went live).
 
 1. Create an **empty public** GitHub repository named `tilawa-coach` (no README/licence).
 2. From this folder, push `main`. Its history is one clean commit with no personal data; the older history stays on a

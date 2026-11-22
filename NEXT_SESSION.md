@@ -5,8 +5,11 @@ the Playwright browsers lived in a temporary session folder — re-download (nod
 chromium webkit`). `private/` (career data, pack passphrase) exists only on the Mac.
 
 ## Top 10 (priority order)
-1. **Owner:** create the public GitHub repo, push `main`, enable Pages (README → Go live). Then the 10-minute iPhone
-   check; FEEDBACK.md items come first next session.
+1. **Owner:** the app is live (`https://<your-username>.github.io/tilawa-coach/`). Do the 10-minute iPhone check
+   (README → 2) and put what you find in FEEDBACK.md; those items come first next session. Pushing from this Mac uses a
+   7-day GitHub token kept in the macOS Keychain: after it expires, make a new one (repo + workflow) when git asks.
+   Headless Chrome on this Mac lost audio rendering on 22 Nov (AudioContext clock stalled), so the two audio e2e tests
+   only ran on GitHub that day; check they pass locally again.
 2. **Teacher review** (owner + a qualified teacher): TEACHER_REVIEW.md section 0 (check first), D (Quran.com
    disputes), D2 (163 rule-engine disagreements) and E (model-knowledge lesson items); approvals go into
    `src/content/review.json`. Then draw approved engine-only findings (e.g. the alif of أَنَا۠, silent when joining).

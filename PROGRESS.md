@@ -26,6 +26,10 @@ ladder, offline gaps, no learner-path e2e tests, start-up bundle growing with co
 minors. Fixed: all blockers and majors (the history squash is the last step of the session) and m-1, m-2, m-3, m-5,
 m-6, m-7, m-8, m-9 (partly), m-11, m-13, m-14. Open: m-4 (makhraj diagrams, teacher-recording slot), m-10 (option
 lengths; the linter warns), m-12 (Nuraniah mapping, for the owner/teacher), m-15 (reading-speed history). D-019.
+**Live (22 Nov):** published to GitHub Pages (`https://<your-username>.github.io/tilawa-coach/`). The first CI run on
+GitHub caught a real bug the Mac could not: the live-pitch worklet told YIN 16 kHz after decimating 44.1 kHz audio to
+14.7 kHz, so pitch read ~9% sharp on 44.1 kHz devices; fixed with a tested `decimation()` helper, then CI and the
+deploy passed.
 **Re-review (same reviewer, 22 Nov): signed off for Stages 0–1**, on condition that the history is squashed before the
 first push (done: D-013). Its 7 new minor findings were fixed (n-1 small-sign keys, n-2 shadda questions, n-3 repeated
 questions, n-4 test hook only on a local server, n-5 caption order, n-6 listening questions practice-only, n-7 task
@@ -53,6 +57,6 @@ TESTING.md with caveats), M10 (second tajweed source's independence not establis
 9. Learning rules — **holds**: big idea first, YOUR TASK NOW on every step, progress % after every step, strict
    4-option MCQs, mastery (≥ 95% on ≥ 20 questions new to your tests + a retest 3+ days later; the linter proves every
    lesson can reach it), spaced review. Weak spot: the right option is often the longest (linter warning; to fix).
-10. iPhone first — **WebKit-tested only**; the owner's iPhone check is pending.
-11. Always deployable — **holds locally** (CI-gated deploy); not deployed.
+10. iPhone first — **WebKit-tested only**; the owner's iPhone check on the live site is pending.
+11. Always deployable — **holds**: live on GitHub Pages; the deploy runs only after CI passes on `main`.
 12. Beauty never beats tajweed — **holds** (melody feedback labelled secondary; tajweed checks come in M5).
