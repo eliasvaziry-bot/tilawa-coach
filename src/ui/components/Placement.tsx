@@ -11,6 +11,7 @@ import { loadSurah, type Ayah } from '../../data/quranData.ts';
 import { ayahBuffer, playSegment } from '../../audio/everyayah.ts';
 import { resumeAudio } from '../../audio/context.ts';
 import { progress, updateProgress } from '../../srs/progress.ts';
+import { awardXp } from '../../srs/game.ts';
 import { settings, updateSettings, say } from '../state.ts';
 import { Quiz } from './Quiz.tsx';
 import { QuranSnippet } from './QuranSnippet.tsx';
@@ -79,6 +80,7 @@ export function PlacementCard() {
   };
   const result = (passed: boolean) => {
     if (!at) return;
+    if (passed) void awardXp('placementLevel');
     if (passed) {
       if (at.level === 4) void finish(5);
       else go(at.level + 1, 0);

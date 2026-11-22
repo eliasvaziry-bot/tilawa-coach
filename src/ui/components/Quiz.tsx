@@ -1,10 +1,12 @@
 // One question at a time, strict marking (no second try on the same question), explanation for every option.
 // Every answer is reported at once (onAnswer), so leaving a test half-way cannot bring the same questions back (M-3).
 // A "Listen…" question whose recording cannot play can be skipped without counting (M-9).
+// Game feel: a green / red answer panel with Continue, a combo counter for answers right in a row, small sounds.
 import { useEffect, useRef, useState } from 'preact/hooks';
 import type { QuizItem } from '../../content/quiz.ts';
 import { loadSurah } from '../../data/quranData.ts';
 import { mushafPlayer } from '../../audio/mushafPlayer.ts';
+import { sfx } from '../sfx.ts';
 import { ReviewBadge } from './ReviewBadge.tsx';
 
 // Test-only (D-016): ?quizbot=1 marks the right option so e2e tests can walk the learner path. Changes nothing else.
@@ -17,6 +19,8 @@ export interface QuizResult {
   total: number;
   seen: string[];
   skipped: number;
+  /** most answers right in a row */
+  bestCombo: number;
 }
 
 function ArabicWithHighlight({ text, hl }: { text: string; hl?: [number, number] }) {
@@ -30,12 +34,29 @@ function ArabicWithHighlight({ text, hl }: { text: string; hl?: [number, number]
   );
 }
 
-export function Quiz({ items, title, onDone, onAnswer, onQuit }: { items: QuizItem[]; title: string; onDone: (r: QuizResult) => void; onAnswer?: (id: string, correct: boolean) => void; onQuit?: () => void }) {
+export function Quiz({
+  items,
+  title,
+  onDone,
+  onAnswer,
+  onQuit,
+  xpPerCorrect,
+}: {
+  items: QuizItem[];
+  title: string;
+  onDone: (r: QuizResult) => void;
+  onAnswer?: (id: string, correct: boolean) => void;
+  onQuit?: () => void;
+  /** shown as "+n XP" on a right answer (the caller awards it) */
+  xpPerCorrect?: number;
+}) {
   const [i, setI] = useState(0);
   const [picked, setPicked] = useState<number | null>(null);
   const [correct, setCorrect] = useState(0);
   const [skipped, setSkipped] = useState(0);
   const [answered, setAnswered] = useState<string[]>([]);
+  const [combo, setCombo] = useState(0);
+  const [bestCombo, setBestCombo] = useState(0);
   const [audioFailed, setAudioFailed] = useState(false);
   const [finishing, setFinishing] = useState(false);
   const nextRef = useRef<HTMLButtonElement>(null);
@@ -59,12 +80,15 @@ export function Quiz({ items, title, onDone, onAnswer, onQuit }: { items: QuizIt
     }
     if (finishing) return; // a double tap on Finish must not record twice (m-6)
     setFinishing(true);
-    onDone({ correct: c, total: items.length - sk, seen: ans, skipped: sk });
+    sfx('done');
+    onDone({ correct: c, total: items.length - sk, seen: ans, skipped: sk, bestCombo });
   };
+  const right = picked !== null && picked === item.answer;
   return (
     <div class="card" aria-live="polite">
       <div class="row">
         <b class="grow">{title}</b>
+        {combo >= 3 ? <span class="chip combo">🔥 {combo} in a row</span> : null}
         <span class="small muted">
           {i + 1} / {items.length}
         </span>
@@ -75,7 +99,7 @@ export function Quiz({ items, title, onDone, onAnswer, onQuit }: { items: QuizIt
         ) : null}
       </div>
       <div class="progress" style={{ margin: '8px 0' }}>
-        <span style={{ width: `${Math.round((i / items.length) * 100)}%` }} />
+        <span style={{ width: `${Math.round(((i + (picked !== null ? 1 : 0)) / items.length) * 100)}%` }} />
       </div>
       <p ref={qRef} tabIndex={-1} style={{ fontWeight: 650 }}>
         {item.q} {item.provenance.kind === 'model-knowledge' ? <ReviewBadge /> : null}
@@ -130,7 +154,12 @@ export function Quiz({ items, title, onDone, onAnswer, onQuit }: { items: QuizIt
               onClick={() => {
                 const ok = k === item.answer;
                 setPicked(k);
-                if (ok) setCorrect(correct + 1);
+                if (ok) {
+                  setCorrect(correct + 1);
+                  setCombo(combo + 1);
+                  setBestCombo(Math.max(bestCombo, combo + 1));
+                } else setCombo(0);
+                sfx(ok ? 'correct' : 'wrong');
                 setAnswered([...answered, item.id]);
                 onAnswer?.(item.id, ok);
               }}
@@ -143,19 +172,20 @@ export function Quiz({ items, title, onDone, onAnswer, onQuit }: { items: QuizIt
         })}
       </div>
       {picked !== null ? (
-        <div class="notice" style={{ marginTop: 10 }}>
-          <b>{picked === item.answer ? 'Correct.' : 'Not quite.'}</b> {item.explain[picked]}
-          {picked !== item.answer ? (
-            <>
-              <br />
+        <div class={`answer-sheet ${right ? 'ok' : 'err'}`}>
+          <h3>
+            {right ? 'Correct!' : 'Not quite'}
+            {right && xpPerCorrect ? <span class="xp-gain"> +{xpPerCorrect} XP</span> : null}
+          </h3>
+          <p style={{ margin: '0 0 6px' }}>{item.explain[picked]}</p>
+          {!right ? (
+            <p style={{ margin: '0 0 6px' }}>
               <b>Answer:</b> {item.options[item.answer]} — {item.explain[item.answer]}
-            </>
+            </p>
           ) : null}
-          <div style={{ marginTop: 10 }}>
-            <button ref={nextRef} class="btn primary" disabled={finishing} onClick={() => advance(correct, skipped, answered)}>
-              {last ? 'Finish' : 'Next question'}
-            </button>
-          </div>
+          <button ref={nextRef} class={`btn block ${right ? 'primary' : ''}`} disabled={finishing} onClick={() => advance(correct, skipped, answered)}>
+            {last ? 'Finish' : 'Continue'}
+          </button>
         </div>
       ) : null}
     </div>

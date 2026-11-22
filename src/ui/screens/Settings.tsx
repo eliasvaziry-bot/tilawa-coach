@@ -57,6 +57,9 @@ export default function SettingsScreen() {
         <label class="row">
           <input type="checkbox" checked={s.handsFree} onChange={(e) => set('handsFree', e.currentTarget.checked)} /> Hands-free mode (big buttons, auto-advance, spoken prompts)
         </label>
+        <label class="row">
+          <input type="checkbox" checked={s.gameSounds} onChange={(e) => set('gameSounds', e.currentTarget.checked)} /> Game sounds (a short tone for right, wrong and finished)
+        </label>
       </div>
       <div class="card">
         <h2>Appearance</h2>

@@ -59,6 +59,9 @@ progress %, RemNote export, teacher-review export); Career Desk (encrypted oppor
 email drafter, pay pathways, paste-an-email deadline finder); Diagnostics; backup/restore; calendar reminder.
 **Also works:** Stage 0–1 lessons (36, waiting for a teacher's check), placement ladder with the Persian/Urdu
 fast-track, 3-day retests and spaced reviews (about 7, 21 and 60 days), Stage 0–1 lessons offline.
+**Game layer (motivation only; the mastery rules are unchanged):** XP for steps, right answers and passed tests, a
+daily XP goal ring, levels, 15 badges, a winding lesson path, green / red answer panels with Continue, combos, short
+celebrations and optional game sounds (Settings → Game sounds). Nothing is taken away for a mistake.
 **Partial:** makhraj "diagrams" are text tables and there is no "my teacher's recording" slot yet; reading-speed results
 are not stored; in many hand-written questions the right option is still the longest; runtime timing refinement only for
 short ayat.

@@ -8,13 +8,15 @@ test.skip(({ browserName }) => browserName !== 'chromium', 'learner path runs in
 async function answerAll(page: Page, max = 40): Promise<void> {
   for (let k = 0; k < max; k++) {
     await page.locator('[data-correct="1"]').first().click();
-    const next = page.getByRole('button', { name: /^(Next question|Finish)$/ });
+    const next = page.getByRole('button', { name: /^(Continue|Finish)$/ });
     const last = (await next.textContent())?.includes('Finish');
     await next.click();
     if (last) return;
   }
 }
 const day = (d: number) => new Date(Date.UTC(2026, 11, d, 9));
+/** after a quiz in a lesson, a celebration card shows the score and XP; Continue closes it */
+const closeCard = (page: Page) => page.getByRole('button', { name: 'Continue' }).click();
 
 test('placement ladder, then practice → mastery → retest → spaced review', async ({ page }) => {
   await page.clock.install({ time: day(1) });
@@ -30,8 +32,12 @@ test('placement ladder, then practice → mastery → retest → spaced review',
   await expect(page.getByText('Locked:')).toHaveCount(0);
   await page.getByRole('button', { name: 'Practice quiz' }).click();
   await answerAll(page);
+  await expect(page.getByText(/Perfect! أحسنت/)).toBeVisible();
+  await expect(page.getByText(/\+\d+ XP/)).toBeVisible();
+  await closeCard(page);
   await page.getByRole('button', { name: 'Mastery test' }).click();
   await answerAll(page);
+  await closeCard(page);
   await expect(page.getByText(/retest unlocks on/)).toBeVisible();
   await expect(page.getByRole('button', { name: 'Mastery test' })).toBeDisabled();
 
@@ -40,6 +46,8 @@ test('placement ladder, then practice → mastery → retest → spaced review',
   await page.reload();
   await page.getByRole('button', { name: 'Retest' }).click();
   await answerAll(page);
+  await expect(page.getByText('Lesson mastered! 🏅')).toBeVisible();
+  await closeCard(page);
   await expect(page.getByText(/mastered · next review/)).toBeVisible();
 
   // a week after that: Today lists the review; it opens on the Check step; passing clears it
@@ -62,7 +70,7 @@ test('a running mastery test locks the step tabs and keeps its place', async ({ 
   await page.goto('./?quizbot=1#/learn/s1-03-dal-dhal?step=check');
   await page.getByRole('button', { name: 'Mastery test' }).click();
   await page.locator('[data-correct="1"]').first().click();
-  await page.getByRole('button', { name: 'Next question' }).click();
+  await page.getByRole('button', { name: 'Continue' }).click();
   await expect(page.getByText('2 / 20')).toBeVisible();
   await expect(page.getByRole('tab', { name: /Big idea/ })).toBeDisabled();
   await expect(page.getByText('2 / 20')).toBeVisible();

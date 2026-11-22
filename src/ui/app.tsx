@@ -1,6 +1,11 @@
 import type { ComponentChildren } from 'preact';
 import { lazy, Suspense } from 'preact/compat';
-import { goBack, online, parentOf, route, toast } from './state.ts';
+import { useEffect, useState } from 'preact/hooks';
+import { goBack, online, parentOf, route, settings, toast } from './state.ts';
+import { LESSONS } from '../content/lessons.ts';
+import { loadProgress, progress, streak } from '../srs/progress.ts';
+import { BADGES, earnedBadges, loadXp, markBadgesSeen, xpReady, xpState } from '../srs/game.ts';
+import { BadgeBanner } from './components/Celebrate.tsx';
 import { IconCareer, IconLearn, IconMore, IconMushaf, IconPractice, IconToday } from './components/icons.tsx';
 import { PlayerBar } from './components/PlayerBar.tsx';
 import { TodayScreen } from './screens/Today.tsx';
@@ -74,7 +79,25 @@ function screenFor(top: string): ComponentChildren {
   }
 }
 
+/** A badge earned since it was last announced gets a banner once (only after the saved XP has loaded). */
+function useNewBadges(): [{ icon: string; title: string }[], () => void] {
+  const [shown, setShown] = useState<string[]>([]);
+  useEffect(() => {
+    void loadProgress();
+    void loadXp();
+  }, []);
+  const fresh = xpReady.value ? earnedBadges(progress.value, streak.value, xpState.value, LESSONS, !!settings.value.placement).filter((id) => !xpState.value.seenBadges.includes(id)) : [];
+  const key = fresh.join(',');
+  useEffect(() => {
+    if (!fresh.length) return;
+    setShown((s) => [...s, ...fresh.filter((id) => !s.includes(id))]);
+    void markBadgesSeen(fresh);
+  }, [key]);
+  return [shown.map((id) => BADGES.find((b) => b.id === id)!).filter(Boolean), () => setShown([])];
+}
+
 export function App() {
+  const [newBadges, closeBadges] = useNewBadges();
   const top = route.value.parts[0] ?? 'today';
   const activeTab = TABS.some((t) => t.id === top) ? top : top === '' ? 'today' : '';
   return (
@@ -100,6 +123,7 @@ export function App() {
         <Suspense fallback={<p class="muted">Loading…</p>}>{screenFor(top)}</Suspense>
       </main>
       <PlayerBar />
+      {newBadges.length ? <BadgeBanner key={newBadges.map((b) => b.title).join()} badges={newBadges} onClose={closeBadges} /> : null}
       {toast.value ? (
         <div role="status" class="card" style={{ position: 'fixed', left: 16, right: 16, bottom: 'calc(var(--nav-h) + env(safe-area-inset-bottom) + 70px)', zIndex: 40 }}>
           {toast.value}

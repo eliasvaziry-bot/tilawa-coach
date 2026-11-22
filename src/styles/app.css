@@ -304,3 +304,51 @@ pre.draft { white-space: pre-wrap; font-family: var(--ui-font); background: var(
 .sheet { position: fixed; left: 8px; right: 8px; bottom: calc(var(--nav-h) + env(safe-area-inset-bottom) + 8px); z-index: 35; max-height: 55vh; overflow: auto; margin: 0; box-shadow: 0 8px 30px rgb(0 0 0 / 25%); }
 /* bigger invisible tap area for short Quran words (B12: ≥ 44 px) without changing the layout */
 .w::after { content: ''; position: absolute; inset: -0.32em -3px; }
+
+/* ---------- game layer (XP, combos, celebrations, lesson path) ---------- */
+.answer-sheet { position: sticky; bottom: calc(var(--nav-h) + env(safe-area-inset-bottom) + 8px); z-index: 5; margin-top: 12px; padding: 14px; border-radius: var(--radius); border: 2px solid var(--line); background: var(--surface); }
+.answer-sheet.ok { background: color-mix(in srgb, var(--ok) 13%, var(--surface)); border-color: var(--ok); }
+.answer-sheet.err { background: color-mix(in srgb, var(--err) 11%, var(--surface)); border-color: var(--err); }
+.answer-sheet h3 { margin: 0 0 4px; font-size: 19px; }
+.answer-sheet.ok h3 { color: var(--ok); }
+.answer-sheet.err h3 { color: var(--err); }
+.xp-gain { font-size: 15px; color: var(--accent); font-weight: 700; }
+.chip.combo { background: color-mix(in srgb, var(--accent) 15%, var(--surface)); border-color: var(--accent); }
+.celebrate { position: relative; overflow: hidden; text-align: center; }
+.celebrate h2 { font-size: 23px; margin-top: 6px; }
+.celebrate-line { margin: 4px 0; font-weight: 600; }
+.confetti { position: absolute; inset: 0; pointer-events: none; }
+.confetti i { position: absolute; top: -14px; width: 8px; height: 12px; border-radius: 2px; opacity: 0.9; animation: confetti-fall 1.7s ease-in forwards; }
+@keyframes confetti-fall { to { transform: translateY(280px) rotate(560deg); opacity: 0; } }
+.badge-banner { position: fixed; left: var(--gutter); right: var(--gutter); top: calc(env(safe-area-inset-top) + 58px); z-index: 45; display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: var(--radius); background: var(--surface); border: 2px solid var(--accent); box-shadow: var(--shadow); pointer-events: none; max-width: 520px; margin: 0 auto; }
+.badge-banner-ico { font-size: 26px; }
+.badge-banner-close { pointer-events: auto; border: 0; background: none; color: var(--muted); font-size: 24px; line-height: 1; min-width: 44px; min-height: 44px; cursor: pointer; }
+/* lesson path */
+.path { list-style: none; margin: 10px 0 4px; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.path li { margin-left: var(--x, 0px); }
+.path .node-link { display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; }
+.stone { flex: none; width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 18px; color: var(--primary-ink); background: var(--primary); box-shadow: 0 3px 0 color-mix(in srgb, var(--primary) 55%, black); }
+.stone.done { background: var(--accent); box-shadow: 0 3px 0 color-mix(in srgb, var(--accent) 55%, black); font-size: 24px; }
+.stone.started { color: var(--ink); background: radial-gradient(circle, var(--surface) 0 60%, transparent 61%), conic-gradient(var(--primary) var(--pct, 0%), var(--line) 0); box-shadow: none; }
+.stone.placed { color: var(--primary); background: var(--surface); border: 2px dashed var(--primary); box-shadow: none; }
+.stone.locked { color: var(--muted); background: var(--surface-2); border: 1px solid var(--line); box-shadow: none; font-size: 20px; }
+.stone.next { animation: stone-pulse 1.8s ease-in-out infinite; }
+@keyframes stone-pulse { 50% { transform: scale(1.08); } }
+.node-label { min-width: 0; overflow-wrap: anywhere; }
+/* Today game card */
+.game { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.game .stat { display: flex; flex-direction: column; min-width: 64px; }
+.game .stat b { font-size: 20px; }
+.ring circle { fill: none; stroke-width: 7; }
+.ring .bg { stroke: var(--line); }
+.ring .fg { stroke: var(--ok); stroke-linecap: round; transition: stroke-dashoffset 0.5s ease; }
+.ring text { fill: var(--ink); font-size: 13px; font-weight: 700; }
+.badges { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 10px; }
+.badge { text-align: center; font-size: 12px; }
+.badge .ico { font-size: 28px; display: block; }
+.badge.locked { opacity: 0.45; filter: grayscale(1); }
+@media (prefers-reduced-motion: reduce) {
+  .confetti { display: none; }
+  .stone.next { animation: none; }
+  .ring .fg { transition: none; }
+}

@@ -62,6 +62,8 @@ export interface Settings {
   rate: number;
   fastTrack: boolean; // Persian/Urdu reader fast-track
   handsFree: boolean;
+  /** small right / wrong / done sounds in quizzes */
+  gameSounds: boolean;
   latencyMs: Record<string, number>; // per output device label
   harakahMs: number | null; // calibrated count length
   tonicHz: number | null;
@@ -84,6 +86,7 @@ export const DEFAULT_SETTINGS: Settings = {
   rate: 1,
   fastTrack: false,
   handsFree: false,
+  gameSounds: true,
   latencyMs: {},
   harakahMs: null,
   tonicHz: null,

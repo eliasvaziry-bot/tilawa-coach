@@ -11,6 +11,8 @@ import { route, say, settings, updateSettings, type SetupCheck } from '../state.
 import { ReviewBadge } from '../components/ReviewBadge.tsx';
 import { QuranSnippet } from '../components/QuranSnippet.tsx';
 import { Quiz, type QuizResult } from '../components/Quiz.tsx';
+import { Celebrate, type CelebrateInfo } from '../components/Celebrate.tsx';
+import { awardXp, XP_FOR } from '../../srs/game.ts';
 import { YouTubeLesson } from '../components/YouTubeLesson.tsx';
 import { MicCard, NoiseCard, RecordTestCard, LatencyCard, RangeCard } from '../components/AudioSetup.tsx';
 import { SayDrill } from '../components/SayDrill.tsx';
@@ -45,6 +47,8 @@ function FactText({ f }: { f: Fact }) {
 
 function StageMap() {
   const p = progress.value;
+  // the lesson to do next: the first open one not yet passed (setup done / mastery test passed) and not placed
+  const nextId = LESSONS.find((l) => lessonOpen(l, p) && !p[l.id]?.placed && !(l.setup ? p[l.id]?.setupDone : masteryPassed(p[l.id]?.mastery ?? null)))?.id;
   const overall = weightedPct(LESSONS, p);
   return (
     <>
@@ -73,30 +77,33 @@ function StageMap() {
               <span class="small muted">{ls.length ? `${pct}%` : st.planned}</span>
             </div>
             {ls.length ? (
-              <ul class="list">
-                {ls.map((l) => {
+              <ol class="path">
+                {ls.map((l, i) => {
                   const lp = p[l.id];
                   const open = lessonOpen(l, p);
-                  const Row = open ? 'a' : 'div'; // locked rows are plain text, not links without a target (m-8)
+                  const Row = open ? 'a' : 'div'; // locked lessons are plain text, not links without a target (m-8)
                   const status = isMastered(lp) ? 'mastered' : retestDue(lp) ? 'retest due' : masteryPassed(lp?.mastery ?? null) ? 'retest in 3 days' : lp?.placed ? 'placed (open)' : lp?.stepsDone ? `${lessonPct(lp)}%` : open ? 'new' : 'locked';
+                  const kind = isMastered(lp) ? 'done' : !open ? 'locked' : lp?.placed && !lp.stepsDone ? 'placed' : lp?.stepsDone || lp?.mastery ? 'started' : 'open';
+                  const next = l.id === nextId;
                   return (
-                    <li key={l.id}>
-                      <Row href={open ? `#/learn/${l.id}` : undefined} style={open ? undefined : { opacity: 0.55, display: 'flex', alignItems: 'center', gap: 10 }}>
-                        <span class="chip" style={{ minWidth: 44, justifyContent: 'center' }}>
-                          {l.order}
+                    <li key={l.id} style={{ '--x': `${[0, 24, 48, 24][i % 4]}px` } as Record<string, string>}>
+                      <Row class="node-link" href={open ? `#/learn/${l.id}` : undefined}>
+                        <span class={`stone ${kind}${next ? ' next' : ''}`} style={kind === 'started' ? ({ '--pct': `${lessonPct(lp)}%` } as Record<string, string>) : undefined} aria-hidden="true">
+                          {kind === 'done' ? '★' : kind === 'locked' ? '🔒' : l.order}
                         </span>
-                        <span class="grow">
+                        <span class="node-label">
                           <b>{l.title}</b>
                           <br />
                           <span class="small muted">
                             {l.minutes} min · {status}
+                            {next ? ' · up next' : ''}
                           </span>
                         </span>
                       </Row>
                     </li>
                   );
                 })}
-              </ul>
+              </ol>
             ) : (
               <p class="small muted">Coming later: {st.planned}.</p>
             )}
@@ -158,6 +165,7 @@ function Player({ lesson }: { lesson: Lesson }) {
   const [surahs, setSurahs] = useState<Map<number, Ayah[]> | null>(null);
   const [loadNote, setLoadNote] = useState<string | null>(null);
   const [quiz, setQuiz] = useState<{ items: QuizItem[]; kind: 'practice' | 'mastery' | 'review' } | null>(null);
+  const [celebrate, setCelebrate] = useState<CelebrateInfo | null>(null);
   const [nuraniah, setNuraniah] = useState<FeedItem[]>([]);
   useEffect(() => void loadNuraniah().then(setNuraniah), []);
   useEffect(() => {
@@ -183,8 +191,17 @@ function Player({ lesson }: { lesson: Lesson }) {
   const offline = typeof navigator !== 'undefined' && navigator.onLine === false;
   const quizTaken = !!(p?.seenQuestions?.length || p?.checksPassed || p?.mastery || p?.setupDone);
   const complete = async (i: number) => {
-    if (i + 1 > done) await updateProgress(lesson.id, { stepsDone: i + 1, stepsTotal: total }, total);
+    const first = i + 1 > done;
+    if (first) {
+      await updateProgress(lesson.id, { stepsDone: i + 1, stepsTotal: total }, total);
+      void awardXp('step');
+    }
     await markPractisedToday();
+    if (first && i === total - 1)
+      setCelebrate({
+        title: 'All seven steps done — أحسنت',
+        lines: [`+${XP_FOR.step} XP`, setup ? 'Finish the setup checks (step 6) to complete it.' : isMastered(progress.value[lesson.id]) ? 'This lesson is mastered.' : 'Next: the mastery test on step 6, then a retest 3 days later.'],
+      });
     setStep(Math.min(total - 1, i + 1));
     window.scrollTo({ top: 0 });
   };
@@ -197,11 +214,13 @@ function Player({ lesson }: { lesson: Lesson }) {
     if (needs.every(checkOk) && (!hasQuiz || p?.checksPassed) && done >= total) {
       void updateProgress(lesson.id, { setupDone: Date.now() }, total);
       if (needs.includes('mic')) updateSettings({ onboarded: true });
-      say('Setup lesson complete.');
+      void awardXp('setup');
+      setCelebrate({ title: 'Setup complete — أحسنت', lines: [`+${XP_FOR.setup} XP`, 'This lesson is done.'], confetti: true });
     }
   }, [s.setupChecks, s.placement, p?.checksPassed, done]);
   // ---------- quizzes: every answer is recorded at once (M-3) ----------
-  const onAnswer = (id: string) => {
+  const onAnswer = (id: string, ok: boolean) => {
+    if (ok) void awardXp('correct');
     const cur = progress.value[lesson.id];
     if (quiz?.kind === 'practice') void updateProgress(lesson.id, { seenQuestions: [...new Set([...(cur?.seenQuestions ?? []), id])] }, total);
     else void updateProgress(lesson.id, { masteryUsed: { ...(cur?.masteryUsed ?? {}), [id]: Date.now() } }, total);
@@ -209,33 +228,43 @@ function Player({ lesson }: { lesson: Lesson }) {
   const onQuizDone = async (r: QuizResult) => {
     const cur = progress.value[lesson.id] ?? emptyProgress(lesson.id, total);
     const now = Date.now();
+    const score = `${r.correct} / ${r.total} correct`;
+    const run = r.bestCombo >= 3 ? [`Best run: ${r.bestCombo} right in a row 🔥`] : [];
+    let xp = r.correct * XP_FOR.correct; // already awarded answer by answer
+    let info: CelebrateInfo;
     if (quiz?.kind === 'mastery') {
       const wasRetest = retestDue(cur, now);
-      if (r.total < 20) say(`${r.skipped} question(s) could not play, so this test does not count. Try again when you are online.`);
+      if (r.total < 20) info = { title: 'This test does not count', lines: [`${r.skipped} question(s) could not play. Try again when you are online.`] };
       else {
         const patch = afterMasteryTest(cur, r, now);
         await updateProgress(lesson.id, patch, total);
         const after = { ...cur, ...patch };
-        say(
-          isMastered(after)
-            ? 'Retest passed — lesson mastered. First review in about 7 days.'
-            : wasRetest
-              ? `Retest: ${r.correct}/${r.total}. It needs 95% (19 of 20): practise, then take the retest again.`
-              : masteryPassed(after.mastery)
-                ? `Mastery test passed (${r.correct}/${r.total}). The retest unlocks in 3 days.`
-                : `${r.correct}/${r.total}. Mastery needs 95% (19 of 20). Practise and try again.`,
-        );
+        if (wasRetest && isMastered(after)) {
+          xp += await awardXp('retest');
+          info = { title: 'Lesson mastered! 🏅', lines: [score, `+${xp} XP`, ...run, 'First review in about 7 days.'], confetti: true };
+        } else if (wasRetest) info = { title: 'Retest: not yet', lines: [score, 'It needs 95% (19 of 20): practise, then take the retest again.', `+${xp} XP`] };
+        else if (patch.mastery && masteryPassed(after.mastery)) {
+          xp += await awardXp('mastery');
+          info = { title: 'Mastery test passed — أحسنت', lines: [score, `+${xp} XP`, ...run, 'The retest unlocks in 3 days.'], confetti: r.correct === r.total };
+        } else info = { title: 'Not yet — keep going', lines: [score, 'Mastery needs 95% (19 of 20). Practise and try again.', `+${xp} XP`] };
       }
     } else if (quiz?.kind === 'review') {
       const patch = afterReview(cur, r, now);
       await updateProgress(lesson.id, patch, total);
-      say(r.total && r.correct / r.total >= 0.9 ? `Review passed (${r.correct}/${r.total}). Next review: ${new Date(patch.reviewDue!).toLocaleDateString()}.` : `Review: ${r.correct}/${r.total}. It comes back tomorrow.`);
+      const passed = r.total > 0 && r.correct / r.total >= 0.9;
+      if (passed) xp += await awardXp('review');
+      info = passed
+        ? { title: 'Review passed — أحسنت', lines: [score, `+${xp} XP`, ...run, `Next review: ${new Date(patch.reviewDue!).toLocaleDateString()}`] }
+        : { title: 'Review: not yet', lines: [score, 'It comes back tomorrow.', `+${xp} XP`] };
     } else {
       await updateProgress(lesson.id, { checksPassed: cur.checksPassed || (setup && r.total > 0 && r.correct === r.total) }, total);
-      say(`Practice: ${r.correct}/${r.total}.`);
+      const perfect = r.total > 0 && r.correct === r.total;
+      if (perfect) xp += await awardXp('perfect');
+      info = { title: perfect ? 'Perfect! أحسنت' : r.correct / Math.max(1, r.total) >= 0.8 ? 'Well done — أحسنت' : 'Good effort — keep going', lines: [score, `+${xp} XP`, ...run], confetti: perfect };
     }
     await markPractisedToday();
     setQuiz(null);
+    setCelebrate(info);
   };
   const onQuit = () => {
     if (quiz?.kind !== 'practice') say('Test stopped. The questions you saw will not come back in a test for 14 days.');
@@ -385,6 +414,7 @@ function Player({ lesson }: { lesson: Lesson }) {
               onDone={(r) => void onQuizDone(r)}
               onAnswer={onAnswer}
               onQuit={onQuit}
+              xpPerCorrect={XP_FOR.correct}
             />
           );
         const cur = progress.value[lesson.id];
@@ -504,7 +534,10 @@ function Player({ lesson }: { lesson: Lesson }) {
               disabled={!!quiz && quiz.kind !== 'practice' && step !== i}
               title={quiz && quiz.kind !== 'practice' && step !== i ? 'Finish or stop the test first' : undefined}
               class={`btn small${step === i ? ' primary' : ''}`}
-              onClick={() => setStep(i)}
+              onClick={() => {
+                setStep(i);
+                setCelebrate(null);
+              }}
             >
               {i + 1}. {n}
             </button>
@@ -516,19 +549,19 @@ function Player({ lesson }: { lesson: Lesson }) {
       </div>
       <div class="card" id="lesson-panel" role="tabpanel" aria-labelledby={`step-tab-${step}`}>
         <h3 style={{ marginTop: 0 }}>{STEP_NAMES[step]}</h3>
-        {body()}
-        {step < total - 1 && !quiz ? (
+        {celebrate ? <Celebrate info={celebrate} onClose={() => setCelebrate(null)} /> : body()}
+        {step < total - 1 && !quiz && !celebrate ? (
           <div class="task-now" style={{ marginTop: 12 }}>
             <b>YOUR TASK NOW:</b> {stepTask(lesson, step, p, setup)}
           </div>
         ) : null}
-        {step < total - 1 && !quiz ? (
+        {step < total - 1 && !quiz && !celebrate ? (
           <button class="btn primary block" style={{ marginTop: 12 }} disabled={step === 5 && !quizTaken} onClick={() => void complete(step)}>
             Done — next step
           </button>
         ) : null}
         {step === 5 && !quiz && !quizTaken ? <p class="small muted">Take a practice quiz first: this step counts as done after one.</p> : null}
-        {step > 0 && !quiz ? (
+        {step > 0 && !quiz && !celebrate ? (
           <button
             class="btn block"
             style={{ marginTop: 8 }}
@@ -540,7 +573,7 @@ function Player({ lesson }: { lesson: Lesson }) {
             ‹ Previous step
           </button>
         ) : null}
-        {step === total - 1 ? (
+        {step === total - 1 && !celebrate ? (
           <button class="btn block" style={{ marginTop: 12 }} onClick={() => void complete(step)}>
             Mark lesson steps complete
           </button>

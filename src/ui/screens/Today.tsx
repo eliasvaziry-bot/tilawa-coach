@@ -7,6 +7,23 @@ import { LESSONS, STEP_NAMES } from '../../content/lessons.ts';
 import { loadProgress, masteryPassed, progress, retestDue, reviewDueNow, streak, streakLength, weightedPct, dayKey } from '../../srs/progress.ts';
 import { lessonOpen } from '../../content/gating.ts';
 import { kvGet, kvSet } from '../../data/db.ts';
+import { BADGES, earnedBadges, goalFor, levelOf, loadXp, xpOn, xpState } from '../../srs/game.ts';
+
+/** Daily goal ring: today's XP against the goal for the minutes picked. */
+function GoalRing({ xp, goal }: { xp: number; goal: number }) {
+  const r = 26;
+  const c = 2 * Math.PI * r;
+  const f = Math.min(1, xp / goal);
+  return (
+    <svg class="ring" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label={`Daily goal: ${xp} of ${goal} XP`}>
+      <circle class="bg" cx="32" cy="32" r={r} />
+      <circle class="fg" cx="32" cy="32" r={r} stroke-dasharray={c} stroke-dashoffset={c * (1 - f)} transform="rotate(-90 32 32)" />
+      <text x="32" y="36" text-anchor="middle">
+        {f >= 1 ? '✓' : `${xp}/${goal}`}
+      </text>
+    </svg>
+  );
+}
 
 interface PlanItem {
   label: string;
@@ -41,6 +58,7 @@ export function TodayScreen() {
   const [mins, setMins] = useState<number>(10);
   useEffect(() => {
     void loadProgress();
+    void loadXp();
     void kvGet<number>('todayMinutes', 10).then(setMins);
   }, []);
   const plan = planFor(mins);
@@ -48,6 +66,10 @@ export function TodayScreen() {
   const days = streakLength(st);
   const doneToday = st.days.includes(dayKey());
   const overall = weightedPct(LESSONS, progress.value);
+  const xp = xpState.value;
+  const lv = levelOf(xp.total);
+  const goal = goalFor(mins);
+  const earned = earnedBadges(progress.value, st, xp, LESSONS, !!s.placement);
   const first = plan[0];
   // until the microphone is set up that is the first task, but due retests/reviews stay listed below it
   const needsSetup = !s.onboarded && !progress.value[LESSONS[0]?.id ?? '']?.setupDone;
@@ -56,12 +78,27 @@ export function TodayScreen() {
     <>
       <div class="card">
         <h2>Salam, Elias</h2>
-        <div class="row small muted" style={{ marginTop: -4 }}>
-          <span>
-            Streak {days} day{days === 1 ? '' : 's'} {doneToday ? '· done today' : ''}
-          </span>
-          <span>· overall {overall}%</span>
+        <div class="game" style={{ marginTop: 4 }}>
+          <GoalRing xp={xpOn(xp)} goal={goal} />
+          <div class="stat">
+            <b>🔥 {days}</b>
+            <span class="small muted">
+              day streak{doneToday ? ' · today ✓' : ''}
+            </span>
+          </div>
+          <div class="stat grow">
+            <b>Level {lv.level}</b>
+            <div class="progress" style={{ margin: '4px 0' }} role="progressbar" aria-label={`Level ${lv.level}`} aria-valuemin={0} aria-valuemax={lv.need} aria-valuenow={lv.into}>
+              <span style={{ width: `${Math.round((lv.into / lv.need) * 100)}%` }} />
+            </div>
+            <span class="small muted">
+              {xp.total} XP · {lv.need - lv.into} to level {lv.level + 1}
+            </span>
+          </div>
         </div>
+        <p class="small muted" style={{ margin: '6px 0 0' }}>
+          Daily goal {goal} XP (from the minutes below) · overall progress {overall}%
+        </p>
         <div class="tabs" role="radiogroup" aria-label="Minutes today" style={{ marginTop: 8 }}>
           {[5, 10, 20, 30].map((m) => (
             <button
@@ -109,6 +146,26 @@ export function TodayScreen() {
         <p class="small muted" style={{ marginBottom: 0 }}>
           <a href="#/mushaf/1">Listen to Al-Fatiha</a> any time. One streak freeze per week covers a missed day.
         </p>
+      </div>
+      <div class="card">
+        <h2>
+          Badges <span class="small muted">{earned.length} of {BADGES.length}</span>
+        </h2>
+        <div class="badges">
+          {BADGES.map((b) => {
+            const got = earned.includes(b.id);
+            return (
+              <div key={b.id} class={`badge${got ? '' : ' locked'}`}>
+                <span class="ico" aria-hidden="true">
+                  {b.icon}
+                </span>
+                <b>{b.title}</b>
+                <br />
+                <span class="muted">{got ? 'earned' : b.how}</span>
+              </div>
+            );
+          })}
+        </div>
       </div>
       <CareerTodayCard />
     </>

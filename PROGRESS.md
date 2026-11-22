@@ -26,6 +26,9 @@ ladder, offline gaps, no learner-path e2e tests, start-up bundle growing with co
 minors. Fixed: all blockers and majors (the history squash is the last step of the session) and m-1, m-2, m-3, m-5,
 m-6, m-7, m-8, m-9 (partly), m-11, m-13, m-14. Open: m-4 (makhraj diagrams, teacher-recording slot), m-10 (option
 lengths; the linter warns), m-12 (Nuraniah mapping, for the owner/teacher), m-15 (reading-speed history). D-019.
+**Game layer (22 Nov, owner's request: "slightly like a game"):** XP (`src/srs/game.ts`), daily goal ring, levels,
+15 badges computed from progress (announced once), a lesson path map, answer panels with combos, celebration cards
+and optional sounds. Motivation only: no lives or penalties, and the mastery rules are untouched (unit + e2e tested).
 **Live (22 Nov):** published to GitHub Pages (`https://<your-username>.github.io/tilawa-coach/`). The first CI run on
 GitHub caught a real bug the Mac could not: the live-pitch worklet told YIN 16 kHz after decimating 44.1 kHz audio to
 14.7 kHz, so pitch read ~9% sharp on 44.1 kHz devices; fixed with a tested `decimation()` helper, then CI and the
