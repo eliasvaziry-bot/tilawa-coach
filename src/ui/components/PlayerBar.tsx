@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks';
+import { useEffect, useState } from 'preact/hooks';
 import { mushafPlayer, nowAyah, playerError, playerState } from '../../audio/mushafPlayer.ts';
 import { IconPause, IconPlay, IconStop } from './icons.tsx';
 import { settings, updateSettings } from '../state.ts';
@@ -9,7 +9,12 @@ export function PlayerBar() {
   const [loop, setLoop] = useState<{ a: number; b?: number } | null>(null);
   const st = playerState.value;
   const now = nowAyah.value;
-  if (st === 'idle' || !now) return null;
+  const on = st !== 'idle' && !!now;
+  // while the bar shows, the page leaves room for it so nothing hides behind it
+  useEffect(() => {
+    document.documentElement.classList.toggle('player-on', on);
+  }, [on]);
+  if (!on) return null;
   const rate = settings.value.rate;
   const loopLabel = !loop ? 'A–B' : loop.b === undefined ? `A=${loop.a} · set B` : `${loop.a}–${loop.b} ↻`;
   return (

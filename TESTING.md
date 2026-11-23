@@ -62,12 +62,40 @@ This proves the loop works; it says nothing about how well a human will be judge
 - E2E (Chromium): placement ladder → practice → mastery → retest 3+ days later → spaced review (fake clock); a running
   test locks the step tabs; a Stage 1 lesson's quiz works offline without listening questions. 92 e2e tests in all.
 
-## Performance
-- Start-up script 70 KB (24 KB gzip), down from 544 KB: only a lesson index ships at start; a lesson (and the zod
-  validator, 94 KB) loads when opened. Precache 133 entries, 1,270 KiB, incl. the 137 KB Quran font, all lesson chunks
-  and the Quran data for Stage 0–1 (surahs 1 and 67–114) so those lessons work offline.
+## Performance (speed pass, 23 Nov 2026)
+Measured with `node scripts/perf.ts` (after `npm run build`): median of 3 cold starts with no service worker, at
+390×844. Chromium uses Lighthouse's mobile profile applied through DevTools (4× CPU slowdown, "Slow 4G": 562 ms latency,
+1.47 Mbps down); WebKit cannot be throttled, so its numbers are unthrottled. Lab metrics are read in the page (paint
+timing, largest-contentful-paint, long tasks); Lighthouse itself was not run (it needs a download).
+
+| | Before (223fa9e) | After |
+|---|---|---|
+| Chromium: first screen (Today's greeting drawn) | 1,886 ms | 1,908 ms |
+| Chromium: first / largest contentful paint | 1,956 / 2,168 ms | 1,972 / 2,184 ms |
+| Chromium: load event | 2,179 ms | 1,881 ms |
+| Chromium: total blocking time; long tasks | 0 ms; 1 (60 ms, before first paint) | 0 ms; 1 (55 ms) |
+| Chromium: bytes / requests until settled | 275 KB / 13 | 180 KB / 12 |
+| WebKit: first screen | 120 ms | 117 ms |
+| WebKit: bytes / requests until settled | 276 KB / 14 | 43 KB / 10 |
+| Start-up script | 76.7 KB (26.9 KB gzip) | 52.7 KB (19.4 KB gzip) |
+| Lesson tapped through (open, 4 steps, Check, start a quiz), 4× CPU | 0 long tasks | 0 long tasks |
+| Lesson path scrolled for 2 s, 4× CPU | 60 fps, 0 long tasks | 60 fps, 0 long tasks |
+
+- What changed: the Quran font (134 KB) is prefetched instead of preloaded; the career pack is checked with a HEAD
+  request when locked and its update check waits 5 s when unlocked (it was an 87 KB download at every start); the
+  service worker registers 3 s after load, so the 1.3 MB offline cache no longer competes with a first visit; the FSRS
+  scheduler moved out of the start-up script (`src/srs/schedule.ts`, lessons only).
+- Honest reading: on Slow 4G the first screen is bound by network round trips (about three of 562 ms), so less data
+  did not move it; the gains are less data and less contention on every start. Bytes are as served by `vite preview`
+  (uncompressed); GitHub Pages sends them gzipped.
+- Smoothness: every animation runs on transform/opacity only (the ring and word-highlight transitions were removed),
+  and none runs with reduced motion.
+- Operable: the screen e2e test now fails if any control on 11 screens (Today, Learn, a lesson, Practice, the surah
+  list, three surahs, Credits, Settings…) is under 44 px, or if anything is hidden behind the tab bar — Chromium and
+  WebKit, 390 and 430 px, light and dark. Form controls use 16 px text (no iOS zoom); checkbox rows are 44 px; lesson
+  step buttons sit in a sticky bar within thumb reach; the page leaves room for the recitation player bar.
 - Surah 2 (6,121 words) shows text in ~0.4 s at 4× CPU throttle (measured by the independent reviewer).
-- Not yet measured: time to interactive on a throttled mobile profile, Lighthouse a11y/performance, checker latency/memory.
+- Not yet measured: a full Lighthouse / axe accessibility audit, checker latency and memory.
 
 ## How to run
 `npm run ci` (guard, typecheck, lint, unit tests, content lint, build) · `npx playwright test` (e2e; Chromium + WebKit) ·

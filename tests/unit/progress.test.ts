@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { applyFreeze, emptyProgress, isMastered, lessonPct, masteryPassed, retestDue, review, streakLength, weightedPct } from '../../src/srs/progress.ts';
+import { applyFreeze, emptyProgress, isMastered, lessonPct, masteryPassed, retestDue, streakLength, weightedPct } from '../../src/srs/progress.ts';
+import { review } from '../../src/srs/schedule.ts';
 import { remnoteText } from '../../src/content/remnote.ts';
 import { arrangeHandWritten, typedCorrect } from '../../src/content/quiz.ts';
 import { rng } from '../../src/content/generate.ts';

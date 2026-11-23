@@ -91,22 +91,26 @@ export async function loadCareer(): Promise<void> {
       packState.value = 'unlocked';
       // each published pack has a fresh salt: a different salt online means the list was updated
       const seen = rows.find((r) => r.type === 'pack-salt')?.data as string | undefined;
-      void fetch(`${import.meta.env.BASE_URL}data/career/pack.enc.json`, { cache: 'no-cache' })
-        .then((r) => (r.ok ? (r.json() as Promise<EncryptedPack>) : null))
-        .then((enc) => {
-          if (enc?.salt && enc.salt !== seen) packUpdate.value = true;
-        })
-        .catch(() => undefined);
+      // checked when the app is idle, so the 87 KB pack never competes with the first screen
+      setTimeout(() => {
+        void fetch(`${import.meta.env.BASE_URL}data/career/pack.enc.json`, { cache: 'no-cache' })
+          .then((r) => (r.ok ? (r.json() as Promise<EncryptedPack>) : null))
+          .then((enc) => {
+            if (enc?.salt && enc.salt !== seen) packUpdate.value = true;
+          })
+          .catch(() => undefined);
+      }, 5000);
     }
   } catch {
     /* private mode: memory only */
   }
   if (!pack.value) {
     try {
-      const r = await fetch(`${import.meta.env.BASE_URL}data/career/pack.enc.json`);
+      // only "is there a pack?": a HEAD request moves no data (offline: assume it is there)
+      const r = await fetch(`${import.meta.env.BASE_URL}data/career/pack.enc.json`, { method: 'HEAD' });
       packState.value = r.ok ? 'locked' : 'missing';
     } catch {
-      packState.value = 'missing';
+      packState.value = navigator.onLine === false ? 'locked' : 'missing';
     }
   }
 }

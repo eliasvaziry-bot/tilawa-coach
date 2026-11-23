@@ -20,7 +20,11 @@ import { connectLoopback } from './audio/mic.ts';
 async function start(): Promise<void> {
   await loadSettings();
   render(<App />, document.getElementById('app')!);
-  void initPwa();
+  // the offline cache (about 1.3 MB) starts downloading only after the page has loaded and settled, so it never
+  // competes with the first screen on a slow connection
+  const registerLater = () => setTimeout(() => void initPwa(), 3000);
+  if (document.readyState === 'complete') registerLater();
+  else window.addEventListener('load', registerLater, { once: true });
   void purgeExpiredQf(); // Quran Foundation data: never kept longer than 7 days
   // persistence must follow a user gesture on some browsers
   window.addEventListener('pointerdown', () => void requestPersistence(), { once: true });

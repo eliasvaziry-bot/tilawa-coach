@@ -6,7 +6,8 @@ import type { Fact, Lesson } from '../../content/schema.ts';
 import { isSetupLesson, masterySet, practiceSet, reviewSet, type QuizItem } from '../../content/quiz.ts';
 import { lessonOpen, prereqDone } from '../../content/gating.ts';
 import { loadSurah, type Ayah } from '../../data/quranData.ts';
-import { afterMasteryTest, afterReview, emptyProgress, isMastered, lessonPct, loadProgress, markPractisedToday, masteryPassed, progress, retestDue, reviewDueNow, updateProgress, weightedPct, type LessonProgress } from '../../srs/progress.ts';
+import { afterMasteryTest, afterReview } from '../../srs/schedule.ts';
+import { emptyProgress, isMastered, lessonPct, loadProgress, markPractisedToday, masteryPassed, progress, retestDue, reviewDueNow, updateProgress, weightedPct, type LessonProgress } from '../../srs/progress.ts';
 import { route, say, settings, updateSettings, type SetupCheck } from '../state.ts';
 import { ReviewBadge } from '../components/ReviewBadge.tsx';
 import { QuranSnippet } from '../components/QuranSnippet.tsx';
@@ -582,28 +583,31 @@ function Player({ lesson }: { lesson: Lesson }) {
             <b>YOUR TASK NOW:</b> {stepTask(lesson, step, p, setup)}
           </div>
         ) : null}
-        {step < total - 1 && !quiz && !celebrate ? (
-          <button class="btn primary block" style={{ marginTop: 12 }} disabled={step === 5 && !quizTaken} onClick={() => void complete(step)}>
-            Done — next step
-          </button>
-        ) : null}
         {step === 5 && !quiz && !quizTaken ? <p class="small muted">Take a practice quiz first: this step counts as done after one.</p> : null}
-        {step > 0 && !quiz && !celebrate ? (
-          <button
-            class="btn block"
-            style={{ marginTop: 8 }}
-            onClick={() => {
-              setStep(step - 1);
-              window.scrollTo({ top: 0 });
-            }}
-          >
-            ‹ Previous step
-          </button>
-        ) : null}
-        {step === total - 1 && !celebrate ? (
-          <button class="btn block" style={{ marginTop: 12 }} onClick={() => void complete(step)}>
-            Mark lesson steps complete
-          </button>
+        {!quiz && !celebrate ? (
+          // one-handed: the step buttons stay within thumb reach at the bottom of the screen
+          <div class="step-actions">
+            {step > 0 ? (
+              <button
+                class="btn"
+                onClick={() => {
+                  setStep(step - 1);
+                  window.scrollTo({ top: 0 });
+                }}
+              >
+                ‹ Previous step
+              </button>
+            ) : null}
+            {step < total - 1 ? (
+              <button class="btn primary" disabled={step === 5 && !quizTaken} onClick={() => void complete(step)}>
+                Done — next step
+              </button>
+            ) : (
+              <button class="btn primary" onClick={() => void complete(step)}>
+                Mark lesson steps complete
+              </button>
+            )}
+          </div>
         ) : null}
       </div>
     </>

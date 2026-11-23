@@ -5,7 +5,8 @@ import { decodeAyah, type Ayah, type RawAyah } from '../../src/data/quranData.ts
 import { generate, lettersOf, masteryOnly } from '../../src/content/generate.ts';
 import { DAY, masterySet, practiceSet, REUSE_AFTER_DAYS } from '../../src/content/quiz.ts';
 import { Lesson } from '../../src/content/schema.ts';
-import { afterMasteryTest, afterReview, emptyProgress, isMastered, reviewDueNow, type LessonProgress } from '../../src/srs/progress.ts';
+import { emptyProgress, isMastered, reviewDueNow, type LessonProgress } from '../../src/srs/progress.ts';
+import { afterMasteryTest, afterReview } from '../../src/srs/schedule.ts';
 
 const index = JSON.parse(readFileSync('public/data/quran/index.json', 'utf8')) as { surahs: { file: string }[] };
 const load = (list: number[]) => new Map(list.map((n) => [n, (JSON.parse(readFileSync(`public/data/quran/${index.surahs[n - 1]!.file}`, 'utf8')) as { ayat: RawAyah[] }).ayat.map((a, i) => decodeAyah(n, i + 1, a))] as [number, Ayah[]]));

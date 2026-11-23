@@ -31,7 +31,8 @@ src/
               scripts/lesson-index.ts), lessons.ts (index + lazy loadLesson), generate (data-generated MCQs incl.
               contrast sets, seeded RNG, Fisher–Yates, test-only partition), quiz (practice / mastery / review sets),
               gating (which lessons are open), remnote, review.json (teacher approvals)
-  srs/        progress (mastery rule, idempotent test/retest/review transitions, FSRS via ts-fsrs, 7/21/60-day
+  srs/        progress (mastery rule, the light helpers the first screen needs), schedule (idempotent test / retest /
+              review transitions, FSRS via ts-fsrs — loaded with lessons only), game (XP, levels, badges), 7/21/60-day
               review ladder, streak + weekly freeze, progress %)
   career/     model (on-device store), pack (AES-GCM pack crypto), text (date finder, templates), screens
   ui/         app shell, state (router, settings), pwa, ics, tajweedPaint (Highlight API + overlay fallback),

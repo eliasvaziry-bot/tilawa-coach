@@ -20,7 +20,8 @@
     <meta name="apple-mobile-web-app-title" content="Tilawa" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
     <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
-    <link rel="preload" href="/fonts/AmiriQuran.ttf" as="font" type="font/ttf" crossorigin />
+    <!-- the Quran font (134 KB) is not needed by the first screen: fetch it when the page is idle -->
+    <link rel="prefetch" href="/fonts/AmiriQuran.ttf" as="font" type="font/ttf" crossorigin />
     <title>Tilawa Coach</title>
   </head>
   <body>

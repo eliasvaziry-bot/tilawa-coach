@@ -220,7 +220,7 @@ table.simple th, table.simple td { text-align: left; padding: 6px 4px; border-bo
 .ayah { padding: 6px 0 10px; border-bottom: 1px solid var(--line); scroll-margin-top: 80px; }
 .ayah-head { display: flex; align-items: center; gap: 6px; justify-content: space-between; direction: ltr; }
 .ayah-no { font-size: 13px; color: var(--muted); font-weight: 700; }
-.w { border-radius: 8px; padding: 0 1px; cursor: pointer; transition: background-color 80ms linear; }
+.w { border-radius: 8px; padding: 0 1px; cursor: pointer; }
 .w.now { background: var(--word-now); box-shadow: inset 0 -3px 0 var(--word-now-line); }
 .w:focus-visible { outline-offset: 0; }
 .pm { font-size: 0.72em; color: var(--accent); padding: 0 1px; }
@@ -341,7 +341,7 @@ pre.draft { white-space: pre-wrap; font-family: var(--ui-font); background: var(
 .game .stat b { font-size: 20px; }
 .ring circle { fill: none; stroke-width: 7; }
 .ring .bg { stroke: var(--line); }
-.ring .fg { stroke: var(--ok); stroke-linecap: round; transition: stroke-dashoffset 0.5s ease; }
+.ring .fg { stroke: var(--ok); stroke-linecap: round; }
 .ring text { fill: var(--ink); font-size: 13px; font-weight: 700; }
 .badges { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 10px; }
 .badge { text-align: center; font-size: 12px; }
@@ -350,7 +350,6 @@ pre.draft { white-space: pre-wrap; font-family: var(--ui-font); background: var(
 @media (prefers-reduced-motion: reduce) {
   .confetti { display: none; }
   .stone.next { animation: none; }
-  .ring .fg { transition: none; }
 }
 
 /* ---------- polish: stage cards, segmented picker, transitions ---------- */
@@ -377,3 +376,23 @@ pre.draft { white-space: pre-wrap; font-family: var(--ui-font); background: var(
 .tabs.steps { gap: 6px; padding-right: 28px; -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent); }
 .tabs.steps .btn.small { font-size: 14px; padding: 0 11px; }
 .step-count { margin: 0 0 2px; font-size: 12px; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase; color: var(--muted); }
+
+/* ---------- operable on an iPhone ---------- */
+/* every form control is at least 44 px tall with 16 px text (iOS zooms the page into fields with smaller text) */
+select, textarea, input:not([type]), input[type='text'], input[type='search'], input[type='number'], input[type='email'], input[type='date'], input[type='time'], input[type='url'], input[type='password'] {
+  min-height: 44px; font: inherit; font-size: 16px; color: var(--ink); padding: 8px 10px; border-radius: 10px; border: 1px solid var(--line); background-color: var(--surface);
+}
+select { -webkit-appearance: none; appearance: none; padding-right: 34px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; }
+select.btn, select.btn.small { padding-right: 34px; }
+input[type='range'] { height: 44px; }
+/* lesson step buttons: sticky at the bottom, within thumb reach */
+.step-actions { position: sticky; bottom: calc(var(--nav-h) + env(safe-area-inset-bottom) + 8px); z-index: 4; display: flex; gap: 8px; margin: 12px -8px -8px; padding: 8px; border-radius: var(--radius); background: color-mix(in srgb, var(--surface) 94%, transparent); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.step-actions .btn { min-height: 48px; }
+.step-actions .btn.primary { flex: 1; }
+/* the recitation player bar sits above the tab bar: leave room for it while it shows */
+.player-on .main { padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom) + 96px); }
+.player-on .step-actions, .player-on .answer-sheet { bottom: calc(var(--nav-h) + env(safe-area-inset-bottom) + 72px); }
+/* checkbox and radio rows: the whole row is the target, at least 44 px tall */
+input[type='checkbox'], input[type='radio'] { width: 20px; height: 20px; flex: none; accent-color: var(--primary); }
+label:has(> input[type='checkbox'], > input[type='radio']) { min-height: 44px; }
+label:not(.row):has(> input[type='checkbox'], > input[type='radio']) { display: flex; align-items: center; gap: 8px; }

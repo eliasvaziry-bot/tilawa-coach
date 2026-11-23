@@ -29,6 +29,9 @@ lengths; the linter warns), m-12 (Nuraniah mapping, for the owner/teacher), m-15
 **Game layer (22 Nov, owner's request: "slightly like a game"):** XP (`src/srs/game.ts`), daily goal ring, levels,
 15 badges computed from progress (announced once), a lesson path map, answer panels with combos, celebration cards
 and optional sounds. Motivation only: no lives or penalties, and the mastery rules are untouched (unit + e2e tested).
+**Speed pass (23 Nov, owner: "fast, smooth and operable"):** measured before/after with `scripts/perf.ts` (TESTING.md):
+start-up script 76.7 → 52.7 KB, start-up data 275 → 180 KB (Chromium) and 276 → 43 KB (WebKit), no long tasks when
+tapping through a lesson, 60 fps on the path; 44 px controls and nothing behind the tab bar are now e2e gates.
 **Live (22 Nov):** published to GitHub Pages (`https://<your-username>.github.io/tilawa-coach/`). The first CI run on
 GitHub caught a real bug the Mac could not: the live-pitch worklet told YIN 16 kHz after decimating 44.1 kHz audio to
 14.7 kHz, so pitch read ~9% sharp on 44.1 kHz devices; fixed with a tested `decimation()` helper, then CI and the
